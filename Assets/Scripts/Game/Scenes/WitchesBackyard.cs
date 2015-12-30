@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 using Framework;
 
@@ -26,7 +27,7 @@ namespace Scenes
 			doorToHouse.DoorToHouseOpen -= OnDoorToHouseOpen;
 		}
 
-        override public void Cheat()
+        override protected void Cheat()
         {
             _inventory.AddItem("hand_with_feather");
             _inventory.AddItem("blue_nugget");
@@ -49,5 +50,21 @@ namespace Scenes
             pos.x -= 20.0f;
             Utils.GetGameObject(transform, "door_open").GetComponent<RectTransform>().localPosition = pos;
 		}
+
+//----------------TEST TIMERS-------------------------------------------------
+
+        override protected void OnGameObjectClicked(GameObject layer) {
+            if (layer.name == "timer_test") {
+                timers[0].Start();
+            }
+        }
+
+        override protected void CreateTimers() {
+            CreateTimer("test", 5, OnTimerTest);
+        }
+
+        void OnTimerTest() {
+            transform.Find("back").gameObject.GetComponent<Image>().color = Color.clear;
+        }
     }
 }

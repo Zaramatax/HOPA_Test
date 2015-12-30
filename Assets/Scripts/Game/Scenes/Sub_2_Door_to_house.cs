@@ -10,7 +10,7 @@ namespace Scenes
     {
 		public event System.Action DoorToHouseOpen;
 
-        override public void OnGameObjectClicked(GameObject layer)
+        override protected void OnGameObjectClicked(GameObject layer)
         {
             if (layer.name == "hand_feather" && _inventory.GetSelectedItem() == "hand_with_feather")
             {
