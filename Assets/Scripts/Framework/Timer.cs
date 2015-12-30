@@ -1,7 +1,7 @@
 using System.Xml;
 
 public class Timer {
-    private const string timeAttrName = "time";
+    private const string timeAttrName  = "time";
     private const string startAttrName = "start";
 
     private string name;
@@ -34,6 +34,10 @@ public class Timer {
             action();
         }
     }
+
+	public override string ToString () {
+		return name;
+	}
 
     public void LoadFromXML(XmlNode parent) {
         XmlNode node = parent.SelectSingleNode(name);

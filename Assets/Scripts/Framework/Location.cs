@@ -1,12 +1,12 @@
 using UnityEngine;
-using System.Collections.Generic;
 using System.Collections;
 using System.Xml;
 
 namespace Framework {
     public class Location : MonoBehaviour {
+		
         protected InventoryManager _inventory;
-        protected List<Timer> timers;
+		protected TimerManager timerManager;
 
         public LayerMask layerMask;
         public string locationName;
@@ -16,12 +16,11 @@ namespace Framework {
         virtual protected void CreateTimers() { }
 
         virtual protected void Awake() {
-            
+			timerManager = new TimerManager ();
         }
 
         virtual protected void Start() {
             _inventory = InventoryManager.instance;
-            timers = new List<Timer>();
 
             CreateTimers();
             Load();
@@ -41,13 +40,7 @@ namespace Framework {
                 }
             }
 
-            UpdateTimers(Time.deltaTime);
-        }
-
-        protected Timer CreateTimer(string name, float time, System.Action action) {
-            timers.Add(new Timer(name, time, action));
-
-            return timers[timers.Count - 1];
+			timerManager.UpdateTimers(Time.deltaTime);
         }
 
         void Save() {
@@ -56,7 +49,7 @@ namespace Framework {
             doc.AppendChild(root);
 
             SaveLocationState(doc);
-            SaveTimers(doc);
+			timerManager.Save(doc);
 
             doc.Save(locationName + ".xml");
         }
@@ -67,7 +60,7 @@ namespace Framework {
                 doc.Load(locationName + ".xml");
 
                 LoadLocationState(doc);
-                LoadTimers(doc);
+				timerManager.Load(doc);
             }
             catch { };
         }
@@ -81,26 +74,6 @@ namespace Framework {
         void LoadLocationState(XmlDocument doc) {
             XmlNode locationState = doc.DocumentElement.SelectSingleNode("location_state");
             LocationState.LoadFromXML(transform, locationState, doc);
-        }
-
-        void UpdateTimers(float delta) {
-            for (int i = 0; i < timers.Count; i++)
-                timers[i].Update(delta);
-        }
-
-        void SaveTimers(XmlDocument doc) {
-            XmlNode timersNode = doc.CreateElement("timers");
-            doc.DocumentElement.AppendChild(timersNode);
-
-            for (int i = 0; i < timers.Count; i++)
-                timers[i].SaveToXML(timersNode, doc);
-        }
-
-        void LoadTimers(XmlDocument doc) {
-            XmlNode timersNode = doc.DocumentElement.SelectSingleNode("timers");
-
-            for (int i = 0; i < timers.Count; i++)
-                timers[i].LoadFromXML(timersNode);
         }
     }
 }

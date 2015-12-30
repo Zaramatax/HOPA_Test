@@ -14,6 +14,7 @@ namespace Framework
 
         virtual protected void Awake()
         {
+			base.Awake ();
             _state = State.Closed;
         }
 

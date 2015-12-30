@@ -11,6 +11,11 @@ namespace Scenes
     {
 		public List<SubLocation> subLocations;
 
+		protected override void Awake ()
+		{
+			base.Awake ();
+		}
+
 		override protected void Start()
 		{
 			base.Start ();
@@ -55,12 +60,12 @@ namespace Scenes
 
         override protected void OnGameObjectClicked(GameObject layer) {
             if (layer.name == "timer_test") {
-                timers[0].Start();
+				timerManager.StartTimer("test");
             }
         }
 
         override protected void CreateTimers() {
-            CreateTimer("test", 5, OnTimerTest);
+            timerManager.CreateTimer("test", 5, OnTimerTest);
         }
 
         void OnTimerTest() {
