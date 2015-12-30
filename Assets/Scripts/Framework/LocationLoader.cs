@@ -8,7 +8,7 @@ namespace Framework {
         }
 
         IEnumerator Load() {
-            AsyncOperation async = Application.LoadLevelAsync(LocationManager.instance.GetLocationToLoad());
+            Application.LoadLevelAsync(LocationManager.instance.GetLocationToLoad());
             yield return null;
             LocationManager.instance.LocationLoaded();
         }
