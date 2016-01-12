@@ -43,7 +43,7 @@ namespace Framework {
 			timerManager.UpdateTimers(Time.deltaTime);
         }
 
-        void Save() {
+        virtual protected void Save() {
             XmlDocument doc = new XmlDocument();
             XmlNode root = doc.CreateElement("root");
             doc.AppendChild(root);
@@ -54,7 +54,7 @@ namespace Framework {
             doc.Save(locationName + ".xml");
         }
 
-        void Load() {
+        virtual protected void Load() {
             XmlDocument doc = new XmlDocument();
             try {
                 doc.Load(locationName + ".xml");

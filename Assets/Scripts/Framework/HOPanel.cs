@@ -8,6 +8,7 @@ namespace Framework {
     public struct Placeholder {
         public Image place;
         public HOItem item;
+
         public Placeholder(Image place, HOItem item) {
             this.place = place;
             this.item = item;
@@ -16,15 +17,12 @@ namespace Framework {
         }
 
         public void UpdateColor() {
-            Color color = place.color;
             if (item.IsCollected()) {
-                color.a = 0;
+                place.gameObject.GetComponent<Animator>().Play("ho_item_on_panel_hide");
             }
             else {
-                color.a = 1;
+                place.gameObject.GetComponent<Animator>().Play("ho_item_on_panel_show");
             }
-
-            place.color = color;
         }
     }
 
@@ -38,12 +36,16 @@ namespace Framework {
 
         public void SetUpPanel(List<HOItem> items) {
             int i = 0;
+            placeholders.Clear();
+
             foreach (Transform placeholder in transform.GetChild(0)) {
                 if (i >= items.Count) {
                     break;
                 }
+
                 Image place = placeholder.gameObject.GetComponent<Image>();
                 placeholders.Add(new Placeholder(place, items[i]));
+
                 ++i;
             }
         }

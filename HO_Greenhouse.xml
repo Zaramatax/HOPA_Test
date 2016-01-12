@@ -1,0 +1,68 @@
+<root>
+  <location_state>
+    <background />
+    <pick_01_folding_ladder />
+    <pick_01_watering_can />
+    <pick_01_bird />
+    <pick_01_frog />
+    <pick_01_lamp />
+    <pick_01_flower_hanging />
+    <decor>
+      <plant_08_копия />
+      <plant_05 />
+      <Слой_109_копия_2 />
+      <фон />
+      <plant_01 />
+      <патч />
+      <Слой_83 />
+      <valve_01 />
+      <scarecrow_hat_01_shadow>
+        <scarecrow_hat_01 />
+      </scarecrow_hat_01_shadow>
+      <lamplight />
+      <patch_00 />
+      <valve_07 />
+      <Слой_84 />
+      <Pumpkin_ho2 />
+      <valve_12 />
+      <Iguanaiguana>
+        <Слой_86 />
+        <Слой_87 />
+      </Iguanaiguana>
+      <patch_01 />
+      <ewer_shadow />
+      <patch_02 />
+      <turtle_shell_01_shadow />
+      <grabli />
+      <Слой_88 />
+      <n004c />
+      <patch_05 />
+      <plant_03 />
+      <patch_06 />
+      <patch_07 />
+      <Слой_93 />
+      <patch_08 />
+      <amanita_shadow />
+      <patch_10 />
+      <patch_11 />
+      <patch_12 />
+      <patch_13 />
+      <patch_14 />
+      <patch_15 />
+      <kluch />
+      <Слой_97 />
+      <plant_06 />
+      <patch_16 />
+    </decor>
+    <go_to_location />
+  </location_state>
+  <timers />
+  <ho_state>
+    <pick_01_folding_ladder state="ENDED" />
+    <pick_01_watering_can state="ENDED" />
+    <pick_01_bird state="ENDED" />
+    <pick_01_frog state="ACTIVE" />
+    <pick_01_lamp state="ENDED" />
+    <pick_01_flower_hanging state="ENDED" />
+  </ho_state>
+</root>

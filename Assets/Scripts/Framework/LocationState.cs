@@ -92,7 +92,7 @@ namespace Framework {
         public static void LoadFromXML(Transform parent_transform, XmlNode parent_node, XmlDocument doc) {
             foreach (Transform child in parent_transform) {
 
-                XmlNode node = parent_node.SelectSingleNode(child.name);
+                XmlNode node = parent_node.SelectSingleNode(child.name.Replace(' ', '_'));
                 if (node != null) {
                     foreach (Attribute attribute in attributes) {
                         attribute.Load(child.gameObject, node);
@@ -105,7 +105,7 @@ namespace Framework {
 
         public static void SaveToXML(Transform parent_transform, XmlNode parent_node, XmlDocument doc) {
             foreach (Transform child in parent_transform) {
-                XmlNode node = doc.CreateElement(child.name);
+                XmlNode node = doc.CreateElement(child.name.Replace(' ', '_'));
 
                 foreach (Attribute attribute in attributes) {
                     attribute.Save(child.gameObject, node, doc);

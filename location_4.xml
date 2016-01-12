@@ -1,0 +1,15 @@
+<root>
+  <location_state>
+    <open_sub_2 active="1" position="314 29.00003 0" />
+    <open_sub_5 active="1" position="-192 49 0" />
+    <back active="1" position="0 0 0" />
+    <back_1 active="1" position="0 0 0" />
+    <door_open active="0" position="307.8 33.60001 0" />
+    <glass_door_open active="0" position="-194 10 0" />
+    <go_to_location active="1" position="-386 -90 0" />
+    <go_to_ho active="1" position="351 -162 0" />
+  </location_state>
+  <timers>
+    <test start="0" time="5" />
+  </timers>
+</root>

@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using System.Xml;
 
 namespace Framework {
     enum State {
@@ -32,7 +33,7 @@ namespace Framework {
         }
 
         public bool IsCollected() {
-            return State.COLLECTED == state;
+            return State.ENDED == state;
         }
 
         public void OnPointerClick(PointerEventData eventData)
@@ -66,6 +67,35 @@ namespace Framework {
             }
 
             gameObject.SetActive(false);
+        }
+
+        public void SaveToXML(XmlDocument doc, XmlNode hoState) {
+            XmlNode node = doc.CreateElement(gameObject.name.Replace(' ', '_'));
+            XmlAttribute attribute = doc.CreateAttribute("state");
+            attribute.Value = state.ToString();
+            node.Attributes.Append(attribute);
+
+            hoState.AppendChild(node);
+        }
+
+        public void LoadFromXML(XmlDocument doc, XmlNode hoStateNode) {
+            XmlNode node = hoStateNode.SelectSingleNode(gameObject.name.Replace(' ', '_'));
+            if (node != null) {
+                XmlAttribute attribute = node.Attributes["state"];
+                if (attribute == null) {
+                    return;
+                }
+
+                state = Utils.ParseEnum<State>(attribute.Value);
+
+                if (State.COLLECTED == state || State.FLYING == state) {
+                    state = State.ENDED;
+                }
+
+                if (State.ENDED == state) {
+                    gameObject.SetActive(false);
+                }
+            }
         }
     }
 }

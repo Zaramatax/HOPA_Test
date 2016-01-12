@@ -1,0 +1,11 @@
+<root>
+  <location_state>
+    <CloseButton active="1" position="393 335 0" />
+    <back active="1" position="1 80 0" />
+    <hand_feather active="1" position="17 9 0" />
+    <podpis active="0" position="33.5 2 0" />
+    <hand_1 active="0" position="-37.5 26 0" />
+    <frame active="1" position="0.5 80.5 0" />
+  </location_state>
+  <timers />
+</root>

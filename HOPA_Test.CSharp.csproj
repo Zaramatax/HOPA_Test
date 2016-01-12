@@ -73,6 +73,9 @@
     <Compile Include="Assets\Scripts\Framework\DropZone.cs" />
     <Compile Include="Assets\Scripts\Framework\GlobalVariables.cs" />
     <Compile Include="Assets\Scripts\Framework\GoToLocation.cs" />
+    <Compile Include="Assets\Scripts\Framework\HOItem.cs" />
+    <Compile Include="Assets\Scripts\Framework\HOManager.cs" />
+    <Compile Include="Assets\Scripts\Framework\HOPanel.cs" />
     <Compile Include="Assets\Scripts\Framework\InventoryItem.cs" />
     <Compile Include="Assets\Scripts\Framework\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\Framework\InventoryPanel.cs" />
@@ -84,6 +87,7 @@
     <Compile Include="Assets\Scripts\Framework\StartGame.cs" />
     <Compile Include="Assets\Scripts\Framework\SubLocation.cs" />
     <Compile Include="Assets\Scripts\Framework\Timer.cs" />
+    <Compile Include="Assets\Scripts\Framework\TimerManager.cs" />
     <Compile Include="Assets\Scripts\Framework\Utils.cs" />
     <Compile Include="Assets\Scripts\Game\Scenes\Sub_2_Door_to_house.cs" />
     <Compile Include="Assets\Scripts\Game\Scenes\Sub_5_Door_in_a_greenhouse.cs" />
