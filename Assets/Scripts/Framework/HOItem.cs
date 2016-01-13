@@ -14,6 +14,7 @@ namespace Framework {
     public class HOItem : MonoBehaviour, IPointerClickHandler {
         private State state;
         private Vector3 endPosition;
+        private const string stateAttribute = "state";
 
         public Sprite silhouette;
         public event System.Action<HOItem> onCollect;
@@ -50,7 +51,6 @@ namespace Framework {
         IEnumerator Fly() {
             Vector3 startPosition = transform.position;
 
-            float step = ((startPosition - endPosition).magnitude) * Time.fixedDeltaTime * 0.01f;
             float t = 0;
 
             while (t <= 1.0f) {
@@ -71,7 +71,7 @@ namespace Framework {
 
         public void SaveToXML(XmlDocument doc, XmlNode hoState) {
             XmlNode node = doc.CreateElement(gameObject.name.Replace(' ', '_'));
-            XmlAttribute attribute = doc.CreateAttribute("state");
+            XmlAttribute attribute = doc.CreateAttribute(stateAttribute);
             attribute.Value = state.ToString();
             node.Attributes.Append(attribute);
 
@@ -81,7 +81,7 @@ namespace Framework {
         public void LoadFromXML(XmlDocument doc, XmlNode hoStateNode) {
             XmlNode node = hoStateNode.SelectSingleNode(gameObject.name.Replace(' ', '_'));
             if (node != null) {
-                XmlAttribute attribute = node.Attributes["state"];
+                XmlAttribute attribute = node.Attributes[stateAttribute];
                 if (attribute == null) {
                     return;
                 }

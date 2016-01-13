@@ -4,74 +4,52 @@ using System.Collections;
 using System.Collections.Generic;
 
 namespace Framework {
-
-    public struct Placeholder {
-        public Image place;
-        public HOItem item;
-
-        public Placeholder(Image place, HOItem item) {
-            this.place = place;
-            this.item = item;
-
-            this.place.sprite = this.item.silhouette;
-        }
-
-        public void UpdateColor() {
-            if (item.IsCollected()) {
-                place.gameObject.GetComponent<Animator>().Play("ho_item_on_panel_hide");
-            }
-            else {
-                place.gameObject.GetComponent<Animator>().Play("ho_item_on_panel_show");
-            }
-        }
-    }
-
     public class HOPanel : MonoBehaviour {
 
-        public List<Placeholder> placeholders;
+        private List<HOPlaceholder> placeholders;
 
         void Awake() {
-            placeholders = new List<Placeholder>();
+            placeholders = new List<HOPlaceholder>();
         }
 
-        public void SetUpPanel(List<HOItem> items) {
+        public void SetupPanel(List<HOItem> items) {
             int i = 0;
             placeholders.Clear();
 
-            foreach (Transform placeholder in transform.GetChild(0)) {
-                if (i >= items.Count) {
-                    break;
+            foreach (Transform placeholderTransform in transform.GetChild(0)) {
+                HOItem item = null;
+                if (i < items.Count) {
+                    item = items[i];
                 }
 
-                Image place = placeholder.gameObject.GetComponent<Image>();
-                placeholders.Add(new Placeholder(place, items[i]));
+                HOPlaceholder placeholder = placeholderTransform.gameObject.GetComponent<HOPlaceholder>();
+                placeholder.Setup(item);
+                placeholders.Add(placeholder);
 
                 ++i;
             }
         }
 
         public void OnChange() {
-            foreach (Placeholder placeholder in placeholders) {
-                placeholder.UpdateColor();
+            foreach (HOPlaceholder placeholder in placeholders) {
+                placeholder.UpdateVisibility();
             }
         }
 
         public void OnCollect(HOItem item) {
-            foreach (Placeholder placeholder in placeholders) {
-                if (item == placeholder.item) {
-                    placeholder.place.gameObject.GetComponent<Animator>().Play("ho_item_on_panel_hide");
-                } 
+            HOPlaceholder placeholder = placeholders.Find(x => (x.item == item));
+            if (placeholder != null) {
+                placeholder.FadeOut();
             }
         }
 
         public Vector3 GetPlaceholderPosition(HOItem item) {
-            foreach (Placeholder placeholder in placeholders) {
-                if (item == placeholder.item) {
-                    return placeholder.place.transform.position;
-                }
+            HOPlaceholder placeholder = placeholders.Find(x => (x.item == item));
+            if (placeholder != null) {
+                return placeholder.transform.position;
             }
 
             return new Vector3(0.0f, 0.0f, 0.0f);
-        } 
+        }
     }
 }

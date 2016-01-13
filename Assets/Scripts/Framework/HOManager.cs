@@ -5,18 +5,14 @@ using System.Collections.Generic;
 using System.Xml;
 
 namespace Framework {
-    enum HOMode {
-        DEFAULT,
-        SILHOUETTE,
-        CLOSED_BOXES,
-    }
-
     public class HOManager : Location {
 
-        GameObject hoPanelGO;
-        GameObject inventoryPanelGO;
-        HOPanel hoPanel;
-        HOMode mode;
+        private GameObject hoPanelGO;
+        private GameObject inventoryPanelGO;
+        private HOPanel hoPanel;
+        private const string stateNode = "ho_state";
+        private const string openAnimation = "open";
+        private const string closeAnimation = "close";
 
         public List<HOItem> items;
         public string parentLocation;
@@ -35,7 +31,7 @@ namespace Framework {
 
             Assert.IsNotNull(hoPanel, "Fatal error: no 'HOPanel' component found");
 
-            hoPanel.SetUpPanel(items);
+            hoPanel.SetupPanel(items);
             hoPanel.OnChange();
 
             ChangePanels(true);
@@ -60,7 +56,7 @@ namespace Framework {
         }
 
         void SaveHOState(XmlDocument doc) {
-            XmlNode hoState = doc.CreateElement("ho_state");
+            XmlNode hoState = doc.CreateElement(stateNode);
 
             foreach (HOItem item in items) {
                 item.SaveToXML(doc, hoState);                
@@ -82,7 +78,7 @@ namespace Framework {
         }
 
         void LoadHOState(XmlDocument doc) {
-            XmlNode hoStateNode = doc.DocumentElement.SelectSingleNode("ho_state");
+            XmlNode hoStateNode = doc.DocumentElement.SelectSingleNode(stateNode);
 
             foreach (HOItem item in items) {
                 item.LoadFromXML(doc, hoStateNode);
@@ -90,10 +86,10 @@ namespace Framework {
         }
 
         void ChangePanels(bool toHO) {
-            string playHO = "open", playInventory = "close";
+            string playHO = openAnimation, playInventory = closeAnimation;
             if (!toHO) {
-                playInventory = "open";
-                playHO = "close";
+                playInventory = openAnimation;
+                playHO = closeAnimation;
             }           
 
             if (hoPanelGO) {

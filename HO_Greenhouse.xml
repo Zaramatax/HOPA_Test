@@ -1,68 +1,74 @@
 <root>
   <location_state>
-    <background />
-    <pick_01_folding_ladder />
-    <pick_01_watering_can />
-    <pick_01_bird />
-    <pick_01_frog />
-    <pick_01_lamp />
-    <pick_01_flower_hanging />
-    <decor>
-      <plant_08_копия />
-      <plant_05 />
-      <Слой_109_копия_2 />
-      <фон />
-      <plant_01 />
-      <патч />
-      <Слой_83 />
-      <valve_01 />
-      <scarecrow_hat_01_shadow>
-        <scarecrow_hat_01 />
+    <background active="1" position="0 3.051758E-05 0" />
+    <pick_01_folding_ladder_0 active="0" position="-313.95 -334.5983 0" />
+    <pick_01_watering_can active="0" position="-181.95 -334.5984 0" />
+    <pick_01_bird active="0" position="-313.95 -334.5984 0" />
+    <pick_01_frog active="0" position="-313.95 -334.5984 0" />
+    <pick_01_lamp active="0" position="214.05 -334.5984 0" />
+    <pick_01_flower_hanging active="0" position="346.05 -334.5984 0" />
+    <decor active="1" position="0 3.051758E-05 0">
+      <plant_08_копия active="1" position="-608.5 87.00003 0" />
+      <plant_05 active="1" position="-350 335 0" />
+      <Слой_109_копия_2 active="1" position="-354.5 50.50003 0" />
+      <фон active="1" position="-241 79.50003 0" />
+      <plant_01 active="1" position="432 236 0" />
+      <патч active="1" position="429.5 39.00003 0" />
+      <Слой_83 active="1" position="178.5 70.00003 0" />
+      <valve_01 active="0" position="56.5 240.5 0" />
+      <scarecrow_hat_01_shadow active="1" position="-227 159.5 0">
+        <scarecrow_hat_01 active="1" position="10 1.999969 0" />
       </scarecrow_hat_01_shadow>
-      <lamplight />
-      <patch_00 />
-      <valve_07 />
-      <Слой_84 />
-      <Pumpkin_ho2 />
-      <valve_12 />
-      <Iguanaiguana>
-        <Слой_86 />
-        <Слой_87 />
+      <lamplight active="1" position="-14 13.00003 0" />
+      <patch_00 active="1" position="20.5 -30.99997 0" />
+      <valve_07 active="1" position="155 6.000031 0" />
+      <Слой_84 active="1" position="158 15.50003 0" />
+      <Pumpkin_ho2 active="1" position="156.5 12.50003 0" />
+      <valve_12 active="1" position="-102.5 -21.99997 0" />
+      <Iguanaiguana active="1" position="-102.5 -21.99995 0">
+        <Слой_86 active="1" position="4.5 5.999981 0" />
+        <Слой_87 active="1" position="-7.5 11.99998 0" />
       </Iguanaiguana>
-      <patch_01 />
-      <ewer_shadow />
-      <patch_02 />
-      <turtle_shell_01_shadow />
-      <grabli />
-      <Слой_88 />
-      <n004c />
-      <patch_05 />
-      <plant_03 />
-      <patch_06 />
-      <patch_07 />
-      <Слой_93 />
-      <patch_08 />
-      <amanita_shadow />
-      <patch_10 />
-      <patch_11 />
-      <patch_12 />
-      <patch_13 />
-      <patch_14 />
-      <patch_15 />
-      <kluch />
-      <Слой_97 />
-      <plant_06 />
-      <patch_16 />
+      <patch_01 active="1" position="144 58.00003 0" />
+      <ewer_shadow active="1" position="220 -23.49997 0" />
+      <patch_02 active="1" position="244.5 -5.999969 0" />
+      <turtle_shell_01_shadow active="1" position="341 -52.99997 0" />
+      <grabli active="1" position="300.5 -38.49997 0" />
+      <Слой_88 active="1" position="301.5 -142 0" />
+      <n004c active="1" position="-148 116 0" />
+      <patch_05 active="1" position="-193 33.00003 0" />
+      <plant_03 active="1" position="377.5 101 0" />
+      <patch_06 active="1" position="428.5 -64.99997 0" />
+      <patch_07 active="1" position="-259 133.5 0" />
+      <Слой_93 active="1" position="136 -52.49997 0" />
+      <patch_08 active="1" position="-300.5 -88.49997 0" />
+      <amanita_shadow active="1" position="100.5 -103.5 0" />
+      <patch_10 active="1" position="-356 -108.5 0" />
+      <patch_11 active="1" position="-222.5 172.5 0" />
+      <patch_12 active="1" position="-343 329 0" />
+      <patch_13 active="1" position="256 -143.5 0" />
+      <patch_14 active="1" position="475.5 43.00003 0" />
+      <patch_15 active="1" position="529.5 255.5 0" />
+      <kluch active="1" position="394 140.5 0" />
+      <Слой_97 active="1" position="391.5 198.5 0" />
+      <plant_06 active="1" position="557 166.5 0" />
+      <patch_16 active="1" position="593.5 17.50003 0" />
     </decor>
-    <go_to_location />
+    <go_to_location active="1" position="-9.121872 -292 0" />
+    <pick_01_folding_ladder_1 active="0" position="82.04996 -334.5983 0" />
+    <pick_01_folding_ladder_2 active="0" position="214.05 -334.5984 0" />
+    <pick_01_folding_ladder_3 active="0" position="82.04996 -334.5984 0" />
   </location_state>
   <timers />
   <ho_state>
-    <pick_01_folding_ladder state="ENDED" />
+    <pick_01_folding_ladder_0 state="ENDED" />
     <pick_01_watering_can state="ENDED" />
     <pick_01_bird state="ENDED" />
-    <pick_01_frog state="ACTIVE" />
+    <pick_01_frog state="ENDED" />
     <pick_01_lamp state="ENDED" />
     <pick_01_flower_hanging state="ENDED" />
+    <pick_01_folding_ladder_1 state="ENDED" />
+    <pick_01_folding_ladder_2 state="ENDED" />
+    <pick_01_folding_ladder_3 state="ENDED" />
   </ho_state>
 </root>

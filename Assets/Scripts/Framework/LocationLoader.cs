@@ -4,7 +4,7 @@ using System.Collections;
 namespace Framework {
     public class LocationLoader : MonoBehaviour {
         void Start() {
-            StartCoroutine("Load");
+            StartCoroutine(Load());
         }
 
         IEnumerator Load() {
