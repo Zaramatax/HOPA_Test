@@ -5,20 +5,23 @@ using System.Collections.Generic;
 using System.Xml;
 
 namespace Framework {
-    enum HOMode {
-        DEFAULT,
-        SILHOUETTE,
-        CLOSED_BOXES,
+    [System.Serializable]
+    public class HOList {
+        public List<HOItem> items;
     }
 
     public class HOManager : Location {
 
-        GameObject hoPanelGO;
-        GameObject inventoryPanelGO;
-        HOPanel hoPanel;
-        HOMode mode;
+        private GameObject hoPanelGO;
+        private GameObject inventoryPanelGO;
+        private HOPanel hoPanel;
+        private const string stateNode = "ho_state";
+        private const string currentListAttribute = "current_list";
+        private const string openAnimation = "open";
+        private const string closeAnimation = "close";
+        private int currentList;
 
-        public List<HOItem> items;
+        public List<HOList> lists;
         public string parentLocation;
 
         override protected void Start() {
@@ -35,15 +38,29 @@ namespace Framework {
 
             Assert.IsNotNull(hoPanel, "Fatal error: no 'HOPanel' component found");
 
-            hoPanel.SetUpPanel(items);
-            hoPanel.OnChange();
+            hoPanel.SetupPanel(lists[currentList].items);
 
             ChangePanels(true);
 
-            foreach (HOItem item in items) {
-                item.onCollect += OnCollect;
-                item.onCollectAnimationEnded += OnCollectAnimationEnded;
+            foreach (HOList list in lists) {
+                foreach (HOItem item in list.items) {
+                    item.onCollect += OnCollect;
+                    item.onCollectAnimationEnded += OnCollectAnimationEnded;
+                }
             }
+        }
+
+        override protected void OnDestroy() {
+            base.OnDestroy();
+
+            foreach (HOList list in lists) {
+                foreach (HOItem item in list.items) {
+                    item.onCollect -= OnCollect;
+                    item.onCollectAnimationEnded -= OnCollectAnimationEnded;
+                }
+            }
+
+            ChangePanels(false);
         }
 
         override protected void Save() {
@@ -60,10 +77,13 @@ namespace Framework {
         }
 
         void SaveHOState(XmlDocument doc) {
-            XmlNode hoState = doc.CreateElement("ho_state");
+            XmlNode hoState = doc.CreateElement(stateNode);
+            XmlAttribute attribute = doc.CreateAttribute(currentListAttribute);
+            attribute.Value = currentList.ToString();
+            hoState.Attributes.Append(attribute);
 
-            foreach (HOItem item in items) {
-                item.SaveToXML(doc, hoState);                
+            foreach (HOItem item in lists[currentList].items) {
+                item.SaveToXML(doc, hoState);
             }
 
             doc.DocumentElement.AppendChild(hoState);
@@ -82,19 +102,20 @@ namespace Framework {
         }
 
         void LoadHOState(XmlDocument doc) {
-            XmlNode hoStateNode = doc.DocumentElement.SelectSingleNode("ho_state");
+            XmlNode hoStateNode = doc.DocumentElement.SelectSingleNode(stateNode);
+            currentList = int.Parse(hoStateNode.Attributes[currentListAttribute].Value);
 
-            foreach (HOItem item in items) {
+            foreach (HOItem item in lists[currentList].items) {
                 item.LoadFromXML(doc, hoStateNode);
             }
         }
 
         void ChangePanels(bool toHO) {
-            string playHO = "open", playInventory = "close";
+            string playHO = openAnimation, playInventory = closeAnimation;
             if (!toHO) {
-                playInventory = "open";
-                playHO = "close";
-            }           
+                playInventory = openAnimation;
+                playHO = closeAnimation;
+            }
 
             if (hoPanelGO) {
                 hoPanelGO.GetComponent<Animator>().Play(playHO);
@@ -103,17 +124,6 @@ namespace Framework {
             if (inventoryPanelGO) {
                 inventoryPanelGO.GetComponent<Animator>().Play(playInventory);
             }
-        }
-
-        override protected void OnDestroy() {
-            base.OnDestroy();
-
-            foreach (HOItem item in items) {
-                item.onCollect -= OnCollect;
-                item.onCollectAnimationEnded -= OnCollectAnimationEnded;
-            }
-
-            ChangePanels(false);
         }
 
         void OnCollect(HOItem item) {
@@ -126,13 +136,20 @@ namespace Framework {
         }
 
         void CheckComplete() {
-            foreach (HOItem item in items) {
+            foreach (HOItem item in lists[currentList].items) {
                 if (!item.IsCollected()) {
                     return;
                 }
             }
 
-            Complete();
+            ++currentList;
+
+            if (currentList == lists.Count) {
+                Complete();
+            }
+            else {
+                hoPanel.SetupPanel(lists[currentList].items);
+            }
         }
 
         void Complete() {
