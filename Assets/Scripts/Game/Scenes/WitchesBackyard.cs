@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.UI;
 
 using Framework;
@@ -9,8 +8,6 @@ namespace Scenes
 {
     public class WitchesBackyard : Location
     {
-		public List<SubLocation> subLocations;
-
 		protected override void Awake ()
 		{
 			base.Awake ();

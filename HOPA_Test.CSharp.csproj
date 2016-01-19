@@ -74,9 +74,13 @@
     <Compile Include="Assets\Scripts\Framework\GlobalVariables.cs" />
     <Compile Include="Assets\Scripts\Framework\GoToLocation.cs" />
     <Compile Include="Assets\Scripts\Framework\HOItem.cs" />
+    <Compile Include="Assets\Scripts\Framework\HOItemSilhouette.cs" />
+    <Compile Include="Assets\Scripts\Framework\HOItemText.cs" />
     <Compile Include="Assets\Scripts\Framework\HOManager.cs" />
     <Compile Include="Assets\Scripts\Framework\HOPanel.cs" />
     <Compile Include="Assets\Scripts\Framework\HOPlaceholder.cs" />
+    <Compile Include="Assets\Scripts\Framework\HOPlaceholderSilhouette.cs" />
+    <Compile Include="Assets\Scripts\Framework\HintManager.cs" />
     <Compile Include="Assets\Scripts\Framework\InventoryItem.cs" />
     <Compile Include="Assets\Scripts\Framework\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\Framework\InventoryPanel.cs" />

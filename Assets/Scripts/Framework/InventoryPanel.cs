@@ -133,5 +133,15 @@ namespace Framework {
                 scrollRect.horizontalNormalizedPosition = Mathf.Clamp(scrollRect.horizontalNormalizedPosition, 0, 1);
             }
         }
+
+        public Vector3 GetItemPosition(InventoryItem item) {
+            foreach (GameObject place in items) {
+                if (place.name == item.itemId + "(Clone)") {
+                    return place.transform.position;
+                }
+            }
+
+            return new Vector3(0.0f, 0.0f, 0.0f);
+        }
     }
 }

@@ -10,17 +10,24 @@ namespace Framework {
         public static InventoryManager instance;
         public static event System.Action OnInventoryChanged;
 
-        Dictionary<GameObject, int> items = new Dictionary<GameObject, int>();
-        InventoryItem _selectedItem = null;
+        private Dictionary<GameObject, int> items;
+        private InventoryItem selectedItem;
+        private InventoryPanel inventoryPanel;
 
         void Awake() {
             instance = this;
-            items.Clear();
+            items = new Dictionary<GameObject, int>();
+            selectedItem = null;
+
             DontDestroyOnLoad(this);
         }
 
+        void Start() {
+            inventoryPanel = GameObject.FindObjectOfType<InventoryPanel>();
+        }
+
         void Update() {
-            if (Input.GetMouseButtonDown(1) && _selectedItem) {
+            if (Input.GetMouseButtonDown(1) && selectedItem) {
                 UnselectItem();
             }
         }
@@ -56,8 +63,8 @@ namespace Framework {
                 }
 
                 if (items[item] == 0) {
-                    if (_selectedItem.itemId == itemID) {
-                        _selectedItem.Drop();
+                    if (selectedItem.itemId == itemID) {
+                        selectedItem.Drop();
                     }
                     items.Remove(item);
                     Inform();
@@ -118,8 +125,8 @@ namespace Framework {
         }
 
         public string GetSelectedItem() {
-            if (_selectedItem)
-                return _selectedItem.itemId;
+            if (selectedItem)
+                return selectedItem.itemId;
             else
                 return "";
         }
@@ -133,17 +140,21 @@ namespace Framework {
         }
 
         public void SelectItem(InventoryItem item) {
-            if (_selectedItem) {
-                _selectedItem.Drop();
+            if (selectedItem) {
+                selectedItem.Drop();
             }
 
-            _selectedItem = item;
+            selectedItem = item;
             item.Select();
         }
 
         public void UnselectItem() {
-            _selectedItem.Unselect();
-            _selectedItem = null;
+            selectedItem.Unselect();
+            selectedItem = null;
+        }
+
+        public Vector3 GetItemPosition(InventoryItem item) {
+            return inventoryPanel.GetItemPosition(item);
         }
     }
 }

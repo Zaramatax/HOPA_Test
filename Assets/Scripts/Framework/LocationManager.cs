@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Framework {
     public class LocationManager : MonoBehaviour {
@@ -10,27 +11,36 @@ namespace Framework {
             Idle
         };
 
+        class LocationNode {
+            string name;
+            LocationNode parent;
+            List<LocationNode> childs;
+        }
+
+        public static LocationManager instance;
         public GameObject fade;
 
         string toLocation;
         State state;
-        public static LocationManager instance;
+        Location currentLocation;
 
         void Awake() {
             instance = this;
             state = State.Idle;
             toLocation = "";
+            currentLocation = null;
         }
 
         public void GoToLocation(string location) {
-            toLocation = location;
-            state = State.Closing;
-            fade.SetActive(true);
+            if (!currentLocation || location != currentLocation.GetName()) {
+                toLocation = location;
+                state = State.Closing;
+                fade.SetActive(true);
+            }
         }
 
         public void LocationLoaded() {
             state = State.Opening;
-            toLocation = "";
         }
 
         void Update() {
@@ -41,6 +51,8 @@ namespace Framework {
                     fade.GetComponent<Image>().color = Color.clear;
                     state = State.Idle;
                     fade.SetActive(false);
+                    ChangeCurrentLocation();
+                    toLocation = "";
                 }
             }
 
@@ -70,6 +82,14 @@ namespace Framework {
 
         public string GetLocationToLoad() {
             return toLocation;
+        }
+
+        public Location GetCurrentLocation() {
+            return currentLocation;
+        }
+
+        void ChangeCurrentLocation() {
+            currentLocation = GameObject.Find(toLocation).GetComponent<Location>();
         }
     }
 }

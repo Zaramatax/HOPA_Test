@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UI;
 
 namespace Framework
@@ -12,6 +13,8 @@ namespace Framework
         protected Transform mainLocation;
         protected Transform thisSub;
 
+        private GameObject closeButton;
+
         virtual protected void Awake()
         {
 			base.Awake ();
@@ -21,7 +24,8 @@ namespace Framework
         virtual protected void Start() {
             base.Start();
 
-            mainLocation = transform.parent.Find("Main");
+            closeButton = GameObject.FindObjectOfType<CloseSubLocation>().gameObject;
+            mainLocation = GameObject.FindGameObjectWithTag("Main").transform;
             thisSub = transform;
         }
 
@@ -42,6 +46,16 @@ namespace Framework
                 _state = State.Closing;
 				GetComponent<Animator>().SetTrigger("close_sub");
 				_state = State.Closed;
+            }
+        }
+
+        public bool IsOpen() {
+            return State.Open == _state;
+        }
+
+        virtual protected void AddTransferZone(ref List<HintInfo> result) {
+            if (0 == result.Count) {
+                result.Add(HintInfo.CreateHint(closeButton));
             }
         }
     }

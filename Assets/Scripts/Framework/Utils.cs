@@ -7,7 +7,12 @@ namespace Framework
 	public static class Utils {
 		public static GameObject GetGameObject(Transform transform, string name)
 		{
-			return transform.Find (name).gameObject;
+            Transform result = transform.Find(name);
+            if (result) {
+                return result.gameObject;
+            }
+
+            return null;
 		}
 
 		public static void GameObjectSetActive(Transform transform, string name, bool active)
