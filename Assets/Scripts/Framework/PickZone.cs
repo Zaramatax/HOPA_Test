@@ -8,7 +8,7 @@ namespace Framework {
         public int count = 1;
 
         public void OnPointerClick(PointerEventData eventData) {
-            InventoryManager.instance.AddItem(item.itemId, count);
+            InventoryManager.instance.AddItemToInventory(item.itemId, count);
             gameObject.SetActive(false);
         }
     }

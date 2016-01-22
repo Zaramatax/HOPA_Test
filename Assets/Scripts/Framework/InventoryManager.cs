@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
-using System;
+using System.Xml;
 using UnityEngine.EventSystems;
 
 namespace Framework {
@@ -24,6 +23,11 @@ namespace Framework {
 
         void Start() {
             inventoryPanel = GameObject.FindObjectOfType<InventoryPanel>();
+            Load();
+        }
+
+        void OnDestroy() {
+            Save();
         }
 
         void Update() {
@@ -32,16 +36,33 @@ namespace Framework {
             }
         }
 
+        private GameObject GetInventoryItemFromID (string itemID) {
+            return (GameObject) Resources.Load("Prefabs/Inventory/" + itemID);
+        } 
+
         public void AddItem(string itemId, int count = 1) {
-            GameObject itemGO = (GameObject)Resources.Load("Prefabs/Inventory/" + itemId);
+            GameObject itemGO = GetInventoryItemFromID(itemId);
+
+            if(itemGO) {
+                AddItem(itemGO, count);
+                Inform();
+            }
+        }
+
+        public void AddItem(GameObject item, int count = 1) {
+            if (!items.ContainsKey(item)) {
+                items.Add(item, count);
+            }
+            else {
+                items[item] += count;
+            }
+        }
+
+        public void AddItemToInventory(string itemId, int count = 1) {
+            GameObject itemGO = GetInventoryItemFromID(itemId);
 
             if (itemGO) {
-                if (!items.ContainsKey(itemGO)) {
-                    items.Add(itemGO, count);
-                }
-                else {
-                    items[itemGO] += count;
-                }
+                AddItem(itemGO, count);
 
                 WindowManager.instance.OpenWellDoneWindow(itemGO.GetComponent<InventoryItem>(), Inform);
             }
@@ -155,6 +176,46 @@ namespace Framework {
 
         public Vector3 GetItemPosition(InventoryItem item) {
             return inventoryPanel.GetItemPosition(item);
+        }
+
+        private void Save() {
+            XmlDocument doc = new XmlDocument();
+            XmlNode root = doc.CreateElement("root");
+            doc.AppendChild(root);
+
+            foreach(KeyValuePair<GameObject, int> item in items) {
+                XmlNode node = doc.CreateElement("item");
+
+                XmlAttribute itemID = doc.CreateAttribute("name");
+                itemID.Value = item.Key.GetComponent<InventoryItem>().itemId;
+                node.Attributes.Append(itemID);
+
+                XmlAttribute count = doc.CreateAttribute("count");
+                count.Value = item.Value.ToString();
+                node.Attributes.Append(count);
+
+                root.AppendChild(node);
+            }
+
+            doc.Save("inventory.xml");
+        }
+
+        private void Load() {
+            XmlDocument doc = new XmlDocument();
+
+            try {
+                doc.Load("inventory.xml");
+
+                XmlNodeList nodes = doc.DocumentElement.SelectNodes("/root/item");
+
+                foreach(XmlNode node in nodes) {
+                    string itemId = node.Attributes[0].Value;
+                    string count = node.Attributes[1].Value;
+
+                    AddItem(itemId, int.Parse(count));
+                }
+            }
+            catch { };
         }
     }
 }
