@@ -9,19 +9,18 @@ namespace Framework {
         public InventoryItem requiredItem;
         public int itemsCount = 1;
         public string clickMessage;
-
         public UnityEvent onUse;
 
-        InventoryManager _inventory;
+        private InventoryManager inventory;
 
         void Start() {
-            _inventory = InventoryManager.instance;
+            inventory = InventoryManager.instance;
         }
 
         void OnMouseDown() {
-            if (_inventory.GetSelectedItem() == requiredItem.itemId && itemsCount == _inventory.GetItemsCount(requiredItem.itemId)) {
+            if (inventory.GetSelectedItem() == requiredItem.itemId && itemsCount == inventory.GetItemsCount(requiredItem.itemId)) {
                 onUse.Invoke();
-                _inventory.RemoveItem(requiredItem.itemId);
+                inventory.RemoveItem(requiredItem.itemId);
 
                 return;
             }

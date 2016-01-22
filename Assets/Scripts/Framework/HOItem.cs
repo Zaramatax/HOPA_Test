@@ -12,6 +12,7 @@ namespace Framework {
         FLYING,
         ENDED,
     }
+
     public class HOItem : MonoBehaviour, IPointerClickHandler {
         private State state;
         private Vector3 endPosition;

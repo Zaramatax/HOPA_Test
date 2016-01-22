@@ -8,36 +8,41 @@ namespace Framework {
         public Image bigIcon;
         public string itemId;
 
-        GameObject _icon;
-        bool _selected = false;
+        private GameObject icon;
+        private bool selected = false;
 
         void Start() {
-            _icon = gameObject.transform.GetChild(0).gameObject;
+            icon = gameObject.transform.GetChild(0).gameObject;
         }
 
         public void Select() {
-            if (!_selected) {
-                _selected = true;
-                CursorManager.instance.Attach(_icon);
+            if (!selected) {
+                selected = true;
+                CursorManager.instance.Attach(icon);
             }
         }
 
         public void Unselect() {
-            if (_selected) {
-                _selected = false;
+            if (selected) {
+                selected = false;
                 CursorManager.instance.Drop();
             }
         }
 
         public void Drop() {
-            if (_selected) {
-                _selected = false;
+            if (selected) {
+                selected = false;
                 CursorManager.instance.Detach();
             }
         }
 
         public bool IsSelected() {
-            return _selected;
+            return selected;
+        }
+
+        public Image GetSmallImage() {
+            Transform icon = transform.GetChild(0);
+            return icon.gameObject.GetComponent<Image>();
         }
     }
 }

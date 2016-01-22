@@ -31,10 +31,9 @@ namespace Scenes
 
         override protected void Cheat()
         {
-            _inventory.AddItem("hand_with_feather");
-            _inventory.AddItem("blue_nugget");
-			_inventory.AddItem("flint");
-			_inventory.AddItem("flame_emblem");
+            //inventory.AddItem("hand_with_feather");
+            //inventory.AddItem("flint");
+            //inventory.AddItem("flame_emblem");
         }
 
 		void OnDoorToHouseOpen()

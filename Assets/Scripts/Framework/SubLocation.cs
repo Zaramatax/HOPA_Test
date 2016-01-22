@@ -9,7 +9,7 @@ namespace Framework
     {
         protected enum State { Closed, Opening, Open, Closing };
 
-        protected State _state;
+        protected State state;
         protected Transform mainLocation;
         protected Transform thisSub;
 
@@ -18,7 +18,7 @@ namespace Framework
         virtual protected void Awake()
         {
 			base.Awake ();
-            _state = State.Closed;
+            state = State.Closed;
         }
 
         virtual protected void Start() {
@@ -31,29 +31,29 @@ namespace Framework
 
         public void Open()
         {
-            if (_state == State.Closed)
+            if (state == State.Closed)
             {
-                _state = State.Opening;
+                state = State.Opening;
 				GetComponent<Animator>().SetTrigger("open_sub");
-				_state = State.Open;
+				state = State.Open;
             }
         }
 
         public void Close()
         {
-            if (_state == State.Open)
+            if (state == State.Open)
             {
-                _state = State.Closing;
+                state = State.Closing;
 				GetComponent<Animator>().SetTrigger("close_sub");
-				_state = State.Closed;
+				state = State.Closed;
             }
         }
 
         public bool IsOpen() {
-            return State.Open == _state;
+            return State.Open == state;
         }
 
-        virtual protected void AddTransferZone(ref List<HintInfo> result) {
+        override protected void AddTransferZone(List<HintInfo> result) {
             if (0 == result.Count) {
                 result.Add(HintInfo.CreateHint(closeButton));
             }

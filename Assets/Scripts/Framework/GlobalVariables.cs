@@ -4,20 +4,20 @@ using System.Collections.Generic;
 
 namespace Framework {
     public abstract class Variable {
-        public abstract object value { get; set;}
+        public abstract object Value { get; set;}
         public abstract void SetValue(object value);
         public abstract object GetValue();
     }
 
     public class Variable<T> : Variable {
-        public override object value { get; set;}
+        public override object Value { get; set;}
 
         public override void SetValue(object newValue) {
-            value = (T) newValue;
+            Value = (T) newValue;
         }
 
         public override object GetValue() {
-            return value;
+            return Value;
         }
     }
 

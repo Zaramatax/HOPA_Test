@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace Framework {
     public class Location : MonoBehaviour {
 		
-        protected InventoryManager _inventory;
+        protected InventoryManager inventory;
 		protected TimerManager timerManager;
 
         public LayerMask layerMask;
@@ -15,8 +15,8 @@ namespace Framework {
         virtual protected void OnGameObjectClicked(GameObject layer) { }
         virtual protected void Cheat() { }
         virtual protected void CreateTimers() { }
-        virtual protected void AddTransferZone(ref List<HintInfo> result) { }
-        virtual protected void AddCustom(ref List<HintInfo> result) { }
+        virtual protected void AddTransferZone(List<HintInfo> result) { }
+        virtual protected void AddCustomHints(List<HintInfo> result) { }
 
         protected string locationName;
 
@@ -25,7 +25,7 @@ namespace Framework {
         }
 
         virtual protected void Start() {
-            _inventory = InventoryManager.instance;
+            inventory = InventoryManager.instance;
             locationName = gameObject.name;
 
             CreateTimers();
@@ -85,22 +85,20 @@ namespace Framework {
         protected List<HintInfo> CreateHints() {
             List<HintInfo> result = new List<HintInfo>();
 
-            AddDropZones(ref result);
-            AddPickItems(ref result);
-            AddCustom(ref result);
-            AddSublocations(ref result);
+            AddDropZones(result);
+            AddPickItems(result);
+            AddCustomHints(result);
+            AddSublocations(result);
 
             return result;
         }
 
-        void AddSublocations(ref List<HintInfo> result) {
+        void AddSublocations(List<HintInfo> result) {
             if (result.Count == 0) {
                 foreach (SubLocation sub in subLocations) {
                     if (sub.CreateHints().Count > 0) {
                         GameObject openSub = GetOpenSubZone(sub);
-                        if (openSub) {
-                            result.Add(HintInfo.CreateHint(openSub));
-                        }
+                        result.Add(HintInfo.CreateHint(openSub));
                     }
                 }
             }
@@ -126,23 +124,27 @@ namespace Framework {
 
             List<HintInfo> result = CreateHints();
 
-            AddTransferZone(ref result);
+            AddTransferZone(result);
 
             return result;
         }
 
-        void AddDropZones(ref List<HintInfo> result) {
+        void AddDropZones(List<HintInfo> result) {
             foreach (DropZone zone in transform.GetComponentsInChildren<DropZone>()) {
-                InventoryItem item = _inventory.GetItem(zone.requiredItem.itemId);
+                InventoryItem item = inventory.GetItem(zone.requiredItem.itemId);
 
-                if (_inventory.GetItemsCount(item.itemId) == zone.itemsCount) {
+                if (inventory.GetItemsCount(item.itemId) == zone.itemsCount) {
                     result.Add(HintInfo.CreateHint(zone.gameObject, item));
                 }
             }
         }
         
-        void AddPickItems(ref List<HintInfo> result) {
-            //TODO: add pick items
+        void AddPickItems(List<HintInfo> result) {
+            foreach (PickZone zone in transform.GetComponentsInChildren<PickZone>()) {
+                if (zone.gameObject.activeInHierarchy) {
+                    result.Add(HintInfo.CreateHint(zone.gameObject));
+                }
+            }
         }
 
         public string GetName() {

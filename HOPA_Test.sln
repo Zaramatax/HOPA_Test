@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HOPA_Test.CSharp", "HOPA_Test.CSharp.csproj", "{AFA740A2-E0F2-5211-A928-9A8F1FA9D6A4}"
 EndProject
 Global

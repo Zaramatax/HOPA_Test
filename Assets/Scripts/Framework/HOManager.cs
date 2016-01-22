@@ -7,7 +7,7 @@ using System.Xml;
 namespace Framework {
     [System.Serializable]
     public class HOList {
-        public List<HOItem> items;
+        public List<HOItem> Items { set; get; }
     }
 
     public class HOManager : Location {
@@ -38,12 +38,12 @@ namespace Framework {
 
             Assert.IsNotNull(hoPanel, "Fatal error: no 'HOPanel' component found");
 
-            hoPanel.SetupPanel(lists[currentList].items);
+            hoPanel.SetupPanel(lists[currentList].Items);
 
             ChangePanels(true);
 
             foreach (HOList list in lists) {
-                foreach (HOItem item in list.items) {
+                foreach (HOItem item in list.Items) {
                     item.onCollect += OnCollect;
                     item.onCollectAnimationEnded += OnCollectAnimationEnded;
                 }
@@ -54,7 +54,7 @@ namespace Framework {
             base.OnDestroy();
 
             foreach (HOList list in lists) {
-                foreach (HOItem item in list.items) {
+                foreach (HOItem item in list.Items) {
                     item.onCollect -= OnCollect;
                     item.onCollectAnimationEnded -= OnCollectAnimationEnded;
                 }
@@ -82,7 +82,7 @@ namespace Framework {
             attribute.Value = currentList.ToString();
             hoState.Attributes.Append(attribute);
 
-            foreach (HOItem item in lists[currentList].items) {
+            foreach (HOItem item in lists[currentList].Items) {
                 item.SaveToXML(doc, hoState);
             }
 
@@ -105,7 +105,7 @@ namespace Framework {
             XmlNode hoStateNode = doc.DocumentElement.SelectSingleNode(stateNode);
             currentList = int.Parse(hoStateNode.Attributes[currentListAttribute].Value);
 
-            foreach (HOItem item in lists[currentList].items) {
+            foreach (HOItem item in lists[currentList].Items) {
                 item.LoadFromXML(doc, hoStateNode);
             }
         }
@@ -136,7 +136,7 @@ namespace Framework {
         }
 
         void CheckComplete() {
-            foreach (HOItem item in lists[currentList].items) {
+            foreach (HOItem item in lists[currentList].Items) {
                 if (!item.IsCollected()) {
                     return;
                 }
@@ -148,7 +148,7 @@ namespace Framework {
                 Complete();
             }
             else {
-                hoPanel.SetupPanel(lists[currentList].items);
+                hoPanel.SetupPanel(lists[currentList].Items);
             }
         }
 

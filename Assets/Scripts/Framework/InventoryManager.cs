@@ -32,18 +32,18 @@ namespace Framework {
             }
         }
 
-        public void AddItem(string itemId) {
+        public void AddItem(string itemId, int count = 1) {
             GameObject itemGO = (GameObject)Resources.Load("Prefabs/Inventory/" + itemId);
 
             if (itemGO) {
                 if (!items.ContainsKey(itemGO)) {
-                    items.Add(itemGO, 1);
+                    items.Add(itemGO, count);
                 }
                 else {
-                    items[itemGO]++;
+                    items[itemGO] += count;
                 }
 
-                Inform();
+                WindowManager.instance.OpenWellDoneWindow(itemGO.GetComponent<InventoryItem>(), Inform);
             }
             else {
                 Debug.LogWarning("Not found item " + itemId);

@@ -4,12 +4,12 @@ using System.Collections.Generic;
 
 namespace Framework {
     public class HintInfo {
-        public GameObject layer = null;
-        public InventoryItem item = null;
+        public GameObject Layer { set; get; }
+        public InventoryItem Item { set; get; }
 
         private HintInfo(GameObject layer, InventoryItem item) {
-            this.layer = layer;
-            this.item = item;
+            Layer = layer;
+            Item = item;
         }
 
         public static HintInfo CreateHint(GameObject layer, InventoryItem item) {
@@ -45,11 +45,13 @@ namespace Framework {
         }
 
         void CreateHintEffect(HintInfo info) {
-            hintEffectLayer.transform.position = info.layer.transform.position;
-            hintEffectLayer.Play("show_hint", -1, 0f);
+            if (info.Layer) {
+                hintEffectLayer.transform.position = info.Layer.transform.position;
+                hintEffectLayer.Play("show_hint", -1, 0f);
+            }
 
-            if (info.item) {
-                hintEffectInventory.transform.position = InventoryManager.instance.GetItemPosition(info.item);
+            if (info.Item) {
+                hintEffectInventory.transform.position = InventoryManager.instance.GetItemPosition(info.Item);
                 hintEffectInventory.Play("show_hint", -1, 0f);
             }
         }

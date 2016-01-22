@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UI;
 
 using Framework;
@@ -12,17 +13,17 @@ namespace Scenes
 
         override protected void OnGameObjectClicked(GameObject layer)
         {
-            if (layer.name == "hand_feather" && _inventory.GetSelectedItem() == "hand_with_feather")
+            if (layer.name == "hand_feather" && inventory.GetSelectedItem() == "hand_with_feather")
             {
 				Utils.GameObjectSetActive(transform, "hand_1", true);
-                _inventory.RemoveItem("hand_with_feather");
+                inventory.RemoveItem("hand_with_feather");
                 CheckDone();
             }
 
-            if (layer.name == "hand_feather" && _inventory.GetSelectedItem() == "blue_nugget")
+            if (layer.name == "hand_feather" && inventory.GetSelectedItem() == "blue_nugget")
 			{
 				Utils.GameObjectSetActive(transform, "podpis", true);
-				_inventory.RemoveItem("blue_nugget");
+				inventory.RemoveItem("blue_nugget");
                 CheckDone();
 			}
         }
@@ -43,5 +44,10 @@ namespace Scenes
 			if (DoorToHouseOpen != null)
 				DoorToHouseOpen ();
 		}
+
+        override protected void AddCustomHints(List<HintInfo> result) {
+            if (Utils.IsGameObjectActive(transform, "hand_feather") && inventory.GetItemsCount("hand_with_feather") > 0)
+                result.Add(HintInfo.CreateHint(Utils.GetGameObject(transform, "hand_feather"), inventory.GetItem("hand_with_feather")));
+        }
     }
 }

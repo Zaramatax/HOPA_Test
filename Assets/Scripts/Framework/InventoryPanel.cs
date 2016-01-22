@@ -9,16 +9,14 @@ namespace Framework {
 
         public static InventoryPanel instance;
     
-	    ScrollRect scrollRect;
-    
-	    public Button leftButton;
+	    private ScrollRect scrollRect;
+        private bool hasChanges = true;
+        private List<GameObject> items = new List<GameObject>();
+        private InventoryManager inventoryManager;
+
+        public Button leftButton;
         public Button rightButton;
 	    public GameObject itemsContainer;
-
-	    bool hasChanges = true;
-
-	    List<GameObject> items = new List<GameObject>();
-	    InventoryManager _inventoryManager;
 
         void Awake()
         {
@@ -30,7 +28,7 @@ namespace Framework {
         void Start()
         {
             InventoryManager.OnInventoryChanged += instance_OnChange;
-		    _inventoryManager = InventoryManager.instance;
+		    inventoryManager = InventoryManager.instance;
         }
 
         public void UpdateState()
@@ -65,7 +63,7 @@ namespace Framework {
         {
             ClearPanel();
 
-		    foreach (GameObject item in _inventoryManager.CurrentItemsVisible) {
+		    foreach (GameObject item in inventoryManager.CurrentItemsVisible) {
 			    GameObject newGo = (GameObject)Instantiate(item);
                 Button button = newGo.transform.GetChild(0).gameObject.GetComponent<Button>();
                 button.onClick.AddListener(() =>
@@ -77,10 +75,10 @@ namespace Framework {
 		    }
 
 		    ContentSizeFitter csf = itemsContainer.GetComponent<ContentSizeFitter>();
-            bool more = _inventoryManager.CurrentItemsVisible.Count > 5;
+            bool more = inventoryManager.CurrentItemsVisible.Count > 5;
             csf.horizontalFit = more ? ContentSizeFitter.FitMode.MinSize : ContentSizeFitter.FitMode.Unconstrained;
             if (!more) csf.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 560);
-		    if (_inventoryManager.CurrentItemsVisible.Count > 6)
+		    if (inventoryManager.CurrentItemsVisible.Count > 6)
                 StartCoroutine(scrollToEnd());
         }
 
@@ -96,7 +94,7 @@ namespace Framework {
 
         void OnItemSelected(GameObject item)
         {
-            _inventoryManager.SelectItem(item.GetComponent<InventoryItem>());
+            inventoryManager.SelectItem(item.GetComponent<InventoryItem>());
         }
 
         IEnumerator scrollToEnd()

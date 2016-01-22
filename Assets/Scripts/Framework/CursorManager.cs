@@ -3,16 +3,26 @@ using System.Collections;
 
 namespace Framework {
     public class CursorManager : MonoBehaviour {
+        public enum CursorMode {
+            DEFAULT,
+            LOUPE,
+            GEARS,
+            FINGER,
+            DIALOGUE,
+            EYE,
+        }
 
-        GameObject _draggable_object;
-        GameObject _origin_parent;
-        Vector3 _origin_position;
-        Vector3 _offset;
+        private GameObject draggableObject;
+        private GameObject originParent;
+        private Vector3 originPosition;
+        private Vector3 offset;
+        private CursorMode mode;
 
         public static CursorManager instance;
 
         void Awake() {
-            _draggable_object = null;
+            draggableObject = null;
+            mode = CursorMode.DEFAULT;
         }
 
         void Start() {
@@ -20,21 +30,21 @@ namespace Framework {
         }
 
         void Update() {
-            if (_draggable_object) {
+            if (draggableObject) {
                 Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z);
 
-                Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + _offset;
-                _draggable_object.transform.position = curPosition;
+                Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
+                draggableObject.transform.position = curPosition;
             }
         }
 
-        public void Attach(GameObject draggable_object, Vector3 offset = default(Vector3)) {
-            _draggable_object = draggable_object;
-            _origin_parent = draggable_object.transform.parent.gameObject;
-            _origin_position = draggable_object.transform.position;
-            _offset = offset;
+        public void Attach(GameObject draggableObject, Vector3 offset = default(Vector3)) {
+            this.draggableObject = draggableObject;
+            this.originParent = draggableObject.transform.parent.gameObject;
+            this.originPosition = draggableObject.transform.position;
+            this.offset = offset;
 
-            _draggable_object.transform.SetParent(transform);
+            draggableObject.transform.SetParent(transform);
         }
 
         public void Drop() {
@@ -42,24 +52,28 @@ namespace Framework {
         }
 
         public void Detach() {
-            _draggable_object.transform.position = _origin_position;
-            _draggable_object.transform.SetParent(_origin_parent.transform);
+            draggableObject.transform.position = originPosition;
+            draggableObject.transform.SetParent(originParent.transform);
 
-            _draggable_object = null;
+            draggableObject = null;
         }
 
         IEnumerator GetBack() {
-            Vector3 startPosition = _draggable_object.transform.position;
-            float step = ((startPosition - _origin_position).magnitude) * Time.fixedDeltaTime * 0.03f;
+            Vector3 startPosition = draggableObject.transform.position;
+            float step = ((startPosition - originPosition).magnitude) * Time.fixedDeltaTime * 0.03f;
             float t = 0;
 
             while (t <= 1.0f) {
                 t += step;
-                _draggable_object.transform.position = Vector3.Lerp(startPosition, _origin_position, t);
+                draggableObject.transform.position = Vector3.Lerp(startPosition, originPosition, t);
                 yield return null;
             }
 
             Detach();
+        }
+
+        public void SetMode(CursorMode mode) {
+            this.mode = mode;
         }
     }
 }
