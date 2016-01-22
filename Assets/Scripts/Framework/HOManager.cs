@@ -67,13 +67,11 @@ namespace Framework {
             base.Save();
 
             XmlDocument doc = new XmlDocument();
-
-            try {
-                doc.Load(locationName + ".xml");
+            
+            if (ProfileSaver.Load(doc, locationName)) {
                 SaveHOState(doc);
-                doc.Save(locationName + ".xml");
             }
-            catch { };
+            ProfileSaver.Save(doc, locationName);
         }
 
         void SaveHOState(XmlDocument doc) {
@@ -93,12 +91,10 @@ namespace Framework {
             base.Load();
 
             XmlDocument doc = new XmlDocument();
-
-            try {
-                doc.Load(locationName + ".xml");
+            
+            if (ProfileSaver.Load(doc, locationName)) {
                 LoadHOState(doc);
             }
-            catch { };
         }
 
         void LoadHOState(XmlDocument doc) {

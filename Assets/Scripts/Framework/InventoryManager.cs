@@ -196,26 +196,23 @@ namespace Framework {
 
                 root.AppendChild(node);
             }
-
-            doc.Save("inventory.xml");
+            
+            ProfileSaver.Save(doc, "inventory");
         }
 
         private void Load() {
             XmlDocument doc = new XmlDocument();
 
-            try {
-                doc.Load("inventory.xml");
-
+            if (ProfileSaver.Load(doc, "inventory")) {
                 XmlNodeList nodes = doc.DocumentElement.SelectNodes("/root/item");
 
-                foreach(XmlNode node in nodes) {
+                foreach (XmlNode node in nodes) {
                     string itemId = node.Attributes[0].Value;
                     string count = node.Attributes[1].Value;
 
                     AddItem(itemId, int.Parse(count));
                 }
             }
-            catch { };
         }
     }
 }

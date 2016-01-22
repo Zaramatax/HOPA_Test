@@ -55,19 +55,17 @@ namespace Framework {
 
             SaveLocationState(doc);
 			timerManager.Save(doc);
-
-            doc.Save(locationName + ".xml");
+            
+            ProfileSaver.Save(doc, locationName);
         }
 
         virtual protected void Load() {
             XmlDocument doc = new XmlDocument();
-            try {
-                doc.Load(locationName + ".xml");
 
+            if (ProfileSaver.Load(doc, locationName)) {
                 LoadLocationState(doc);
 				timerManager.Load(doc);
             }
-            catch { };
         }
 
         void SaveLocationState(XmlDocument doc) {

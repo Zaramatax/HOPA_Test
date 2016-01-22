@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\Framework\LocationState.cs" />
     <Compile Include="Assets\Scripts\Framework\OpenSubArea.cs" />
     <Compile Include="Assets\Scripts\Framework\PickZone.cs" />
+    <Compile Include="Assets\Scripts\Framework\ProfileSaver.cs" />
     <Compile Include="Assets\Scripts\Framework\StartGame.cs" />
     <Compile Include="Assets\Scripts\Framework\SubLocation.cs" />
     <Compile Include="Assets\Scripts\Framework\Timer.cs" />
