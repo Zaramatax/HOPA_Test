@@ -1,0 +1,32 @@
+<autotest_config autotest_on="0">
+ <screen_captures value="1" ho_captures="1" location_captures="1" minigame_captures="1" dialogues_captures="1" achievement_captures="1"/>
+ <replay_game value="5"/>
+ <show_FPS value="1"/>
+ <go_to_random_place value="0"/>
+ <wait_on_start value="2"/>
+ <close_game value="0"/>
+ <random_gameplay value="0"/>
+ <hit_repeat_counts value="100"/>
+ <time_scale value="30"/>
+ <pickup_morphs value="0"/>
+ 
+ <rules value="0">
+  <rule type="layer" name="tutorial_window/start_note" location="se_01_hotel">
+   <command type="wait" time="0.5"/>
+   <command type="move" x="570" y="370"/>
+   <command type="wait" time="0.5"/>
+   <command type="click"/>
+   <command type="wait" time="0.5"/>
+   <command type="move" x="720" y="310"/>
+   <command type="wait" time="0.5"/>
+   <command type="click"/>
+  </rule>
+  <rule type="layer" name="achievment_scene/root_container/background/back">
+   <command type="wait" time="0.5"/>
+   <command type="move" x="1170" y="700"/>
+   <command type="wait" time="0.5"/>
+   <command type="click"/>
+  </rule>
+ </rules>
+ 
+</autotest_config>

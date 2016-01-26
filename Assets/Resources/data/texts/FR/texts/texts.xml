@@ -1,0 +1,13 @@
+﻿<texts language="english">
+  <input_letters letters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"/>
+  <game_title text="Witches' Legacy: Slumbering Darkness">
+    <ce_full text="Witches' Legacy: Menaces Endormies Edition Collector"/>
+    <ce_demo text="Witches' Legacy: Menaces Endormies Edition Collector"/>
+    <se_full text="Witches' Legacy: Menaces Endormies"/>
+    <se_demo text="Witches' Legacy: Menaces Endormies"/>
+    <survey text="Sondage sur Witches' Legacy: Menaces Endormies"/>
+  </game_title>
+  <gameplay>
+    <ho_items/>
+  </gameplay>
+</texts>

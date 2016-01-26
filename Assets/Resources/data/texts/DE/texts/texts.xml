@@ -1,0 +1,13 @@
+﻿<texts language="english">
+  <input_letters letters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"/>
+  <game_title text="Witches' Legacy: Slumbering Darkness">
+    <ce_full text="Witches' Legacy: Drohende Finsternis Sammleredition"/>
+    <ce_demo text="Witches' Legacy: Drohende Finsternis Sammleredition"/>
+    <se_full text="Witches' Legacy: Drohende Finsternis"/>
+    <se_demo text="Witches' Legacy: Drohende Finsternis"/>
+    <survey text="Witches' Legacy: Drohende Finsternis Umfrage"/>
+  </game_title>
+  <gameplay>
+    <ho_items/>
+  </gameplay>
+</texts>

@@ -46,6 +46,8 @@ namespace Framework
                 state = State.Closing;
 				GetComponent<Animator>().SetTrigger("close_sub");
 				state = State.Closed;
+
+                gameObject.SetActive(false);
             }
         }
 

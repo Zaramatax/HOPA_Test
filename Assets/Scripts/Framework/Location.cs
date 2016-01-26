@@ -27,6 +27,10 @@ namespace Framework {
             inventory = InventoryManager.instance;
             locationName = gameObject.name;
 
+            foreach(SubLocation sub in subLocations) {
+                sub.gameObject.SetActive(false);
+            }
+
             CreateTimers();
             Load();
             Cheat();

@@ -1,0 +1,668 @@
+﻿<texts language="english">
+  <input_letters letters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"/>
+  <pics_with_text to_bfg="This text is drawn on the pictures. Each node of text consists path to the appropriate image. So you won't see any changes in the game after editing texts. You should deliver these texts to us and we will update pictures."/>
+  <cutscenes_description to_bfg="This text is drawn on the pictures in temp cutscenes. Each node of text consists path to the appropriate image. So you won't see any changes in the game after editing texts. You should deliver these texts to us and we will update pictures."/>
+  <gameplay>
+    <map>
+      <location_titles>
+        <se_01 text="Jahrmarkt"/>
+        <se_02 text="Puppentheater"/>
+        <se_03 text="Tal der Hexen"/>
+        <se_04 text="Zaubergarten"/>
+        <se_05 text="Werkstatt"/>
+        <se_06 text="Hexenhaus"/>
+        <se_07 text="Verlies"/>
+        <se_08 text="Spiegelkammer"/>
+      </location_titles>
+    </map>
+    <diary>
+      <start_note>
+        <content text=""/>
+        <header text=""/>
+      </start_note>
+    </diary>
+    <tutorial>
+      <text_start text="Möchtest Du das Spiel erklärt bekommen?"/>
+      <full_version text="Komplette Anleitung"/>
+      <select_version text="Nur Besonderheiten dieses Spiels"/>
+      <cancel_version text="Nein, danke."/>
+      <task_subscreen_loupe text="Eine Lupe erscheint, wenn Du einen Bereich genauer untersuchen kannst."/>
+      <click_task_subscreen_loupe text="Untersuche den Bereich, um fortzufahren."/>
+      <task_cursor_finger text="Der Finger bedeutet, dass Du mit einem Objekt in der Spielwelt interagieren kannst."/>
+      <click_task_cursor_finger text="Löse die Knoten."/>
+      <task_morfing_and_puzle_take_morphing text="Halte Ausschau nach Chamäleonobjekten."/>
+      <task_morfing_and_puzle_take_puzzle text="Halte Ausschau nach Sammelobjekten. In jedem Bereich undjeder Nahansichtszene ist ein Sammelobjekt versteckt."/>
+      <click_task_morfing_and_puzle text="Nimm es an Dich."/>
+      <task_hint text="Wähle den Tipp aus, wenn Du einmal nicht weiterkommst. Achtung: Er muss sich nach Gebrauch erst wieder aufladen."/>
+      <click_task_hint text="Fortfahren ..."/>
+      <task_meet_imp text="Der Kobold wird Dich auf Deinem Abenteuer begleiten und Dir helfen."/>
+      <click_task_meet_imp text="Vergiss ihn nicht."/>
+      <task_inventory_interactiv text="Gegenstände mit einem Pluszeichen können mit einem weiteren Objekt kombiniert werden."/>
+      <click_task_inventory_interactiv text="Wähle den Anhänger aus."/>
+      <change_task_inventory_interactiv text="Stecke das Bild in den Anhänger."/>
+      <inventory_interactiv_open_sub text="Nimm das Foto."/>
+      <inventory_interactiv_pick_first_item text="Stecke das Foto in den Anhänger."/>
+      <task_use_iventory_item text="Du kannst alle Inventargegenstände verwenden."/>
+      <click_task_use_iventory_item text="Füge Lynns Anhänger in die Aussparung ihres Tagebuchs ein."/>
+      <task_hidden_plate text="Füge die Masken in die richtigen Aussparungen ein, um die Objektliste aufzurufen."/>
+      <click_task_hidden_plate text="Nimm diese Maske."/>
+      <change_text_click_task_hidden_plate text="Füge sie hier ein."/>
+      <task_hidden_scene text="Finde die unten aufgeführten Objekte."/>
+      <click_task_hidden_scene text="Nimm den Spiegel."/>
+      <task_hidden_about_interactive text="Gegenstände in grüner Schrift, erfordern einen zusätzlichen Schritt."/>
+      <click_task_hidden_about_interactive text="Nimm den Kamm."/>
+      <click_task_hidden_about_interactive_picked text="Kämme damit die Perücke."/>
+      <task_about_task_from_imp text="Auf der Schriftrolle des Kobolds sind Deine Aufgaben verzeichnet."/>
+      <click_task_about_task_from_imp text="Stupse den Kobold an."/>
+      <task_use_imp text="Er kann Dir helfen, wenn Gegenstände außer Reichweite sind. Wenn der Kobold etwas für Dich tun kann, erscheint sein Gesicht neben dem Gegenstand, den Du berührst."/>
+      <click_task_use_imp text=" Wähle die Attraktion „Hau den Lukas“ aus."/>
+      <click_task_use_imp_take_hammer text="Nimm den Hammer."/>
+      <click_task_use_imp_use_hammer text="Schlage mit dem Hammer zu."/>
+      <task_mini_hos text="Finde alle Vögel. Du kannst nur in der Nahansicht nach den Vögeln suchen."/>
+      <click_task_mini_hos text="Wähle den Vogel aus."/>
+      <task_map text="Weißt Du nicht, wo Du Dich befindest, dann schaue auf Deine Karte. Dort kannst Du auch sehen, in welchen Bereichen Du bereits Sammelobjekte gefunden hast. Sie sind durch einen Stern gekennzeichnet."/>
+      <click_task_map text="Fortfahren ..."/>
+      <task_hidden_magong text="Statt einer Wimmelbildszene kannst Du auch ein Matching-Spiel spielen."/>
+      <click_task_hidden_magong text="Fortfahren ..."/>
+      <task_hidden_ho_key text=" Verwende den Schlüssel. "/>
+      <click_task_hidden_ho_key text="Nimm den Schlüssel."/>
+      <skip_tutor text="Keine Anleitung."/>
+    </tutorial>
+    <for_save_tutor>
+      <click_task_use_imp text=" Wähle die Anzeige aus."/>
+      <click_task_iventory_item text="Wähle das Foto aus, um fortzufahren."/>
+      <task_iventory_item_after_click text="Nützliche Gegenstände, die Du während Deines Abenteuers findest, werden in Deinem Inventar abgelegt."/>
+      <task_iventory_item_click_to_continue text="Fortfahren ..."/>
+      <inventory_interactiv_compot_interactiv_task text="Zauberhaft! Das wäre repariert."/>
+      <inventory_interactiv_compot_interactiv_continue text="Fortfahren ..."/>
+    </for_save_tutor>
+    <ho_items>
+      <se_01_ho_01>
+        <feather>
+          <_1 text="Feder"/>
+        </feather>
+        <musicians>
+          <_1 text="Musikanten"/>
+        </musicians>
+        <party_popper>
+          <_1 text="Tröte"/>
+        </party_popper>
+        <braid>
+          <_1 text="Zopf"/>
+        </braid>
+        <concertina>
+          <_1 text="Akkordion"/>
+        </concertina>
+        <coffee_grinder>
+          <_1 text="Kaffeemühle"/>
+        </coffee_grinder>
+        <bat>
+          <_1 text="Fledermaus"/>
+        </bat>
+        <scarf>
+          <_1 text="Schal"/>
+        </scarf>
+        <pipe>
+          <_1 text="Pfeife"/>
+        </pipe>
+        <mirror>
+          <_1 text="Spiegel"/>
+        </mirror>
+        <card>
+          <_1 text="Karte"/>
+        </card>
+        <fan>
+          <_1 text="Fächer"/>
+        </fan>
+        <se_board_center_inv>
+          <_1 text="Schildemblem"/>
+        </se_board_center_inv>
+      </se_01_ho_01>
+      <se_04_ho_01>
+        <violin>
+          <_1 text="Violine"/>
+        </violin>
+        <folding_ladder>
+          <_1 text="Klappleiter"/>
+        </folding_ladder>
+        <bird_house>
+          <_1 text="Vogelhaus"/>
+        </bird_house>
+        <knife>
+          <_1 text="Messer"/>
+        </knife>
+        <lamp>
+          <_1 text="Lampe"/>
+        </lamp>
+        <flower_hanging>
+          <_1 text="Hängende Blume"/>
+        </flower_hanging>
+        <barrette>
+          <_1 text="Haarnadel"/>
+        </barrette>
+        <bow>
+          <_1 text="Schleife"/>
+        </bow>
+        <umbrella>
+          <_1 text="Schirm"/>
+        </umbrella>
+        <crystals>
+          <_1 text="Kristalle"/>
+        </crystals>
+        <bird>
+          <_1 text="Vogel"/>
+        </bird>
+        <frog>
+          <_1 text="Frosch"/>
+        </frog>
+        <se_watering_can_inv>
+          <_1 text=""/>
+          <_2 text="Gießkanne"/>
+          <_3 text="Schenkt allem, das wachsen kann, Leben."/>
+        </se_watering_can_inv>
+      </se_04_ho_01>
+      <se_04_ho_02>
+        <pumpkin>
+          <_1 text="Kürbis"/>
+        </pumpkin>
+        <ewer>
+          <_1 text="Karaffe"/>
+        </ewer>
+        <fern>
+          <_1 text="Farn"/>
+        </fern>
+        <amanita>
+          <_1 text="Pilz"/>
+        </amanita>
+        <iguana>
+          <_1 text="Eidechse"/>
+        </iguana>
+        <scarecrow>
+          <_1 text="Vogelscheuche"/>
+        </scarecrow>
+        <beatle>
+          <_1 text="Käfer"/>
+        </beatle>
+        <bouquet_of_roses>
+          <_1 text="Rosenstrauß"/>
+        </bouquet_of_roses>
+        <glove>
+          <_1 text="Handschuh"/>
+        </glove>
+        <mandrake_root>
+          <_1 text="Alraune"/>
+        </mandrake_root>
+        <pear>
+          <_1 text="Birne"/>
+        </pear>
+        <gnome>
+          <_1 text="Zwerg"/>
+        </gnome>
+        <se_pollen_inv>
+          <_1 text="Blütenstaub"/>
+        </se_pollen_inv>
+      </se_04_ho_02>
+      <se_06_ho_01>
+        <elephant>
+          <_1 text="Elefant"/>
+        </elephant>
+        <bubble>
+          <_1 text="Seifenblase"/>
+        </bubble>
+        <dill>
+          <_1 text="Dill"/>
+        </dill>
+        <potion>
+          <_1 text="Schwebeelixier"/>
+        </potion>
+        <snail>
+          <_1 text="Schnecke"/>
+        </snail>
+        <doll>
+          <_1 text="Puppe"/>
+        </doll>
+        <pisces>
+          <_1 text="Sternzeichen Fisch"/>
+        </pisces>
+        <olive_oil>
+          <_1 text="Olivenöl"/>
+        </olive_oil>
+        <bullion>
+          <_1 text="Goldbarren"/>
+        </bullion>
+        <horn>
+          <_1 text="Horn"/>
+        </horn>
+        <alchemist>
+          <_1 text="Alchemist"/>
+        </alchemist>
+        <emerald>
+          <_1 text="Smaragd"/>
+        </emerald>
+        <amanita>
+          <_1 text="Pilz"/>
+        </amanita>
+      </se_06_ho_01>
+      <se_06_ho_02>
+        <se_mirror_splinters_inv>
+          <_1 text="Spiegelscherben"/>
+        </se_mirror_splinters_inv>
+        <shards_of_mirror>
+          <_1 text="Spiegelscherben"/>
+        </shards_of_mirror>
+        <scorpion>
+          <_1 text="Skorpion"/>
+        </scorpion>
+        <scroll>
+          <_1 text="Schriftrolle"/>
+        </scroll>
+        <bay_leaf>
+          <_1 text="Lorbeerblatt"/>
+        </bay_leaf>
+        <walnuts>
+          <_1 text="Walnüsse"/>
+        </walnuts>
+        <lemon>
+          <_1 text="Zitrone"/>
+        </lemon>
+        <glasses>
+          <_1 text="Brille"/>
+        </glasses>
+        <poison>
+          <_1 text="Gift"/>
+        </poison>
+        <coffee>
+          <_1 text="Kaffee"/>
+        </coffee>
+        <chimera>
+          <_1 text="Chimäre"/>
+        </chimera>
+        <star>
+          <_1 text="Stern"/>
+        </star>
+        <rosehips>
+          <_1 text="Hagebutte"/>
+        </rosehips>
+        <rosary>
+          <_1 text="Glücksarmband"/>
+        </rosary>
+      </se_06_ho_02>
+    </ho_items>
+    <inventory_items>
+      <se_rubber_hummer_inv text="Gummihammer"/>
+      <se_master_key_inv text="Dietrich"/>
+      <se_cover_with_points_inv text="Brillenetui"/>
+      <se_broken_pendent_inv text="Lynns Anhänger"/>
+      <se_lynns_pendent_inv text="Lynns Anhänger"/>
+      <se_board_center_inv text="Schildemblem"/>
+      <se_figure_lynn_inv text="Frauenfigur"/>
+      <se_figure_morgana_inv text="Magierfigur"/>
+      <se_cross_inv text="Kreuz"/>
+      <se_coin_inv text="Münze"/>
+      <se_knife_inv text="Messer"/>
+      <se_watering_with_water_inv text="Volle Gießkanne"/>
+      <se_emblem_throne_inv text="Miniaturthron"/>
+      <se_ring_sorcerer_inv text="Runenring"/>
+      <se_pumpkins_inv text="Kürbis"/>
+      <se_hand_with_a_roll_inv text="Steinhand mit Schriftrolle"/>
+      <se_hand_with_a_feather_inv text="Steinhand mit Feder"/>
+      <se_turpentine_inv text="Terpentin"/>
+      <se_scroll_witches_inv text="Zettel mit Hexenrunen"/>
+      <se_silhouette_cup_inv text="Kelchemblem"/>
+      <se_cork_inv text="Korken"/>
+      <se_shoes_inv text="Holzschuhe"/>
+      <se_handle_chest_inv text="Griff"/>
+      <se_flint_inv text="Feuerstein &amp; Stahl"/>
+      <se_pollen_inv text="Blütenstaub"/>
+      <se_matter_rag_inv text="Lappen"/>
+      <se_edwards_photo_inv text="Edwards Foto"/>
+      <se_pin_inv text="Anstecknadel"/>
+      <se_panicle_inv text="Besen"/>
+      <se_stick_inv text="Stock"/>
+      <se_watering_can_inv text="Leere Gießkanne"/>
+      <se_oil_lamp_inv text="Petroleumlampe"/>
+      <se_mirror_inv text="Spiegel"/>
+      <se_mask_for_swimming_inv text="Winzige Taucherausrüstung"/>
+      <se_straw_inv text="Schilfrohr"/>
+      <se_emblem_of_hats_inv text="Zauberhutemblem"/>
+      <se_succinic_mask_inv text="Maske"/>
+      <se_model_steam_locomotive_inv text="Modellok"/>
+      <se_casket_inv text="Kästchen"/>
+      <se_paint_and_brush_inv text="Pinsel &amp; Farbe"/>
+      <se_sorcerer_doll_inv text="Zauberermarionette"/>
+      <se_metal_hanger_inv text="Kleiderbügel"/>
+      <se_sphere_emblem_inv text="Blaue Kugel"/>
+      <se_pollen_inv text="Blütenstaub"/>
+      <se_casket_inv text="Kästchen"/>
+      <se_page_slotted_inv text="Decodierzettel"/>
+      <se_recipe_for_casket_inv text="Rezept"/>
+      <se_black_plate_inv text="Schiefertafel"/>
+      <se_idol_1_inv text="Statuette"/>
+      <se_idol_2_inv text="Statuette"/>
+      <se_cutting_fork_inv text="Gabel"/>
+      <se_vial_of_hourglass_inv text="Sanduhr"/>
+      <se_magic_apple_inv text="Zauberapfel"/>
+      <se_silver_ignot_inv text="Silberbarren"/>
+      <se_key_with_a_rune_inv text="Runenkeil"/>
+      <se_chain_with_a_hook_inv text="Kette mit Haken"/>
+      <se_watch_on_a_chain_inv text="Taschenuhr"/>
+      <se_key_to_exit_inv text="Schlüssel"/>
+      <se_part_of_a_cover_inv text="Halbes Apfelemblem"/>
+      <se_sieve_inv text="Sieb"/>
+      <se_puppet_edward_inv text="Marionette Edward"/>
+      <se_flying_panicle_inv text="Zauberbesen"/>
+      <se_part_of_a_fresco_inv text="Freskostück"/>
+      <se_potion_of_levitation_inv text="Schwebeelixier"/>
+      <se_glass_eye_inv text="Glasauge"/>
+      <se_mirror_splinters_inv text="Spiegelscherben"/>
+      <se_black_candle_inv text="Katzenkerze"/>
+      <se_spell_inv text="Zauberspruch"/>
+      <se_master_edward_inv text="Lebende Marionette"/>
+      <se_hook_inv text="Haken"/>
+      <se_broken_hook_inv text="Kaputter Haken"/>
+      <se_chain_inv text="Kette"/>
+      <se_edwards_bag_inv text="Edwards Tasche"/>
+    </inventory_items>
+    <comments>
+      <item_misuse>
+        <se_flying_panicle_inv>
+          <drop_zone_se_flying_panicle_inv_without_imp>
+            <text_00 text="Auf diesem Besen kann nur ein Winzling reiten."/>
+          </drop_zone_se_flying_panicle_inv_without_imp>
+        </se_flying_panicle_inv>
+        <se_watering_can_inv>
+          <drop_zone_se_watering_with_water_inv>
+            <text_00 text="Die Idee ist gut, aber die Gießkanne leer."/>
+          </drop_zone_se_watering_with_water_inv>
+        </se_watering_can_inv>
+        <se_straw_inv>
+          <drop_zone_se_mask_for_swimming_inv>
+            <text_00 text="Er muss ja auch irgendwie atmen."/>
+          </drop_zone_se_mask_for_swimming_inv>
+        </se_straw_inv>
+      </item_misuse>
+      <inventory_item_partially_collected text="Ich muss erst die anderen Teile finden."/>
+      <scenes>
+        <miniho_instruction text="Finde alle Teile. Sie erscheinen nur in der Nahansicht."/>
+        <common>
+          <hint_unavailable text="Im gewählten Schwierigkeitsgrad steht Dir der Tipp nicht zur Verfügung."/>
+          <skip_unavailable text="Im gewählten Schwierigkeitsgrad steht Dir die „Lösen“-Funktion nicht zur Verfügung."/>
+        </common>
+        <iss>
+          <se_cover_with_points_inv>
+            <comment_drop_zone_se_straw_inv text="Das wäre eine gute Taucherbrille für den Kobold. Aber er muss auch eine Art Schnorchel haben."/>
+          </se_cover_with_points_inv>
+          <se_broken_pendent_inv>
+            <comment_drop_zone_se_edwards_photo_inv text="Wo ist Edwards Foto?"/>
+          </se_broken_pendent_inv>
+          <se_panicle_inv>
+            <comment_drop_zone_se_potion_of_levitation_inv text="Hexen fliegen gelegentlich auf Besen."/>
+          </se_panicle_inv>
+          <se_master_edward_inv>
+            <comment_drop_zone_items text="Er kann mir helfen."/>
+            <comment_drop_zone_se_edwards_bag_inv text="Werkzeuge? Ich finde schon welche."/>
+            <comment_need_se_press_inv text="Mit der Vorlage und dem richtigen Material kann Edward den Stempel schnitzen."/>
+            <comment_need_se_scheme_key_inv text="Edward könnte den Stempel für mich machen, aber er braucht eine Vorlage."/>
+          </se_master_edward_inv>
+          <se_oil_lamp_inv>
+            <comment_drop_zone_se_lampadny_oil_inv text="Ich muss die Lampe mit Petroleum füllen, sonst bringt sie mir nichts."/>
+            <comment_drop_zone_flint_2_inv text="Jetzt muss ich sie nur noch anzünden."/>
+          </se_oil_lamp_inv>
+      
+          <se_casket_inv>
+            <comment_drop_zone_flakon text="Edward wartet auf den richtigen Gegenstand von mir."/>
+            <comment_drop_zone_box_out text="Edward wartet auf den richtigen Gegenstand von mir."/>
+            <comment_drop_zone_kofemolka text="Ich glaube, die Zutaten sollen in die Kaffeemühle."/>
+            <comment_drop_zone_se_puppet_edward_inv text="Ich sollte Edward hier absetzen."/>
+            <comment_drop_zone_se_recipe_for_casket_inv text="Ich brauche ein Rezept."/>
+            <comment_voiced_bbt_need_recipe text="Hmm... Eine magische Kiste durch die Marionetten zum Leben erweckt werden? Aber ich kenne das Rezept für diesen Zauber nicht."/>
+          </se_casket_inv>
+          <se_chain_inv>
+            <comment_drop_zone_se_hook_inv text="Kein Haken dran."/>
+          </se_chain_inv>
+        </iss>
+        <se_01>
+          <comment_voiced_drop_zone_se_rubber_hummer_inv_no_imp text="Oh, Moment. Mein kleiner Kobold könnte mir helfen."/>
+          <comment_drop_zone_se_rubber_hummer_inv_with_imp text="Mit dem richtigen Werkzeug könnten wir dem Lukas einen ganz schönen Schlag verpassen."/>
+          <comment_drop_zone_se_cross_inv text="Wenn da ein X ist, hat das auch was zu bedeuten."/>
+          <comment_button_photo_zastryalo text="Das Ding klemmt? Da steckt was fest."/>
+          <comment_drop_zone_se_knife_inv text="Ein Stück Metall oder so. Ich muss es irgendwie da rausholen."/>
+          <comment_use_coin text="Hmm... Das hat nicht funktioniert."/>
+          <drop_zone_se_coin_inv_use text="Ich habe das Gefühl, ich werde hier mehr ausgeben, als ein bisschen Kleingeld."/>
+          <baranki_no_more text="Was soll ich sagen? Ohne Bagels geht nix."/>
+          <comment_active_zone_grip text="Vielleicht kann ich das Ding da rausholen."/>
+          <comment_voiced_sorcerer_watched text="Das ist doch der Kerl, der Lynn und Edward entführt hat! Er schleicht ihnen nach."/>
+          <comment_voiced_bbt_selfie text="Das ist sogar mal ein gutes Foto von mir."/>
+          <comment_need_imp text="Mit einem Ball funktioniert das wohl nicht. Ohne meinen kleinen Helfer kann ich hier nicht viel ausrichten."/>
+        </se_01>
+        <se_01_ho_01>
+          <comment_comb_01 text="Ziemlich verfilzt das Ding."/>
+          <comment_musicians_flute_01 text="Er hat kein Instrument."/>
+          <comment_musicians_cello_01 text="Er hat kein Instrument."/>
+          <comment_musicians_violin_01 text="Er hat kein Instrument."/>
+          <comment_poster_crumpled_to_move text="Da hat jemand das Poster zerrissen."/>
+          <comment_key_0 text="Ich muss die richtige Maske finden."/>
+          <comment_key_1 text="Ich muss die richtige Maske finden."/>
+          <comment_key_2 text="Ich muss die richtige Maske finden."/>
+          <comment_key_3 text="Ich muss die richtige Maske finden."/>
+          <comment_base_item_part_0 text="Dafür brauche ich den richtigen Schlüssel."/>
+          <comment_base_item_part_1 text="Dafür brauche ich den richtigen Schlüssel."/>
+          <comment_base_item_part_2 text="Dafür brauche ich den richtigen Schlüssel."/>
+          <comment_base_item_part_3 text="Wenn ich das Emblem hineinstecke, müsste das Ding aufgehen."/>
+          <comment_star1 text="Hier fehlt etwas."/>
+          <comment_star2 text="Hier fehlt etwas."/>
+          <comment_star3 text="Hier fehlt etwas."/>
+        </se_01_ho_01>
+        <se_02>
+          <puzzle_text_label text="Unterschiede gefunden: #se_02_puzzle_diff_found#/#se_02_lvl_diff_num#"/>
+          <comment_drop_zone_se_master_key_inv text="Ich kann nirgends einen Schlüssel finden. Vielleicht geht es auch ohne?"/>
+          <comment_drop_zone_se_board_center_inv text="Immer mit der Ruhe, Jungs. Ich finde den Schild schon."/>
+          <comment_drop_zone_se_lynns_pendent_inv text="Unter diesen Umständen wird Lynn mir sicher verzeihen, dass ich dies öffne. Aber dafür brauche ich einen Anhänger oder ein Emblem."/>
+          <comment_drop_zone_figures text="Hier fehlen ein paar Figuren."/>
+          <comment_push_button text="Sie sollen sich wohl bewegen. Ich sollte das Ganze in Gang setzen."/>
+          <comment_main_button text="Ohne die Figuren funktioniert es nicht."/>
+          <comment_missclick_penalty text="Ich kann mich nicht konzentrieren!"/>
+          <comment_witcher_is_not_alone text="Das bedeutet, der Magier agiert im Auftrag eines anderen. Und diese Frau erinnert mich an jemanden."/>
+        </se_02>
+        <se_03>
+          <comment_voiced_after_cutscene_close_gate text="Das man da nicht zu Stein erstarrt, gleicht einem Wunder. Hmm... Vielleicht kann ich das irgendwie zu meinem Vorteil nutzen."/>
+          <comment_drop_zone_se_mirror_inv text="Sein Blick verwandelt einen zu Stein! Schnell! Ich brauche etwas, das reflektiert!"/>
+          <comment_drop_zone_se_mask_for_swimming_inv text="Der Kobold ist kein besonders guter Schwimmer. Er braucht eine Ausrüstung."/>
+          <comment_drop_zone_se_watering_can_inv text="Hier könnte man sich Wasser holen."/>
+          <comment_drop_zone_se_handle_chest_inv text="Hoffentlich ist der fehlende Griff hier irgendwo in der Nähe."/>
+          <comment_drop_zone_se_scroll_witches_inv text="Hexenrunen! Da scheint eine Schriftrolle hinzugehören."/>
+          <comment_drop_zone_knife_inv text="Schilf! Da müsste ich nur ein Stück abschneiden."/>
+          <count_text_label text="Teile gefunden: #se_03_sub_mini_ho_count_item#/6"/>
+        </se_03>
+        <se_03_minigame_kamea>
+          <comment_drop_zone_se_emblem_throne_inv text="Hier fehlt ein Emblem."/>
+          <comment_the_chosen_one text="Sie ist die Auserwählte ..."/>
+          <comment_dont_like_dis text="Die Auserwählte? Das könnte Lynn sein!"/>
+        </se_03_minigame_kamea>
+        <se_04>
+          <comment_drop_zone_se_watering_with_water_inv text="Vernachlässigung kann Bosheit zum Vorschein bringen. Der hat schon lange kein Wasser mehr gehabt."/>
+          <comment_drop_zone_se_pumpkins_inv text="Ich brauche diesen Ring! Ich muss die Krähe verscheuchen."/>
+          <comment_drop_zone_hands text="Die Hände fehlen. Wo könnten sie sein?"/>
+          <comment_drop_zone_se_turpentine_inv text="Ich muss das Zeug entfernen."/>
+          <comment_drop_zone_se_silhouette_cup_inv text="Diese Aussparung erinnert mich an einen Kelch."/>
+          <comment_grape_eat text="Das Böse bekämpfen macht hungrig."/>
+          <comment_drop_zone_se_shoes_inv text="Barfuß möchte der Kobold sicher nicht über die Dornen laufen."/>
+          <comment_drop_zone_se_flint_inv_use text="Das würde leicht brennen."/>
+        </se_04>
+        <se_04_ho_02>
+          <comment_scarecrow_hat_01 text="Eine Vogelscheuche ist es nicht wirklich."/>
+          <comment_scarecrow_ember text="Ohne Gesicht ist sie nicht besonders furchterregend."/>
+          <comment_trowel_01 text="Das müsste ich ausgraben."/>
+          <comment_secateurs text="Autsch! Ich brauche ein Werkzeug. "/>
+          <comment_rose1_01 text="Nicht wirklich ein Blumenstrauß."/>
+          <comment_rose2_01 text="Da sind mehr Rosen gefragt."/>
+          <comment_turtle_shell_01 text="Ihr Panzer ist beschädigt."/>
+          <comment_pot_01 text="Ich brauche ein Gefäß mit einem Deckel."/>
+        </se_04_ho_02>
+        <se_05>
+          <coment_drop_zone_se_emblem_of_hats_inv text="Was der wohl aus dem Hut zaubert. Man will gar nicht daran denken."/>
+          <comment_drop_zone_se_succinic_mask_inv text="Ich brauche eine Maske!"/>
+          <count_text_label text="Teile gefunden: #se_05_sub_miniho_count_item#/6"/>
+          <comment_drop_zone_se_paint_and_brush_inv text="Ein Pinsel und Farbe wären jetzt nützlich."/>
+          <comment_drop_zone_se_matter_rag_inv text="Diese Puppe braucht etwas Neues zum Anziehen."/>
+          <comment_color_first text="Ohne Farbe malt es sich schlecht."/>
+          <comment_drop_zone_kraska text="Ich muss den Pinsel in die Farbe tauchen."/>
+          <comment_left_arm1 text="Die linke Hand fehlt."/>
+          <comment_right_arm1 text="Die rechte Hand gehört hierhin."/>
+          <comment_left_leg1 text="Das linke Bein fehlt."/>
+          <comment_right_leg1 text="Das rechte Bein fehlt."/>
+          <comment_hair1 text="Er braucht Haare!"/>
+          <comment_drop_zone_kraska_after_hair text="Er ist noch ganz ausdruckslos."/>
+          <comment_fabric1 text="Er hat nichts an."/>
+          <comment_scissors text="Aus dem Lappen ließe sich ein Kleidungsstück machen."/>
+          <comment_drop_zone_se_stick_inv text="Das ist zu hoch. Da komme ich nicht dran."/>
+        </se_05>
+        <se_05_puzzle_railroad>
+          <comment_drop_zone_se_model_steam_locomotive_inv text="Ich glaube, da fehlt eine Lok."/>
+        </se_05_puzzle_railroad>
+        <se_05_puzzle_fattochini>
+          <comment_drop_zone_se_sorcerer_doll_inv text="Da ist Platz für eine weitere Figur."/>
+        </se_05_puzzle_fattochini>
+        <se_06>
+          <comment_drop_zone_se_flying_panicle_inv_with_imp text="Ein Hexenbesen würde uns jetzt weiterhelfen."/>
+          <comment_drop_zone_se_flying_panicle_inv_without_imp text="Er kann zwar gut klettern, aber fliegen kann er nicht."/>
+          <comment_drop_zone_knife_inv_2 text="Ich könnte eine gruselige Kürbislaterne daraus schnitzen."/>
+          <comment_drop_zone_se_watch_on_a_chain_inv text="Diese Eule verbirgt etwas."/>
+          <comment_drop_zone_se_part_of_a_cover_inv text="Wo ist denn der Rest des Apfels?"/>
+          <comment_active_zone_bbt_fork text="Da würde ich mich am Ende noch verbrennen."/>
+          <comment_active_zone_bbt_se_08 text="Ich sollte leise sein. Ich will nicht, dass er mich hört."/>
+          <comment_drop_zone_se_sphere_emblem_inv text="Ich muss mich nach etwas umsehen, dass da reinpasst."/>
+          <comment_drop_zone_se_page_slotted_inv text="Hat da wer eine Seite rausgerissen?"/>
+          <comment_drop_zone_se_ring_sorcerer_inv text="Ich brauche also etwas mit denselben Runen ..."/>
+          <comment_pumpkin_lid_01 text="Und jetzt noch der Deckel."/>
+          <comment_candle2 text="Ohne eine Kerze ist es keine richtige Laterne."/>
+          <comment_active_zone_comment_cand text="So tropft mir das heiße wachs auf die Finger."/>
+          <comment_collect_edwards_bag text="Das ist Edwards Tasche!"/>
+        </se_06>
+        <se_06_ho_01>
+          <comment_alchemist_book_01 text="Er braucht ein Zauberbuch."/>
+          <comment_wig_01 text="Sie ist kahl."/>
+          <comment_bead1_01 text="Sie kann nichts sehen."/>
+          <comment_bead2_01 text="Sie kann nichts sehen."/>
+          <comment_soap_01 text="Ich könnte die Seife auflösen."/>
+          <comment_spoon text="Wenn ich kräftig rühre, bilden sich Seifenblasen."/>
+          <comment_base_item_part_0 text="Ich habe keine Honigwabe."/>
+          <comment_base_item_part_1 text="Ich habe keine Feder."/>
+          <comment_base_item_part_2 text="Feuer frei!"/>
+          <comment_base_item_part_3 text="Ich brauche ein Ventilrad."/>
+          <comment_potion_of_levitation text="Daraus sollte ein Schwebeelixier werden."/>
+          <comment_active_zone_bbt_on_matches text="Aber ich muss es erst zumachen. Sonst verdunstet mein Gebräu."/>
+        </se_06_ho_01>
+        <se_06_ho_02>
+          <comment_wolf_01 text="Ich muss alle Glücksbringer finden."/>
+          <comment_raven_01 text="Ich muss alle Glücksbringer finden."/>
+          <comment_basilisk_01 text="Ich muss alle Glücksbringer finden."/>
+        </se_06_ho_02>
+        <se_07>
+          <comment_drop_zone_se_chain_with_a_hook_inv text="So könnte ich an den Hebel kommen!"/>
+          <comment_drop_zone_idol text="Da fehlen zwei Statuetten."/>
+          <comment_drop_zone_se_cutting_fork_inv_se text="Au weia! Diese Klinge muss ich irgendwie aufhalten."/>
+          <comment_drop_zone_se_magic_apple_inv text="Ich müsste sie füttern, sonst kann ich nicht reinsehen."/>
+          <comment_voiced_gas text="Ich kann kaum atmen. Wegen dem Qualm!"/>
+        </se_07>
+        <se_08>
+          <comment_drop_zone_se_key_to_exit_inv text="Das Ding bekommen wir auch noch auf."/>
+          <comment_drop_zone_se_glass_eye_inv text="Das hat die Form eines Auges."/>
+          <comment_drop_zone_ingridients text="Ich sollte mich ernsthaft nach den Zutaten umsehen."/>
+          <comment_drop_zone_se_key_with_a_rune_inv text="Und wo ist der Runenstein?"/>
+          <comment_drop_zone_se_vial_of_hourglass_inv text="Mit der Sanduhr stimmt etwas nicht ganz."/>
+          <comment_drop_zone_se_pollen_inv text="Den Zauber kenne ich! Ich werde etwas Blütenstaub brauchen."/>
+          <comment_drop_zone_se_cork_inv text="Jetzt noch versiegeln ..."/>
+          <comment_candle_cat text="Etwas Wachs hinzufügen."/>
+          <comment_about_portrait text="Irgendwie kriege ich bei dem Anblick eine Gänsehaut."/>
+          <comment_portrait_morgana text="Ich fasse es nicht! Dieser Wahnsinnige hat Morgana zurückgebracht."/>
+          <comment_voiced_bbt_this_door text="Morgana hat Lynn durch diese Tür geschleppt. Wir brauchen den Schlüssel."/>
+          <comment_voiced_bbt_about_seals text="Wolfgang hat recht. Damit kann ich das Siegel zerstören! "/>
+        </se_08>
+        <se_08_puzzle_battle>
+          <comment_voiced_bbt_after_mg text="So wurde die große Hexe Thetis besiegt, jedoch nicht vollends geschlagen. Morgana, ihre treue Schülerin, rettete Thetis' Seele in einem See.&#xD;&#xA; Bald ist die Zeit gekommen, da Thetis zurückkehren und Chaos über die Welt bringen wird."/>
+          <comment_wand text="Er hat die Flammen mit Magie bearbeitet."/>
+          <comment_bird text="Er hat das Eis nicht ohne Hilfe geschmolzen."/>
+          <comment_lantern text="Er wusste, wie man die Dunkelheit bekämpft."/>
+          <comment_meat text="Er hielt den Wolf in Schach."/>
+          <comment_sword text="Er hatte die richtige Waffe für diese Situation."/>
+          <comment_artifact text="Endlich gelang es ihm, die Hexe mit Hilfe des Artefakts in die Knie zu zwingen."/>
+          <comment_voiced_bbt_lvl_1 text="Thetis vernichtete viele Dörfer, bevor die Jäger sie einholen konnten."/>
+          <comment_voiced_bbt_lvl_2 text="Doch Thetis wob einen Eiszauber und hielt ihre Verfolger so auf. Die Jäger konnten sich nur schwer von diesem Zauber befreien."/>
+          <comment_voiced_bbt_lvl_3 text="Thetis stürzte die Welt in Dunkelheit, doch den Jägern gelang es, das Licht wiederzubringen."/>
+          <comment_voiced_bbt_lvl_4 text="Die Hexe jedoch suchte Vergeltung und hetzte wilde Tiere auf das Vieh der Dorfbewohner. Zum Glück konnten die Jäger ihr Einhalt gebieten."/>
+          <comment_voiced_bbt_lvl_5 text="Dann zerstörte Thetis die Ernte, auf dass die Menschen des Dorfes verhungern sollten."/>
+          <comment_voiced_bbt_lvl_6 text="Sie bediente sich der Macht der Natur, um die Dörfler zu peinigen und es schien, dass nichts und niemand sie aufhalten konnte.&#xD;&#xA; Doch den Jägern gelang es zuletzt, sie mit Hilfe des Drachenartefakts zu besiegen."/>
+        </se_08_puzzle_battle>
+      </scenes>
+    </comments>
+    <dialogs>
+      <empty_dialog>
+        <intro_0_0 text=""/>
+      </empty_dialog>
+      <intro_dialog>
+        <intro_1_0 text="Ich kann es kaum glauben, dass heute Euer erster Hochzeitstag ist! Ich bin so froh, dass ihr miteinander glücklich seid. Wer hätte gedacht, dass ein Hexenjäger und eine Hexe eine so glückliche Beziehung haben könnten."/>
+        <intro_1_1 text="Ich glaube, sie hat mich verhext."/>
+        <intro_1_2 text="Oh, sieh mal! Ein Puppentheater! Wollen wir uns das mal ansehen?"/>
+        <intro_1_3 text="Geht ihr zwei schon vor."/>
+        <intro_1_4 text="Ich komme gleich nach."/>
+      </intro_dialog>
+      <se_02_dialog_cutscene_kidnapping>
+        <lynn_1_0 text="Nicht Edward! Neiiiiin!!"/>
+        <sourcerer_1_0 text="Besser Du spurst und kommst mit, sonst siehst Du Deinen lieben Edward nie wieder."/>
+      </se_02_dialog_cutscene_kidnapping>
+      <se_04_dialog_with_lynn_free_me>
+        <lynn_1_0 text="Mutter!! Hilfe!!! Ich komme hier nicht los! Diese Fesseln nehmen mir meine Kräfte!"/>
+      </se_04_dialog_with_lynn_free_me>
+      <se_04_dialog_with_lynn_find_edward>
+        <lynn_2_0 text="Sie haben Edward in eine Marionette verwandelt! Und er ist da drin eingeschlossen. Hier, nimm dies. Vielleicht hilft es uns, Edward zu retten."/>
+      </se_04_dialog_with_lynn_find_edward>
+      <se_06_dialog_cutscene_morgana>
+        <_1_morgana_2_0 text="Mathias ... Dank Dir kann ich nun etwas zu Ende bringen, das vor langer Zeit begann ..."/>
+        <_2_empty_2_0 text=""/>
+        <_3_lynn_2_0 text="Mutter, Hilfe!!! Finde Wolfgang! Er kann uns helfen!"/>
+        <_4_morgana_2_1 text="Deine Mama kann Dir jetzt nicht helfen. Das ist Dein Ende!"/>
+      </se_06_dialog_cutscene_morgana>
+      <se_06_dialog_lynn_free_edward>
+        <lynn_1_0 text="Eine Art Spannungsfeld. Da komme ich nicht durch. Puh ... und ich fühle mich so schwach. Ich sollte mich ein wenig ausruhen. Bitte! Hole Edward hier raus!"/>
+      </se_06_dialog_lynn_free_edward>
+      <se_07_dialog_cutscene_trap>
+        <sourcerer_1_0 text="Du kommst hier niemals raus!"/>
+      </se_07_dialog_cutscene_trap>
+      <se_07_dialog_with_small_edward_01>
+        <_1_heroine_1_0 text="Wir sitzen in der Falle! Wir müssen an diesen Hebel gelangen!"/>
+        <_2_small_edward_1_0 text="Sieh mich doch an! Das einzige, wozu ich gut bin, ist Kinder ein wenig zu unterhalten. Schade, dass ich keinerlei Werkzeug habe."/>
+      </se_07_dialog_with_small_edward_01>
+      <se_07_dialog_with_small_edward_02>
+        <_2_small_edward_2_0 text="Das ist klasse, danke. Jetzt kann ich Dir wenigstens etwas helfen."/>
+      </se_07_dialog_with_small_edward_02>
+      <survey_cutscene_dialog>
+        <survey_1_0 text="Deine erbärmlichen Versuche kannst Du Dir sparen. Du hast keine Chance gegen die Mächte des Bösen. Ich werde die Prophezeiung erfüllen. Thetis soll Lynns Körper erhalten."/>
+        <survey_1_1 text="Und unsere große Hxenkönigin wird wieder unter uns weilen!"/>
+        <survey_1_2 text=""/>
+        <survey_1_3 text="Das kannst Du nicht tun!"/>
+        <survey_1_4 text=""/>
+        <survey_1_5 text="Ha ha ha! Und ob ich das kann! Du wirst nicht in der Lage sein, uns zu widerstehen. Du wirst Thetis gehorchen."/>
+      </survey_cutscene_dialog>
+    </dialogs>
+    <mini_games_descriptions>
+      <se_02_sub_puzzle text="Finde die Unterschiede zwischen den Bildern. Markiere die Unterschiede im rechten Bild."/>
+      <se_03_minigame_kamea text="Bringe die Figuren an der richtigen Stelle unter. Sie können nur auf eine benachbarte, freie Stelle geschoben werden und leuchten auf, wenn Du sie richtig platziert hast."/>
+      <se_05_puzzle_fattochini text="Berühre die Gliedmaßen der Puppen, bis ihre Haltung mit der der Abbildung übereinstimmt. "/>
+      <se_05_puzzle_railroad text="Schicke den Kobold mit der Lok zum Tunnel oben links. Rangiere die Züge so, dass der Weg frei wird."/>
+      <se_08_puzzle_battle text="Wähle die richtige Verteidigung."/>
+    </mini_games_descriptions>
+    <task_from_imp>
+      <task_ text=""/>
+      <task_nil text=""/>
+      <task_00 text="Untersuche den Pavillon."/>
+      <task_01 text="Öffne das Portal."/>
+      <task_02 text="Folge dem Magier."/>
+      <task_03 text="Befreie Lynn."/>
+      <task_04 text="Gelange in das Hexenhaus."/>
+      <task_05 text="Befreie Edward aus dem Spannungsfeld."/>
+      <task_06 text="Entkomme aus dem Verlies."/>
+      <task_07 text="Folge Lynn."/>
+    </task_from_imp>
+  </gameplay>
+</texts>

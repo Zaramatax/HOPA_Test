@@ -1,0 +1,293 @@
+<navigation start_location="ce_00">
+  <ce_00 />
+  <ce_test_scene />
+  <ce_final_movie />
+  
+  <!-- 1 -->
+  <ce_01  map_location="ce_01">
+    <ce_01_sub_fruit  weight="0.1" layer="active_zone_sub_fruit" />
+    <ce_01_sub_miniho  weight="0.1" layer="active_zone_sub_miniho" />
+    <ce_01_sub_obelisk  weight="0.1" layer="active_zone_sub_obelisk" />
+    <ce_01_sub_stoneman  weight="0.1" layer="active_zone_sub_stoneman" />
+    <ce_01_ho_01 layer="active_zone_ho_01"  condition="ce_01_sub_miniho_compot" />
+    <ce_01_ho_02 layer="active_zone_ho_02" />
+    <ce_01_puzzle_temple layer="active_zone_puzzle_temple" />
+    
+    
+      <iss_ce_white_crystall_inv layer="iss_ce_white_crystall_inv" condition="collect_ce_white_crystall_inv" />
+      <iss_ce_grimoire_lynn_inv layer="iss_ce_grimoire_lynn_inv" condition="collect_ce_grimoire_lynn_inv" />
+      
+      
+    <ce_02 layer="active_zone_ce_02" condition="use_ce_ice_spell_inv" />
+    <ce_07 layer="active_zone_ce_07" condition="complete_ce_01_puzzle_temple" />
+  </ce_01>
+  
+  <ce_01_sub_fruit map_location="ce_01">
+    <ce_01 layer="close_button" />
+  </ce_01_sub_fruit>
+  <ce_01_sub_miniho map_location="ce_01">
+    <ce_01 layer="close_button" />
+  </ce_01_sub_miniho>
+  <ce_01_sub_obelisk map_location="ce_01">
+    <ce_01 layer="close_button" />
+  </ce_01_sub_obelisk>
+  <ce_01_sub_stoneman map_location="ce_01">
+    <ce_01 layer="close_button" />
+  </ce_01_sub_stoneman>
+  <ce_01_ho_01 map_location="ce_01">
+    <ce_01 layer="active_zone_go_back" />
+  </ce_01_ho_01>
+  <ce_01_ho_02 map_location="ce_01">
+    <ce_01 layer="active_zone_go_back" />
+  </ce_01_ho_02>
+  <ce_01_puzzle_temple map_location="ce_01">
+    <ce_01 layer="active_zone_go_back" />
+  </ce_01_puzzle_temple>
+  <iss_ce_white_crystall_inv  map_location="ce_01">
+    <ce_01  layer="close_button" />
+  </iss_ce_white_crystall_inv>
+  
+  <iss_ce_grimoire_lynn_inv >
+    <current_place layer="close_button" />
+  </iss_ce_grimoire_lynn_inv>
+  
+  <!-- 2 -->
+  <ce_02  map_location="ce_02">
+    <ce_02_sub_bank weight="0.1" layer="active_zone_sub_bank" />
+    <ce_02_sub_hollow weight="0.1" layer="active_zone_sub_hollow" />
+    <ce_02_sub_arch weight="0.1" layer="active_zone_sub_arch" />
+    <ce_02_ho_01 layer="active_zone_ho_01" />
+    
+    <iss_ce_stick_inv layer="iss_ce_stick_inv" condition="collect_ce_stick_inv" />
+    
+    <ce_03 layer="active_zone_go_ce_03" condition="use_ce_green_rune_inv^use_ce_red_rune_inv" />
+    <ce_01 layer="active_zone_go_back" />
+  </ce_02>
+  <ce_02_sub_arch map_location="ce_02">
+    <ce_03 layer="active_zone_go_ce_03_sub" condition="use_ce_red_rune_inv^use_ce_green_rune_inv" />
+    <ce_02 layer="close_button" />
+   
+  </ce_02_sub_arch>
+   <ce_02_sub_bank map_location="ce_02">
+    <ce_02 layer="close_button" />
+  </ce_02_sub_bank>
+   <ce_02_sub_hollow map_location="ce_02">
+    <ce_02 layer="close_button" />
+  </ce_02_sub_hollow>
+  <ce_02_ho_01 map_location="ce_02">
+    <ce_02 layer="active_zone_go_back" />
+  </ce_02_ho_01>
+  <iss_ce_stick_inv>
+    <ce_02  layer="close_button" />
+  </iss_ce_stick_inv>
+  
+  <!-- 3 -->
+  <ce_03 map_location="ce_03">
+    <ce_03_sub_box weight="0.1" layer="active_zone_sub_box" />
+    <ce_03_sub_golem  weight="0.1" layer="active_zone_sub_golem" />
+    <ce_03_sub_miniho weight="0.1" layer="active_zone_sub_miniho" />
+    <ce_03_sub_stones  weight="0.1" layer="active_zone_sub_stones" />
+    
+    <iss_ce_chain_inv layer="iss_ce_chain_inv" condition="collect_ce_chain_inv" />
+    <iss_ce_leather_belt_inv layer="iss_ce_leather_belt_inv" condition="collect_ce_leather_belt_inv" />
+    <iss_ce_grimoire_lynn_inv layer="iss_ce_grimoire_lynn_inv" condition="collect_ce_grimoire_lynn_inv^use_ce_green_rune_inv^use_ce_red_rune_inv" />
+    
+    <ce_05 layer="active_zone_go_ce_05" condition="use_ce_spell_of_portals_inv" />
+    <ce_04 layer="active_zone_go_ce_04" condition="collect_ce_enchanted_bark_inv^collect_ce_stamp_of_a_bat_inv" />
+    <ce_02 layer="active_zone_go_back" />
+  </ce_03>
+  <ce_03_sub_box map_location="ce_03">
+    <ce_03 layer="close_button" />
+  </ce_03_sub_box>
+  <ce_03_sub_golem map_location="ce_03">
+    <ce_03 layer="close_button" />
+  </ce_03_sub_golem>
+  <ce_03_sub_miniho map_location="ce_03">
+    <ce_03 layer="close_button" />
+  </ce_03_sub_miniho>
+  <ce_03_sub_stones map_location="ce_03">
+    <ce_03 layer="close_button" />
+  </ce_03_sub_stones>
+  
+  <iss_ce_chain_inv map_location="ce_03">
+    <ce_03  layer="close_button" />
+  </iss_ce_chain_inv>
+  
+   <iss_ce_leather_belt_inv map_location="ce_03">
+    <ce_03  layer="close_button" />
+  </iss_ce_leather_belt_inv>
+  
+  <!-- 4 -->
+  <ce_04 map_location="ce_04">
+    <ce_04_sub_floor  weight="0.1" layer="active_zone_sub_floor" />
+    <ce_04_sub_lock  weight="0.1" layer="active_zone_sub_lock" />
+    <ce_03 layer="active_zone_go_back" condition="ce_04_can_go_back"/>
+    <ce_04_puzzle_battle layer="active_zone_go_back"  condition="use_ce_light_spell_inv"/>
+      <iss_ce_grimoire_lynn_inv layer="iss_ce_grimoire_lynn_inv" condition="collect_ce_grimoire_lynn_inv^collect_ce_enchanted_bark_inv^collect_ce_stamp_of_a_bat_inv" />
+    
+    
+    
+  </ce_04>
+  <ce_04_sub_floor map_location="ce_04">
+    <ce_04 layer="close_button" />
+  </ce_04_sub_floor>
+  <ce_04_sub_lock map_location="ce_04">
+    <ce_04 layer="close_button" />
+  </ce_04_sub_lock>
+  <ce_04_puzzle_battle map_location="ce_04"/>
+  <ce_04_ho_01 map_location="ce_04">
+    <ce_04 layer="active_zone_go_back" />
+  </ce_04_ho_01>
+  <ce_04_ho_02 map_location="ce_04">
+    <ce_04 layer="active_zone_go_back" />
+  </ce_04_ho_02>
+  <!-- 5 -->
+  <ce_05 map_location="ce_05">
+    <ce_05_sub_cells layer="active_zone_sub_cells" />
+    <ce_05_sub_mirror layer="active_zone_sub_mirror" />
+    <ce_05_sub_nightstand layer="active_zone_sub_nightstand" />
+    <ce_06 layer="active_zone_go_ce_06" />
+    <ce_03 layer="active_zone_go_back" />
+  </ce_05>
+  <ce_05_sub_cells map_location="ce_05">
+    <ce_05 layer="close_button" />
+  </ce_05_sub_cells>
+  <ce_05_sub_mirror map_location="ce_05">
+    <ce_05 layer="close_button" />
+  </ce_05_sub_mirror>
+  <ce_05_sub_nightstand map_location="ce_05">
+    <ce_05 layer="close_button" />
+    <ce_05_sub_table layer="active_zone_sub_table" />
+  </ce_05_sub_nightstand>
+  <ce_05_sub_table map_location="ce_05">
+    <ce_05_sub_nightstand layer="close_button" />
+  </ce_05_sub_table>
+  
+  <!-- 6 -->
+  <ce_06 map_location="ce_06">
+  
+    <ce_06_sub_bookshelf  weight="0.1" layer="active_zone_sub_bookshelf" />
+    <ce_06_sub_fireplace weight="0.1" layer="active_zone_sub_fireplace" />
+    <ce_05 layer="active_zone_go_back" />
+    <ce_06_puzzle layer="active_zone_go_minigame" />
+    
+  </ce_06>
+  <ce_06_sub_bookshelf map_location="ce_06">
+    <ce_06 layer="close_button" />
+  </ce_06_sub_bookshelf>
+  <ce_06_sub_fireplace map_location="ce_06">
+    <ce_06 layer="close_button" />
+  </ce_06_sub_fireplace>
+  <ce_06_puzzle map_location="ce_06">
+   <ce_06 layer="active_zone_go_back" />
+  </ce_06_puzzle>
+ 
+
+  <!-- 7 -->
+  <ce_07 map_location="ce_07">
+
+
+
+<ce_07_puzzle_water_lock layer="active_zone_go_puzzle_water_lock" condition="ce_07_minihos_end"  />
+<ce_07_puzzle_box layer="active_zone_go_puzzle_box" condition="ce_07_minihos_end"/>
+<ce_08 layer="active_zone_go_ce_08"  condition="collect_ce_shawl_inv^collect_ce_2_part_of_leaf_inv" />
+<ce_01 layer="active_zone_go_back" />
+ <iss_ce_bracelet_inv layer="iss_ce_bracelet_inv" condition="collect_ce_bracelet_inv" />
+
+  </ce_07>
+  <ce_07_puzzle_water_lock map_location="ce_07">
+     <ce_07 layer="active_zone_go_back" />
+  </ce_07_puzzle_water_lock>
+  <ce_07_puzzle_box map_location="ce_07">
+    <ce_07 layer="active_zone_go_back" />
+  </ce_07_puzzle_box>
+  
+
+  <iss_ce_bracelet_inv map_location="ce_07">
+    <ce_07  layer="close_button" />
+  </iss_ce_bracelet_inv>
+  
+  <!-- 8 -->
+  <ce_08 map_location="ce_08">
+    <ce_08_sub_sanctuary weight="0.1" layer="active_zone_sub_sanctuary" />
+    <ce_08_sub_boat weight="0.1" layer="active_zone_sub_boat" />
+    <ce_08_sub_miniho weight="0.1" layer="active_zone_sub_miniho" condition="collect_ce_chest_inv" />
+    <ce_08_sub_island weight="0.1"  layer="active_zone_sub_island" />
+    
+    <iss_ce_hook_cat_inv layer="iss_ce_hook_cat_inv" condition="collect_ce_hook_cat_inv" />
+       
+   <iss_ce_chest_inv layer="iss_ce_chest_inv" condition="collect_ce_chest_inv" />       
+        
+    <ce_09 layer="active_zone_go_ce_09" condition="ce_08_sub_miniho_complete" />
+    <ce_07 layer="active_zone_go_back" />
+  </ce_08>
+  
+  <iss_ce_hook_cat_inv map_location="ce_08">
+    <ce_08  layer="close_button" />
+   
+  </iss_ce_hook_cat_inv>
+  <ce_08_sub_sanctuary map_location="ce_08">
+    <ce_08 layer="close_button" />
+  </ce_08_sub_sanctuary>
+  <ce_08_sub_boat map_location="ce_08">
+    <ce_08 layer="close_button" />
+  </ce_08_sub_boat>
+  <ce_08_sub_miniho map_location="ce_08">
+    <ce_08 layer="close_button" />
+  </ce_08_sub_miniho>
+  <ce_08_sub_island map_location="ce_08">
+    <ce_08 layer="close_button" />
+  </ce_08_sub_island>
+  
+  
+  <!-- 9 -->
+  <ce_09 map_location="ce_09">
+    <ce_09_sub_table  weight="0.1"  layer="active_zone_sub_table" />
+    <ce_09_sub_elli  weight="0.1"  layer="active_zone_sub_elli" />
+    
+     <iss_ce_stoned_ball_inv layer="iss_ce_stoned_ball_inv" condition="collect_ce_stoned_ball_inv" />
+     
+     
+    <ce_09_ho_01 layer="active_zone_ho_01" />
+    <ce_09_ho_02 layer="active_zone_ho_02" />
+    <ce_08 layer="active_zone_go_back" />
+    
+  </ce_09>
+  <ce_09_sub_table map_location="ce_09">
+    <ce_09 layer="close_button" />
+  </ce_09_sub_table>
+  <ce_09_sub_elli map_location="ce_09">
+    <ce_09 layer="close_button" />
+  </ce_09_sub_elli>
+   <ce_09_ho_01 map_location="ce_09">
+    <ce_09 layer="active_zone_go_back" />
+  </ce_09_ho_01>
+  <ce_09_ho_02 map_location="ce_09">
+    <ce_09 layer="active_zone_go_back" />
+  </ce_09_ho_02>
+  
+  <iss_ce_stoned_ball_inv>
+     <ce_09 layer="close_button" />
+     <iss_ce_chest_inv layer="iss_ce_chest_inv" condition="collect_ce_chest_inv" />
+  </iss_ce_stoned_ball_inv>
+  
+  <iss_ce_chest_inv >
+     <current_place layer="close_button" />
+  </iss_ce_chest_inv>
+  
+  
+   <current_place>
+    <ce_01 layer="close_button" condition="condit_current_place_ce_01"/> 
+    <ce_02 layer="close_button" condition="condit_current_place_ce_02"/> 
+    <ce_03 layer="close_button" condition="condit_current_place_ce_03"/> 
+    <ce_04 layer="close_button" condition="condit_current_place_ce_04"/> 
+    <ce_05 layer="close_button" condition="condit_current_place_ce_05"/> 
+    <ce_06 layer="close_button" condition="condit_current_place_ce_06"/> 
+    <ce_07 layer="close_button" condition="condit_current_place_ce_07"/> 
+    <ce_08 layer="close_button" condition="condit_current_place_ce_08"/> 
+    <ce_09 layer="close_button" condition="condit_current_place_ce_09"/> 
+  </current_place>
+  
+  
+  
+</navigation>

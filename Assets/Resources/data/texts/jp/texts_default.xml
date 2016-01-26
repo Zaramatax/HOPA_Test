@@ -1,0 +1,640 @@
+﻿<?xml version="1.0" encoding="unicode"?>
+<texts language="english">
+  <input_letters letters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"/>
+  <no_break_lines_letters letters="!?.,-。"/>
+  <game_title text="Witches' Legacy: Slumbering Darkness">
+    <ce_full text="ウィッチズ・レガシー：まどろみの闇 コレクターズ・エディション"/>
+    <ce_demo text="ウィッチズ・レガシー：まどろみの闇 コレクターズ・エディション"/>
+    <se_full text="ウィッチズ・レガシー：まどろみの闇"/>
+    <se_demo text="ウィッチズ・レガシー：まどろみの闇"/>
+    <survey text="ウィッチズ・レガシー：まどろみの闇 アンケート版"/>
+  </game_title>
+  <save_extras_folder_title text="ウィッチズ・レガシー まどろみの闇 コレクターズ・エディション"/>
+  <pics_with_text to_bfg="This text is drawn on the pictures. Each node of text consists path to the appropriate image. So you won't see any changes in the game after editing texts. You should deliver these texts to us and we will update pictures.">
+    
+  </pics_with_text>
+  <gameplay>
+  
+  <test_scene>
+       <scene_ho_name text="#_scene_ho_name#"/>
+       <test_mini_games_descriptions text=""/>
+  </test_scene>
+   
+   
+    <banner_window>
+      <counter text="#banner_window_counter_var#"/>
+    </banner_window>
+    <achievements>
+      <egghead>
+        <title text="インテリ"/>
+        <title_big text="インテリ"/>
+        <description text="スキップせずに全ミニゲームをクリア"/>
+      </egghead>
+      <unassisted>
+        <title text="独立心"/>
+        <title_big text="独立心"/>
+        <description text="ヒントを使わずに全アイテム探しをクリア"/>
+      </unassisted>
+      <puzzlefan>
+        <title text="鋭い目"/>
+        <title_big text="鋭い目"/>
+        <description text="すべてのパズルピースを発見"/>
+      </puzzlefan>
+      <curious>
+        <title text="好奇心"/>
+        <title_big text="好奇心"/>
+        <description text="すべての変化アイテムを発見"/>
+      </curious>
+      <help_of_friend>
+        <title text="小さなヘルパー"/>
+        <title_big text="小さなヘルパー"/>
+        <description text="小鬼の力を借りる"/>
+      </help_of_friend>
+      <kind_gardener>
+        <title text="優しい庭師"/>
+        <title_big text="優しい庭師"/>
+        <description text="邪悪な木に水を与える"/>
+      </kind_gardener>
+      <fearless_savior>
+        <title text="恐れを知らない救世主"/>
+        <title_big text="恐れを知らない救世主"/>
+        <description text="リンを救出する"/>
+      </fearless_savior>
+      <sharp_wit>
+        <title text="鋭い機転"/>
+        <title_big text="鋭い機転"/>
+        <description text="魔術師の罠から脱出"/>
+      </sharp_wit>
+      <love_wins>
+        <title text="愛は勝つ"/>
+        <title_big text="愛は勝つ"/>
+        <description text="エドワードを救出"/>
+      </love_wins>
+      <wise_man>
+        <title text="賢者"/>
+        <title_big text="賢者"/>
+        <description text="ヒントを使わずにスフィンクスのなぞなぞを解く"/>
+      </wise_man>
+      <true_pathfinder>
+        <title text="真の開拓者"/>
+        <title_big text="真の開拓者"/>
+        <description text="ドラゴンの盾を発見"/>
+      </true_pathfinder>
+      <ace>
+        <title text="エース"/>
+        <title_big text="エース"/>
+        <description text="全アワードを獲得"/>
+      </ace>
+      <counter text="#_ACHIEVEMENT_TOTAL#"/>
+      <button_close text="閉じる"/>
+    </achievements>
+    <map>
+      <place_description text="現在地"/>
+      <quest_description text="タスクあり"/>
+    </map>
+    <diary>
+      <page_number text="#_diary_page_number#"/>
+      <count_pieces_puzzle text="#puzzle_diary_count_pieces_puzzle#/8"/>
+      <hero_name text="#_puzzle_hero_name_text#"/>
+      <puzzle text="パズル"/>
+      <diary text="日記"/>
+      <back text="戻る"/>
+      <help text="ヘルプ"/>
+      <collect text="集める"/>
+      
+      <collect_all_pieces_of_puzzle text="すべてのパズルピースを集めて物語をさらに深く学びましょう。"/>
+      <compile_the_puzzle text="パズルを完成させて登場キャラクターについて学びましょう。"/>
+      <collect_puzzle_story_edward text="エドワードの両親は邪悪な魔女エリザベスによって殺された。魔女ハンター騎士団はエドワードをメンバーとして育てることで一流のハンターになると信じ、エドワードを引き取った。騎士団はエドワードの家族となり、彼は恐れを知らないハンターとして成長した。リンに出会うまで、エドワードは善い心を持った魔女など存在しないと信じていた。自分の魔力を人々のために使うリンの姿を見て、エドワードは恋に落ちた。二人は共に人生を歩むことを望み結婚した。しかし悪が存在する限り、二人は戦い続ける。"/>
+      <collect_puzzle_story_morgana text="魔女の中で最も卑劣な魔女。偉大なる魔女の母テティスの忠実な弟子だったモルガナは、地球を征服しようと試みてきた。冷酷で無慈悲なモルガナは、魔女が君臨する世界を熱望している。モルガナは同等の魔力を持つリンを自分の弟子にしようしたが、リンはその誘惑をはねのけた。しかしモルガナはそこであきらめることはなかった…"/>
+      <collect_puzzle_story_wolfgang text="魔女ハンター騎士団の創立者。その昔、ウルフガングはある女性と恋に落ちた。その美しさに目がくらみ、その女性の心にひそむ闇に気づかなかった…この女性こそがモルガナであった。モルガナはウルフガングの命を奪い、彼の魂が永遠に死者の世界をさまようように呪いをかけた。しかしそこで彼はすべてをあきらめたわけではなかった。死者の世界から邪悪なものが人間界に入り込むのを防ぐために彼は奮闘している。"/>
+      <collect_puzzle_story_mathias text="手品師と人形師の親を持つマティアスは貧しい家庭に生まれた。彼の母親はマティアスが小さな頃に他界した。父親は通りで人形劇を行いわずかな生活費を稼いだ。父親から人形劇の技術を学んだマティアスは、貧困という残虐さと戦うために旅に出た。世界中を旅していた彼は、ある古い図書館で黒魔術の本と出会った。本から学べることに限りがあることに気づいたマティアスは師匠を求めるようになった。そして黒いマントを身に着けた人物が目の前に現れ、彼の師匠となった…それはモルガナだった。"/>
+      <instrunction_title text="説明"/>
+      <button_instructions text="説明"/>
+      <instrunction_description text="9個のパズルピースを発見したら、パズルを完成させます。ピースを選択してふさわしい場所に動かしてください。パズルが完成すると登場キャラクターのストーリーを読むことができます。"/>
+      <click_to_continued text="続行…"/>
+      <comment_button_collect text="パズルピースを見つけてください！"/>
+      <comment_button_help text="パズルを完成させて登場キャラクターについて学びましょう。"/>
+      <unlock_screenshot text="壁紙をアンロック"/>
+    </diary>
+    <end_demo>
+      <text_0 text="体験版をお試しいただきありがとうございました！"/>
+      <text_ok_but text="OK"/>
+    </end_demo>
+    <ui>
+    
+      <loading text="ロード中" />
+      <loading_point text="..."/>
+      <give_item_window>
+        <well_done text="お見事！"/>
+        <you_got_a text="アイテム入手！{rule font(button)}{%ITEM_NAME%}"/>
+        <ok_button_label text="OK"/>
+      </give_item_window>
+      <puzzle_button_text text="マッチモードに切替"/>
+      <unpuzzle_button_text text="マッチモードに切替"/>
+      <nothing_to_do_on_scene text="ここでできることはないわ。"/>
+      <hint text="ヒント"/>
+      <skip text="スキップ"/>
+      <hint_unavailable text="現在の難易度ではヒントボタンを利用できません。"/>
+      <skip_unavailable text="現在の難易度ではスキップボタンを利用できません。"/>
+      <reset text="リセット"/>
+      <inventory text="所持品"/>
+      <skip_cut_scene text="スキップ"/>
+      <switch_to_mahjong text="マッチモードに切替"/>
+      <switch_to_ho text="アイテム探しに切替"/>
+      <items_list text="アイテムリスト"/>
+      <_items_list text="残りアイテム：%ITEMS_LEFT% / %ITEMS_TOTAL%"/>
+      <mini_game_description_title text="ルール"/>
+      <scores_text_main_menu text=""/>
+    </ui>
+    <ho_card_pairs>
+      <button_instruction text="ヘルプ"/>
+      <ho_puzzle_instruction>
+        <button_continue text="続行"/>
+        <instruction text="同じカードのペアを見つけてボードからすべてのカードを消去しましょう。カードのペアを見つける度にリストのアイテムが1つ消えます。プレイモードはいつでも切り替え可能です。"/>
+        <instruction_label text="説明"/>
+      </ho_puzzle_instruction>
+    </ho_card_pairs>
+    <comments>
+      <item_misuse>
+        <default>
+          <text_00 text="ここにははまらない。 "/>
+          <text_01 text="違うものが必要よ。 "/>
+          <text_02 text="ここに使うものじゃない。 "/>
+          <text_03 text="いい考えとは言えなかったわね。 "/>
+          <text_04 text="何だか間違っているような気がする。 "/>
+          <text_05 text="やってみる価値はあった！ "/>
+        </default>
+      </item_misuse>
+      <rapid_clicks>
+        <text_00 text="動揺しているのかしら？ "/>
+        <text_01 text="冷静さを失っちゃだめ。 "/>
+        <text_02 text="慌てると何か見落としてしまうかもしれない。 "/>
+      </rapid_clicks>
+      <inventory_item_partially_collected text="ほかのパーツを先に見つけましょう。 "/>
+    </comments>
+    <dialogs>
+      <click_to_continue text="続行…"/>
+    </dialogs>
+  </gameplay>
+  <strategy>
+    <title text="攻略ガイド"/>
+    <base text="ベース"/>
+    <extras text="ボーナス"/>
+    <back text="戻る"/>
+  </strategy>
+  <credits>
+    <block_00>
+      <title_ text="Big Fish Games"/>
+      <image text="bfg_logo"/>
+      <text_00 text=""/>
+    </block_00>
+    <block_01>
+      <title text="Director and Executive Producer"/>
+      <text_00 text="Isaias Vallejo"/>
+    </block_01>
+    <block_02>
+      <title text="Manager, Game Production and Lead Producer"/>
+      <text_00 text="Zachary Hines"/>
+    </block_02>
+    <block_03>
+      <title text="Associate Game Producer"/>
+      <text_00 text="Phil Hamilton"/>
+    </block_03>
+    <block_04>
+      <title text="Senior Producer"/>
+      <text_00 text="Brishan Merrill-Brown"/>
+    </block_04>
+    <block_05>
+      <title text="Manager, Narrative Design"/>
+      <text_00 text="Lisa Brunette"/>
+    </block_05>
+    <block_06>
+      <title text="Narrative Design"/>
+      <text_00 text="Faye Hoerauf"/>
+      <text_01 text="Joanie Rich"/>
+      <text_02 text=""/>
+      <text_03 text=""/>
+      <text_04 text=""/>
+      <text_05 text=""/>
+    </block_06>
+    <block_07>
+      <image text="ef_logo"/>
+      <title_ text="EleFun Games"/>
+      <text_00 text=""/>
+    </block_07>
+    <block_08>
+      <title text="President"/>
+      <text_00 text="Sergey Shatokhin"/>
+    </block_08>
+    <block_09>
+      <title text="Chief Executive Officer"/>
+      <text_00 text="Alexander Gulyaev"/>
+    </block_09>
+    <block_10>
+      <title text="Chief Operating Officer"/>
+      <text_00 text="Vladimir Krylov"/>
+    </block_10>
+    <block_11>
+      <title text="Chief Technology Officer"/>
+      <text_00 text="Alexander Gulyaev"/>
+    </block_11>
+    <block_12>
+      <title text="Creative Director"/>
+      <text_00 text="Andrey Yanchenko"/>
+    </block_12>
+    <block_13>
+      <title text="Art Director"/>
+      <text_00 text="Sergey Shatokhin"/>
+    </block_13>
+    <block_14>
+      <title text="Art Producer"/>
+      <text_00 text="Sergey Hryukin"/>
+    </block_14>
+    <block_15>
+      <title text="Producer"/>
+      <text_00 text="Olesya Gumenaya"/>
+    </block_15>
+    <block_16>
+      <title text="Project Manager"/>
+      <text_00 text="Dmitriy Blazhennov"/>
+    </block_16>
+    <block_17>
+      <title text="Game Design"/>
+      <text_00 text="Maria Erfilova"/>
+    </block_17>
+    <block_18>
+      <title text="Scenarist"/>
+      <text_00 text="Olga Barmina"/>
+    </block_18>
+    <block_19>
+      <title text="Programming"/>
+      <text_00 text="Dmitry Shabanov"/>
+      <text_01 text="Vyacheslav Spirin"/>
+    </block_19>
+    <block_20>
+      <title text="Lead Scripting"/>
+      <text_00 text="Vadim Voronin"/>
+    </block_20>
+    <block_21>
+      <title text="Scripting"/>
+      <text_00 text="Mikhail Borodin"/>
+      <text_01 text="Alexey Efremov"/>
+      <text_02 text="Mikhail Raznikov"/>
+      <text_03 text="Dmitriy Suzonov"/>
+      <text_04 text="Alexey Arhipov"/>
+      <text_05 text="Anastasia Voronova"/>
+      <text_06 text="Marina Makarova"/>
+    </block_21>
+    <block_22>
+      <title text="Designers"/>
+      <text_00 text="Alexander Nekrasov"/>
+      <text_01 text="Ekaterina Pushnina"/>
+    </block_22>
+    <block_23>
+      <title text="Testing"/>
+      <text_00 text="Natalia Tsalko"/>
+      <text_01 text="Danil Kultishev"/>
+    </block_23>
+    <block_24>
+      <title text="Lead Artists"/>
+      <text_00 text="Maria Hryukina"/>
+    </block_24>
+    <block_25>
+      <title text="Artists"/>
+      <text_00 text="Julia Pechugina"/>
+      <text_01 text="Elena Zakharova"/>
+      <text_02 text="Roman Kolmakov"/>
+      <text_03 text="Anna Gromova"/>
+      <text_04 text="Margarita Narozhnykh"/>
+      <text_05 text="Irina Taurskaya"/>
+      <text_06 text="Georgiy Vostrikovs"/>
+    </block_25>
+    <block_26>
+      <title text="3D Modeling and Visualization"/>
+      <text_00 text="Sergey Chanov"/>
+      <text_01 text="Ekaterina Mozharovskaya"/>
+      <text_02 text="Igor Khusnaydinov"/>
+      <text_03 text="Andrey Boldizhar"/>
+      <text_04 text="Alexander Shatokhin"/>
+      <text_05 text="Dmitry Kutcenko"/>
+    </block_26>
+    <block_27>
+      <title text="Music"/>
+      <text_00 text="Alexey Arhipov"/>
+    </block_27>
+    <block_28>
+      <title text="Sound and SFX"/>
+      <text_00 text="Alexey Arhipov"/>
+    </block_28>
+    <block_29>
+      <title text="Voice Artists"/>
+      <text_00 text="Matthew Posner"/>
+      <text_01 text="Kendra Hoffman"/>
+      <text_02 text="Brittany Pressley"/>
+      <text_03 text="Jamal Fahim"/>
+      <text_04 text="Karen Kahler"/>
+      <text_05 text="Emily Eldridge"/>
+      <text_06 text="Matthew Lerner-Lam"/>
+      <text_07 text="Patrick Conn"/>
+    </block_29>
+    <block_30>
+      <title text="Special Thanks"/>
+      <text_00 text="Mariya Sinyavskaya"/>
+      <text_01 text="Anton Nikolsky"/>
+      <text_02 text="Nikita Klabukov"/>
+      <text_03 text="Julia Golubeva"/>
+      <text_04 text="Alexey Belkin"/>
+      <text_05 text="Dmitriy Shubeykin"/>
+      <text_06 text="Kristina Shatokhina"/>
+      <text_07 text="Konstantin Grigoriev"/>
+      <text_08 text=""/>
+      <text_09 text=""/>
+      <text_10 text=""/>
+      <text_11 text=""/>
+      <text_12 text=""/>
+    </block_30>
+    <block_31>
+      <title text="(c) 2015 Big Fish Games, Inc., "/>
+      <text_00 text="All Rights Reserved."/>
+      <text_01 text="{rule scale(0.9)}{ Big Fish、Big Fish のロゴとウィッチズ・レガシー：まどろみの闇はBig Fish Games, Inc. の登録商標です。 }"/>
+    </block_31>
+    <block_end>
+      <title text="The End"/>
+    </block_end>
+  </credits>
+  <main_menu>
+    <profile_name text="%PROFILE_NAME%"/>
+    <click_here_text text="プレイヤーの変更はここを選択"/>
+    <common>
+      <ok text="OK"/>
+      <cancel text="キャンセル"/>
+      <yes text="はい"/>
+      <no text="いいえ"/>
+      <back text="戻る"/>
+      <continue text="続行"/>
+      <exit text="終了"/>
+      <enter_your_name text="名前を入力してください"/>
+      <hit_mouse_button text="続ける…"/>
+      <loading text="ロード中です。お待ちください…"/>
+    </common>
+    <nosound>
+      <title text="注意！"/>
+      <text text="サウンドデバイスが検知されませんでした。サウンドなしでゲームが進行します。"/>
+    </nosound>
+    <delete_profile>
+      <title text="プロフィール削除"/>
+      <text text="次のプロフィールを削除しますか：'%PROFILE_NAME%'？"/>
+    </delete_profile>
+    <bad_profile>
+      <title text="破損したプロフィール"/>
+      <text text="いくつかのプロフィールが破損したため削除されました。"/>
+    </bad_profile>
+    <too_many_profiles>
+      <title text="プロフィール最大数"/>
+      <text text="作成できるプロフィールは最大15個です。"/>
+    </too_many_profiles>
+    <exit>
+      <title text="終了？"/>
+      <text text="ゲームを終了しますか？"/>
+    </exit>
+    <confirmation>
+      <title text="確認"/>
+      <text text="実行しますか？"/>
+      <wallpaper_set text="この画像をデスクトップの背景に設定しますか？"/>
+      <wallpaper_save text="この画像をマイドキュメントに保存しますか？"/>
+      <concept_save text="このコンセプトアートをマイドキュメントに保存しますか？"/>
+      <screensaver_set text="この画像をスクリーンセーバーに設定しますか？"/>
+      <music_save text="この音楽ファイルをマイドキュメントに保存しますか？"/>
+    </confirmation>
+    <game_complete>
+      <title text="ゲームクリア"/>
+      <text text="おめでとうございます！本編を攻略しました。ボーナス章をプレイするにはメインメニューのプレイボタンを選択してください。"/>
+      <text_ce text="おめでとうございます！ボーナス章を含め、ゲームを完全クリアしました。"/>
+    </game_complete>
+    <game_extras_note>
+      <title text="ボーナスコンテンツ"/>
+      <text text="ゲームの本編をクリアするとボーナス章がアンロックされます。"/>
+      <text_2 text="ボーナスコンテンツは完全版のみで保存できます。"/>
+      <text_3 text="パズルピースを集めて壁紙をアンロックしましょう。ゲームをクリアしている場合、足りないピースを集めるために再度ゲームをプレイし、ボーナスパズルをアンロックすることができます。"/>
+    </game_extras_note>
+    <extras_menu>
+      <play text="ゲーム"/>
+      <screensavers text="スクリーンセーバー"/>
+      <wallpapers text="壁紙"/>
+      <music text="サウンドトラック"/>
+      <concept text="アートギャラリー"/>
+      <puzzle text="パズル"/>
+      <puzzle_second_part text=""/>
+      <puzzle_instruction text="説明"/>
+      <puzzle_set text="設定"/>
+      <achievs text="アワード"/>
+      <exit text="戻る"/>
+      <set text="設定"/>
+      <save text="保存"/>
+      <play_button text="プレイ"/>
+      <stop_button text="停止"/>
+      <complete_text text="ゲームクリア"/>
+      <complete_title text="ゲームクリア"/>
+      <button_extras_prev text="プレビュー"/>
+      <button_extras_next text="次へ"/>
+    </extras_menu>
+    <bonus_content>
+      <music>
+        <track_0 text="メインメニューのテーマ"/>
+        <track_1 text="山のせせらぎ"/>
+        <track_2 text="追憶"/>
+        <track_3 text="日記のメロディ"/>
+        <track_4 text="謎に包まれた場所"/>
+        <track_5 text="ボーナス章イントロ"/>
+        <track_6 text="ミニチュアの町"/>
+        <track_7 text="恐ろしい秘密"/>
+        <track_8 text="列車のミニゲーム"/>
+        <track_9 text="超現実主義"/>
+        <track_10 text="橋"/>
+      </music>
+    </bonus_content>
+    <game_logic>
+      <menu text="メニュー"/>
+      <guide text="攻略ガイド"/>
+      <calendar_counter text="#_text_update_calendar_counter#"/>
+    </game_logic>
+    <game_logic_exit>
+      <title text="ゲームを終了？"/>
+      <text text="ゲームは自動的に保存されます。"/>
+      <leave text="終了"/>
+    </game_logic_exit>
+    <game_logic_menu>
+      <title text="ゲームメニュー"/>
+      <restart text="レベルを再スタート"/>
+      <return text="続行"/>
+      <return_to_map text="メインメニュー"/>
+      <options text="オプション"/>
+      <change_difficulty text="難易度変更"/>
+      <go_to_map text="地図"/>
+    </game_logic_menu>
+    <game_logic_pause>
+      <title text="一時停止中"/>
+      <text text="ゲームは一時停止中です。"/>
+      <resume text="再開"/>
+    </game_logic_pause>
+    <game_logic_restart>
+      <title text="再スタート？"/>
+      <text text="このレベルを再スタートしますか？"/>
+    </game_logic_restart>
+    <game_replay>
+      <title text="ゲームの再プレイ"/>
+      <button_replay text="はい"/>
+      <button_exit text="いいえ"/>
+      <text text="ゲームはクリア済みです。もう一度プレイしますか？現在のアワード達成状況をそのままにゲームを再度プレイできます。達成していないアワードの獲得と残りのパズルピースの発見を目指しましょう。"/>
+      <text_ce text="ゲームはクリア済みです。もう一度プレイしますか？現在のアワード達成状況をそのままにゲームを再度プレイできます。達成していないアワードの獲得と未発見のパズルピースの発見を目指しましょう。"/>
+    </game_replay>
+    <main_menu>
+      <main_title text="ようこそ"/>
+      <start text="スタート"/>
+      <options text="オプション"/>
+      <change_player text="プレイヤー変更"/>
+      <exit text="終了"/>
+      <more_games text="その他情報"/>
+      <credits text="クレジット"/>
+    </main_menu>
+    <new_profile>
+      <title text="新規プレイヤー"/>
+    </new_profile>
+    <options>
+      <title text="オプション"/>
+      <sound_volume text="効果音"/>
+      <music_volume text="音楽"/>
+      <enviroment_volume text="環境音"/>
+      <voice_volume text="音声"/>
+      <fullscreen text="フルスクリーン"/>
+      <widescreen text="ワイドスクリーン"/>
+      <custom_cursor text="カスタムアイコン"/>
+      <video_mode text="ビデオモード"/>
+      <apply text="適用"/>
+      <defaults text="デフォルト設定"/>
+      <credits text="クレジット"/>
+    </options>
+    <select_the_game>
+      <title text="どちらをプレイしますか？"/>
+      <not_covered text="ロック未解除"/>
+      <play_button text="プレイ"/>
+      <main_story>
+        <title text="本編"/>
+        <game_time text="プレイ時間：#MAIN_GAMEPLAY_TIME_HOURS#時間#MAIN_GAMEPLAY_TIME_MINUTES#分"/>
+        <game_progress text="ゲーム進行：#MAIN_GAMEPLAY_PROGRESS#%"/>
+      </main_story>
+      <bonus_gameplay>
+        <title text="ボーナス章"/>
+        <game_time text="プレイ時間：#BONUS_GAMEPLAY_TIME_HOURS#時間#BONUS_GAMEPLAY_TIME_MINUTES#分"/>
+        <game_progress text="ゲーム進行：#BONUS_GAMEPLAY_PROGRESS#%"/>
+      </bonus_gameplay>
+    </select_the_game>
+    <profile_name_conflict>
+      <title text="名前の重複"/>
+      <text text="この名前はすでに使われています。"/>
+    </profile_name_conflict>
+    <profiles>
+      <title text="プレイヤーを選択"/>
+      <create text="作成"/>
+      <rename text="名前の編集"/>
+      <delete text="削除"/>
+      <done text="OK"/>
+    </profiles>
+    <rename_profile>
+      <title text="プロフィール名変更"/>
+    </rename_profile>
+    <welcome>
+      <title text="ようこそ"/>
+      <player text="Player"/>
+    </welcome>
+    <difficulty_level>
+      <description>
+        <text_definition_title_casual text="初めてアイテム探しゲームをプレイする方におすすめ。"/>
+        <text_definition_title_normal text="アイテム探しファンにおすすめ。"/>
+        <text_definition_title_hard text="難易度の高いゲームに挑戦したいハードコアゲーマーにおすすめ。"/>
+        <hos_penatly_section>
+          <on text="- アイテム探し中のペナルティ有り"/>
+          <off text="- アイテム探し中のペナルティ無し"/>
+        </hos_penatly_section>
+        <hos_sparkles_section>
+          <on text="- アイテム探しのきらめき表示有り"/>
+          <off text="- アイテム探しのきらめき表示無し"/>
+        </hos_sparkles_section>
+        <hint_section>
+          <active text="- ヒントチャージ時間：#window_difficulty_text# 秒"/>
+          <inactive text="- ヒントボタン使用不可"/>
+        </hint_section>
+        <skip_section>
+          <active text="- スキップチャージ時間：#window_difficulty_text# 秒"/>
+          <inactive text="- スキップボタン使用不可"/>
+        </skip_section>
+        <sparkles_section>
+          <active text="-  アイテムやアクション可能エリアを #window_difficulty_text# 秒置きにきらめきで表示"/>
+          <inactive text="- アイテムやアクション可能エリアのきらめき表示無し"/>
+        </sparkles_section>
+      </description>
+      <title_select_difficulty_game text="難易度を選択"/>
+      <difficulty_section>
+        <casual text="カジュアル"/>
+        <normal text="ノーマル"/>
+        <hard text="ハード"/>
+        <custom text="カスタム"/>
+      </difficulty_section>
+      <difficulty_title>
+        <casual text="カジュアル"/>
+        <normal text="ノーマル"/>
+        <hard text="ハード"/>
+        <custom text="カスタム"/>
+      </difficulty_title>
+      <text_definition_custom_section text=""/>
+      <custom_section>
+        <hint_section>
+          <title text="ヒントチャージ速度"/>
+          <quick text="速い"/>
+          <normal text="普通"/>
+          <inactive text="オフ"/>
+        </hint_section>
+        <skip_section>
+          <title text="スキップチャージ速度"/>
+          <quick text="速い"/>
+          <normal text="普通"/>
+          <inactive text="オフ"/>
+        </skip_section>
+        <sparkles_section>
+          <title text="きらめき"/>
+          <scenes text="通常画面"/>
+          <hidden_object text="アイテム探し"/>
+        </sparkles_section>
+        <hos_penatly_section>
+          <title text="アイテム探し&#xD;&#xA;ペナルティ"/>
+          <on text="ON"/>
+          <off text="OFF"/>
+        </hos_penatly_section>
+        <hos_sparkles_section>
+          <title text="アイテム探しの&#xD;&#xA;きらめき表示"/>
+          <on text="ON"/>
+          <off text="OFF"/>
+        </hos_sparkles_section>
+      </custom_section>
+      <text_background text="難易度はプレイ中でも変更できます。"/>
+      <window_difficulty_note>
+        <title text="お知らせ"/>
+        <text text="ゲームをプレイ中もメニューから難易度を変更することができます。"/>
+      </window_difficulty_note>
+    </difficulty_level>
+    <strategy>
+      <title text="攻略ガイド"/>
+      <base text="ベース"/>
+      <extras text="ボーナス"/>
+      <back text="戻る"/>
+    </strategy>
+  </main_menu>
+  <fonts_listener>
+    <title text="アワード"/>
+    <title_font text="#_achievements_title_font#"/>
+    <title_intersymbol_factor text="#_title_intersymbol_factor#"/>
+    <ABCDEF text="А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9"/>
+    <ABCDEF_2 text="АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзиклмнопрстуфхцчшщъыьэюяΑBCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"/>
+    <ABCDEF_3 text="開発中です。"/>
+  </fonts_listener>
+</texts>

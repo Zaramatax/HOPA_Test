@@ -63,6 +63,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Framework\CloseSubLocation.cs" />
+    <Compile Include="Assets\Scripts\Framework\CommentManager.cs" />
+    <Compile Include="Assets\Scripts\Framework\CommentZone.cs" />
     <Compile Include="Assets\Scripts\Framework\CursorManager.cs" />
     <Compile Include="Assets\Scripts\Framework\DropZone.cs" />
     <Compile Include="Assets\Scripts\Framework\GlobalVariables.cs" />
@@ -78,6 +80,13 @@
     <Compile Include="Assets\Scripts\Framework\InventoryItem.cs" />
     <Compile Include="Assets\Scripts\Framework\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\Framework\InventoryPanel.cs" />
+    <Compile Include="Assets\Scripts\Framework\Localization\Localization.cs" />
+    <Compile Include="Assets\Scripts\Framework\Localization\LocalizationManager.cs" />
+    <Compile Include="Assets\Scripts\Framework\Localization\UIAutoLocalization.cs" />
+    <Compile Include="Assets\Scripts\Framework\Localization\UILocalization.cs" />
+    <Compile Include="Assets\Scripts\Framework\Localization\UILocalizationBase.cs" />
+    <Compile Include="Assets\Scripts\Framework\Localization\UILocalizationGroup.cs" />
+    <Compile Include="Assets\Scripts\Framework\Localization\UISelectLocale.cs" />
     <Compile Include="Assets\Scripts\Framework\Location.cs" />
     <Compile Include="Assets\Scripts\Framework\LocationLoader.cs" />
     <Compile Include="Assets\Scripts\Framework\LocationManager.cs" />
@@ -97,6 +106,43 @@
     <Compile Include="Assets\Scripts\Game\Scenes\Sub_5_Door_in_a_greenhouse.cs" />
     <Compile Include="Assets\Scripts\Game\Scenes\WitchesBackyard.cs" />
     <Compile Include="Assets\Scripts\Game\Scenes\Workshop.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Resources\data\hint_system\autotest_config.xml" />
+    <None Include="Assets\Resources\data\hint_system\navigation_ce.xml" />
+    <None Include="Assets\Resources\data\hint_system\navigation_se.xml" />
+    <None Include="Assets\Resources\data\hint_system\quest_ce.xml" />
+    <None Include="Assets\Resources\data\hint_system\quest_se.xml" />
+    <None Include="Assets\Resources\data\hint_system\quest_specialty_ce.xml" />
+    <None Include="Assets\Resources\data\hint_system\quest_specialty_se.xml" />
+    <None Include="Assets\Resources\data\texts\DE\strategy_guide\guide.xml" />
+    <None Include="Assets\Resources\data\texts\DE\strategy_guide\guide_demo.xml" />
+    <None Include="Assets\Resources\data\texts\DE\texts\texts.xml" />
+    <None Include="Assets\Resources\data\texts\DE\texts\texts_ce.xml" />
+    <None Include="Assets\Resources\data\texts\DE\texts\texts_config.xml" />
+    <None Include="Assets\Resources\data\texts\DE\texts\texts_default.xml" />
+    <None Include="Assets\Resources\data\texts\DE\texts\texts_first_hour.xml" />
+    <None Include="Assets\Resources\data\texts\DE\texts\texts_se.xml" />
+    <None Include="Assets\Resources\data\texts\FR\strategy_guide\guide.xml" />
+    <None Include="Assets\Resources\data\texts\FR\strategy_guide\guide_demo.xml" />
+    <None Include="Assets\Resources\data\texts\FR\texts\texts.xml" />
+    <None Include="Assets\Resources\data\texts\FR\texts\texts_ce.xml" />
+    <None Include="Assets\Resources\data\texts\FR\texts\texts_config.xml" />
+    <None Include="Assets\Resources\data\texts\FR\texts\texts_default.xml" />
+    <None Include="Assets\Resources\data\texts\FR\texts\texts_first_hour.xml" />
+    <None Include="Assets\Resources\data\texts\FR\texts\texts_se.xml" />
+    <None Include="Assets\Resources\data\texts\en\texts.xml" />
+    <None Include="Assets\Resources\data\texts\en\texts_ce.xml" />
+    <None Include="Assets\Resources\data\texts\en\texts_config.xml" />
+    <None Include="Assets\Resources\data\texts\en\texts_default.xml" />
+    <None Include="Assets\Resources\data\texts\en\texts_first_hour.xml" />
+    <None Include="Assets\Resources\data\texts\en\texts_se.xml" />
+    <None Include="Assets\Resources\data\texts\jp\texts.xml" />
+    <None Include="Assets\Resources\data\texts\jp\texts_ce.xml" />
+    <None Include="Assets\Resources\data\texts\jp\texts_config.xml" />
+    <None Include="Assets\Resources\data\texts\jp\texts_default.xml" />
+    <None Include="Assets\Resources\data\texts\jp\texts_first_hour.xml" />
+    <None Include="Assets\Resources\data\texts\jp\texts_se.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

@@ -1,0 +1,330 @@
+<quests active="1">
+	<!--1-->
+	<se_01>
+		<collect_morph_se_01 type="condition" highlight_layer="morph_01" condition="collect_morph_se_01='1'">
+			<dependency>
+			</dependency>
+		</collect_morph_se_01>
+		<collect_puzzle_se_01 type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_01='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_01>
+	</se_01>
+	
+	<!--2-->
+	<se_02>
+		<collect_morph_se_02 type="condition" highlight_layer="morph_01" condition="collect_morph_se_02='1'">
+			<dependency>
+			</dependency>
+		</collect_morph_se_02>
+		<collect_puzzle_se_02 type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_02='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_02>
+	</se_02>
+	
+	<!-- 3 -->
+	<se_03>
+		<collect_morph_se_03 type="condition" highlight_layer="morph_01" condition="collect_morph_se_03='1'">
+			<dependency>
+				<use_se_mirror_inv />
+			</dependency>
+		</collect_morph_se_03>
+		<collect_puzzle_se_03 type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_03='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_03>
+	</se_03>
+	
+	<!-- 4 -->
+	<se_04>
+		<collect_puzzle_se_04 type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_04='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_04>
+	</se_04>
+	<se_04_sub_cellar>
+		<collect_morph_se_04 type="condition" highlight_layer="morph_01" condition="collect_morph_se_04_sub_cellar='1'">
+			<dependency>
+				<use_se_silhouette_cup_inv />
+			</dependency>
+		</collect_morph_se_04>
+	</se_04_sub_cellar>
+	
+	<!-- 5 -->
+	<se_05>
+		<collect_morph_se_05 type="condition" highlight_layer="morph_01" condition="collect_morph_se_05='1'">
+			<dependency>
+			</dependency>
+		</collect_morph_se_05>
+		<collect_puzzle_se_05 type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_05='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_05>
+	</se_05>
+	<se_05_sub_doll>
+		<collect_puzzle_se_05_sub_doll type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_05_sub_doll='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_05_sub_doll>
+	</se_05_sub_doll>
+	
+	<!-- 6 -->
+	<se_06>
+		<collect_morph_se_06 type="condition" highlight_layer="morph_01" condition="collect_morph_se_06='1'">
+			<dependency>
+			</dependency>
+		</collect_morph_se_06>
+		<collect_puzzle_se_06 type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_06='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_06>
+	</se_06>
+	
+	<!-- 7 -->
+	<se_07>
+		<collect_morph_se_07 type="condition" highlight_layer="morph_01" condition="collect_morph_se_07='1'">
+			<dependency>
+				<use_se_chain_with_a_hook_inv />
+			</dependency>
+		</collect_morph_se_07>
+		<collect_puzzle_se_07 type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_07='1'">
+			<dependency>
+				<use_se_chain_with_a_hook_inv />
+			</dependency>
+		</collect_puzzle_se_07>
+	</se_07>
+	
+	<!-- 8 -->
+	<se_08>
+		<collect_morph_se_08 type="condition" highlight_layer="morph_01" condition="collect_morph_se_08='1'">
+			<dependency>
+			</dependency>
+		</collect_morph_se_08>
+		<collect_puzzle_se_08 type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_08='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_08>
+	</se_08>
+	
+	<!-- 9 -->
+	<se_09>
+		<collect_puzzle_se_09 type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_09='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_09>
+		<collect_morph_se_09 type="condition" highlight_layer="morph_01" condition="collect_morph_se_09='1'">
+			<dependency>
+			</dependency>
+		</collect_morph_se_09>
+	</se_09>
+	
+	<!-- 10 -->
+	<se_10>
+		<collect_puzzle_se_10 type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_10='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_10>
+		<collect_morph_se_10 type="condition" highlight_layer="morph_01" condition="collect_morph_se_10='1'">
+			<dependency>
+			</dependency>
+		</collect_morph_se_10>
+	</se_10>
+	
+	<!-- 11 -->
+	<se_11_sub_monster>
+		<collect_puzzle_se_11_sub_monster type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_11_sub_monster='1'">
+			<dependency>
+				<use_se_short_sword_inv />
+			</dependency>
+		</collect_puzzle_se_11_sub_monster>
+	</se_11_sub_monster>
+	<se_11>
+		<collect_morph_se_11 type="condition" highlight_layer="morph_01" condition="collect_morph_se_11='1'">
+			<dependency>
+			</dependency>
+		</collect_morph_se_11>
+	</se_11>
+	
+	<!-- 12 -->
+	<se_12>
+		<collect_puzzle_se_12 type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_12='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_12>
+		<collect_morph_se_12 type="condition" highlight_layer="morph_01" condition="collect_morph_se_12='1'">
+			<dependency>
+			</dependency>
+		</collect_morph_se_12>
+	</se_12>
+	
+	<!-- 13 -->
+	<se_13>
+		<collect_puzzle_se_13 type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_13='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_13>
+	</se_13>
+	<se_13_sub_table>
+		<collect_morph_se_13 type="condition" highlight_layer="morph_01" condition="collect_morph_se_13_sub_table='1'">
+			<dependency>
+			</dependency>
+		</collect_morph_se_13>
+	</se_13_sub_table>
+		
+	
+	
+	<!-- 14 -->
+	<se_14>
+		<collect_puzzle_se_14 type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_14='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_14>
+		<collect_morph_se_14 type="condition" highlight_layer="morph_01" condition="collect_morph_se_14='1'">
+			<dependency>
+			</dependency>
+		</collect_morph_se_14>
+	</se_14>
+	
+	<!-- 15 -->
+	<se_15>
+		<collect_morph_se_15 type="condition" highlight_layer="morph_01" condition="collect_morph_se_15='1'">
+			<dependency>
+			</dependency>
+		</collect_morph_se_15>
+	</se_15>
+	<se_15_sub_tethys_corner>
+		<collect_puzzle_se_15_sub_tethys_corner type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_15_sub_tethys_corner='1'">
+			<dependency>
+				<use_se_press_key_inv />
+			</dependency>
+		</collect_puzzle_se_15_sub_tethys_corner>
+	</se_15_sub_tethys_corner>
+	
+	
+	<!-- 16 -->
+	<se_16_sub_armor_monster>
+		<collect_puzzle_se_16_sub_armor_monster type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_16_sub_armor_monster='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_16_sub_armor_monster>
+		<collect_morph_se_16_sub_armor_monster type="condition" highlight_layer="morph_01" condition="collect_morph_se_16_sub_armor_monster='1'">
+			<dependency>
+			</dependency>
+		</collect_morph_se_16_sub_armor_monster>
+	</se_16_sub_armor_monster>
+	
+	
+	<!-- 17 -->
+	<se_17>
+		<collect_puzzle_se_17 type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_17='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_17>
+		<collect_morph_se_17 type="condition" highlight_layer="morph_01" condition="collect_morph_se_17='1'">
+			<dependency>
+			</dependency>
+		</collect_morph_se_17>
+	</se_17>
+	
+	
+	<!-- 18 -->
+	<se_18>
+		<collect_morph_se_18 type="condition" highlight_layer="morph_01" condition="collect_morph_se_18='1'">
+			<dependency>
+			</dependency>
+		</collect_morph_se_18>
+	</se_18>
+	<se_18_sub_artefakt>
+		<collect_puzzle_se_18 type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_18_sub_artefakt='1'">
+			<dependency>
+				<use_se_burned_image_inv />
+			</dependency>
+		</collect_puzzle_se_18>
+	</se_18_sub_artefakt>
+	
+	
+	
+	<!-- 19 -->
+	<se_19>
+		<collect_puzzle_se_19 type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_19='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_19>
+		<collect_morph_se_19 type="condition" highlight_layer="morph_01" condition="collect_morph_se_19='1'">
+			<dependency>
+			</dependency>
+		</collect_morph_se_19>
+	</se_19>
+	
+	
+	<!-- 20 -->
+	<se_20>
+		<collect_puzzle_se_20 type="condition" highlight_layer="puzzle_main_scene" condition="collect_puzzle_se_20='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_20>
+		<collect_morph_se_20 type="condition" highlight_layer="morph_01" condition="collect_morph_se_20='1'">
+			<dependency>
+			</dependency>
+		</collect_morph_se_20>
+	</se_20>
+	<se_20_sub_basement>
+		<collect_puzzle_se_20_sub_basement type="condition" highlight_layer="puzzle_sub" condition="collect_puzzle_se_20_sub_basement='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_20_sub_basement>
+	</se_20_sub_basement>
+	
+	
+	<!-- 21 -->
+	<se_21>
+		<collect_puzzle_se_21 type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_21='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_21>
+		<collect_morph_se_21 type="condition" highlight_layer="morph_01" condition="collect_morph_se_21='1'">
+			<dependency>
+			</dependency>
+		</collect_morph_se_21>
+	</se_21>
+	
+	<!-- 22 -->
+	<se_22_sub_stone_processing>
+		<collect_puzzle_se_22_sub_stone_processing type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_22_sub_stone_processing='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_22_sub_stone_processing>
+	</se_22_sub_stone_processing>
+	<se_22_sub_crystals>
+		<collect_morph_se_22_sub_crystals type="condition" highlight_layer="morph_01" condition="collect_morph_se_22_sub_crystals='1'">
+			<dependency>
+			</dependency>
+		</collect_morph_se_22_sub_crystals>
+	</se_22_sub_crystals>
+	
+	
+	<!-- 23 -->
+	<se_23>
+		<collect_puzzle_se_23 type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_23='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_23>
+		<collect_morph_se_23 type="condition" highlight_layer="morph_01" condition="collect_morph_se_23='1'">
+			<dependency>
+			</dependency>
+		</collect_morph_se_23>
+	</se_23>
+	
+	<!-- 24 -->
+	<se_24>
+		<collect_puzzle_se_24 type="condition" highlight_layer="puzzle" condition="collect_puzzle_se_24='1'">
+			<dependency>
+			</dependency>
+		</collect_puzzle_se_24>
+		<collect_morph_se_24 type="condition" highlight_layer="morph_01" condition="collect_morph_se_24='1'">
+			<dependency>
+			</dependency>
+		</collect_morph_se_24>
+	</se_24>
+</quests>

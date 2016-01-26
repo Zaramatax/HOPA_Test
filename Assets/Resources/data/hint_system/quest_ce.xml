@@ -1,0 +1,1636 @@
+<quests final_quest="final_quest">
+  <ce_01>
+   
+   
+   
+   
+		<collect_ce_blue_flower_inv type="inventory_item" inventory_item="ce_blue_flower_inv"   highlight_layer="active_zone_ho_01" >
+			<dependency>
+				<ce_01_sub_miniho_compot/>
+			</dependency>
+		</collect_ce_blue_flower_inv>
+        
+
+	     <collect_ce_rubellite_inv type="inventory_item" inventory_item="ce_rubellite_inv"   highlight_layer="active_zone_ho_02" >
+			<dependency>
+				<collect_ce_shawl_inv/>
+			</dependency>
+		</collect_ce_rubellite_inv>
+        
+        
+        
+        
+        <use_ce_ice_spell_inv type="apply_item" inventory_item="ce_ice_spell_inv" drop_zone="drop_zone_ce_ice_spell_inv">
+			<dependency>
+				 <collect_ce_ice_spell_inv/>  
+			</dependency>
+		</use_ce_ice_spell_inv>
+        
+          <collect_ce_grimoire_lynn_inv type="inventory_item" inventory_item="ce_grimoire_lynn_inv"    >
+			<dependency>
+				<ce_01_sub_miniho_compot/>
+			</dependency>
+		</collect_ce_grimoire_lynn_inv>
+        
+      
+        
+  </ce_01>
+  <ce_01_puzzle_temple>
+  
+    <use_ce_mirror_plate_inv type="apply_item" inventory_item="ce_mirror_plate_inv" drop_zone="drop_zone_ce_mirror_plate_inv">
+			<dependency>
+				 <collect_ce_mirror_plate_inv/>  
+			</dependency>
+		</use_ce_mirror_plate_inv>
+        
+        
+    <use_ce_ringed_crystal_inv type="apply_item" inventory_item="ce_ringed_crystal_inv" drop_zone="drop_zone_ce_ringed_crystal_inv">
+			<dependency>
+				 <collect_ce_ringed_crystal_inv/>  
+			</dependency>
+		</use_ce_ringed_crystal_inv>
+        
+        <complete_ce_01_puzzle_temple type="complete_mini_game" mini_game_name="ce_01_puzzle_temple">
+			<dependency>
+				<use_ce_ringed_crystal_inv/>
+				<use_ce_mirror_plate_inv/>
+			</dependency>
+		</complete_ce_01_puzzle_temple>
+      
+  </ce_01_puzzle_temple>
+  
+  <ce_01_sub_miniho>
+      
+    <ce_01_sub_miniho_part_1_collect type="condition" highlight_layer="part1_out" condition="ce_01_sub_miniho_part_1_collect='1'">
+			
+    </ce_01_sub_miniho_part_1_collect>
+    
+    
+    <ce_01_sub_miniho_part_2_collect type="condition" highlight_layer="part2_out" condition="ce_01_sub_miniho_part_2_collect='1'">
+			
+    </ce_01_sub_miniho_part_2_collect>
+    
+        <ce_01_sub_miniho_part_3_collect type="condition" highlight_layer="part3_out" condition="ce_01_sub_miniho_part_3_collect='1'">
+			
+    </ce_01_sub_miniho_part_3_collect>
+    
+        <ce_01_sub_miniho_part_4_collect type="condition" highlight_layer="part4_out" condition="ce_01_sub_miniho_part_4_collect='1'">
+			
+    </ce_01_sub_miniho_part_4_collect>
+    
+        <ce_01_sub_miniho_part_5_collect type="condition" highlight_layer="part5_out" condition="ce_01_sub_miniho_part_5_collect='1'">
+			
+    </ce_01_sub_miniho_part_5_collect>
+    
+    <ce_01_sub_miniho_part_6_collect type="condition" highlight_layer="part6_out" condition="ce_01_sub_miniho_part_6_collect='1'">
+			
+    </ce_01_sub_miniho_part_6_collect>
+        
+  
+        <ce_01_sub_miniho_compot type="condition" highlight_layer="my_label_back" condition="ce_01_sub_miniho_compot='1'">
+			
+    </ce_01_sub_miniho_compot>
+        
+  </ce_01_sub_miniho>
+  
+  <ce_01_sub_fruit>
+		<ce_01_sub_miniho_active_zone_imp_click type="condition" highlight_layer="active_zone_imp" condition="ce_01_sub_miniho_active_zone_imp_click_hint='1'">
+			<dependency>
+				 <collect_ce_shawl_inv/>  
+			</dependency>
+		</ce_01_sub_miniho_active_zone_imp_click>
+			
+			
+		<use_ce_shawl_inv type="apply_item" inventory_item="ce_shawl_inv" drop_zone="drop_zone_ce_shawl_inv">
+			<dependency>
+				 <ce_01_sub_miniho_active_zone_imp_click/>  
+				 <collect_ce_shawl_inv/>  
+			</dependency>
+		</use_ce_shawl_inv>
+        
+        <collect_ce_magic_fruit_inv type="inventory_item" highlight_layer="video_imp_give/selection" inventory_item="ce_magic_fruit_inv"    >
+			<dependency>
+				<use_ce_shawl_inv/>
+			</dependency>
+		</collect_ce_magic_fruit_inv>
+
+        
+      
+        
+  </ce_01_sub_fruit>
+  <ce_01_sub_stoneman>
+  
+       
+        <use_ce_oil_inv type="apply_item" inventory_item="ce_oil_inv" drop_zone="drop_zone_ce_oil_inv">
+			<dependency>
+				 <collect_ce_oil_inv/>  
+			</dependency>
+		</use_ce_oil_inv>
+        
+          
+        
+        
+         <collect_ce_leather_belt_inv type="inventory_item" inventory_item="ce_leather_belt_inv"    >
+			<dependency>
+				<use_ce_oil_inv/>
+			</dependency>
+		</collect_ce_leather_belt_inv>
+        
+          <collect_ce_red_rune_inv type="inventory_item" inventory_item="ce_red_rune_inv"    >
+			<dependency>
+				
+			</dependency>
+		</collect_ce_red_rune_inv>
+        
+        
+        
+        
+        
+        
+  </ce_01_sub_stoneman>
+  <ce_01_sub_obelisk>
+  
+  
+     
+    <use_ce_part_of_the_obelisk_3_inv type="apply_item" inventory_item="ce_part_of_the_obelisk_3_inv" drop_zone="drop_zone_ce_part_of_the_obelisk_3_inv">
+			<dependency>
+				 <collect_ce_part_of_the_obelisk_3_inv/>  
+			</dependency>
+		</use_ce_part_of_the_obelisk_3_inv>
+    <use_ce_part_of_the_obelisk_2_inv type="apply_item" inventory_item="ce_part_of_the_obelisk_2_inv" drop_zone="drop_zone_ce_part_of_the_obelisk_2_inv">
+			<dependency>
+				 <collect_ce_part_of_the_obelisk_2_inv/>  
+			</dependency>
+		</use_ce_part_of_the_obelisk_2_inv>
+    <use_ce_part_of_the_obelisk_1_inv type="apply_item" inventory_item="ce_part_of_the_obelisk_1_inv" drop_zone="drop_zone_ce_part_of_the_obelisk_1_inv">
+			<dependency>
+				 <collect_ce_part_of_the_obelisk_1_inv/>  
+			</dependency>
+      </use_ce_part_of_the_obelisk_1_inv>
+  
+      
+       <collect_ce_stone_island_inv type="inventory_item" inventory_item="ce_stone_island_inv"    >
+			<dependency>
+				<collect_ce_mosaic_part_inv/>
+			</dependency>
+		</collect_ce_stone_island_inv>
+      
+       <collect_ce_green_rune_inv type="inventory_item" inventory_item="ce_green_rune_inv"    >
+			<dependency>
+				<use_ce_part_of_the_obelisk_1_inv/>
+			</dependency>
+		</collect_ce_green_rune_inv>
+      
+       <collect_ce_mosaic_part_inv type="inventory_item" inventory_item="ce_mosaic_part_inv"    >
+			<dependency>
+				<use_ce_part_of_the_obelisk_2_inv/>
+			</dependency>
+		</collect_ce_mosaic_part_inv>
+      
+       <collect_ce_hook_cat_inv type="inventory_item" inventory_item="ce_hook_cat_inv"    >
+			<dependency>
+			</dependency>
+		</collect_ce_hook_cat_inv>
+      <collect_ce_sphere_from_mechanism_inv type="inventory_item" inventory_item="ce_sphere_from_mechanism_inv"    >
+			<dependency>
+				<use_ce_part_of_the_obelisk_3_inv/>
+			</dependency>
+		</collect_ce_sphere_from_mechanism_inv>
+      
+      
+  
+  
+  
+  
+     </ce_01_sub_obelisk>
+     
+     
+  
+     <!--   2  -->
+        
+      <ce_02>
+      
+      
+       <collect_ce_explosive_potion_inv type="inventory_item" inventory_item="ce_explosive_potion_inv"   highlight_layer="active_zone_ho_01" >
+			<dependency>
+				
+			</dependency>
+		</collect_ce_explosive_potion_inv>
+      </ce_02>
+      
+      <ce_02_sub_arch>
+     
+         <collect_ce_golden_threads_inv type="inventory_item" inventory_item="ce_golden_threads_inv"  >
+			<dependency>
+			
+			</dependency>
+		</collect_ce_golden_threads_inv>
+        
+  
+        <use_ce_green_rune_inv type="apply_item" inventory_item="ce_green_rune_inv" drop_zone="drop_zone_ce_green_rune_inv">
+			<dependency>
+				 <collect_ce_green_rune_inv/>  
+			</dependency>
+		</use_ce_green_rune_inv>
+
+        <use_ce_red_rune_inv type="apply_item" inventory_item="ce_red_rune_inv" drop_zone="drop_zone_ce_red_rune_inv">
+			<dependency>
+				 <collect_ce_red_rune_inv/>  
+			</dependency>
+		</use_ce_red_rune_inv>
+
+      </ce_02_sub_arch>
+      
+      <ce_02_sub_bank>
+        
+           <use_ce_gaff_inv type="apply_item" inventory_item="ce_gaff_inv" drop_zone="drop_zone_ce_gaff_inv">
+			<dependency>
+				 <collect_ce_gaff_inv/>  
+			</dependency>
+		</use_ce_gaff_inv>
+        
+        <click_bag_closed type="click" click_layer="bag_closed">
+			<dependency>
+               <use_ce_gaff_inv/>  
+			</dependency>
+		</click_bag_closed>
+        
+        <collect_ce_chain_inv type="inventory_item" inventory_item="ce_chain_inv"  >
+			<dependency>
+               <click_bag_closed/>  
+			</dependency>
+		</collect_ce_chain_inv>
+        
+        
+         <collect_ce_white_crystall_inv type="inventory_item" inventory_item="ce_white_crystall_inv"  >
+			<dependency>
+			</dependency>
+		</collect_ce_white_crystall_inv>
+      
+      </ce_02_sub_bank>
+      
+      <ce_02_sub_hollow>
+      
+         <collect_ce_basket_inv type="inventory_item" inventory_item="ce_basket_inv"   highlight_layer="active_zone_basket" >
+			<dependency>
+			</dependency>
+		</collect_ce_basket_inv>
+        
+          <use_ce_lamp_with_fireflies_inv type="apply_item" inventory_item="ce_lamp_with_fireflies_inv" drop_zone="drop_zone_ce_lamp_with_fireflies_inv">
+			<dependency>
+				 <collect_ce_lamp_with_fireflies_inv/>  
+			</dependency>
+		</use_ce_lamp_with_fireflies_inv>
+        
+        
+           <use_ce_explosive_potion_inv type="apply_item" inventory_item="ce_explosive_potion_inv" drop_zone="drop_zone_ce_explosive_potion_inv">
+			<dependency>
+				 <collect_ce_explosive_potion_inv/>  
+			</dependency>
+		</use_ce_explosive_potion_inv>
+        
+          <collect_ce_blue_rune_inv type="inventory_item" inventory_item="ce_blue_rune_inv"  >
+			<dependency>
+             <use_ce_explosive_potion_inv/>  
+			</dependency>
+		</collect_ce_blue_rune_inv>
+		
+          <collect_ce_part_of_the_obelisk_1_inv type="inventory_item" inventory_item="ce_part_of_the_obelisk_1_inv"  >
+			<dependency>
+             <use_ce_explosive_potion_inv/>  
+			</dependency>
+		</collect_ce_part_of_the_obelisk_1_inv>
+        
+        
+        <collect_ce_mirror_plate_inv type="inventory_item" inventory_item="ce_mirror_plate_inv"  >
+			<dependency>
+             <use_ce_lamp_with_fireflies_inv/>  
+			</dependency>
+		</collect_ce_mirror_plate_inv>
+        
+      </ce_02_sub_hollow>
+      
+      
+      
+     <!--  3-->
+   
+      <ce_03>
+      
+      <!--<ce_03_hint_on_golem_sub type="condition" highlight_layer="active_zone_sub_golem" condition="ce_03_hint_on_golem_sub='1'">
+
+      </ce_03_hint_on_golem_sub>-->
+      
+      
+      
+        <use_ce_spell_of_portals_inv type="apply_item" inventory_item="ce_spell_of_portals_inv" drop_zone="drop_zone_ce_spell_of_portals_inv">
+			<dependency>
+				 <collect_ce_spell_of_portals_inv/>  
+			</dependency>
+		</use_ce_spell_of_portals_inv>
+        
+      
+      
+      </ce_03>
+      
+      <ce_03_sub_box>
+      
+          <use_ce_stone_island_inv type="apply_item" inventory_item="ce_stone_island_inv" drop_zone="drop_zone_ce_stone_island_inv">
+			<dependency>
+				 <collect_ce_stone_island_inv/>  
+			</dependency>
+		</use_ce_stone_island_inv>
+        
+        
+          <use_ce_screwdriver_inv type="apply_item" inventory_item="ce_screwdriver_inv" drop_zone="drop_zone_ce_screwdriver_inv">
+			<dependency>
+				 <collect_ce_screwdriver_inv/>  
+				 <use_ce_stone_island_inv/>
+			</dependency>
+		</use_ce_screwdriver_inv>
+        
+        
+        
+          <collect_ce_fern_inv type="inventory_item" inventory_item="ce_fern_inv"  >
+			<dependency>
+             <use_ce_stone_island_inv/>  
+			</dependency>
+		</collect_ce_fern_inv>
+        
+        
+          
+          <collect_ce_code_catalog_c3_inv type="inventory_item" inventory_item="ce_code_catalog_c3_inv"  >
+			<dependency>
+             <use_ce_stone_island_inv/>  
+			</dependency>
+		</collect_ce_code_catalog_c3_inv>
+        
+           
+          <collect_ce_stamp_of_a_wolf_inv type="inventory_item" inventory_item="ce_stamp_of_a_wolf_inv"  >
+			<dependency>
+             <use_ce_screwdriver_inv/>  
+			</dependency>
+		</collect_ce_stamp_of_a_wolf_inv>
+        
+           <collect_ce_red_pantahedron_inv type="inventory_item" inventory_item="ce_red_pantahedron_inv"  >
+			<dependency>
+             <use_ce_screwdriver_inv/>  
+			</dependency>
+		</collect_ce_red_pantahedron_inv>
+        
+      </ce_03_sub_box>
+      
+      <ce_03_sub_golem>
+      
+          <use_ce_leather_charm_inv type="apply_item" inventory_item="ce_leather_charm_inv" drop_zone="drop_zone_ce_leather_charm_inv">
+			<dependency>
+				 <collect_ce_leather_charm_inv/>  
+			</dependency>
+		</use_ce_leather_charm_inv>
+        
+        
+          <collect_ce_enchanted_bark_inv type="inventory_item" inventory_item="ce_enchanted_bark_inv"  >
+			<dependency>
+             <use_ce_leather_charm_inv/>  
+			</dependency>
+		</collect_ce_enchanted_bark_inv>
+        
+        
+          <collect_ce_stamp_of_a_bat_inv type="inventory_item" inventory_item="ce_stamp_of_a_bat_inv"  >
+			<dependency>
+             <use_ce_leather_charm_inv/>  
+			</dependency>
+		</collect_ce_stamp_of_a_bat_inv>
+
+      </ce_03_sub_golem>
+      
+      <ce_03_sub_miniho>
+     <!-- 
+      <ce_03_sub_miniho_part_1_collect type="condition" highlight_layer="out_part1|active_zone_for_hint" condition="ce_03_sub_miniho_part_1_collect='1'">
+			
+      </ce_03_sub_miniho_part_1_collect>
+        
+     <ce_03_sub_miniho_part_2_collect type="condition" highlight_layer="out_part2|active_zone_for_hint" condition="ce_03_sub_miniho_part_2_collect='1'">
+			
+        </ce_03_sub_miniho_part_2_collect>
+        
+     <ce_03_sub_miniho_part_3_collect type="condition" highlight_layer="out_part3|active_zone_for_hint" condition="ce_03_sub_miniho_part_3_collect='1'">
+			
+      </ce_03_sub_miniho_part_3_collect>
+      
+     <ce_03_sub_miniho_part_4_collect type="condition" highlight_layer="out_part4|active_zone_for_hint" condition="ce_03_sub_miniho_part_4_collect='1'">
+			
+      </ce_03_sub_miniho_part_4_collect>
+      
+     <ce_03_sub_miniho_part_5_collect type="condition" highlight_layer="out_part5|active_zone_for_hint" condition="ce_03_sub_miniho_part_5_collect='1'">
+			
+            
+      </ce_03_sub_miniho_part_5_collect>
+     <ce_03_sub_miniho_part_6_collect type="condition" highlight_layer="out_part6|active_zone_for_hint" condition="ce_03_sub_miniho_part_6_collect='1'">
+			
+      </ce_03_sub_miniho_part_6_collect>
+      
+     <ce_03_sub_miniho_part_7_collect type="condition" highlight_layer="out_part7|active_zone_for_hint" condition="ce_03_sub_miniho_part_7_collect='1'">
+			
+      </ce_03_sub_miniho_part_7_collect>
+      
+     <ce_03_sub_miniho_part_8_collect type="condition" highlight_layer="out_part8|active_zone_for_hint" condition="ce_03_sub_miniho_part_8_collect='1'">
+			
+      </ce_03_sub_miniho_part_8_collect>
+    
+      -->
+      
+	  
+	  
+	  <complete_ce_03_sub_miniho_puzzle type="complete_mini_game" mini_game_name="ce_03_sub_miniho_puzzle">
+			<dependency>
+			</dependency>
+		</complete_ce_03_sub_miniho_puzzle>
+	  
+          <collect_ce_lamp_with_fireflies_inv type="inventory_item" inventory_item="ce_lamp_with_fireflies_inv"  >
+			<dependency>
+              <complete_ce_03_sub_miniho_puzzle />
+			</dependency>
+		</collect_ce_lamp_with_fireflies_inv>
+        
+        
+      </ce_03_sub_miniho>
+      
+      <ce_03_sub_stones>
+      
+        <use_ce_basket_inv type="apply_item" inventory_item="ce_basket_inv" drop_zone="drop_zone_ce_basket_inv">
+			<dependency>
+			<collect_ce_basket_inv/> 
+			<ce_03_sub_stones_imp_use_for_hint/> 
+			</dependency>
+		</use_ce_basket_inv>
+        
+        
+          <collect_ce_part_of_the_obelisk_2_inv type="inventory_item" inventory_item="ce_part_of_the_obelisk_2_inv"  >
+			<dependency>
+             <use_ce_basket_inv/>  
+			</dependency>
+		</collect_ce_part_of_the_obelisk_2_inv>
+        
+        
+        
+         <ce_03_sub_stones_imp_use_for_hint type="condition" highlight_layer="active_zone_imp" condition="ce_03_sub_stones_imp_use_for_hint='1'">
+			
+      </ce_03_sub_stones_imp_use_for_hint>
+        
+
+      </ce_03_sub_stones>
+      
+      
+      
+      
+      
+    <!--  4-->
+        <ce_04>
+        
+        
+        <collect_ce_gold_ring_inv type="inventory_item" inventory_item="ce_gold_ring_inv"   highlight_layer="active_zone_go_ho_01" >
+			<dependency>
+              
+			</dependency>
+		</collect_ce_gold_ring_inv>
+        
+        
+         <collect_ce_silver_cup_inv type="inventory_item" inventory_item="ce_silver_cup_inv"   highlight_layer="active_zone_go_ho_02" >
+			<dependency>
+                 <collect_ce_spring_water_inv/>
+			</dependency>
+		</collect_ce_silver_cup_inv>
+        
+        
+        <collect_ce_blue_pantahedron_inv type="inventory_item" inventory_item="ce_blue_pantahedron_inv" >
+			<dependency>
+			</dependency>
+		</collect_ce_blue_pantahedron_inv>
+        
+        
+        
+        
+         <use_ce_badge_with_a_dragon_inv type="apply_item" inventory_item="ce_badge_with_a_dragon_inv" drop_zone="drop_zone_ce_badge_with_a_dragon_inv">
+			<dependency>
+			   <collect_ce_badge_with_a_dragon_inv/>
+			</dependency>
+		</use_ce_badge_with_a_dragon_inv> 
+
+        <use_ce_light_spell_inv type="apply_item" inventory_item="ce_light_spell_inv" drop_zone="drop_zone_ce_light_spell_inv">
+			<dependency>
+			   <collect_ce_light_spell_inv/>
+			</dependency>
+		</use_ce_light_spell_inv>
+        
+        
+        
+		
+		<ce_04_can_go_back type="condition" highlight_layer="active_zone_go_back" condition="ce_04_can_go_back=''">
+			
+			<dependency>
+			   <final_quest/>
+			</dependency>
+		</ce_04_can_go_back>
+		
+		
+      
+        
+        </ce_04>
+        
+        <ce_04_puzzle_battle>
+        
+          <final_quest type="complete_mini_game" mini_game_name="ce_04_puzzle_battle">
+              <dependency>
+                  <use_ce_light_spell_inv/>
+              </dependency>
+          </final_quest>
+        
+        </ce_04_puzzle_battle>
+        
+        <ce_04_sub_floor>
+        
+          <use_ce_stamp_of_a_bat_inv type="apply_item" inventory_item="ce_stamp_of_a_bat_inv" drop_zone="drop_zone_stamps">
+			<dependency>
+			   <collect_ce_stamp_of_a_bat_inv/>
+			</dependency>
+		</use_ce_stamp_of_a_bat_inv>
+        
+        
+         <use_ce_stamp_of_a_wolf_inv type="apply_item" inventory_item="ce_stamp_of_a_wolf_inv" drop_zone="drop_zone_stamps">
+			<dependency>
+			   <collect_ce_stamp_of_a_wolf_inv/>
+			</dependency>
+		</use_ce_stamp_of_a_wolf_inv>
+        
+        
+        <use_ce_stamp_of_a_eagle_inv type="apply_item" inventory_item="ce_stamp_of_a_eagle_inv" drop_zone="drop_zone_stamps">
+			<dependency>
+			   <collect_ce_stamp_of_a_eagle_inv/>
+			</dependency>
+		</use_ce_stamp_of_a_eagle_inv>
+        
+        
+        
+        <collect_ce_code_catalog_a14_inv type="inventory_item" inventory_item="ce_code_catalog_a14_inv"  >
+			<dependency>
+             <use_ce_stamp_of_a_eagle_inv/>  
+             <use_ce_stamp_of_a_wolf_inv/>  
+             <use_ce_stamp_of_a_bat_inv/>  
+			</dependency>
+		</collect_ce_code_catalog_a14_inv>
+        
+        
+        <collect_ce_light_crystal_inv type="inventory_item" highlight_layer="ce_light_crystal_inv/selection" inventory_item="ce_light_crystal_inv"  >
+			<dependency>
+             <use_ce_enchanted_bark_inv/>  
+             <use_ce_spring_water_inv/>  
+             <use_ce_magic_fruit_inv/>  
+             <use_ce_portrait_of_mathias_inv/>  
+              
+			</dependency>
+		</collect_ce_light_crystal_inv>
+        
+        
+        
+        
+        <use_ce_enchanted_bark_inv type="apply_item" inventory_item="ce_enchanted_bark_inv" drop_zone="drop_zone_table">
+			<dependency>
+			   <collect_ce_enchanted_bark_inv/>
+			   <collect_ce_code_catalog_a14_inv/>
+			</dependency>
+		</use_ce_enchanted_bark_inv>
+        
+          <use_ce_spring_water_inv type="apply_item" inventory_item="ce_spring_water_inv" drop_zone="drop_zone_table">
+			<dependency>
+			   <collect_ce_spring_water_inv/>
+			   <collect_ce_code_catalog_a14_inv/>
+			</dependency>
+		</use_ce_spring_water_inv>
+        
+        
+        <use_ce_magic_fruit_inv type="apply_item" inventory_item="ce_magic_fruit_inv" drop_zone="drop_zone_table">
+			<dependency>
+			   <collect_ce_magic_fruit_inv/>
+			   <collect_ce_code_catalog_a14_inv/>
+			</dependency>
+		</use_ce_magic_fruit_inv>
+        
+        
+         <use_ce_portrait_of_mathias_inv type="apply_item" inventory_item="ce_portrait_of_mathias_inv" drop_zone="drop_zone_table">
+			<dependency>
+			   <collect_ce_portrait_of_mathias_inv/>
+			   <collect_ce_code_catalog_a14_inv/>
+			</dependency>
+		</use_ce_portrait_of_mathias_inv>
+        
+ 
+        </ce_04_sub_floor>
+        
+        <ce_04_sub_lock>
+        
+         <use_ce_part_of_a_lock_inv type="apply_item" inventory_item="ce_part_of_a_lock_inv" drop_zone="drop_zone_ce_part_of_a_lock_inv">
+			<dependency>
+			   <collect_ce_part_of_a_lock_inv/>
+		
+			</dependency>
+		</use_ce_part_of_a_lock_inv>
+        
+        <collect_ce_screwdriver_inv type="inventory_item" inventory_item="ce_screwdriver_inv"  >
+			<dependency>
+				<use_ce_part_of_a_lock_inv/>
+			</dependency>
+		</collect_ce_screwdriver_inv> 
+
+        <collect_ce_portrait_of_mathias_inv type="inventory_item" inventory_item="ce_portrait_of_mathias_inv"  >
+			<dependency>
+				<use_ce_silver_cup_inv/>
+			</dependency>
+		</collect_ce_portrait_of_mathias_inv>
+        
+         <use_ce_silver_cup_inv type="apply_item" inventory_item="ce_silver_cup_inv" drop_zone="drop_zone_ce_silver_cup_inv">
+			<dependency>
+			   <collect_ce_silver_cup_inv/> 
+		
+			</dependency>
+		</use_ce_silver_cup_inv>
+        </ce_04_sub_lock>
+        
+     <!--    5-->
+     
+     <ce_05>
+     
+     
+     
+       <collect_ce_stamp_of_a_eagle_inv type="inventory_item" inventory_item="ce_stamp_of_a_eagle_inv"  >
+			<dependency>
+              
+			</dependency>
+		</collect_ce_stamp_of_a_eagle_inv>
+     </ce_05>
+   
+   <ce_05_sub_cells>
+   
+     
+        <collect_ce_fireproof_gloves_inv type="inventory_item" inventory_item="ce_fireproof_gloves_inv"  >
+			<dependency>
+             <use_ce_code_catalog_c3_inv/>     
+			</dependency>
+		</collect_ce_fireproof_gloves_inv>
+        
+        
+         <collect_ce_3_part_of_leaf_inv type="inventory_item" inventory_item="ce_3_part_of_leaf_inv"  >
+			<dependency>
+             <use_ce_code_catalog_a14_inv/>     
+			</dependency>
+		</collect_ce_3_part_of_leaf_inv>
+        
+ 
+   
+        <use_ce_code_catalog_c3_inv type="apply_item" inventory_item="ce_code_catalog_c3_inv" drop_zone="drop_zone_ce_code_catalog_c3_inv">
+			<dependency>
+			   <collect_ce_code_catalog_c3_inv/> 
+		
+			</dependency>
+		</use_ce_code_catalog_c3_inv>
+
+        <use_ce_code_catalog_a14_inv type="apply_item" inventory_item="ce_code_catalog_a14_inv" drop_zone="drop_zone_ce_code_catalog_a14_inv">
+			<dependency>
+			   <collect_ce_code_catalog_a14_inv/> 
+		
+			</dependency>
+		</use_ce_code_catalog_a14_inv>
+  
+   </ce_05_sub_cells>
+   <ce_05_sub_mirror>
+   
+     <use_ce_figure_of_a_man_inv type="apply_item" inventory_item="ce_figure_of_a_man_inv" drop_zone="drop_zone_ce_figure_of_a_man_inv">
+			<dependency>
+			   <collect_ce_figure_of_a_man_inv/> 
+			</dependency>
+		</use_ce_figure_of_a_man_inv>
+        
+        
+         <use_ce_mathias_figure_inv type="apply_item" inventory_item="ce_mathias_figure_inv" drop_zone="drop_zone_ce_mathias_figure_inv">
+			<dependency>
+			   <collect_ce_mathias_figure_inv/> 
+			</dependency>
+		</use_ce_mathias_figure_inv>
+        
+   
+   
+     <collect_ce_manuscript_inv type="inventory_item" inventory_item="ce_manuscript_inv"  >
+			<dependency>
+              <use_ce_mathias_figure_inv/>     
+              <use_ce_figure_of_a_man_inv/>     
+			</dependency>
+		</collect_ce_manuscript_inv>
+        
+        
+        <collect_ce_knife_inv type="inventory_item" inventory_item="ce_knife_inv"  >
+			<dependency>
+              <use_ce_mathias_figure_inv/>     
+              <use_ce_figure_of_a_man_inv/>     
+			</dependency>
+		</collect_ce_knife_inv>
+        
+  
+   </ce_05_sub_mirror>
+  <ce_05_sub_nightstand>
+  
+        <use_ce_old_key_inv type="apply_item" inventory_item="ce_old_key_inv" drop_zone="drop_zone_ce_old_key_inv">
+			<dependency>
+			   <collect_ce_old_key_inv/> 
+			</dependency>
+		</use_ce_old_key_inv>
+        
+        
+        <use_ce_burnt_book_inv type="apply_item" inventory_item="ce_burnt_book_inv" drop_zone="drop_zone_ce_burnt_book_inv">
+			<dependency>
+			   <collect_ce_burnt_book_inv/> 
+			</dependency>
+		</use_ce_burnt_book_inv>
+        
+          <collect_ce_badge_with_a_dragon_inv type="inventory_item" inventory_item="ce_badge_with_a_dragon_inv"  >
+			<dependency>
+              <use_ce_old_key_inv/>     
+			</dependency>
+		</collect_ce_badge_with_a_dragon_inv>
+        
+          <collect_ce_part_of_a_lock_inv type="inventory_item" inventory_item="ce_part_of_a_lock_inv"  >
+			<dependency>
+              <use_ce_old_key_inv/>     
+			</dependency>
+		</collect_ce_part_of_a_lock_inv>
+        
+        
+        
+        
+        
+  </ce_05_sub_nightstand>
+  
+  
+  
+  <ce_05_sub_table>
+        <ce_05_sub_table_str_1 type="condition" highlight_layer="str1/selection" condition="ce_05_sub_table_str_1='1'">
+          <dependency>
+              <use_ce_burnt_book_inv/>     
+			</dependency>
+		</ce_05_sub_table_str_1>  
+        
+        <ce_05_sub_table_str_2 type="condition" highlight_layer="str2/selection" condition="ce_05_sub_table_str_2='1'">
+          <dependency>
+              <ce_05_sub_table_str_1/>     
+			</dependency>
+		</ce_05_sub_table_str_2>
+        
+        <collect_ce_figure_of_a_man_inv type="inventory_item" inventory_item="ce_figure_of_a_man_inv"  >
+			<dependency>
+              <ce_05_sub_table_str_2/>     
+			</dependency>
+		</collect_ce_figure_of_a_man_inv>
+  </ce_05_sub_table>
+  
+ <!-- 6-->
+    
+   <ce_06>
+     
+         <collect_ce_stick_inv type="inventory_item" inventory_item="ce_stick_inv"  >
+			<dependency>
+			</dependency>
+		</collect_ce_stick_inv>
+        
+   </ce_06>
+   
+   
+   <ce_06_sub_bookshelf>
+   
+   
+    <use_ce_manuscript_inv type="apply_item" inventory_item="ce_manuscript_inv" drop_zone="drop_zone_ce_manuscript_inv">
+			<dependency>
+			  <collect_ce_manuscript_inv/>
+			</dependency>
+		</use_ce_manuscript_inv>
+  
+        <ce_06_sub_bookshelf_open_book_1 type="condition" highlight_layer="parent_book_big/book_big" condition="ce_06_sub_bookshelf_open_book_1='1'">
+            <dependency>
+			  <use_ce_manuscript_inv/>
+			</dependency>
+			
+		</ce_06_sub_bookshelf_open_book_1>
+		         
+        <ce_06_sub_bookshelf_open_book_2 type="condition" highlight_layer="parent_book_big/book_big" condition="ce_06_sub_bookshelf_open_book_2='1'">
+            <dependency>
+			  <ce_06_sub_bookshelf_open_book_1/>
+			</dependency>
+			
+		</ce_06_sub_bookshelf_open_book_2>
+		
+          <collect_ce_old_key_inv type="inventory_item" inventory_item="ce_old_key_inv"  >
+			<dependency>
+              <collect_ce_hook_inv/>
+			</dependency>
+		</collect_ce_old_key_inv>
+  
+        <collect_ce_hook_inv type="inventory_item" inventory_item="ce_hook_inv"  >
+			<dependency>
+             <ce_06_sub_bookshelf_open_book_1/>
+			</dependency>
+		</collect_ce_hook_inv>  
+        
+        <collect_ce_tiara_inv type="inventory_item" inventory_item="ce_tiara_inv"  >
+			<dependency>
+			</dependency>
+		</collect_ce_tiara_inv>
+        
+   </ce_06_sub_bookshelf>
+   
+   <ce_06_sub_fireplace>
+   
+        <collect_ce_oil_inv type="inventory_item" inventory_item="ce_oil_inv"  >
+			<dependency>
+			</dependency>
+		</collect_ce_oil_inv>
+        
+         <use_ce_fireproof_gloves_inv type="apply_item" inventory_item="ce_fireproof_gloves_inv" drop_zone="drop_zone_ce_fireproof_gloves_inv">
+			<dependency>
+			  <collect_ce_oil_inv/>
+			  <collect_ce_fireproof_gloves_inv/>
+			</dependency>
+		</use_ce_fireproof_gloves_inv>
+        
+        <collect_ce_burnt_book_inv type="inventory_item" inventory_item="ce_burnt_book_inv"  >
+			<dependency>
+             <use_ce_fireproof_gloves_inv/>
+			</dependency>
+		</collect_ce_burnt_book_inv>
+        
+   </ce_06_sub_fireplace>
+   
+   
+   <ce_06_puzzle>
+   
+     <use_ce_mosaic_part_inv type="apply_item" inventory_item="ce_mosaic_part_inv" drop_zone="drop_zone_ce_mosaic_part_inv">
+			<dependency>
+			  <collect_ce_mosaic_part_inv/>
+			</dependency>
+		</use_ce_mosaic_part_inv>
+        
+        <complete_ce_06_puzzle type="complete_mini_game" mini_game_name="ce_06_puzzle">
+			<dependency>
+				<use_ce_mosaic_part_inv/>
+			</dependency>
+		</complete_ce_06_puzzle>
+        
+         <collect_ce_pearls_inv type="inventory_item" inventory_item="ce_pearls_inv"  >
+			<dependency>
+              <complete_ce_06_puzzle/>
+			</dependency>
+		</collect_ce_pearls_inv>
+        
+         <collect_ce_mathias_figure_inv type="inventory_item" inventory_item="ce_mathias_figure_inv"  >
+			<dependency>
+              <complete_ce_06_puzzle/>
+			</dependency>
+		</collect_ce_mathias_figure_inv>
+
+   
+  
+
+   
+   
+   
+   </ce_06_puzzle>
+   
+  
+  <!-- 7-->
+   
+   
+   <ce_07>
+   
+   
+        <click_pyramid1_out type="click" click_layer="pyramid1_out">
+			<dependency>
+			</dependency>
+		</click_pyramid1_out>
+        
+        <click_pyramid2_out type="click" click_layer="pyramid2_out">
+			<dependency>
+			</dependency>
+		</click_pyramid2_out>
+        
+         <click_pyramid3_out type="click" click_layer="pyramid3_out">
+			<dependency>
+			</dependency>
+		</click_pyramid3_out>
+        
+         <click_pyramid4_out type="click" click_layer="pyramid4_out">
+			<dependency>
+			</dependency>
+		</click_pyramid4_out>
+        
+         <click_pyramid5_out type="click" click_layer="pyramid5_out">
+			<dependency>
+			</dependency>
+		</click_pyramid5_out>
+        
+
+        <ce_07_minihos_end type="condition" highlight_layer="pyramid5_out" condition="ce_07_minihos_end='1'">
+            <dependency>
+               <click_pyramid1_out/>
+               <click_pyramid2_out/>
+               <click_pyramid3_out/>
+               <click_pyramid4_out/>
+               <click_pyramid5_out/>
+             
+			</dependency>
+		</ce_07_minihos_end>
+
+   </ce_07>
+   
+   <ce_07_puzzle_box>
+   
+   
+   
+   
+   
+        <use_ce_bracelet_with_rubellite_inv type="apply_item" inventory_item="ce_bracelet_with_rubellite_inv" drop_zone="drop_zone_ce_bracelet_with_rubellite_inv">
+			<dependency>
+			  <collect_ce_bracelet_with_rubellite_inv/>
+			</dependency>
+		</use_ce_bracelet_with_rubellite_inv>
+        
+        <complete_ce_07_puzzle_box type="complete_mini_game" mini_game_name="ce_07_puzzle_box">
+			<dependency>
+				<use_ce_bracelet_with_rubellite_inv/>
+			</dependency>
+		</complete_ce_07_puzzle_box>
+
+         <collect_ce_solar_belt_inv type="inventory_item" inventory_item="ce_solar_belt_inv"  >
+			<dependency>
+              <complete_ce_07_puzzle_box/>
+              <ce_07_puzzle_box_click_cover_part_5/>
+              <ce_07_puzzle_box_click_cover_part_4/>
+              <ce_07_puzzle_box_click_cover_part_3/>
+              <ce_07_puzzle_box_click_cover_part_2/>
+              <ce_07_puzzle_box_click_cover_part_1/>
+			</dependency>
+		</collect_ce_solar_belt_inv>
+        
+        <ce_07_puzzle_box_click_cover_part_1 type="condition" highlight_layer="cover_part_01" condition="ce_07_puzzle_box_click_cover_part_1='1'">
+			<dependency>
+              <complete_ce_07_puzzle_box/>
+			</dependency>
+		</ce_07_puzzle_box_click_cover_part_1>
+        
+        
+        <ce_07_puzzle_box_click_cover_part_2 type="condition" highlight_layer="cover_part_02" condition="ce_07_puzzle_box_click_cover_part_2='1'">
+			<dependency>
+              <complete_ce_07_puzzle_box/>
+			</dependency>
+		</ce_07_puzzle_box_click_cover_part_2>
+        
+           <ce_07_puzzle_box_click_cover_part_3 type="condition" highlight_layer="cover_part_03" condition="ce_07_puzzle_box_click_cover_part_3='1'">
+			<dependency>
+              <complete_ce_07_puzzle_box/>
+			</dependency>
+            
+		</ce_07_puzzle_box_click_cover_part_3>
+        
+           <ce_07_puzzle_box_click_cover_part_4 type="condition" highlight_layer="cover_part_04" condition="ce_07_puzzle_box_click_cover_part_4='1'">
+			<dependency>
+              <complete_ce_07_puzzle_box/>
+			</dependency>
+		</ce_07_puzzle_box_click_cover_part_4>
+        
+           <ce_07_puzzle_box_click_cover_part_5 type="condition" highlight_layer="cover_part_05" condition="ce_07_puzzle_box_click_cover_part_5='1'">
+			<dependency>
+              <complete_ce_07_puzzle_box/>
+			</dependency>
+		</ce_07_puzzle_box_click_cover_part_5>
+        
+        
+   
+   </ce_07_puzzle_box>
+   <ce_07_puzzle_water_lock>
+   
+   
+        <use_ce_red_pantahedron_inv type="apply_item" inventory_item="ce_red_pantahedron_inv" drop_zone="drop_zone_pantahedron">
+			<dependency>
+			  <collect_ce_red_pantahedron_inv/>
+			</dependency>
+		</use_ce_red_pantahedron_inv>
+        
+         <use_ce_blue_pantahedron_inv type="apply_item" inventory_item="ce_blue_pantahedron_inv" drop_zone="drop_zone_pantahedron">
+			<dependency>
+			  <collect_ce_blue_pantahedron_inv/>
+			</dependency>
+		</use_ce_blue_pantahedron_inv>
+        
+        
+        
+         <collect_ce_part_of_the_obelisk_3_inv type="inventory_item" inventory_item="ce_part_of_the_obelisk_3_inv"  >
+			<dependency>
+               <complete_ce_07_puzzle_water_lock/>
+			</dependency>
+		</collect_ce_part_of_the_obelisk_3_inv>
+        
+        <collect_ce_1_part_of_leaf_inv type="inventory_item" inventory_item="ce_1_part_of_leaf_inv"  >
+			<dependency>
+              <complete_ce_07_puzzle_water_lock/>
+			</dependency>
+		</collect_ce_1_part_of_leaf_inv>
+        
+        
+        
+        <complete_ce_07_puzzle_water_lock type="complete_mini_game" mini_game_name="ce_07_puzzle_water_lock">
+			<dependency>
+				<use_ce_blue_pantahedron_inv/>
+				<use_ce_red_pantahedron_inv/>
+			</dependency>
+		</complete_ce_07_puzzle_water_lock>
+        
+        <use_ce_sphere_from_mechanism_inv type="apply_item" inventory_item="ce_sphere_from_mechanism_inv" drop_zone="drop_zone_ce_sphere_from_mechanism_inv">
+			<dependency>
+			  <collect_ce_sphere_from_mechanism_inv/>
+			</dependency>
+		</use_ce_sphere_from_mechanism_inv>
+        
+        <collect_ce_shawl_inv type="inventory_item" inventory_item="ce_shawl_inv"  >
+			<dependency>
+              <use_ce_sphere_from_mechanism_inv/>
+			</dependency>
+		</collect_ce_shawl_inv>
+        
+         <collect_ce_2_part_of_leaf_inv type="inventory_item" inventory_item="ce_2_part_of_leaf_inv"  >
+			<dependency>
+              <use_ce_sphere_from_mechanism_inv/>
+			</dependency>
+		</collect_ce_2_part_of_leaf_inv>
+        
+   </ce_07_puzzle_water_lock>
+   
+ <!--  8 -->
+ 
+   <ce_08>
+      
+   </ce_08>
+   
+   <ce_08_sub_miniho>
+   
+   
+   
+     <ce_08_sub_miniho_part_collect_1 type="condition" highlight_layer="part1" condition="ce_08_sub_miniho_part_collect_1='1'">
+		<dependency>
+			  <collect_ce_chest_inv/>
+			</dependency>
+		</ce_08_sub_miniho_part_collect_1>
+     <ce_08_sub_miniho_part_collect_2 type="condition" highlight_layer="part2" condition="ce_08_sub_miniho_part_collect_2='1'">
+		<dependency>
+			  <collect_ce_chest_inv/>
+			</dependency>
+		</ce_08_sub_miniho_part_collect_2>
+     <ce_08_sub_miniho_part_collect_3 type="condition" highlight_layer="part3" condition="ce_08_sub_miniho_part_collect_3='1'">
+	 	<dependency>
+			  <collect_ce_chest_inv/>
+			</dependency>
+		</ce_08_sub_miniho_part_collect_3>
+     <ce_08_sub_miniho_part_collect_4 type="condition" highlight_layer="part4" condition="ce_08_sub_miniho_part_collect_4='1'">
+	 	<dependency>
+			  <collect_ce_chest_inv/>
+			</dependency>
+		</ce_08_sub_miniho_part_collect_4>
+     <ce_08_sub_miniho_part_collect_5 type="condition" highlight_layer="part5" condition="ce_08_sub_miniho_part_collect_5='1'">
+	 	<dependency>
+			  <collect_ce_chest_inv/>
+			</dependency>
+		</ce_08_sub_miniho_part_collect_5>
+     <ce_08_sub_miniho_part_collect_6 type="condition" highlight_layer="part6" condition="ce_08_sub_miniho_part_collect_6='1'">
+	 	<dependency>
+			  <collect_ce_chest_inv/>
+			</dependency>
+		</ce_08_sub_miniho_part_collect_6>
+     <ce_08_sub_miniho_part_collect_7 type="condition" highlight_layer="part7" condition="ce_08_sub_miniho_part_collect_7='1'">
+	 	<dependency>
+			  <collect_ce_chest_inv/>
+			</dependency>
+		</ce_08_sub_miniho_part_collect_7>
+        
+        
+   <ce_08_sub_miniho_complete type="condition" highlight_layer="part7" condition="ce_08_sub_miniho_complete='1'">
+		</ce_08_sub_miniho_complete>
+   </ce_08_sub_miniho>
+   
+   
+   
+   <ce_08_sub_boat>
+   
+<!--		<use_ce_chip_with_a_boat_inv type="apply_item" inventory_item="ce_chip_with_a_boat_inv" drop_zone="drop_zone_ce_chip_with_a_boat_inv">
+			<dependency>
+			  <collect_ce_chip_with_a_boat_inv/>
+			  <ce_08_sub_miniho_complete/>
+			 
+			</dependency>
+		</use_ce_chip_with_a_boat_inv>
+        
+        <collect_ce_rope_inv type="inventory_item" inventory_item="ce_rope_inv" highlight_layer="parent_clip/ce_rope_inv"  >
+			<dependency>
+              <use_ce_chip_with_a_boat_inv/>
+			</dependency>
+		</collect_ce_rope_inv>
+        
+        <collect_ce_stoned_ball_inv type="inventory_item" inventory_item="ce_stoned_ball_inv" highlight_layer="parent_clip/ce_stoned_ball_inv"    >
+			<dependency>
+              <use_ce_chip_with_a_boat_inv/>
+			</dependency>
+		</collect_ce_stoned_ball_inv>-->
+        <collect_ce_chest_inv type="inventory_item" inventory_item="ce_chest_inv"   >
+			<dependency>
+              <!--<use_ce_chip_with_a_boat_inv/>-->
+			  <collect_ce_bracelet_inv/>
+			</dependency>
+		</collect_ce_chest_inv>
+
+   </ce_08_sub_boat>
+   
+   <ce_08_sub_island>
+   
+        <use_ce_rope_with_hook_inv type="apply_item" inventory_item="ce_rope_with_hook_inv" drop_zone="drop_zone_ce_rope_with_hook_inv">
+			<dependency>
+			  <collect_ce_rope_with_hook_inv/>
+               <use_ce_board_inv/>
+          
+			</dependency>
+		</use_ce_rope_with_hook_inv>
+        
+         <use_ce_board_inv type="apply_item" inventory_item="ce_board_inv" drop_zone="drop_zone_ce_board_inv">
+			<dependency>
+			  <collect_ce_board_inv/>
+			 
+			</dependency>
+		</use_ce_board_inv>
+        
+        <ce_08_sub_island_imp_go type="condition" highlight_layer="active_zone_imp_go" condition="ce_08_sub_island_imp_go='1'">
+            <dependency>
+			  <use_ce_board_inv/>
+			  <use_ce_rope_with_hook_inv/>
+			</dependency>
+		</ce_08_sub_island_imp_go>
+        
+         <collect_ce_bracetel_for_shoulder_inv type="inventory_item" highlight_layer="imp_iddle/selection" inventory_item="ce_bracetel_for_shoulder_inv"  >
+			<dependency>
+              <ce_08_sub_island_imp_go/>
+			</dependency>
+		</collect_ce_bracetel_for_shoulder_inv>
+        
+        
+        
+   </ce_08_sub_island>
+   
+   <ce_08_sub_sanctuary>
+   
+      <use_ce_1_part_of_leaf_inv type="apply_item" inventory_item="ce_1_part_of_leaf_inv" drop_zone="drop_zone_parts_of_leaf_inv">
+			<dependency>
+			 <collect_ce_1_part_of_leaf_inv/>
+			</dependency>
+		</use_ce_1_part_of_leaf_inv>
+        
+          <use_ce_2_part_of_leaf_inv type="apply_item" inventory_item="ce_2_part_of_leaf_inv" drop_zone="drop_zone_parts_of_leaf_inv">
+			<dependency>
+			 <collect_ce_2_part_of_leaf_inv/>
+			</dependency>
+		</use_ce_2_part_of_leaf_inv>
+        
+          <use_ce_3_part_of_leaf_inv type="apply_item" inventory_item="ce_3_part_of_leaf_inv" drop_zone="drop_zone_parts_of_leaf_inv">
+			<dependency>
+			 <collect_ce_3_part_of_leaf_inv/>
+			</dependency>
+		</use_ce_3_part_of_leaf_inv>
+        
+        
+        <collect_ce_bracelet_inv type="inventory_item" highlight_layer="ce_bracelet_inv/selection" inventory_item="ce_bracelet_inv"  >
+			<dependency>
+              <use_ce_1_part_of_leaf_inv/>
+              <use_ce_2_part_of_leaf_inv/>
+              <use_ce_3_part_of_leaf_inv/>
+			</dependency>
+		</collect_ce_bracelet_inv>
+      
+   </ce_08_sub_sanctuary>
+   
+    <!-- 9-->
+    
+    
+    <ce_09>
+    
+        <collect_ce_board_inv type="inventory_item" inventory_item="ce_board_inv"  >
+			<dependency>
+			</dependency>
+		</collect_ce_board_inv>
+        
+        <collect_ce_chip_with_a_boat_inv type="inventory_item" inventory_item="ce_chip_with_a_boat_inv"  highlight_layer="active_zone_ho_01"  >
+			<dependency>
+			</dependency>
+		</collect_ce_chip_with_a_boat_inv>
+        
+        <collect_ce_vial_inv type="inventory_item" inventory_item="ce_vial_inv"  highlight_layer="active_zone_ho_02"  >
+			<dependency>
+               <use_ce_bracelet_with_rubellite_inv_2/>
+               <use_ce_necklace_inv/>
+               <use_ce_tiara_inv/>
+			</dependency>
+		</collect_ce_vial_inv>
+
+    </ce_09>
+    
+    <ce_09_sub_elli>
+    
+     <use_ce_bracelet_with_rubellite_inv_2 type="apply_item" inventory_item="ce_bracetel_for_shoulder_inv" drop_zone="drop_zone_elli">
+			<dependency>
+			 <collect_ce_bracetel_for_shoulder_inv/>
+			</dependency>
+		</use_ce_bracelet_with_rubellite_inv_2>
+        
+        
+     <use_ce_necklace_inv type="apply_item" inventory_item="ce_necklace_inv" drop_zone="drop_zone_elli">
+			<dependency>
+			 <collect_ce_necklace_inv/>
+			</dependency>
+		</use_ce_necklace_inv>
+        
+        
+     <use_ce_tiara_inv type="apply_item" inventory_item="ce_tiara_inv" drop_zone="drop_zone_elli">
+			<dependency>
+			 <collect_ce_tiara_inv/>
+			</dependency>
+		</use_ce_tiara_inv>
+        
+         <use_ce_vial_inv type="apply_item" inventory_item="ce_vial_inv" drop_zone="drop_zone_ce_vial_inv">
+			<dependency>
+			 <collect_ce_vial_inv/>
+			
+			</dependency>
+		</use_ce_vial_inv>
+        
+          <collect_ce_spring_water_inv type="inventory_item" inventory_item="ce_spring_water_inv"  >
+			<dependency>
+                <use_ce_vial_inv/>
+			</dependency>
+		</collect_ce_spring_water_inv>
+        
+        
+        
+    
+    </ce_09_sub_elli>
+    
+    <ce_09_sub_table>
+    
+    
+        <use_ce_golden_threads_inv type="apply_item" inventory_item="ce_golden_threads_inv" drop_zone="drop_zone_ce_golden_threads_inv">
+			<dependency>
+			 <collect_ce_golden_threads_inv/>
+			</dependency>
+		</use_ce_golden_threads_inv>
+        
+        
+         <use_ce_stoned_sun_inv type="apply_item" inventory_item="ce_stoned_sun_inv" drop_zone="drop_zone_ce_stoned_sun_inv">
+			<dependency>
+			 <collect_ce_stoned_sun_inv/>
+			 <use_ce_golden_threads_inv/>
+			</dependency>
+		</use_ce_stoned_sun_inv>
+        
+    
+      
+      
+        <collect_ce_necklace_inv type="inventory_item" inventory_item="ce_necklace_inv"   >
+			<dependency>
+            <use_ce_stoned_sun_inv/>
+			</dependency>
+		</collect_ce_necklace_inv>
+       
+        
+
+    
+    
+    
+    </ce_09_sub_table>
+    
+    
+    
+  
+   <!-- IIP-->
+   
+   <iss_ce_bracelet_inv>
+   
+         <use_ce_rubellite_inv type="apply_item" inventory_item="ce_rubellite_inv" drop_zone="drop_zone_ce_rubellite_inv">
+			<dependency>
+			 <collect_ce_rubellite_inv/>
+			</dependency>
+		</use_ce_rubellite_inv>
+        
+        <collect_ce_bracelet_with_rubellite_inv type="inventory_item" inventory_item="ce_bracelet_with_rubellite_inv"  highlight_layer="drop_zone_ce_rubellite_inv"   >
+			<dependency>
+            <use_ce_rubellite_inv/>
+			</dependency>
+		</collect_ce_bracelet_with_rubellite_inv>
+        
+   </iss_ce_bracelet_inv>
+   
+  
+   
+   <iss_ce_chain_inv>
+   
+    <use_ce_leather_scraps_inv type="apply_item" inventory_item="ce_leather_scraps_inv" drop_zone="drop_zone_ce_leather_scraps_inv">
+			<dependency>
+			 <collect_ce_leather_scraps_inv/>
+			</dependency>
+		</use_ce_leather_scraps_inv>
+        
+        <use_ce_pearls_inv type="apply_item" inventory_item="ce_pearls_inv" drop_zone="drop_zone_ce_pearls_inv">
+			<dependency>
+			 <collect_ce_pearls_inv/>
+			 <use_ce_leather_scraps_inv/>
+			</dependency>
+		</use_ce_pearls_inv>
+        
+           <collect_ce_leather_charm_inv type="inventory_item" inventory_item="ce_leather_charm_inv"  highlight_layer="drop_zone_ce_pearls_inv"   >
+			<dependency>
+            <use_ce_pearls_inv/>
+			</dependency>
+		</collect_ce_leather_charm_inv>
+        
+   </iss_ce_chain_inv>
+   
+   
+   <iss_ce_hook_cat_inv>
+   
+        <use_ce_rope_inv type="apply_item" inventory_item="ce_rope_inv" drop_zone="drop_zone_ce_rope_inv">
+			<dependency>
+			 <collect_ce_rope_inv/>
+			 <use_ce_chip_with_a_boat_inv/>
+			</dependency>
+		</use_ce_rope_inv>
+        
+        
+        <collect_ce_rope_with_hook_inv type="inventory_item" inventory_item="ce_rope_with_hook_inv"  >
+			<dependency>
+            <use_ce_rope_inv/>
+			</dependency>
+		</collect_ce_rope_with_hook_inv>
+        
+
+   </iss_ce_hook_cat_inv>
+   
+   
+   <iss_ce_leather_belt_inv>
+   
+        <use_ce_knife_inv type="apply_item" inventory_item="ce_knife_inv" drop_zone="drop_zone_ce_knife_inv">
+			<dependency>
+			 <collect_ce_knife_inv/>
+			</dependency>
+		</use_ce_knife_inv>
+        
+        <collect_ce_leather_scraps_inv type="inventory_item" inventory_item="ce_leather_scraps_inv"  >
+			<dependency>
+            <use_ce_knife_inv/>
+			</dependency>
+		</collect_ce_leather_scraps_inv>
+        
+  
+   </iss_ce_leather_belt_inv>
+   
+   <iss_ce_stick_inv>
+   
+        <use_ce_hook_inv type="apply_item" inventory_item="ce_hook_inv" drop_zone="drop_zone_ce_hook_inv">
+			<dependency>
+			 <collect_ce_hook_inv/>
+			</dependency>
+        </use_ce_hook_inv>
+        
+         <collect_ce_gaff_inv type="inventory_item" inventory_item="ce_gaff_inv"  >
+			<dependency>
+            <use_ce_hook_inv/>
+			</dependency>
+		</collect_ce_gaff_inv>
+   
+   </iss_ce_stick_inv>
+   
+   <iss_ce_stoned_ball_inv>
+   
+          <use_ce_solar_belt_inv type="apply_item" inventory_item="ce_solar_belt_inv" drop_zone="drop_zone_ce_solar_belt_inv">
+			<dependency>
+			 <collect_ce_solar_belt_inv/>
+			</dependency>
+        </use_ce_solar_belt_inv>
+        
+         <collect_ce_stoned_sun_inv type="inventory_item" inventory_item="ce_stoned_sun_inv"  >
+			<dependency>
+            <use_ce_solar_belt_inv/>
+			</dependency>
+		</collect_ce_stoned_sun_inv>
+   
+   
+   </iss_ce_stoned_ball_inv>
+   
+   <iss_ce_white_crystall_inv>
+   
+        <use_ce_gold_ring_inv type="apply_item" inventory_item="ce_gold_ring_inv" drop_zone="drop_zone_ce_gold_ring_inv">
+			<dependency>
+			 <collect_ce_gold_ring_inv/>
+			</dependency>
+        </use_ce_gold_ring_inv>
+
+        <collect_ce_ringed_crystal_inv type="inventory_item" inventory_item="ce_ringed_crystal_inv"  >
+			<dependency>
+            <use_ce_gold_ring_inv/>
+			</dependency>
+		</collect_ce_ringed_crystal_inv>
+
+   </iss_ce_white_crystall_inv>
+   
+   <iss_ce_chest_inv>
+   
+        <use_ce_chip_with_a_boat_inv type="apply_item" inventory_item="ce_chip_with_a_boat_inv" drop_zone="drop_zone_ce_chip_with_a_boat_inv">
+			<dependency>
+			 <collect_ce_chip_with_a_boat_inv/>
+			</dependency>
+        </use_ce_chip_with_a_boat_inv>
+
+        <collect_ce_rope_inv type="inventory_item" inventory_item="ce_rope_inv"  highlight_layer="ce_rope_inv/selection" >
+			<dependency>
+            <use_ce_chip_with_a_boat_inv/>
+			</dependency>
+		</collect_ce_rope_inv>
+		
+        <collect_ce_stoned_ball_inv type="inventory_item" inventory_item="ce_stoned_ball_inv"  highlight_layer="ce_stoned_ball_inv/selection" >
+			<dependency>
+            <use_ce_chip_with_a_boat_inv/>
+			</dependency>
+		</collect_ce_stoned_ball_inv>
+
+   </iss_ce_chest_inv>
+   
+   
+   <iss_ce_grimoire_lynn_inv>
+   
+
+        <use_ce_blue_flower_inv type="apply_item" inventory_item="ce_blue_flower_inv" drop_zone="drop_zone_ce_blue_flower_inv">
+			<dependency>
+			 <collect_ce_blue_flower_inv/>
+			</dependency>
+        </use_ce_blue_flower_inv>
+		
+		
+        <use_ce_light_crystal_inv type="apply_item" inventory_item="ce_light_crystal_inv" drop_zone="drop_zone_ce_light_crystal_inv">
+			<dependency>
+			 <collect_ce_light_crystal_inv/>
+			 <collect_ce_spell_of_portals_inv/>
+			</dependency>
+        </use_ce_light_crystal_inv>
+        
+        <use_ce_blue_rune_inv type="apply_item" inventory_item="ce_blue_rune_inv" drop_zone="drop_zone_ce_blue_rune_inv">
+			<dependency>
+			 <collect_ce_blue_rune_inv/>
+			 <collect_ce_ice_spell_inv/>
+			</dependency>
+        </use_ce_blue_rune_inv> 
+        
+        <use_ce_fern_inv type="apply_item" inventory_item="ce_fern_inv" drop_zone="drop_zone_ce_fern_inv">
+			<dependency>
+			 <collect_ce_fern_inv/>
+			 <collect_ce_ice_spell_inv/>
+			</dependency>
+        </use_ce_fern_inv>
+        
+          <collect_ce_ice_spell_inv type="inventory_item" inventory_item="ce_ice_spell_inv"  >
+			<dependency>
+           <iss_ce_grimoire_lynn_inv_miniho_complete/>
+			</dependency>
+		</collect_ce_ice_spell_inv>
+        
+        <collect_ce_light_spell_inv type="inventory_item" inventory_item="ce_light_spell_inv"  >
+			<dependency>
+           <use_ce_light_crystal_inv/>
+			</dependency>
+		</collect_ce_light_spell_inv>
+
+        <collect_ce_spell_of_portals_inv type="inventory_item" inventory_item="ce_spell_of_portals_inv"  >
+			<dependency>
+          
+             <use_ce_blue_rune_inv/>
+             <use_ce_fern_inv/>
+			</dependency>
+		</collect_ce_spell_of_portals_inv>
+        
+        
+        <iss_ce_grimoire_lynn_inv_flower_use_1 type="condition" highlight_layer="drop_zone_lian_flower_01|iss_ce_grimoire_lynn_inv_lian_flower_01" condition="iss_ce_grimoire_lynn_inv_flower_use_1='1'">
+			
+			<dependency>
+				<use_ce_blue_flower_inv/>
+			</dependency>
+		</iss_ce_grimoire_lynn_inv_flower_use_1>
+        
+        <iss_ce_grimoire_lynn_inv_flower_use_2 type="condition" highlight_layer="drop_zone_lian_flower_02|iss_ce_grimoire_lynn_inv_lian_flower_02" condition="iss_ce_grimoire_lynn_inv_flower_use_2='1'">
+			<dependency>
+				<use_ce_blue_flower_inv/>
+			</dependency>
+		</iss_ce_grimoire_lynn_inv_flower_use_2>
+			
+        <iss_ce_grimoire_lynn_inv_flower_use_3 type="condition" highlight_layer="drop_zone_lian_flower_03|iss_ce_grimoire_lynn_inv_lian_flower_03" condition="iss_ce_grimoire_lynn_inv_flower_use_3='1'">
+			<dependency>
+				<use_ce_blue_flower_inv/>
+			</dependency>
+		</iss_ce_grimoire_lynn_inv_flower_use_3>
+        
+        <iss_ce_grimoire_lynn_inv_flower_use_4 type="condition" highlight_layer="drop_zone_lian_flower_04|iss_ce_grimoire_lynn_inv_lian_flower_04" condition="iss_ce_grimoire_lynn_inv_flower_use_4='1'">
+			<dependency>
+				<use_ce_blue_flower_inv/>
+			</dependency>
+		</iss_ce_grimoire_lynn_inv_flower_use_4>
+        
+        <iss_ce_grimoire_lynn_inv_flower_use_5 type="condition" highlight_layer="drop_zone_lian_flower_05|iss_ce_grimoire_lynn_inv_lian_flower_05" condition="iss_ce_grimoire_lynn_inv_flower_use_5='1'">
+			<dependency>
+				<use_ce_blue_flower_inv/>
+			</dependency>
+		</iss_ce_grimoire_lynn_inv_flower_use_5>
+        
+        
+         <iss_ce_grimoire_lynn_inv_miniho_complete type="condition" highlight_layer="drop_zone_lian_flower_05" condition="iss_ce_grimoire_lynn_inv_miniho_complete='1'">
+			
+            <dependency>
+                <iss_ce_grimoire_lynn_inv_flower_use_5/>
+                <iss_ce_grimoire_lynn_inv_flower_use_4/>
+                <iss_ce_grimoire_lynn_inv_flower_use_3/>
+                <iss_ce_grimoire_lynn_inv_flower_use_2/>
+                <iss_ce_grimoire_lynn_inv_flower_use_1/>
+			</dependency>
+		</iss_ce_grimoire_lynn_inv_miniho_complete>
+   
+   </iss_ce_grimoire_lynn_inv>
+   
+   <current_place>
+   
+    <condit_current_place_ce_01 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='ce_01'">
+      <dependency>
+        <final_quest />
+      </dependency>
+    </condit_current_place_ce_01>
+	
+	 <condit_current_place_ce_02 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='ce_02'">
+      <dependency>
+        <final_quest />
+      </dependency>
+    </condit_current_place_ce_02>
+	
+	 <condit_current_place_ce_03 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='ce_03'">
+      <dependency>
+        <final_quest />
+      </dependency>
+    </condit_current_place_ce_03>
+	
+	 <condit_current_place_ce_04 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='ce_04'">
+      <dependency>
+        <final_quest />
+      </dependency>
+    </condit_current_place_ce_04>
+	
+	 <condit_current_place_ce_05 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='ce_05'">
+      <dependency>
+        <final_quest />
+      </dependency>
+    </condit_current_place_ce_05>
+	
+	 <condit_current_place_ce_06 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='ce_06'">
+      <dependency>
+        <final_quest />
+      </dependency>
+    </condit_current_place_ce_06>
+	
+	 <condit_current_place_ce_07 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='ce_07'">
+      <dependency>
+        <final_quest />
+      </dependency>
+    </condit_current_place_ce_07>
+	
+	 <condit_current_place_ce_08 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='ce_08'">
+      <dependency>
+        <final_quest />
+      </dependency>
+    </condit_current_place_ce_08>
+	
+	 <condit_current_place_ce_09 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='ce_09'">
+      <dependency>
+        <final_quest />
+      </dependency>
+    </condit_current_place_ce_09>
+	
+	 <condit_current_place_ce_10 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='ce_10'">
+      <dependency>
+        <final_quest />
+      </dependency>
+    </condit_current_place_ce_10>
+  </current_place>
+  
+  
+    
+</quests>

@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
-using UnityEngine.EventSystems;
 using UnityEngine.Events;
 
 namespace Framework {
@@ -8,7 +6,10 @@ namespace Framework {
 
         public InventoryItem requiredItem;
         public int itemsCount = 1;
+
+        [LocalizationString]
         public string clickMessage;
+
         public UnityEvent onUse;
 
         private InventoryManager inventory;
@@ -25,7 +26,7 @@ namespace Framework {
                 return;
             }
 
-            //TO DO: show note
+            CommentManager.instance.Show(clickMessage);
         }
     }
 }

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="unicode"?>
+
+<texts language="english">
+  <input_letters letters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"/>
+  <game_title text="Witches' Legacy: Slumbering Darkness">
+    <ce_full text="ウィッチズ・レガシー：まどろみの闇 コレクターズ・エディション"/>
+    <ce_demo text="ウィッチズ・レガシー：まどろみの闇 コレクターズ・エディション"/>
+    <se_full text="ウィッチズ・レガシー：まどろみの闇"/>
+    <se_demo text="ウィッチズ・レガシー：まどろみの闇"/>
+    <survey text="ウィッチズ・レガシー：まどろみの闇 アンケート版"/>
+  </game_title>
+  <gameplay>
+    <ho_items/>
+  </gameplay>
+</texts>

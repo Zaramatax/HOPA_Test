@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="unicode"?>
+
+<texts language="english">
+  <input_letters letters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"/>
+  <pics_with_text to_bfg="This text is drawn on the pictures. Each node of text consists path to the appropriate image. So you won't see any changes in the game after editing texts. You should deliver these texts to us and we will update pictures."/>
+  <cutscenes_description to_bfg="This text is drawn on the pictures in temp cutscenes. Each node of text consists path to the appropriate image. So you won't see any changes in the game after editing texts. You should deliver these texts to us and we will update pictures."/>
+  <gameplay>
+    <map>
+      <location_titles>
+        <se_01 text="フェスティバル"/>
+        <se_02 text="人形劇場"/>
+        <se_03 text="魔女の谷"/>
+        <se_04 text="魔術師の屋敷の裏庭"/>
+        <se_05 text="作業場"/>
+        <se_06 text="魔術師の屋敷"/>
+        <se_07 text="地下牢"/>
+        <se_08 text="鏡の間"/>
+      </location_titles>
+    </map>
+    <diary>
+      <start_note>
+        <content text=""/>
+        <header text=""/>
+      </start_note>
+    </diary>
+    <tutorial>
+      <text_start text="チュートリアルを表示しますか？"/>
+      <full_version text="すべて表示"/>
+      <select_version text="特殊機能のみ表示"/>
+      <cancel_version text="表示しない"/>
+      <task_subscreen_loupe text="虫眼鏡の表示されるエリアは拡大して調べることができます。"/>
+      <click_task_subscreen_loupe text="このエリアを調べましょう。"/>
+      <task_cursor_finger text="アクションを起こすことのできるところに触れると手のアイコンが表示されます。"/>
+      <click_task_cursor_finger text="ロープをほどきます。"/>
+      <task_morfing_and_puzle_take_morphing text="ゲーム内に隠された変化アイテムを注意して探しましょう。"/>
+      <task_morfing_and_puzle_take_puzzle text="ゲーム内に隠されたコレクションアイテムを注意して探しましょう。各メイン場面または拡大画面に少なくとも1つコレクションアイテムが隠されています。"/>
+      <click_task_morfing_and_puzle text="このアイテムを取ってください。"/>
+      <task_hint text="行き詰まったらヒントボタンを押すと次に調べるエリアが表示されます。使用するたびにチャージを待たなくてはなりません。"/>
+      <click_task_hint text="続行…"/>
+      <task_meet_imp text="小鬼はあなたの助っ人です。"/>
+      <click_task_meet_imp text="小鬼を選択して連れて行きましょう。"/>
+      <task_inventory_interactiv text="プラスマークのアイテムはほかのアイテムと組み合わせることができます。"/>
+      <click_task_inventory_interactiv text="ペンダントを選択しましょう。"/>
+      <change_task_inventory_interactiv text="壊れたペンダントを直してください。"/>
+      <inventory_interactiv_open_sub text="写真を選択します。"/>
+      <inventory_interactiv_pick_first_item text="ペンダントに入れてください。"/>
+      <task_use_iventory_item text="所持品トレイのアイテムを使うことができます。"/>
+      <click_task_use_iventory_item text="リンのペンダントを日記にはめてください。"/>
+      <task_hidden_plate text="仮面を画面下のくぼみにはめると探すべきアイテムリストが表示されます。"/>
+      <click_task_hidden_plate text="このマスクを選択しましょう。"/>
+      <change_text_click_task_hidden_plate text="ここに使ってください。"/>
+      <task_hidden_scene text="下にリストされたアイテムを見つけてください。"/>
+      <click_task_hidden_scene text="鏡を取りましょう。"/>
+      <task_hidden_about_interactive text="緑色で表示されたアイテムを見つけるにはアクションを起こす必要があります。"/>
+      <click_task_hidden_about_interactive text="くしを取ります。"/>
+      <click_task_hidden_about_interactive_picked text="くしをウィッグに使いましょう。"/>
+      <task_about_task_from_imp text="小鬼の巻物でタスクを確認できます。"/>
+      <click_task_about_task_from_imp text="小鬼を選択しましょう。"/>
+      <task_use_imp text="小鬼の力を借りてアイテムを手に入れることができます。小鬼が役立つエリアではアイコンが表示されます。"/>
+      <click_task_use_imp text=" 力試しマシンを選択しましょう。"/>
+      <click_task_use_imp_take_hammer text="ハンマーを選択します。"/>
+      <click_task_use_imp_use_hammer text="ハンマーをパッドに使います。"/>
+      <task_mini_hos text="すべての鳥を見つけてください。この拡大ウィンドウが開いているときのみ探すことができます。"/>
+      <click_task_mini_hos text="鳥を選択します。"/>
+      <task_map text="迷ったときは地図を確認しましょう。地図からコレクションアイテムの発見状況を確認することができます。発見済みの場所には星のマークが点灯します。"/>
+      <click_task_map text="続行..."/>
+      <task_hidden_magong text="アイテム探しの代わりにマッチゲームをプレイできます。"/>
+      <click_task_hidden_magong text="続行…"/>
+      <task_hidden_ho_key text=" 鍵を使ってロッカーを開きましょう。 "/>
+      <click_task_hidden_ho_key text="鍵を取ります。"/>
+      <skip_tutor text="チュートリアルをスキップ"/>
+    </tutorial>
+    <for_save_tutor>
+      <click_task_use_imp text=" メーターを選択。"/>
+      <click_task_iventory_item text="写真を選択して続ける。"/>
+      <task_iventory_item_after_click text="冒険中に見つけたアイテムは所持品として保管されます。"/>
+      <task_iventory_item_click_to_continue text="続行…"/>
+      <inventory_interactiv_compot_interactiv_task text="お見事でした。修理完了！"/>
+      <inventory_interactiv_compot_interactiv_continue text="続行…"/>
+    </for_save_tutor>
+    <ho_items>
+      <se_01_ho_01>
+        <feather>
+          <_1 text="羽根"/>
+        </feather>
+        <musicians>
+          <_1 text="音楽家"/>
+        </musicians>
+        <party_popper>
+          <_1 text="しましまの筒"/>
+        </party_popper>
+        <braid>
+          <_1 text="三つ編み"/>
+        </braid>
+        <concertina>
+          <_1 text="アコーディオン"/>
+        </concertina>
+        <coffee_grinder>
+          <_1 text="コーヒーミル"/>
+        </coffee_grinder>
+        <bat>
+          <_1 text="コウモリ"/>
+        </bat>
+        <scarf>
+          <_1 text="マフラー"/>
+        </scarf>
+        <pipe>
+          <_1 text="喫煙パイプ"/>
+        </pipe>
+        <mirror>
+          <_1 text="鏡"/>
+        </mirror>
+        <card>
+          <_1 text="トランプ"/>
+        </card>
+        <fan>
+          <_1 text="扇子"/>
+        </fan>
+        <se_board_center_inv>
+          <_1 text="盾のエンブレム"/>
+        </se_board_center_inv>
+      </se_01_ho_01>
+      <se_04_ho_01>
+        <violin>
+          <_1 text="バイオリン"/>
+        </violin>
+        <folding_ladder>
+          <_1 text="はしご"/>
+        </folding_ladder>
+        <bird_house>
+          <_1 text="鳥の巣箱"/>
+        </bird_house>
+        <knife>
+          <_1 text="ナイフ"/>
+        </knife>
+        <lamp>
+          <_1 text="電球"/>
+        </lamp>
+        <flower_hanging>
+          <_1 text="吊るされた花"/>
+        </flower_hanging>
+        <barrette>
+          <_1 text="バレッタ"/>
+        </barrette>
+        <bow>
+          <_1 text="リボン"/>
+        </bow>
+        <umbrella>
+          <_1 text="傘"/>
+        </umbrella>
+        <crystals>
+          <_1 text="水晶"/>
+        </crystals>
+        <bird>
+          <_1 text="鳥"/>
+        </bird>
+        <frog>
+          <_1 text="カエル"/>
+        </frog>
+        <se_watering_can_inv>
+          <_1 text=""/>
+          <_2 text="じょうろ"/>
+          <_3 text="植物に命を与えるもの"/>
+        </se_watering_can_inv>
+      </se_04_ho_01>
+      <se_04_ho_02>
+        <pumpkin>
+          <_1 text="かぼちゃ"/>
+        </pumpkin>
+        <ewer>
+          <_1 text="ティーポット"/>
+        </ewer>
+        <fern>
+          <_1 text="シダ"/>
+        </fern>
+        <amanita>
+          <_1 text="キノコ"/>
+        </amanita>
+        <iguana>
+          <_1 text="イグアナ"/>
+        </iguana>
+        <scarecrow>
+          <_1 text="かかし"/>
+        </scarecrow>
+        <beatle>
+          <_1 text="甲虫"/>
+        </beatle>
+        <bouquet_of_roses>
+          <_1 text="バラの花束"/>
+        </bouquet_of_roses>
+        <glove>
+          <_1 text="手袋"/>
+        </glove>
+        <mandrake_root>
+          <_1 text="マンドレイク"/>
+        </mandrake_root>
+        <pear>
+          <_1 text="洋梨"/>
+        </pear>
+        <gnome>
+          <_1 text="小人"/>
+        </gnome>
+        <se_pollen_inv>
+          <_1 text="花粉"/>
+        </se_pollen_inv>
+      </se_04_ho_02>
+      <se_06_ho_01>
+        <elephant>
+          <_1 text="ゾウ"/>
+        </elephant>
+        <bubble>
+          <_1 text="泡"/>
+        </bubble>
+        <dill>
+          <_1 text="ハーブ"/>
+        </dill>
+        <potion>
+          <_1 text="浮遊ポーション"/>
+        </potion>
+        <snail>
+          <_1 text="カタツムリ"/>
+        </snail>
+        <doll>
+          <_1 text="人形"/>
+        </doll>
+        <pisces>
+          <_1 text="魚座のシンボル"/>
+        </pisces>
+        <olive_oil>
+          <_1 text="オリーブオイル"/>
+        </olive_oil>
+        <bullion>
+          <_1 text="金の延べ棒"/>
+        </bullion>
+        <horn>
+          <_1 text="角"/>
+        </horn>
+        <alchemist>
+          <_1 text="錬金術師"/>
+        </alchemist>
+        <emerald>
+          <_1 text="エメラルド"/>
+        </emerald>
+        <amanita>
+          <_1 text="キノコ"/>
+        </amanita>
+      </se_06_ho_01>
+      <se_06_ho_02>
+        <se_mirror_splinters_inv>
+          <_1 text="鏡の破片"/>
+        </se_mirror_splinters_inv>
+        <shards_of_mirror>
+          <_1 text="鏡の破片"/>
+        </shards_of_mirror>
+        <scorpion>
+          <_1 text="サソリ"/>
+        </scorpion>
+        <scroll>
+          <_1 text="巻物"/>
+        </scroll>
+        <bay_leaf>
+          <_1 text="ベイリーフ"/>
+        </bay_leaf>
+        <walnuts>
+          <_1 text="くるみ"/>
+        </walnuts>
+        <lemon>
+          <_1 text="レモン"/>
+        </lemon>
+        <glasses>
+          <_1 text="眼鏡"/>
+        </glasses>
+        <poison>
+          <_1 text="毒"/>
+        </poison>
+        <coffee>
+          <_1 text="コーヒー豆"/>
+        </coffee>
+        <chimera>
+          <_1 text="キメラ"/>
+        </chimera>
+        <star>
+          <_1 text="星"/>
+        </star>
+        <rosehips>
+          <_1 text="ローズヒップ"/>
+        </rosehips>
+        <rosary>
+          <_1 text="チャームのブレスレット"/>
+        </rosary>
+      </se_06_ho_02>
+    </ho_items>
+    <inventory_items>
+      <se_rubber_hummer_inv text="おもちゃのハンマー"/>
+      <se_master_key_inv text="ロックピック"/>
+      <se_cover_with_points_inv text="眼鏡の入ったケース"/>
+      <se_broken_pendent_inv text="リンのペンダント"/>
+      <se_lynns_pendent_inv text="リンのペンダント"/>
+      <se_board_center_inv text="盾のエンブレム"/>
+      <se_figure_lynn_inv text="女性の人形"/>
+      <se_figure_morgana_inv text="頭巾をかぶった人形"/>
+      <se_cross_inv text="十字"/>
+      <se_coin_inv text="コイン"/>
+      <se_knife_inv text="ナイフ"/>
+      <se_watering_with_water_inv text="水の入ったじょうろ"/>
+      <se_emblem_throne_inv text="王座のエンブレム"/>
+      <se_ring_sorcerer_inv text="魔術師の指輪"/>
+      <se_pumpkins_inv text="カボチャ"/>
+      <se_hand_with_a_roll_inv text="手と巻物"/>
+      <se_hand_with_a_feather_inv text="手と羽根"/>
+      <se_turpentine_inv text="塗料シンナー"/>
+      <se_scroll_witches_inv text="魔女の巻物"/>
+      <se_silhouette_cup_inv text="ゴブレットのシルエット"/>
+      <se_cork_inv text="コルク"/>
+      <se_shoes_inv text="木靴"/>
+      <se_handle_chest_inv text="取っ手"/>
+      <se_flint_inv text="火打ち道具"/>
+      <se_pollen_inv text="花粉"/>
+      <se_matter_rag_inv text="布"/>
+      <se_edwards_photo_inv text="エドワードの写真"/>
+      <se_pin_inv text="ブローチ"/>
+      <se_panicle_inv text="ほうき"/>
+      <se_stick_inv text="木の棒"/>
+      <se_watering_can_inv text="空のじょうろ"/>
+      <se_oil_lamp_inv text="オイルランプ"/>
+      <se_mirror_inv text="鏡"/>
+      <se_mask_for_swimming_inv text="ミニチュア潜水マスク"/>
+      <se_straw_inv text="ストロー"/>
+      <se_emblem_of_hats_inv text="帽子のエンブレム"/>
+      <se_succinic_mask_inv text="マスク"/>
+      <se_model_steam_locomotive_inv text="機関車"/>
+      <se_casket_inv text="小箱"/>
+      <se_paint_and_brush_inv text="絵の具と筆"/>
+      <se_sorcerer_doll_inv text="魔術師の人形"/>
+      <se_metal_hanger_inv text="ハンガー"/>
+      <se_sphere_emblem_inv text="スフィアのエンブレム"/>
+      <se_pollen_inv text="花粉"/>
+      <se_casket_inv text="小箱"/>
+      <se_page_slotted_inv text="切り抜かれたページ"/>
+      <se_recipe_for_casket_inv text="説明図"/>
+      <se_black_plate_inv text="黒のプレート"/>
+      <se_idol_1_inv text="偶像"/>
+      <se_idol_2_inv text="偶像"/>
+      <se_cutting_fork_inv text="フォーク"/>
+      <se_vial_of_hourglass_inv text="砂時計"/>
+      <se_magic_apple_inv text="魔法のりんご"/>
+      <se_silver_ignot_inv text="銀の延べ棒"/>
+      <se_key_with_a_rune_inv text="ルーンストーン"/>
+      <se_chain_with_a_hook_inv text="鎖とフック"/>
+      <se_watch_on_a_chain_inv text="懐中時計"/>
+      <se_key_to_exit_inv text="鍵"/>
+      <se_part_of_a_cover_inv text="りんごの一部"/>
+      <se_sieve_inv text="ふるい"/>
+      <se_puppet_edward_inv text="エドワードの人形"/>
+      <se_flying_panicle_inv text="空飛ぶほうき"/>
+      <se_part_of_a_fresco_inv text="フレスコ画の水晶"/>
+      <se_potion_of_levitation_inv text="浮遊ポーション"/>
+      <se_glass_eye_inv text="ガラスの目"/>
+      <se_mirror_splinters_inv text="鏡の破片"/>
+      <se_black_candle_inv text="黒いロウソク"/>
+      <se_spell_inv text="呪文"/>
+      <se_master_edward_inv text="エドワード本人"/>
+      <se_hook_inv text="フック"/>
+      <se_broken_hook_inv text="壊れたフック"/>
+      <se_chain_inv text="鎖"/>
+      <se_edwards_bag_inv text="エドワードの道具袋"/>
+    </inventory_items>
+    <comments>
+      <item_misuse>
+        <se_flying_panicle_inv>
+          <drop_zone_se_flying_panicle_inv_without_imp>
+            <text_00 text="このほうきに乗れるのは小さな体の人だけよ。 "/>
+          </drop_zone_se_flying_panicle_inv_without_imp>
+        </se_flying_panicle_inv>
+        <se_watering_can_inv>
+          <drop_zone_se_watering_with_water_inv>
+            <text_00 text="いい考えだけど缶は空っぽよ。 "/>
+          </drop_zone_se_watering_with_water_inv>
+        </se_watering_can_inv>
+        <se_straw_inv>
+          <drop_zone_se_mask_for_swimming_inv>
+            <text_00 text="呼吸するためのチューブが必要だわ。 "/>
+          </drop_zone_se_mask_for_swimming_inv>
+        </se_straw_inv>
+      </item_misuse>
+      <inventory_item_partially_collected text="先にほかのパーツを見つけないと。 "/>
+      <scenes>
+        <miniho_instruction text="すべてのパーツを見つけてください。拡大画面が開いている間だけ見つけることができます。 "/>
+        <common>
+          <hint_unavailable text="現在の難易度ではヒントボタンを利用できません。 "/>
+          <skip_unavailable text="現在の難易度ではスキップボタンを利用できません。 "/>
+        </common>
+        <iss>
+          <se_cover_with_points_inv>
+            <comment_drop_zone_se_straw_inv text="小鬼の潜水マスクにぴったりだわ。でも水中で呼吸ができるようにチューブをつける必要がある。 "/>
+          </se_cover_with_points_inv>
+          <se_broken_pendent_inv>
+            <comment_drop_zone_se_edwards_photo_inv text="エドワードの写真はどこ？ "/>
+          </se_broken_pendent_inv>
+          <se_panicle_inv>
+            <comment_drop_zone_se_potion_of_levitation_inv text="ほうきと言えば魔女の乗り物よね。 "/>
+          </se_panicle_inv>
+          <se_master_edward_inv>
+            <comment_drop_zone_items text="エドワードは何かを作る気満々だわ。 "/>
+            <comment_drop_zone_se_edwards_bag_inv text="道具ねぇ？きっとどこかで見つかるはず。 "/>
+            <comment_need_se_press_inv text="エドワードはこの図を使って鍵を作ることができる。でもそれにふさわしい材料が必要だわ。 "/>
+            <comment_need_se_scheme_key_inv text="エドワードに頼んで鍵を作ってもらえるけど、デザインがなければ無理だわ。 "/>
+          </se_master_edward_inv>
+          <se_oil_lamp_inv>
+            <comment_drop_zone_se_lampadny_oil_inv text="ランプで道を照らしたいなら、油が必要だわ。 "/>
+            <comment_drop_zone_flint_2_inv text="あとは火をつければいい。 "/>
+          </se_oil_lamp_inv>
+      
+          <se_casket_inv>
+            <comment_drop_zone_flakon text="エドワードに何かを渡さないと。 "/>
+            <comment_drop_zone_box_out text="エドワードに何かを渡さないと。 "/>
+            <comment_drop_zone_kofemolka text="材料をコーヒーミルに入れたらいいと思う。 "/>
+            <comment_drop_zone_se_puppet_edward_inv text="ここにエドワードを置けばいいみたい。 "/>
+            <comment_drop_zone_se_recipe_for_casket_inv text="レシピが必要だわ。 "/>
+            <comment_voiced_bbt_need_recipe text="ふむ…この魔法の箱を使って人形に命を与えられるみたいだわ。でも呪文の作り方がわからないわ… "/>
+          </se_casket_inv>
+          <se_chain_inv>
+            <comment_drop_zone_se_hook_inv text="フックがついていない。 "/>
+          </se_chain_inv>
+        </iss>
+        <se_01>
+          <comment_voiced_drop_zone_se_rubber_hummer_inv_no_imp text="待って。小鬼の出番かもしれない。 "/>
+          <comment_drop_zone_se_rubber_hummer_inv_with_imp text="ふさわしい道具があれば上にあるものを手に入れられるかもしれない。 "/>
+          <comment_drop_zone_se_cross_inv text="バツの形をしたものがはまるみたいね。 "/>
+          <comment_button_photo_zastryalo text="ボタンを押しても何も起こらない。取り出し口に何か詰まっているようね。 "/>
+          <comment_drop_zone_se_knife_inv text="金属製のものが詰まっているわ。どうにかして取り出せないかしら。 "/>
+          <comment_use_coin text="う～ん…うまくいかない。 "/>
+          <drop_zone_se_coin_inv_use text="これで遊ぶにはコインが必要だわ。 "/>
+          <baranki_no_more text="言い訳するつもりはないわ。ベーグルは私の好物なの。 "/>
+          <comment_active_zone_grip text="どうしたらあの怪しげな人形を取れるかしら？ "/>
+          <comment_voiced_sorcerer_watched text="これはリンとエドワードをさらった人物だわ。二人をずっとつけていたのね。 "/>
+          <comment_voiced_bbt_selfie text="写真うつりはいいほうじゃないけど、これはよく撮れてる。 "/>
+          <comment_need_imp text="ボールで落とせないと思う…小鬼の助けがないと何もできない。 "/>
+        </se_01>
+        <se_01_ho_01>
+          <comment_comb_01 text="ウィッグの毛がもつれているわ。 "/>
+          <comment_musicians_flute_01 text="彼は楽器を持っていない。 "/>
+          <comment_musicians_cello_01 text="彼は楽器を持っていない。 "/>
+          <comment_musicians_violin_01 text="彼は楽器を持っていない。 "/>
+          <comment_poster_crumpled_to_move text="ポスターが半分破り取られている。 "/>
+          <comment_key_0 text="正しいマスクを見つけないと。 "/>
+          <comment_key_1 text="正しいマスクを見つけないと。 "/>
+          <comment_key_2 text="正しいマスクを見つけないと。 "/>
+          <comment_key_3 text="正しいマスクを見つけないと。 "/>
+          <comment_base_item_part_0 text="ここは特定の鍵がないと開かない。 "/>
+          <comment_base_item_part_1 text="ここは特定の鍵がないと開かない。 "/>
+          <comment_base_item_part_2 text="ここは特定の鍵がないと開かない。 "/>
+          <comment_base_item_part_3 text="月をはめればこの箱は開くはず。 "/>
+          <comment_star1 text="何か足りないみたいね… "/>
+          <comment_star2 text="何か足りないみたいね… "/>
+          <comment_star3 text="何か足りないみたいね… "/>
+        </se_01_ho_01>
+        <se_02>
+          <puzzle_text_label text="発見した違い #se_02_puzzle_diff_found#/#se_02_lvl_diff_num# "/>
+          <comment_drop_zone_se_master_key_inv text="どこにも鍵が見当たらないわ。鍵を使わずに開ける方法がないかしら。 "/>
+          <comment_drop_zone_se_board_center_inv text="ちょっと落ち着きなさい。あなたたちの盾を探してあげるから。 "/>
+          <comment_drop_zone_se_lynns_pendent_inv text="こんな状況だもの日記を読んでもリンは許してくれるはず。でも開くには鍵が要る。 "/>
+          <comment_drop_zone_figures text="人形がそろっていないみたい。 "/>
+          <comment_push_button text="人形を動かせるようになっているようね。ちょっと試してみましょう。 "/>
+          <comment_main_button text="人形がそろわないと動かないわ。 "/>
+          <comment_missclick_penalty text="集中できない！ "/>
+          <comment_witcher_is_not_alone text="つまり、この魔術師は誰かの命令に従って行動しているということね。それにこの頭巾をかぶった女性は誰かに似ている… "/>
+        </se_02>
+        <se_03>
+          <comment_voiced_after_cutscene_close_gate text="あの視線に当たれば石に変えられてしまう。う～ん…その力を逆手に利用できないかしら。 "/>
+          <comment_drop_zone_se_mirror_inv text="彼の視線でものが石に変わったわ！視線を反射するものが必要ね！ "/>
+          <comment_drop_zone_se_mask_for_swimming_inv text="このまま水に潜るのは大変よね。潜水用具がないかしら。 "/>
+          <comment_drop_zone_se_watering_can_inv text="ここから水を手に入れられる。 "/>
+          <comment_drop_zone_se_handle_chest_inv text="この箱の取っ手が近くにあることを願うわ。 "/>
+          <comment_drop_zone_se_scroll_witches_inv text="魔女のシンボルだわ！ここに巻物があったようね。 "/>
+          <comment_drop_zone_knife_inv text="これはアシね。切り取れば何かに利用できる。 "/>
+          <count_text_label text="発見したパーツ： #se_03_sub_mini_ho_count_item#/6 "/>
+        </se_03>
+        <se_03_minigame_kamea>
+          <comment_drop_zone_se_emblem_throne_inv text="飾りが1つ足りないみたい。 "/>
+          <comment_the_chosen_one text="あの娘が選ばれし者… "/>
+          <comment_dont_like_dis text="選ばれし者？リンにそっくりだわ！ "/>
+        </se_03_minigame_kamea>
+        <se_04>
+          <comment_drop_zone_se_watering_with_water_inv text="手入れをされていない植物は悪に感化されやすい。この木は干ばつの犠牲になってしまったのね。 "/>
+          <comment_drop_zone_se_pumpkins_inv text="あの指輪を手に入れたいのに！カラスをおどかすしかないわ。 "/>
+          <comment_drop_zone_hands text="像の手がないわ。どこにあるのかしら？ "/>
+          <comment_drop_zone_se_turpentine_inv text="ペンキの塊を取り除く必要がある。 "/>
+          <comment_drop_zone_se_silhouette_cup_inv text="この形はゴブレットに似ているわ。 "/>
+          <comment_grape_eat text="悪と戦っているときはおなかが空くのよね。 "/>
+          <comment_drop_zone_se_shoes_inv text="この子は丈夫だけれど、素足でトゲの上を歩かせたくないわ。 "/>
+          <comment_drop_zone_se_flint_inv_use text="これなら簡単に火がつきそうね… "/>
+        </se_04>
+        <se_04_ho_02>
+          <comment_scarecrow_hat_01 text="これじゃかかしとは呼べないわ。 "/>
+          <comment_scarecrow_ember text="表情がなくちゃカラスをおどかせない。 "/>
+          <comment_trowel_01 text="掘り起こさなくちゃ。 "/>
+          <comment_secateurs text="イタッ！切るには道具が必要だわ。 "/>
+          <comment_rose1_01 text="このままじゃ花束とは呼べないわ。 "/>
+          <comment_rose2_01 text="バラが足りない。 "/>
+          <comment_turtle_shell_01 text="甲羅の一部がなくなっている。 "/>
+          <comment_pot_01 text="花粉を入れるふた付きの容器が必要だわ。 "/>
+        </se_04_ho_02>
+        <se_05>
+          <coment_drop_zone_se_emblem_of_hats_inv text="あの帽子から何が飛び出てくるのか不安だわ。 "/>
+          <comment_drop_zone_se_succinic_mask_inv text="マスクを見つけないと！ "/>
+          <count_text_label text="発見したパーツ： #se_05_sub_miniho_count_item#/6 "/>
+          <comment_drop_zone_se_paint_and_brush_inv text="絵の具と筆があればいいんだけど。 "/>
+          <comment_drop_zone_se_matter_rag_inv text="人形に服を着せないとね。 "/>
+          <comment_color_first text="絵の具がないと顔を描けないわ。 "/>
+          <comment_drop_zone_kraska text="筆を絵の具に浸さないと。 "/>
+          <comment_left_arm1 text="左腕がない。 "/>
+          <comment_right_arm1 text="右腕がここにはまるようね。 "/>
+          <comment_left_leg1 text="左脚がない。 "/>
+          <comment_right_leg1 text="右脚がない。 "/>
+          <comment_hair1 text="髪の毛がないわ！ "/>
+          <comment_drop_zone_kraska_after_hair text="表情がないのはさみしいわね。 "/>
+          <comment_fabric1 text="服を着せないと。 "/>
+          <comment_scissors text="布を切る必要があるわ。 "/>
+          <comment_drop_zone_se_stick_inv text="高すぎて届かない。 "/>
+        </se_05>
+        <se_05_puzzle_railroad>
+          <comment_drop_zone_se_model_steam_locomotive_inv text="列車の1つに機関車がついていない。 "/>
+        </se_05_puzzle_railroad>
+        <se_05_puzzle_fattochini>
+          <comment_drop_zone_se_sorcerer_doll_inv text="もう1つ人形を置く場所がある。 "/>
+        </se_05_puzzle_fattochini>
+        <se_06>
+          <comment_drop_zone_se_flying_panicle_inv_with_imp text="魔女のほうきが役に立ちそう。 "/>
+          <comment_drop_zone_se_flying_panicle_inv_without_imp text="小鬼は登るのは上手だけど空を飛ぶことはできない。 "/>
+          <comment_drop_zone_knife_inv_2 text="このカボチャでこわ～いジャックランタンが作れそうね。 "/>
+          <comment_drop_zone_se_watch_on_a_chain_inv text="このフクロウには何かありそう。 "/>
+          <comment_drop_zone_se_part_of_a_cover_inv text="りんごの一部がなくなっている。 "/>
+          <comment_active_zone_bbt_fork text="このまま取ろうとすればやけどしてしまう。 "/>
+          <comment_active_zone_bbt_se_08 text="静かにしないと。魔術師に気づかれたら大変よ。 "/>
+          <comment_drop_zone_se_sphere_emblem_inv text="本の表紙にはまる円形のものを見つけないと。 "/>
+          <comment_drop_zone_se_page_slotted_inv text="ページが破り取られている。"/>
+          <comment_drop_zone_se_ring_sorcerer_inv text="このくぼみにぴったりはまるルーンを見つけないと。 "/>
+          <comment_pumpkin_lid_01 text="あとはふたをして… "/>
+          <comment_candle2 text="中に明かりを入れないと怖さ半減よ。 "/>
+          <comment_active_zone_comment_cand text="ロウが手に垂れてしまう。 "/>
+          <comment_collect_edwards_bag text="エドワードのかばんだわ！ "/>
+        </se_06>
+        <se_06_ho_01>
+          <comment_alchemist_book_01 text="彼は本を持っていない。 "/>
+          <comment_wig_01 text="髪の毛がないわね。 "/>
+          <comment_bead1_01 text="これじゃ何も見えないわ。 "/>
+          <comment_bead2_01 text="これじゃ何も見えないわ。 "/>
+          <comment_soap_01 text="ここで石けんを溶かせる。 "/>
+          <comment_spoon text="かき混ぜれば泡が立つと思う。 "/>
+          <comment_base_item_part_0 text="ハチの巣はまだ手に入れていない。 "/>
+          <comment_base_item_part_1 text="羽根はまだ手に入れていない。 "/>
+          <comment_base_item_part_2 text="点火しないと。 "/>
+          <comment_base_item_part_3 text="バルブが必要だわ。 "/>
+          <comment_potion_of_levitation text="これで浮遊ポーションができるはず。 "/>
+          <comment_active_zone_bbt_on_matches text="でもまずはふたを閉めないと。蒸留物が気化してしまうもの。 "/>
+        </se_06_ho_01>
+        <se_06_ho_02>
+          <comment_wolf_01 text="チャームを全部見つけないと。 "/>
+          <comment_raven_01 text="チャームを全部見つけないと。 "/>
+          <comment_basilisk_01 text="チャームを全部見つけないと。 "/>
+        </se_06_ho_02>
+        <se_07>
+          <comment_drop_zone_se_chain_with_a_hook_inv text="レバーに何かを引っ掛けて倒せばここから出られる！ "/>
+          <comment_drop_zone_idol text="偶像の目が2つともない。 "/>
+          <comment_drop_zone_se_cutting_fork_inv_se text="ぎゃっ！刃を止める方法を見つけないと。 "/>
+          <comment_drop_zone_se_magic_apple_inv text="箱の中身を見たいならまずは食べ物を与えないと。 "/>
+          <comment_voiced_gas text="呼吸がしにくいわ…煙のせいね！ "/>
+        </se_07>
+        <se_08>
+          <comment_drop_zone_se_key_to_exit_inv text="この錠を開くものを見つけないと！ "/>
+          <comment_drop_zone_se_glass_eye_inv text="目の形に似ているわ。 "/>
+          <comment_drop_zone_ingridients text="必要なものをすべて集めないと。 "/>
+          <comment_drop_zone_se_key_with_a_rune_inv text="ルーンストーンが1つないわ。 "/>
+          <comment_drop_zone_se_vial_of_hourglass_inv text="砂時計の準備が終わっていない。 "/>
+          <comment_drop_zone_se_pollen_inv text="呪文のかけ方はわかっている。花粉を手に入れなくちゃ。 "/>
+          <comment_drop_zone_se_cork_inv text="栓をしないとね。 "/>
+          <comment_candle_cat text="ロウを少し足さないと。 "/>
+          <comment_about_portrait text="この肖像画を見ていると背筋がぞくっとするわ。 "/>
+          <comment_portrait_morgana text="あの魔術師がモルガナをよみがえらせたなんて信じられない。 "/>
+          <comment_voiced_bbt_this_door text="モルガナはこの扉の向こうにリンを連れ去った。鍵が必要だわ！ "/>
+          <comment_voiced_bbt_about_seals text="ウルフガングの言うとおりよ。この杖を使って扉の封印を解くことができる！ "/>
+        </se_08>
+        <se_08_puzzle_battle>
+          <comment_voiced_bbt_after_mg text="このようにしてテティスは戦いに負けたが、破滅したわけではなかった。忠実な弟子であるモルガナはテティスの魂を湖にかくまった。&#xD;&#xA;まもなくテティスがよみがえり、世界を混沌に陥れる日がやって来る... "/>
+          <comment_wand text="ハンターは魔法を使って炎を消した。 "/>
+          <comment_bird text="ハンターはあるものを使い氷を溶かした。 "/>
+          <comment_lantern text="ハンターは闇に対抗する方法を知っていた。 "/>
+          <comment_meat text="ハンターは巧みに狼を追い払った。"/>
+          <comment_sword text="ハンターは邪悪な植物に対抗する武器を持っていた。 "/>
+          <comment_artifact text="ついに偉大なる秘宝を使って魔女に勝利した。 "/>
+          <comment_voiced_bbt_lvl_1 text="ハンターが邪悪な魔女テティスと対決するチャンスが訪れたときには、すでに多くの村が魔女の手で焼き払われていた。 "/>
+          <comment_voiced_bbt_lvl_2 text="テティスは氷の魔法を使ってハンターの行く手を阻んだ。その氷は簡単に取り除くことはできないものだった。 "/>
+          <comment_voiced_bbt_lvl_3 text="テティスは村を闇で覆ったが、ハンターは光を取り戻した。 "/>
+          <comment_voiced_bbt_lvl_4 text="テティスは村の家畜を襲わせるために野生の動物を送り込んだが、ハンターは動物を追い払った。 "/>
+          <comment_voiced_bbt_lvl_5 text="それから魔女は、農産物をおびやかし、村人たちの食糧を奪うために邪悪な植物で村を襲った。 "/>
+          <comment_voiced_bbt_lvl_6 text="それから魔女は自然の力を操り村人たちを襲った。魔女を止めることはできないかのように思えた。&#xD;&#xA;しかしハンターはドラゴンの盾を使って、ついに魔女を倒したのだった。 "/>
+        </se_08_puzzle_battle>
+      </scenes>
+    </comments>
+    <dialogs>
+      <empty_dialog>
+        <intro_0_0 text=""/>
+      </empty_dialog>
+      <intro_dialog>
+        <intro_1_0 text="もうあなたたちの結婚1周年だなんて信じられない。二人とも幸せそうでうれしいわ。魔女と魔女ハンターが結ばれるなんて誰が想像できたかしら？"/>
+        <intro_1_1 text="リンに魔法をかけられたんですよ！"/>
+        <intro_1_2 text="見て！人形劇場だわ。行ってみましょうよ。"/>
+        <intro_1_3 text="先に二人で行っててちょうだい。"/>
+        <intro_1_4 text="私はこの子にごはんをあげてから行くわ。"/>
+      </intro_dialog>
+      <se_02_dialog_cutscene_kidnapping>
+        <lynn_1_0 text="エドワードが！そんな！！"/>
+        <sourcerer_1_0 text="お前も来るのだ。さもなくば大切なエドワードは消え、二度と会えなくなるぞ！"/>
+      </se_02_dialog_cutscene_kidnapping>
+      <se_04_dialog_with_lynn_free_me>
+        <lynn_1_0 text="ママ！助けて！身動きが取れないのよ。木につかまれていて魔法が使えないの！"/>
+      </se_04_dialog_with_lynn_free_me>
+      <se_04_dialog_with_lynn_find_edward>
+        <lynn_2_0 text="エドワードを連れ去った人が彼を人形にしてしまったの！あの家の中に閉じ込められているわ。さぁ、これを。エドワードを助けるのに役立つかもしれないわ！"/>
+      </se_04_dialog_with_lynn_find_edward>
+      <se_06_dialog_cutscene_morgana>
+        <_1_morgana_2_0 text="マティアス。あなたのおかげで長年の夢をついに果たすことができそうよ。"/>
+        <_2_empty_2_0 text=""/>
+        <_3_lynn_2_0 text="ママ！助けて！ウルフガングを探して。彼なら力を貸してくれるわ！"/>
+        <_4_morgana_2_1 text="ママは助けに来ない。これでお前は終わりだ！"/>
+      </se_06_dialog_cutscene_morgana>
+      <se_06_dialog_lynn_free_edward>
+        <lynn_1_0 text="バリアのようなものが張り巡らされているわ…あぁ…力が出ない…少し休んだほうがいいみたい。お願い！エドワードを助けて！"/>
+      </se_06_dialog_lynn_free_edward>
+      <se_07_dialog_cutscene_trap>
+        <sourcerer_1_0 text="お前は決してここから出られんぞ！"/>
+      </se_07_dialog_cutscene_trap>
+      <se_07_dialog_with_small_edward_01>
+        <_1_heroine_1_0 text="僕たちは罠にかけられたんだ！あのレバーを倒せば格子が開くはず！"/>
+        <_2_small_edward_1_0 text="情けない姿だな…今の僕ができることは子供を楽しませることくらいですね。道具を持ち合わせていないのが残念です。"/>
+      </se_07_dialog_with_small_edward_01>
+      <se_07_dialog_with_small_edward_02>
+        <_2_small_edward_2_0 text="これは僕の道具袋…ありがとうございます。これで壊れたものを直すことができます。"/>
+      </se_07_dialog_with_small_edward_02>
+      <survey_cutscene_dialog>
+        <survey_1_0 text="お前が求めるつまらない善の力など、悪の力には及ばない。テティス様にリンの肉体を与えることでついに予言を全うできる。"/>
+        <survey_1_1 text="偉大なる魔女の母、テティス様が再びよみがえるのだ！"/>
+        <survey_1_2 text=""/>
+        <survey_1_3 text="そんなの無理よ！"/>
+        <survey_1_4 text=""/>
+        <survey_1_5 text="ハハハ！無理ではない。お前は私たちに逆らえない。テティス様に従うのだからね！"/>
+      </survey_cutscene_dialog>
+    </dialogs>
+    <mini_games_descriptions>
+      <se_02_sub_puzzle text="2枚の写真を比べて一致しない箇所を見つけてください。違いを見つけたら右側の写真に印をつけましょう。"/>
+      <se_03_minigame_kamea text="それぞれの絵をふさわしい場所まで動かしてください。隣接する空きスペースにのみ動かすことができます。正しい場所にある絵は光ります。"/>
+      <se_05_puzzle_fattochini text="図と一致するように人形のポーズを変えてください。頭や手足を選択するとその部分が動きます。"/>
+      <se_05_puzzle_railroad text="小鬼が乗った列車を左上のトンネルまで導いてください。ほかの列車を動かして道を作りましょう。"/>
+      <se_08_puzzle_battle text="魔女の攻撃に対抗するにふさわしいアイテムを順番に選択してください。"/>
+    </mini_games_descriptions>
+    <task_from_imp>
+      <task_ text=""/>
+      <task_nil text=""/>
+      <task_00 text="パビリオンを調べる。"/>
+      <task_01 text="ポータルを開く。"/>
+      <task_02 text="魔術師の後を追う。"/>
+      <task_03 text="リンを木から解放する。"/>
+      <task_04 text="魔法使いの屋敷に入る方法を見つける。"/>
+      <task_05 text="バリアからエドワードを解放する。"/>
+      <task_06 text="牢獄から脱出する。"/>
+      <task_07 text="リンを追跡する。"/>
+    </task_from_imp>
+  </gameplay>
+</texts>

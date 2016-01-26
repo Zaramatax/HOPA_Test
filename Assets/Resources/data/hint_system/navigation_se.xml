@@ -1,0 +1,745 @@
+<navigation start_location="se_01">
+  <se_00 map_location="se_00" />
+  <final_movie />
+  <end_demo map_location="end_demo" />
+  <test_scene />
+  <!-- 1 -->
+  <se_01 map_location="se_01">
+    <se_01_sub_entrance layer="active_zone_sub_entrance" />
+    <se_01_sub_souvenir layer="active_zone_sub_souvenir" />
+    <se_01_sub_van_door layer="active_zone_sub_van_door" />
+    <se_01_sub_photomachine layer="active_zone_sub_photomachine" />
+    <se_02 layer="active_zone_go_se_02" condition="click_active_zone_active_zone_rope_5" />
+    <se_01_ho_01 layer="active_zone_ho_01" condition="use_se_cross_inv" />
+  </se_01>
+  <se_01_sub_entrance map_location="se_01">
+    <se_01 layer="close_button" />
+  </se_01_sub_entrance>
+  <se_01_sub_souvenir map_location="se_01">
+    <se_01 layer="close_button" />
+  </se_01_sub_souvenir>
+  <se_01_sub_van_door map_location="se_01">
+    <se_01 layer="close_button" />
+  </se_01_sub_van_door>
+  <se_01_sub_photomachine map_location="se_01">
+    <se_01 layer="close_button" />
+  </se_01_sub_photomachine>
+  <se_01_ho_01 map_location="se_01">
+    <se_01 layer="active_zone_go_back" />
+  </se_01_ho_01>
+  <!-- 2 -->
+  <se_02 map_location="se_02">
+    <se_02_sub_bag layer="active_zone_sub_bag" />
+    <se_02_sub_box layer="active_zone_sub_box" condition="click_shtora_close" />
+    <se_02_sub_case layer="active_zone_sub_case" />
+    <se_02_sub_organ layer="active_zone_sub_organ" />
+    <se_01 layer="active_zone_go_back" />
+  </se_02>
+  <se_02_sub_bag map_location="se_02">
+    <se_02 layer="close_button" />
+    <se_02_sub_puzzle layer="active_zone_go_mg" condition="use_se_lynns_pendent_inv" />
+    <iss_se_broken_pendent_inv layer="iss_se_broken_pendent_inv" condition="collect_se_broken_pendent_inv" />
+  </se_02_sub_bag>
+  <se_02_sub_box map_location="se_02">
+    <se_02 layer="close_button" />
+    <iss_se_pin_inv layer="iss_se_pin_inv" condition="collect_se_pin_inv" />
+  </se_02_sub_box>
+  <se_02_sub_case map_location="se_02">
+    <se_02 layer="close_button" />
+    <se_03 layer="active_zone_go_se_03" condition="use_se_board_center_inv" />
+  </se_02_sub_case>
+  <se_02_sub_organ map_location="se_02">
+    <se_02 layer="close_button" />
+  </se_02_sub_organ>
+  <se_02_sub_puzzle map_location="se_02">
+    <se_02_sub_bag layer="close_button" />
+  </se_02_sub_puzzle>
+  <iss_se_broken_pendent_inv>
+    <se_02 layer="close_button" />
+  </iss_se_broken_pendent_inv>
+  <iss_se_pin_inv>
+    <se_02 layer="close_button" />
+  </iss_se_pin_inv>
+  <!-- 3 -->
+  <se_03 map_location="se_03">
+    <se_03_sub_hut layer="active_zone_sub_hut" />
+    <se_03_sub_creek layer="active_zone_sub_creek" />
+    <se_03_sub_pagan_temple layer="active_zone_sub_pagan_temple" />
+    <se_03_sub_mini_ho layer="active_zone_sub_mini_ho" condition="use_se_mirror_inv" />
+    <se_04 layer="active_zone_go_se_04" condition="condit_se_03_hint_gate_opened" />
+  </se_03>
+  <se_03_sub_hut map_location="se_03">
+    <se_03 layer="close_button" />
+    <se_03_sub_flint layer="active_zone_sub_flint" conndition="use_se_scroll_witches_inv" />
+  </se_03_sub_hut>
+  <se_03_sub_flint map_location="se_03">
+    <se_03_sub_hut layer="close_button" />
+  </se_03_sub_flint>
+  <se_03_sub_creek map_location="se_03">
+    <se_03 layer="close_button" />
+    <iss_se_cover_with_points_inv layer="iss_se_cover_with_points_inv" condition="collect_se_cover_with_points_inv" />
+  </se_03_sub_creek>
+  <se_03_sub_pagan_temple map_location="se_03">
+    <se_03 layer="close_button" />
+    <se_03_minigame_kamea layer="active_zone_go_minigame" />
+  </se_03_sub_pagan_temple>
+  <se_03_minigame_kamea map_location="se_03">
+    <se_03 layer="active_zone_go_back" />
+  </se_03_minigame_kamea>
+  <se_03_sub_mini_ho map_location="se_03">
+    <se_03 layer="close_button" />
+  </se_03_sub_mini_ho>
+  <iss_se_cover_with_points_inv>
+    <se_03 layer="close_button" />
+  </iss_se_cover_with_points_inv>
+  <!-- 4 -->
+  <se_04 map_location="se_04">
+    <se_04_sub_tree layer="active_zone_sub_tree" />
+    <se_04_sub_door_house layer="active_zone_sub_door_house" />
+    <se_04_sub_cellar layer="active_zone_sub_cellar" />
+    <se_04_sub_grass layer="active_zone_sub_grass" />
+    <se_04_sub_door_greenhouse layer="active_zone_sub_door_greenhouse" />
+    <se_04_ho_01 layer="active_zone_ho_01" condition="use_se_flint_inv" />
+    <se_04_ho_02 layer="active_zone_ho_02" condition="collect_se_silhouette_cup_inv" />
+    <se_03 layer="active_zone_go_back" />
+    <se_05 layer="active_zone_go_se_05" />
+    <se_06 layer="active_zone_go_se_06" condition="use_se_hand_with_a_feather_inv^use_se_hand_with_a_roll_inv" />
+  </se_04>
+  <se_04_sub_tree map_location="se_04">
+    <se_04 layer="close_button" />
+    <se_04_sub_raven layer="active_zone_sub_raven" />
+  </se_04_sub_tree>
+  <se_04_sub_raven map_location="se_04">
+    <se_04_sub_tree layer="close_button" />
+  </se_04_sub_raven>
+  <se_04_sub_door_house map_location="se_04">
+    <se_04 layer="close_button" />
+  </se_04_sub_door_house>
+  <se_04_sub_cellar map_location="se_04">
+    <se_04 layer="close_button" />
+  </se_04_sub_cellar>
+  <se_04_sub_grass map_location="se_04">
+    <se_04 layer="close_button" />
+  </se_04_sub_grass>
+  <se_04_sub_door_greenhouse map_location="se_04">
+    <se_04 layer="close_button" />
+  </se_04_sub_door_greenhouse>
+  <se_04_ho_01 map_location="se_04">
+    <se_04 layer="active_zone_go_back" />
+  </se_04_ho_01>
+  <se_04_ho_02 map_location="se_04">
+    <se_04 layer="active_zone_go_back" />
+  </se_04_ho_02>
+  <!-- 5 -->
+  <se_05 map_location="se_05">
+    <se_05_sub_mezzanine layer="active_zone_sub_mezzanine" />
+    <se_05_sub_craft_table layer="active_zone_sub_craft_table" />
+    <se_05_sub_doll layer="active_zone_sub_doll" />
+    <se_05_puzzle_fattochini layer="active_zone_puzzle_fattochini" />
+    <se_05_puzzle_railroad layer="active_zone_puzzle_railroad" />
+    <se_04 layer="active_zone_go_back" />
+  </se_05>
+  <se_05_sub_mezzanine map_location="se_05">
+    <se_05 layer="close_button" />
+    <se_05_sub_miniho layer="active_zone_miniho" condition="use_se_emblem_of_hats_inv" />
+  </se_05_sub_mezzanine>
+  <se_05_sub_miniho map_location="se_05">
+    <se_05_sub_mezzanine layer="close_button" />
+  </se_05_sub_miniho>
+  <se_05_sub_craft_table map_location="se_05">
+    <se_05 layer="close_button" />
+  </se_05_sub_craft_table>
+  <se_05_sub_doll map_location="se_05">
+    <se_05 layer="close_button" />
+  </se_05_sub_doll>
+  <se_05_puzzle_fattochini map_location="se_05">
+    <se_05 layer="active_zone_go_back" />
+  </se_05_puzzle_fattochini>
+  <se_05_puzzle_railroad map_location="se_05">
+    <se_05 layer="active_zone_go_back" />
+  </se_05_puzzle_railroad>
+  <!-- 6 -->
+  <se_06 map_location="se_06">
+    <se_06_sub_fireplace layer="active_zone_sub_fireplace" />
+    <se_06_sub_forcefield layer="active_zone_sub_forcefield" />
+    <se_06_ho_01 layer="active_zone_go_ho_01" />
+    <se_06_ho_02 layer="active_zone_go_ho_02" />
+    <se_04 layer="active_zone_go_back" />
+    <se_07 layer="active_zone_go_se_07" condition="use_se_chain_with_a_hook_inv" />
+    <se_08 layer="active_zone_go_se_08" condition="use_se_chain_with_a_hook_inv" />
+    <iss_se_panicle_inv layer="iss_se_panicle_inv" condition="collect_se_panicle_inv" />
+  </se_06>
+  <se_06_sub_fireplace map_location="se_06">
+    <se_06 layer="close_button" />
+  </se_06_sub_fireplace>
+  <se_06_sub_forcefield map_location="se_06">
+    <se_06 layer="close_button" />
+  </se_06_sub_forcefield>
+  <se_06_ho_01 map_location="se_06">
+    <se_06 layer="active_zone_go_back" />
+  </se_06_ho_01>
+  <se_06_ho_02 map_location="se_06">
+    <se_06 layer="active_zone_go_back" />
+  </se_06_ho_02>
+  <iss_se_panicle_inv>
+    <se_06 layer="close_button" />
+  </iss_se_panicle_inv>
+  <!-- 7 -->
+  <se_07 map_location="se_07">
+    <se_07_sub_watch layer="active_zone_sub_watch" condition="use_se_chain_with_a_hook_inv" />
+    <se_07_sub_chest layer="active_zone_sub_chest" condition="use_se_chain_with_a_hook_inv" />
+    <se_07_sub_tomb layer="active_zone_sub_tomb" condition="use_se_chain_with_a_hook_inv" />
+    <se_06 layer="active_zone_go_se_06" condition="condit_se_07_click_active_zone_go_se_06_first_time" />
+    <iss_se_casket_inv layer="iss_se_casket_inv" condition="collect_se_casket_inv" />
+    <iss_se_master_edward_inv layer="iss_se_master_edward_inv" condition="collect_se_master_edward_inv^condit_iss_se_master_edward_inv_close_button_state_se_07" />
+    <iss_se_chain_inv layer="iss_se_chain_inv" condition="collect_se_chain_inv" />
+  </se_07>
+  <se_07_sub_watch map_location="se_07">
+    <se_07 layer="close_button" />
+  </se_07_sub_watch>
+  <se_07_sub_chest map_location="se_07">
+    <se_07 layer="close_button" />
+  </se_07_sub_chest>
+  <se_07_sub_tomb map_location="se_07">
+    <se_07 layer="close_button" />
+  </se_07_sub_tomb>
+  <iss_se_casket_inv>
+    <se_07 layer="close_button" />
+  </iss_se_casket_inv>
+  <iss_se_chain_inv>
+    <se_07 layer="close_button" />
+  </iss_se_chain_inv>
+  <!-- 8 -->
+  <se_08 map_location="se_08">
+    <se_08_sub_mirror layer="active_zone_sub_mirror" />
+    <se_08_puzzle_mirror layer="active_zone_puzzle_mirror" condition="use_se_spell_inv" />
+    <se_08_sub_pedestal layer="active_zone_sub_pedestal" />
+    <se_08_sub_portrait layer="active_zone_sub_portrait" />
+    <se_08_sub_exit layer="active_zone_sub_exit" />
+    <se_06 layer="active_zone_go_back" />
+    <se_09 layer="active_zone_go_se_09" condition="use_se_key_to_exit_inv"/>
+  </se_08>
+  <se_08_sub_mirror map_location="se_08">
+    <se_08 layer="close_button" />
+    <iss_se_red_plate_inv layer="iss_se_red_plate_inv" condition="collect_se_red_plate_inv" />
+  </se_08_sub_mirror>
+  <se_08_sub_pedestal map_location="se_08">
+    <se_08 layer="close_button" />
+  </se_08_sub_pedestal>
+  <se_08_sub_portrait map_location="se_08">
+    <se_08_sub_sub_hourglass layer="active_zone_sub_sub_hourglass" condition="use_se_vial_of_hourglass_inv" />
+    <se_08_puzzle_battle layer="active_zone_mg" condition="use_se_cork_inv" />
+    <se_08 layer="close_button" />
+  </se_08_sub_portrait>
+  <se_08_sub_sub_hourglass map_location="se_08">
+    <se_08_sub_portrait layer="close_button" />
+  </se_08_sub_sub_hourglass>
+  <se_08_sub_exit map_location="se_08">
+    <se_08 layer="close_button" />
+  </se_08_sub_exit>
+  <se_08_puzzle_battle map_location="se_08">
+    <se_08 layer="active_zone_go_back" />
+  </se_08_puzzle_battle>
+  <se_08_puzzle_mirror map_location="se_08">
+    <se_08 layer="active_zone_go_back" />
+  </se_08_puzzle_mirror>
+  <iss_se_red_plate_inv>
+    <se_08 layer="close_button" />
+  </iss_se_red_plate_inv>
+  <!-- 9 -->
+  <se_09 map_location="se_09">
+    <se_09_sub_miniho layer="active_zone_sub_miniho" />
+    <se_09_sub_statue layer="active_zone_sub_statue" />
+    <se_09_puzzle layer="active_zone_go_minigame" />
+    <se_08 layer="active_zone_go_back" />
+    <se_10 layer="active_zone_go_se_10" condition="condit_se_09_hint_miniho_complete"/>
+    <se_19 layer="active_zone_go_se_19" condition="complete_se_09_puzzle"/>
+  </se_09>
+  <se_09_puzzle map_location="se_09">
+    <se_09 layer="active_zone_go_back" />
+    <iss_se_not_loaded_staff_b_inv layer="iss_se_not_loaded_staff_b_inv" condition="collect_se_not_loaded_staff_b_inv"/>
+  </se_09_puzzle>
+  <se_09_sub_statue map_location="se_09">
+    <se_09 layer="close_button" />
+  </se_09_sub_statue>
+  <se_09_sub_miniho map_location="se_09">
+    <se_09 layer="close_button" />
+  </se_09_sub_miniho>
+  <iss_se_not_loaded_staff_b_inv>
+    <se_09_puzzle layer="close_button" />
+  </iss_se_not_loaded_staff_b_inv>
+  <!-- 10 -->
+  <se_10 map_location="se_10">
+    <se_10_sub_evil_press layer="active_zone_sub_evil_press" />
+    <se_10_sub_fresco layer="active_zone_sub_fresco" />
+    <se_10_sub_lion layer="active_zone_sub_lion" />
+    <se_10_sub_to_the_lake layer="active_zone_sub_to_the_lake" />
+    <se_09 layer="active_zone_go_back" />
+    <se_23 layer="active_zone_go_se_23" condition="use_se_key_step_inv^use_se_altar_figure_inv"/>
+    <se_16 layer="active_zone_go_se_16"  condition="use_se_magic_staff_l_inv"/>
+    <se_11 layer="active_zone_go_se_11" condition="use_se_magic_staff_y_inv"/>
+  </se_10>
+  <se_10_sub_evil_press map_location="se_10">
+    <se_10 layer="close_button" />
+    <iss_se_not_loaded_staff_y_inv layer="iss_se_not_loaded_staff_y_inv" condition="collect_se_not_loaded_staff_y_inv"/>
+  </se_10_sub_evil_press>
+  <se_10_sub_fresco map_location="se_10">
+    <se_10 layer="close_button" />
+  </se_10_sub_fresco>
+  <se_10_sub_lion map_location="se_10">
+    <se_10 layer="close_button" />
+    <iss_se_not_loaded_staff_l_inv layer="iss_se_not_loaded_staff_l_inv" condition="collect_se_not_loaded_staff_l_inv"/>
+  </se_10_sub_lion>
+  <se_10_sub_to_the_lake map_location="se_10">
+    <se_10 layer="close_button" />
+  </se_10_sub_to_the_lake>
+  <iss_se_not_loaded_staff_y_inv>
+    <se_10_sub_evil_press layer="close_button" />
+  </iss_se_not_loaded_staff_y_inv>
+  <iss_se_not_loaded_staff_l_inv>
+    <se_10_sub_lion layer="close_button" />
+  </iss_se_not_loaded_staff_l_inv>
+  <!-- 11 -->
+  <se_11 map_location="se_11">
+    <se_12 layer="active_zone_go_se_12" />
+    <se_11_sub_mermaid layer="active_zone_sub_mermaid" />
+    <se_11_sub_monster layer="active_zone_sub_monster" />
+    <se_11_sub_puzzle layer="active_zone_sub_puzzle" />
+    <se_13 layer="active_zone_go_se_13" condition="complete_se_11_sub_puzzle"/>
+    <se_11_sub_well layer="active_zone_sub_well" />
+    <se_10 layer="active_zone_go_back" />
+  </se_11>
+  <se_11_sub_mermaid map_location="se_11">
+    <se_11_sub_sub_shell layer="active_zone_sub_sub_shell" />
+    <se_11 layer="close_button" />
+    <iss_se_spindle_with_gaps_inv layer="iss_se_spindle_with_gaps_inv" condition="collect_se_spindle_with_gaps_inv"/>
+  </se_11_sub_mermaid>
+  <se_11_sub_monster map_location="se_11">
+    <se_11 layer="close_button" />
+  </se_11_sub_monster>
+  <se_11_sub_puzzle map_location="se_11">
+    <se_11 layer="close_button" />
+    <se_13 layer="active_zone_go_se_13" condition="complete_se_11_sub_puzzle"/>
+  </se_11_sub_puzzle>
+  <se_11_sub_well map_location="se_11">
+    <se_11 layer="close_button" />
+    <iss_se_wheel_inv layer="iss_se_wheel_inv" condition="collect_se_wheel_inv"/>
+    <iss_se_oil_lamp_inv layer="iss_se_oil_lamp_inv" condition="collect_se_oil_lamp_inv"/>
+  </se_11_sub_well>
+  <se_11_sub_sub_shell map_location="se_11">
+    <se_11_sub_mermaid layer="close_button" />
+  </se_11_sub_sub_shell>
+  <!-- 12 -->
+  <se_12 map_location="se_12">
+    <se_12_sub_hunters layer="active_zone_open_sub_hunters" />
+    <se_12_sub_weeping_willow layer="active_zone_open_sub_weeping_willow" />
+    <se_12_sub_cartwheel layer="active_zone_open_sub_cartwheel" />
+    <se_12_sub_entrance_to_the_ruins layer="active_zone_open_sub_entrance_to_the_ruins" />
+    <se_15 layer="active_zone_go_se_15" condition="use_se_forged_diamond_inv"/>
+    <se_11 layer="active_zone_go_back" />
+  </se_12>
+  <se_12_sub_cartwheel map_location="se_12">
+    <se_12 layer="close_button" />
+  </se_12_sub_cartwheel>
+  <se_12_sub_hunters map_location="se_12">
+    <se_12 layer="close_button" />
+    <se_12_sub_sub_niche_in_a_stone layer="active_zone_open_sub_sub_niche_in_a_stone" condition="use_se_armor_of_vines_inv"/>
+    <iss_se_magic_ball_inv layer="iss_se_magic_ball_inv" condition="collect_se_magic_ball_inv"/>
+  </se_12_sub_hunters>
+  <se_12_sub_sub_niche_in_a_stone map_location="se_12">
+    <se_12_sub_hunters layer="close_button" />
+  </se_12_sub_sub_niche_in_a_stone>
+  <se_12_sub_weeping_willow map_location="se_12">
+    <se_12 layer="close_button" />
+  </se_12_sub_weeping_willow>
+  <se_12_sub_entrance_to_the_ruins map_location="se_12">
+    <se_12 layer="close_button" />
+  </se_12_sub_entrance_to_the_ruins>
+  <se_12_ho_01 map_location="se_12">
+    <se_12 layer="active_zone_go_back" />
+  </se_12_ho_01>
+  <se_12_ho_02 map_location="se_12">
+    <se_12 layer="active_zone_go_back" />
+  </se_12_ho_02>
+  <iss_se_magic_ball_inv>
+    <se_12_sub_hunters layer="close_button" />
+  </iss_se_magic_ball_inv>
+  <!-- 13 -->
+  <se_13 map_location="se_13">
+    <se_13_sub_table layer="active_zone_sub_table" />
+    <se_13_sub_tubes layer="active_zone_sub_tubes" />
+    <se_13_sub_printer layer="active_zone_sub_printer" />
+    <se_13_sub_dial layer="active_zone_sub_dial" />
+    <se_13_sub_miniho layer="active_zone_sub_miniho" />
+    <se_13_puzzle_watch layer="active_zone_puzzle_watch" />
+    <se_11 layer="active_zone_go_back"/>
+    <se_14 layer="active_zone_go_se_14" condition="condit_se_13_hint_miniho_complete"/>
+  </se_13>
+  <se_13_sub_table map_location="se_13">
+    <se_13 layer="close_button" />
+  </se_13_sub_table>
+  <se_13_sub_tubes map_location="se_13">
+    <se_13 layer="close_button" />
+  </se_13_sub_tubes>
+  <se_13_sub_printer map_location="se_13">
+    <se_13 layer="close_button" />
+  </se_13_sub_printer>
+  <se_13_sub_dial map_location="se_13">
+    <se_13 layer="close_button" />
+  </se_13_sub_dial>
+  <se_13_sub_miniho map_location="se_13">
+    <se_13 layer="close_button" />
+  </se_13_sub_miniho>
+  <se_13_puzzle_watch map_location="se_13">
+    <se_13 layer="active_zone_go_back" />
+  </se_13_puzzle_watch>
+  <se_13_ho_01 map_location="se_13">
+    <se_13 layer="active_zone_go_back" />
+  </se_13_ho_01>
+  <se_13_ho_02 map_location="se_13">
+    <se_13 layer="active_zone_go_back" />
+  </se_13_ho_02>
+  <!-- 14 -->
+  <se_14  map_location="se_14">
+    <se_14_sub_bureau layer="active_zone_sub_bureau" />
+    <se_14_sub_hourglass layer="active_zone_sub_hourglass" />
+    <se_14_puzzle_globe layer="active_zone_puzzle_globe" />
+    <se_13 layer="active_zone_go_back"/>
+  </se_14>
+  <se_14_sub_bureau map_location="se_14">
+    <se_14 layer="close_button" />
+  </se_14_sub_bureau>
+  <se_14_sub_hourglass map_location="se_14">
+    <se_14 layer="close_button" />
+  </se_14_sub_hourglass>
+  <se_14_puzzle_globe map_location="se_14">
+    <se_14 layer="active_zone_go_back" />
+  </se_14_puzzle_globe>
+  <!-- 15 -->
+  <se_15 map_location="se_15">
+    <se_15_sub_broken_ball layer="active_zone_sub_broken_ball" condition="condit_se_15_sphere_01_on_place^condit_se_15_sphere_02_on_place^condit_se_15_sphere_03_on_place" />
+    <se_15_sub_failure_in_the_floor layer="active_zone_sub_failure_in_the_floor" />
+    <se_15_sub_tethys_corner layer="active_zone_sub_tethys_corner" />
+    <se_15_puzzle_altar layer="active_zone_puzzle_altar" />
+    <se_12 layer="active_zone_go_back"/>
+  </se_15>
+  <se_15_sub_broken_ball map_location="se_15">
+    <se_15 layer="close_button" />
+  </se_15_sub_broken_ball>
+  <se_15_sub_failure_in_the_floor map_location="se_15">
+    <se_15 layer="close_button" />
+    <iss_se_crossbow_inv layer="iss_se_crossbow_inv" condition="collect_se_crossbow_inv"/>
+  </se_15_sub_failure_in_the_floor>
+  <se_15_sub_tethys_corner map_location="se_15">
+    <se_15 layer="close_button" />
+     <iss_se_master_edward_inv layer="iss_se_master_edward_inv" condition="collect_se_master_edward_inv^condit_iss_se_master_edward_inv_close_button_state_se_15_sub_tethys_corner" />
+  </se_15_sub_tethys_corner>
+  <se_15_puzzle_altar map_location="se_15">
+    <se_15 layer="active_zone_go_back" />
+  </se_15_puzzle_altar>
+  <iss_se_crossbow_inv >
+    <se_15_sub_failure_in_the_floor layer="close_button" />
+  </iss_se_crossbow_inv>
+  <!-- 16 -->
+  <se_16 map_location="se_16" >
+    <se_16_sub_armor_monster layer="active_zone_sub_armor_monster" />
+    <se_16_sub_symbols layer="active_zone_sub_symbols" />
+    <se_16_sub_throne layer="active_zone_sub_throne" />
+    <se_16_puzzle layer="active_zone_go_minigame" />
+    <iss_se_master_edward_inv layer="iss_se_master_edward_inv" condition="collect_se_master_edward_inv^condit_iss_se_master_edward_inv_close_button_state_se_16" />
+    <se_17 layer="active_zone_go_se_17" />
+    <se_18 layer="active_zone_go_se_18" condition="complete_se_16_puzzle" />
+    <se_10 layer="active_zone_go_back"/>
+    <se_16_sub_miniho layer="active_zone_se_16_sub_miniho" condition="use_se_orb_queen_inv^use_se_sceptre_queen_inv" />
+    <iss_se_part_of_an_artefakt_1_inv layer="iss_se_part_of_an_artefakt_1_inv" condition="collect_se_part_of_an_artefakt_1_inv"/>
+    
+  </se_16>
+  <se_16_sub_armor_monster map_location="se_16" >
+    <se_16 layer="close_button" />
+  </se_16_sub_armor_monster>
+  <se_16_sub_symbols map_location="se_16" >
+    <se_16 layer="close_button" />
+  </se_16_sub_symbols>
+  <se_16_sub_throne map_location="se_16" >
+    <se_16 layer="close_button" />
+  </se_16_sub_throne>
+  <se_16_sub_miniho map_location="se_16" >
+    <se_16 layer="close_button" />
+  </se_16_sub_miniho>
+  <se_16_puzzle map_location="se_16" >
+    <se_16 layer="active_zone_go_back" />
+  </se_16_puzzle>
+  <se_16_ho_01 map_location="se_16">
+    <se_16 layer="active_zone_go_back" />
+  </se_16_ho_01>
+  <se_16_ho_02 map_location="se_16">
+    <se_16 layer="active_zone_go_back" />
+  </se_16_ho_02>
+  <!-- 17 -->
+  <se_17  map_location="se_17">
+    <se_17_sub_gobelin layer="active_zone_sub_gobelin" />
+    <se_17_sub_fruit layer="active_zone_sub_fruit" />
+    <se_17_sub_fontain layer="active_zone_sub_fontain" />
+    <se_17_puzzle_sofa layer="active_zone_puzzle_sofa" />
+    <se_16 layer="active_zone_go_back"/>
+  </se_17>
+  <se_17_sub_gobelin map_location="se_17">
+    <se_17 layer="close_button" />
+  </se_17_sub_gobelin>
+  <se_17_sub_fruit map_location="se_17">
+    <se_17 layer="close_button" />
+  </se_17_sub_fruit>
+  <se_17_sub_fontain map_location="se_17">
+    <se_17 layer="close_button" />
+    <iss_se_planch_inv layer="iss_se_planch_inv" condition="collect_se_planch_inv"/>
+  </se_17_sub_fontain>
+  <se_17_puzzle_sofa map_location="se_17">
+    <se_17 layer="active_zone_go_back" />
+  </se_17_puzzle_sofa>
+  <se_17_ho_01 map_location="se_17">
+    <se_17 layer="active_zone_go_back" />
+  </se_17_ho_01>
+  <se_17_ho_02 map_location="se_17">
+    <se_17 layer="active_zone_go_back" />
+  </se_17_ho_02>
+  
+  
+  <!-- 18 -->
+  <se_18 map_location="se_18">
+    <se_18_sub_window layer="active_zone_sub_window" />
+    <se_18_sub_artefakt layer="active_zone_sub_artefakt" />
+    <se_18_sub_prizm layer="active_zone_sub_prizm" />
+    <se_18_puzzle_burner layer="active_zone_puzzle_burner" condition="condit_se_18_ray_on_mg" />
+    <se_16 layer="active_zone_go_back"/>
+  </se_18>
+  <se_18_sub_window map_location="se_18">
+    <se_18 layer="close_button" />
+  </se_18_sub_window>
+  <se_18_sub_artefakt map_location="se_18">
+    <se_18 layer="close_button" />
+    <iss_se_canine_on_lace_inv layer="iss_se_canine_on_lace_inv" condition="collect_se_canine_on_lace_inv"/>
+  </se_18_sub_artefakt>
+  <se_18_sub_prizm map_location="se_18">
+    <se_18 layer="close_button" />
+  </se_18_sub_prizm>
+  <se_18_puzzle_burner map_location="se_18">
+    <se_18 layer="active_zone_go_back" />
+  </se_18_puzzle_burner>
+  <!-- 19 -->
+  <se_19 map_location="se_19">
+    <se_19_sub_raspberry_bush layer="active_zone_sub_raspberry_bush" />
+    <se_19_sub_stone_plate layer="active_zone_sub_stone_plate" />
+    <se_19_puzzle_broken_bridge layer="active_zone_puzzle_broken_bridge" />
+    <se_20 layer="active_zone_tree_house" />
+    <se_21 layer="active_zone_entrance_to_a_cave" condition="use_se_rope_inv"/>
+    <se_19_ho_01 layer="active_zone_ho_01" />
+    <se_19_ho_02 layer="active_zone_ho_02" />
+    <se_09 layer="active_zone_go_back" />
+  </se_19>
+  <se_19_sub_raspberry_bush map_location="se_19">
+    <se_19 layer="close_button" />
+  </se_19_sub_raspberry_bush>
+  <se_19_sub_stone_plate map_location="se_19">
+    <se_19 layer="close_button" />
+  </se_19_sub_stone_plate>
+  <se_19_puzzle_broken_bridge map_location="se_19">
+    <se_19 layer="active_zone_go_back" />
+  </se_19_puzzle_broken_bridge>
+  <se_19_ho_01 map_location="se_19">
+    <se_19 layer="active_zone_go_back" />
+  </se_19_ho_01>
+  <se_19_ho_02 map_location="se_19">
+    <se_19 layer="active_zone_go_back" />
+  </se_19_ho_02>
+  <!--20-->
+  <se_20 map_location="se_20">
+    <se_20_sub_shelf layer="active_zone_sub_shelf" />
+    <se_20_sub_basement layer="active_zone_sub_basement" />
+    <se_20_sub_furnace layer="active_zone_sub_furnace" />
+    <se_20_sub_telescope layer="active_zone_sub_telescope" />
+    <se_19 layer="active_zone_go_back"/>
+  </se_20>
+  <se_20_sub_shelf map_location="se_20">
+    <se_20 layer="close_button" />
+  </se_20_sub_shelf>
+  <se_20_sub_basement map_location="se_20">
+    <se_20 layer="close_button" />
+  </se_20_sub_basement>
+  <se_20_sub_furnace map_location="se_20">
+    <se_20_sub_sub_puzzle layer="active_zone_sub_sub_puzzle" condition="use_se_shovel_with_sand_inv"/>
+    <se_20 layer="close_button" />
+  </se_20_sub_furnace>
+  <se_20_sub_sub_puzzle map_location="se_20">
+    <se_20 layer="active_zone_go_back" />
+  </se_20_sub_sub_puzzle>
+  <se_20_sub_telescope map_location="se_20">
+    <se_20 layer="close_button" />
+  </se_20_sub_telescope>
+  <!--21-->
+  <se_21 map_location="se_21">
+    <se_22 layer="active_zone_go_to_se_22" condition="click_video_fireball_idle"/>
+    <se_21_sub_stone_dwarf layer="active_zone_sub_stone_dwarf" />
+    <se_21_sub_sphinxs layer="active_zone_sub_sphinxs" />
+    <se_21_sub_hiding_place layer="active_zone_sub_hiding_place" />
+    <se_21_sub_stone_of_transformations layer="active_zone_sub_stone_of_transformations" />
+    <se_19 layer="active_zone_go_back" />
+  </se_21>
+  <se_21_sub_hiding_place map_location="se_21">
+    <se_21 layer="close_button" />
+    <se_21_puzzle_mechanical_monster layer="active_zone_puzzle_mechanical_monster" condition="collect_se_trident_inv"/>
+  </se_21_sub_hiding_place>
+  <se_21_sub_sphinxs map_location="se_21">
+    <se_21 layer="close_button" />
+    <se_21_sub_miniho_grail layer="active_zone_sub_miniho_grail" condition="use_se_grail_inv" />
+    <se_22 layer="active_zone_sub_sphinxs_go_to_se_22" condition="use_se_grail_inv" />
+  </se_21_sub_sphinxs>
+  <se_21_sub_stone_dwarf map_location="se_21">
+    <se_21 layer="close_button" />
+  </se_21_sub_stone_dwarf>
+  <se_21_sub_stone_of_transformations map_location="se_21">
+    <se_21 layer="close_button" />
+  </se_21_sub_stone_of_transformations>
+  <se_21_sub_miniho_grail map_location="se_21_sub_sphinxs">
+    <se_21 layer="close_button" />
+  </se_21_sub_miniho_grail>
+  <se_21_puzzle_mechanical_monster map_location="se_21">
+    <se_21 layer="active_zone_go_back" />
+  </se_21_puzzle_mechanical_monster>
+  <!--22-->
+  <se_22 map_location="se_22">
+    <se_22_sub_artefact layer="active_zone_sub_artefact" />
+    <se_22_sub_crystals layer="active_zone_sub_crystals" />
+    <se_22_sub_stone_processing layer="active_zone_sub_stone_processing" />
+    <se_21 layer="active_zone_go_back" />
+  </se_22>
+  <se_22_sub_artefact map_location="se_22">
+    <se_22_puzzle_crater layer="active_zone_puzzle_crater" condition="use_se_lens_with_runes_inv" />
+    <se_22 layer="close_button" />
+  </se_22_sub_artefact>
+  <se_22_sub_crystals map_location="se_22">
+    <se_22 layer="close_button" />
+    <iss_se_master_edward_inv layer="iss_se_master_edward_inv" condition="collect_se_master_edward_inv^condit_iss_se_master_edward_inv_close_button_state_se_22_sub_crystals" />
+  </se_22_sub_crystals>
+  <se_22_sub_stone_processing map_location="se_22">
+    <se_22 layer="close_button" />
+  </se_22_sub_stone_processing>
+  <se_22_puzzle_crater map_location="se_22">
+    <se_22 layer="active_zone_go_back" />
+  </se_22_puzzle_crater>
+  <se_22_ho_01 map_location="se_22">
+    <se_22 layer="active_zone_go_back" />
+  </se_22_ho_01>
+  <se_22_ho_02 map_location="se_22">
+    <se_22 layer="active_zone_go_back" />
+  </se_22_ho_02>
+  
+  <!-- 23 -->
+  <se_23 map_location="se_23" >
+    <se_23_sub_mechanisms layer="active_zone_sub_mechanisms" />
+    <se_23_sub_coast layer="active_zone_sub_coast" />
+    <se_23_puzzle_rubber layer="active_zone_puzzle_rubber" />
+    <se_23_sub_altar_on_island layer="active_zone_sub_altar_on_island" condition="use_se_charged_crystals_inv" />
+    <se_10 layer="active_zone_go_back"  />
+    <se_24 layer="active_zone_go_to_se_24"  />
+  </se_23>
+  <se_23_sub_mechanisms map_location="se_23">
+    <se_23 layer="close_button" />
+  </se_23_sub_mechanisms>
+  <se_23_sub_coast map_location="se_23">
+    <se_23 layer="close_button" />
+    <iss_se_branch_inv layer="iss_se_branch_inv" condition="collect_se_branch_inv"/>
+  </se_23_sub_coast>
+  <se_23_sub_altar_on_island map_location="se_23">
+    <se_23 layer="active_zone_go_back" />
+  </se_23_sub_altar_on_island>
+  <se_23_puzzle_rubber map_location="se_23" >
+    <se_23 layer="active_zone_go_back" />
+  </se_23_puzzle_rubber>
+  <!-- 24 -->
+  <se_24 map_location="se_24">
+    <se_24_sub_window layer="active_zone_sub_window" />
+    <se_24_sub_vessel layer="active_zone_sub_vessel" />
+    <se_24_sub_curbstone layer="active_zone_sub_curbstone" />
+    <se_24_puzzle_mehacrystals layer="active_zone_puzzle_mehacrystals" />
+    <se_23 layer="active_zone_go_back"/>
+  </se_24>
+  <se_24_sub_window map_location="se_24">
+    <se_24 layer="close_button" />
+  </se_24_sub_window>
+  <se_24_sub_vessel map_location="se_24">
+    <se_24 layer="close_button" />
+  </se_24_sub_vessel>
+  <se_24_sub_curbstone map_location="se_24">
+    <se_24 layer="close_button" />
+  </se_24_sub_curbstone>
+  <se_24_puzzle_mehacrystals map_location="se_24">
+    <se_24 layer="active_zone_go_back" />
+  </se_24_puzzle_mehacrystals>
+  
+  <iss_se_part_of_an_artefakt_1_inv>
+    <se_16 layer="close_button" />
+  </iss_se_part_of_an_artefakt_1_inv>
+  
+  <iss_se_planch_inv >
+    <se_17_sub_fontain layer="close_button" />
+  </iss_se_planch_inv>
+  
+  <iss_se_canine_on_lace_inv >
+    <se_18_sub_artefakt layer="close_button" />
+  </iss_se_canine_on_lace_inv>
+  
+  <iss_se_oil_lamp_inv >
+    <se_11_sub_well layer="close_button" />
+  </iss_se_oil_lamp_inv>
+  
+  <iss_se_wheel_inv >
+    <se_11_sub_well layer="close_button" />
+  </iss_se_wheel_inv>
+  
+  <iss_se_spindle_with_gaps_inv >
+    <se_11_sub_mermaid layer="close_button" />
+  </iss_se_spindle_with_gaps_inv>
+  
+  <iss_se_branch_inv >
+    <se_23_sub_coast layer="close_button" />
+  </iss_se_branch_inv>
+  
+  <iss_se_master_edward_inv>
+    <!--<se_07 layer="close_button" condition="condit_iss_se_master_edward_inv_hint_opened"/> -->
+    <!--<se_07 layer="close_button" condition="condit_iss_se_master_edward_inv_close_button_state_se_07^condit_iss_se_master_edward_inv_hint_opened" />
+    <se_15_sub_tethys_corner layer="close_button" condition="condit_iss_se_master_edward_inv_close_button_state_se_15_sub_tethys_corner^condit_iss_se_master_edward_inv_hint_opened" />
+    <se_16 layer="close_button" condition="condit_iss_se_master_edward_inv_close_button_state_se_16^condit_iss_se_master_edward_inv_hint_opened" />
+    <se_22_sub_crystals layer="close_button" condition="condit_iss_se_master_edward_inv_close_button_state_se_22_sub_crystals^condit_iss_se_master_edward_inv_hint_opened" />
+    <se_22 layer="close_button" weight="0.1" condition="condit_iss_se_master_edward_inv_available^condit_iss_se_master_edward_inv_hint_opened" />-->
+    <current_place layer="close_button" />
+  </iss_se_master_edward_inv>
+  
+  
+  <current_place>
+    <se_01 layer="close_button" condition="condit_current_place_se_01"/> 
+    <se_02 layer="close_button" condition="condit_current_place_se_02"/> 
+    <se_03 layer="close_button" condition="condit_current_place_se_03"/> 
+    <se_04 layer="close_button" condition="condit_current_place_se_04"/> 
+    <se_05 layer="close_button" condition="condit_current_place_se_05"/> 
+    <se_06 layer="close_button" condition="condit_current_place_se_06"/> 
+    <se_07 layer="close_button" condition="condit_current_place_se_07"/> 
+    <se_08 layer="close_button" condition="condit_current_place_se_08"/> 
+    <se_09 layer="close_button" condition="condit_current_place_se_09"/> 
+    <se_10 layer="close_button" condition="condit_current_place_se_10"/> 
+    <se_11 layer="close_button" condition="condit_current_place_se_11"/> 
+    <se_12 layer="close_button" condition="condit_current_place_se_12"/> 
+    <se_13 layer="close_button" condition="condit_current_place_se_13"/> 
+    <se_14 layer="close_button" condition="condit_current_place_se_14"/> 
+    <se_15 layer="close_button" condition="condit_current_place_se_15"/> 
+    <se_16 layer="close_button" condition="condit_current_place_se_16"/> 
+    <se_17 layer="close_button" condition="condit_current_place_se_17"/> 
+    <se_18 layer="close_button" condition="condit_current_place_se_18"/> 
+    <se_19 layer="close_button" condition="condit_current_place_se_19"/> 
+    <se_20 layer="close_button" condition="condit_current_place_se_20"/> 
+    <se_21 layer="close_button" condition="condit_current_place_se_21"/> 
+    <se_22 layer="close_button" condition="condit_current_place_se_22"/> 
+    <se_23 layer="close_button" condition="condit_current_place_se_23"/> 
+    <se_24 layer="close_button" condition="condit_current_place_se_24"/> 
+  </current_place>
+  
+</navigation>

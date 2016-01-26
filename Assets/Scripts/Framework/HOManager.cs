@@ -7,7 +7,7 @@ using System.Xml;
 namespace Framework {
     [System.Serializable]
     public class HOList {
-        public List<HOItem> Items { set; get; }
+        public List<HOItem> Items;
     }
 
     public class HOManager : Location {
@@ -137,13 +137,12 @@ namespace Framework {
                     return;
                 }
             }
-
-            ++currentList;
-
-            if (currentList == lists.Count) {
+            
+            if (currentList == lists.Count - 1) {
                 Complete();
             }
             else {
+                ++currentList;
                 hoPanel.SetupPanel(lists[currentList].Items);
             }
         }

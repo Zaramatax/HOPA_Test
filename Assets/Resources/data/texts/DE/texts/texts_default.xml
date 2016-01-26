@@ -1,0 +1,637 @@
+﻿<texts language="english">
+  <input_letters letters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"/>
+  <game_title text="Witches' Legacy: Slumbering Darkness">
+    <ce_full text="Witches' Legacy: Drohende Finsternis Sammleredition"/>
+    <ce_demo text="Witches' Legacy: Sammleredition"/>
+    <se_full text="Witches' Legacy: Drohende Finsternis"/>
+    <se_demo text="Witches' Legacy: Drohende Finsternis"/>
+    <survey text="Witches' Legacy: Drohende Finsternis Umfrage"/>
+  </game_title>
+  <save_extras_folder_title text="Witches Legacy Drohende Finsternis SE"/>
+  <pics_with_text to_bfg="This text is drawn on the pictures. Each node of text consists path to the appropriate image. So you won't see any changes in the game after editing texts. You should deliver these texts to us and we will update pictures.">
+    
+  </pics_with_text>
+  <gameplay>
+  
+  <test_scene>
+       <scene_ho_name text="#_scene_ho_name#"/>
+       <test_mini_games_descriptions text=""/>
+  </test_scene>
+   
+   
+    <banner_window>
+      <counter text="#banner_window_counter_var#"/>
+    </banner_window>
+    <achievements>
+      <egghead>
+        <title text="Helles Köpfchen"/>
+        <title_big text="HELLES KÖPFCHEN"/>
+        <description text="Löse alle Minispiele ohne eines zu überspringen"/>
+      </egghead>
+      <unassisted>
+        <title text="Unabhängig"/>
+        <title_big text="UNABHÄNGIG"/>
+        <description text="Löse alle Wimmelbildszenen ohne einen Tipp zu verwenden."/>
+      </unassisted>
+      <puzzlefan>
+        <title text="Luchsauge"/>
+        <title_big text="LUCHSAUGE"/>
+        <description text="Finde alle Puzzleteile."/>
+      </puzzlefan>
+      <curious>
+        <title text="Chamäleonmeister"/>
+        <title_big text="CHAMÄLEONMEISTER"/>
+        <description text="Finde alle Chamäleonobjekte."/>
+      </curious>
+      <help_of_friend>
+        <title text="Klein aber fein"/>
+        <title_big text="KLEIN ABER FEIN"/>
+        <description text="Nimm die Hilfe des Kobolds in Anspruch."/>
+      </help_of_friend>
+      <kind_gardener>
+        <title text="Gutmütiger Gärtner"/>
+        <title_big text="GUTMÜTIGER GÄRTNER"/>
+        <description text="Gieße den bösen Baum."/>
+      </kind_gardener>
+      <fearless_savior>
+        <title text="Furchtloser Retter"/>
+        <title_big text="FURCHTLOSER RETTER"/>
+        <description text="Rette Lynn."/>
+      </fearless_savior>
+      <sharp_wit>
+        <title text="Gewitzt"/>
+        <title_big text="GEWITZT"/>
+        <description text="Entkomme aus der Falle des Magiers."/>
+      </sharp_wit>
+      <love_wins>
+        <title text="Die Liebe siegt"/>
+        <title_big text="DIE LIEBE SIEGT"/>
+        <description text="Rette Edward."/>
+      </love_wins>
+      <wise_man>
+        <title text="Enträtselt"/>
+        <title_big text="ENTRÄTSELT"/>
+        <description text="Löse das Rätsel der Sphinx, ohne einen Tipp zu verwenden."/>
+      </wise_man>
+      <true_pathfinder>
+        <title text="Spürhund"/>
+        <title_big text="SPÜRHUND"/>
+        <description text="Finde das Artefakt."/>
+      </true_pathfinder>
+      <ace>
+        <title text="Ass"/>
+        <title_big text="ASS"/>
+        <description text="Erhalte alle Auszeichnungen."/>
+      </ace>
+      <counter text="#_ACHIEVEMENT_TOTAL#"/>
+      <button_close text="SCHLIESSEN"/>
+    </achievements>
+    <map>
+      <place_description text="Aktueller Standort"/>
+      <quest_description text="Bereiche mit aktiven Aufgaben."/>
+    </map>
+    <diary>
+      <page_number text="#_diary_page_number#"/>
+      <count_pieces_puzzle text="#puzzle_diary_count_pieces_puzzle#/8"/>
+      <hero_name text="#_puzzle_hero_name_text#"/>
+      <puzzle text="Minispiele"/>
+      <diary text="Tagebuch"/>
+      <back text="Zurück"/>
+      <help text="Hilfe"/>
+      <collect text="Sammle"/>
+      
+      <collect_all_pieces_of_puzzle text="Finde alle Puzzleteile, um mehr über die Geschichte des Spiels zu erfahren."/>
+      <compile_the_puzzle text="Setze das Puzzle zusammen und erfahre mehr über die Charaktere."/>
+      <collect_puzzle_story_edward text="Der bösen Hexe Elizabeth hat er den Tod seiner Eltern zu verdanken. Der Orden der Hexenjäger nahm sich seiner an, um ihn zu einem der ihren zu machen. Er wurde zu Edwards Familie und als er heranwuchs, wurde er zu einem furchtlosen Hexenjäger. Es kam ihm nie in den Sinn, dass eine Hexe auch gut sein könnte. Doch dann traf er Lynn. Er sah, wie sie ihre Kräfte dazu gebrauchte, Menschen zu helfen und verliebte sich in sie. Nun sind sie verheiratet und leben zusammen, doch solange das Böse existiert, wollen sie es bekämpfen."/>
+      <collect_puzzle_story_morgana text="Sie ist die stärkste und schlimmste Hexe von allen. Sie war eine Jüngerin der Großen Hexenmutter Thethis und hat schon immer versucht, die Macht über die Erde zu erlangen. Sie kennt weder Gnade noch Mitleid und trachtet nach absoluter Herrschaft der Hexen. Doch Lynn widerstand Morgana und glaubte sie besiegt. Ein Irrtum, wie sich herausstellte ..."/>
+      <collect_puzzle_story_wolfgang text="Wolfgang ist der Gründer des Hexenjägerordens. Er war einst in eine Frau verliebt - blind, das Böse in ihr zu erkennen. Diese Frau war niemand anders, als Morgana. Sie verhexte und tötete ihn und verdammte seine Seele dazu, für immer ruhelos umherzuwandern. Dennoch gab Wolfgang nicht auf. Aus der Unterwelt bemüht er sich zu verhindern, dass das Böse in die Welt der Lebenden dringt."/>
+      <collect_puzzle_story_mathias text="Mathias stammt aus armen Verhältnissen. Seine Mutter starb, als er noch sehr jung war und sein Vater, ein Puppenspieler, bestritt den Unterhalt mehr schlecht als recht. Mathias erbte das Gewerbe von ihm und versuchte sein Glück. Er reiste durch viele Länder und kam so in eine alte Bibliothek mit Bücher über schwarze Magie. Doch er konnte die Texte nicht allein entschlüsseln und suchte nach einem Lehrer. Ein solcher erschien ihm in Gestalt einer Frau, gekleidet in einen schwarzen Umhang. Es war Morgana."/>
+      <instrunction_title text="Anleitung"/>
+      <button_instructions text="ANLEITUNG"/>
+      <instrunction_description text="Setze das Puzzle wieder zusammen, wenn Du alle neun Teile gefunden hast. Füge die Teile an der passenden Stelle ein. So erfährst Du mehr über die Charaktere und die Geschichte. Du kannst das Bild auch als Hintergrundbild verwenden. "/>
+      <click_to_continued text="Fortfahren ..."/>
+      <comment_button_collect text="Finde weitere Puzzleteile!"/>
+      <comment_button_help text="Setze das Puzzle zusammen und erfahre mehr über Charaktere!"/>
+      <unlock_screenshot text="Wallpaper freischalten"/>
+    </diary>
+    <end_demo>
+      <text_0 text="Vielen Dank, dass Du unsere Probeversion gespielt hast."/>
+      <text_ok_but text="OK"/>
+    </end_demo>
+    <ui>
+      <loading text="Lädt"/>
+      <loading_point text="..."/>
+      <give_item_window>
+        <well_done text="Genau so!"/>
+        <you_got_a text="Gefunden: {rule font(button)}{%ITEM_NAME%}"/>
+        <ok_button_label text="OK"/>
+      </give_item_window>
+      <puzzle_button_text text="Zu Memory wechseln"/>
+      <unpuzzle_button_text text="Zu Memory wechseln"/>
+      <nothing_to_do_on_scene text="Hier gibt es nichts zu tun."/>
+      <hint text="TIPP"/>
+      <skip text="ÜBERSPRINGEN"/>
+      <hint_unavailable text="Im gewählten Schwierigkeitsgrad steht Dir der Tipp nicht zur Verfügung."/>
+      <skip_unavailable text="Im gewählten Schwierigkeitsgrad steht Dir die Lösen-Funktion nicht zur Verfügung."/>
+      <reset text="ERNEUT"/>
+      <inventory text="INVENTAR"/>
+      <skip_cut_scene text="Lösen"/>
+      <switch_to_mahjong text="Zu Memory wechseln"/>
+      <switch_to_ho text="Zur WBS wechseln"/>
+      <items_list text="Objektliste"/>
+      <_items_list text="Verbleibende Objekte: %ITEMS_LEFT% / %ITEMS_TOTAL%"/>
+      <mini_game_description_title text="Anleitung"/>
+      <scores_text_main_menu text=""/>
+    </ui>
+    <ho_card_pairs>
+      <button_instruction text="HILFE"/>
+      <ho_puzzle_instruction>
+        <button_continue text="FORTFAHREN"/>
+        <instruction text="Bilde Paare und entferne so alle Karten vom Spielfeld. Hast Du zwei Kartenpaare gefunden, wird ein Objekt von der Liste gestrichen. Du kannst jederzeit zwischen Wimmelbild und Memory wechseln."/>
+        <instruction_label text="ANLEITUNG"/>
+      </ho_puzzle_instruction>
+    </ho_card_pairs>
+    <comments>
+      <item_misuse>
+        <default>
+          <text_00 text="Leider falsch."/>
+          <text_01 text="Ich brauche etwas anderes."/>
+          <text_02 text="Das funktioniert hier nicht."/>
+          <text_03 text="Die Idee war nicht so toll."/>
+          <text_04 text="Ich scheine auf der falschen Fährte zu sein."/>
+          <text_05 text="War zumindest einen Versuch wert."/>
+        </default>
+      </item_misuse>
+      <rapid_clicks>
+        <text_00 text="Ich darf nicht die Nerven verlieren."/>
+        <text_01 text="Ich darf die Nerven nicht verlieren."/>
+        <text_02 text="Nicht so schnell, sonst übersehe ich noch etwas."/>
+      </rapid_clicks>
+      <inventory_item_partially_collected text="Ich muss erst die anderen Teile finden."/>
+    </comments>
+    <dialogs>
+      <click_to_continue text="Fortfahren ..."/>
+    </dialogs>
+  </gameplay>
+  <strategy>
+    <title text="Handbuch"/>
+    <base text="Basis"/>
+    <extras text="Extras"/>
+    <back text="ZURÜCK"/>
+  </strategy>
+  <credits>
+    <block_00>
+      <title_ text="Big Fish Games"/>
+      <image text="bfg_logo"/>
+      <text_00 text=""/>
+    </block_00>
+    <block_01>
+      <title text="Direktion und ausführender Produzent"/>
+      <text_00 text="Isaias Vallejo"/>
+    </block_01>
+    <block_02>
+      <title text="Management, Spielproduktion und Produktionsleitung"/>
+      <text_00 text="Zachary Hines"/>
+    </block_02>
+    <block_03>
+      <title text="Stellvertretender Spielproduzent"/>
+      <text_00 text="Phil Hamilton"/>
+    </block_03>
+    <block_04>
+      <title text="Produzent"/>
+      <text_00 text="Brishan Merrill-Brown"/>
+    </block_04>
+    <block_05>
+      <title text="Narratives Design (Leitung)"/>
+      <text_00 text="Lisa Brunette"/>
+    </block_05>
+    <block_06>
+      <title text="Narratives Design"/>
+      <text_00 text="Faye Hoerauf"/>
+      <text_01 text="Joanie Rich"/>
+      <text_02 text=""/>
+      <text_03 text=""/>
+      <text_04 text=""/>
+      <text_05 text=""/>
+    </block_06>
+    <block_07>
+      <image text="ef_logo"/>
+      <title_ text="EleFun Games"/>
+      <text_00 text=""/>
+    </block_07>
+    <block_08>
+      <title text="Vorsitzender"/>
+      <text_00 text="Sergey Shatokhin"/>
+    </block_08>
+    <block_09>
+      <title text="Leitende Geschäftsführung"/>
+      <text_00 text="Alexander Gulyaev"/>
+    </block_09>
+    <block_10>
+      <title text="Betriebsleiter"/>
+      <text_00 text="Vladimir Krylov"/>
+    </block_10>
+    <block_11>
+      <title text="Technische Leitung (Vorstand)"/>
+      <text_00 text="Alexander Gulyaev"/>
+    </block_11>
+    <block_12>
+      <title text="Grafik Direktor"/>
+      <text_00 text="Andrey Yanchenko"/>
+    </block_12>
+    <block_13>
+      <title text="Leitung Grafik"/>
+      <text_00 text="Sergey Shatokhin"/>
+    </block_13>
+    <block_14>
+      <title text="Grafik Produzent"/>
+      <text_00 text="Sergey Hryukin"/>
+    </block_14>
+    <block_15>
+      <title text="Produzent"/>
+      <text_00 text="Olesya Gumenaya"/>
+    </block_15>
+    <block_16>
+      <title text="Projektmanager"/>
+      <text_00 text="Dmitriy Blazhennov"/>
+    </block_16>
+    <block_17>
+      <title text="Spieledesigner"/>
+      <text_00 text="Maria Erfilova"/>
+    </block_17>
+    <block_18>
+      <title text="Szenen"/>
+      <text_00 text="Olga Barmina"/>
+    </block_18>
+    <block_19>
+      <title text="Programmierer"/>
+      <text_00 text="Dmitry Shabanov"/>
+      <text_01 text="Vyacheslav Spirin"/>
+    </block_19>
+    <block_20>
+      <title text="Drehbuch (Leitung)"/>
+      <text_00 text="Vadim Voronin"/>
+    </block_20>
+    <block_21>
+      <title text="Autoren"/>
+      <text_00 text="Mikhail Borodin"/>
+      <text_01 text="Alexey Efremov"/>
+      <text_02 text="Mikhail Raznikov"/>
+      <text_03 text="Dmitriy Suzonov"/>
+      <text_04 text="Alexey Arhipov"/>
+      <text_05 text="Anastasia Voronova"/>
+      <text_06 text="Marina Makarova"/>
+    </block_21>
+    <block_22>
+      <title text="Designer"/>
+      <text_00 text="Alexander Nekrasov"/>
+      <text_01 text="Ekaterina Pushnina"/>
+    </block_22>
+    <block_23>
+      <title text="Tester"/>
+      <text_00 text="Natalia Tsalko"/>
+      <text_01 text="Danil Kultishev"/>
+    </block_23>
+    <block_24>
+      <title text="Grafik (Leitung)"/>
+      <text_00 text="Maria Hryukina"/>
+    </block_24>
+    <block_25>
+      <title text="Grafiker"/>
+      <text_00 text="Julia Pechugina"/>
+      <text_01 text="Elena Zakharova"/>
+      <text_02 text="Roman Kolmakov"/>
+      <text_03 text="Anna Gromova"/>
+      <text_04 text="Margarita Narozhnykh"/>
+      <text_05 text="Irina Taurskaya"/>
+      <text_06 text="Georgiy Vostrikovs"/>
+    </block_25>
+    <block_26>
+      <title text="3D-Modelle und Visualisierung"/>
+      <text_00 text="Sergey Chanov"/>
+      <text_01 text="Ekaterina Mozharovskaya"/>
+      <text_02 text="Igor Khusnaydinov"/>
+      <text_03 text="Andrey Boldizhar"/>
+      <text_04 text="Alexander Shatokhin"/>
+      <text_05 text="Dmitry Kutcenko"/>
+    </block_26>
+    <block_27>
+      <title text="Soundtrack"/>
+      <text_00 text="Alexey Arhipov"/>
+    </block_27>
+    <block_28>
+      <title text="Sound und Soundeffekte"/>
+      <text_00 text="Alexey Arhipov"/>
+    </block_28>
+    <block_29>
+      <title text="Stimmen"/>
+      <text_00 text="Matthew Posner"/>
+      <text_01 text="Kendra Hoffman"/>
+      <text_02 text="Brittany Pressley"/>
+      <text_03 text="Jamal Fahim"/>
+      <text_04 text="Karen Kahler"/>
+      <text_05 text="Emily Eldridge"/>
+      <text_06 text="Matthew Lerner-Lam"/>
+      <text_07 text="Patrick Conn"/>
+    </block_29>
+    <block_30>
+      <title text="Besonderer Dank gilt:"/>
+      <text_00 text="Mariya Sinyavskaya"/>
+      <text_01 text="Anton Nikolsky"/>
+      <text_02 text="Nikita Klabukov"/>
+      <text_03 text="Julia Golubeva"/>
+      <text_04 text="Alexey Belkin"/>
+      <text_05 text="Dmitriy Shubeykin"/>
+      <text_06 text="Kristina Shatokhina"/>
+      <text_07 text="Konstantin Grigoriev"/>
+      <text_08 text=""/>
+      <text_09 text=""/>
+      <text_10 text=""/>
+      <text_11 text=""/>
+      <text_12 text=""/>
+    </block_30>
+    <block_31>
+      <title text="© 2015 Big Fish Games, Inc. "/>
+      <text_00 text="Alle Rechte vorbehalten."/>
+      <text_01 text="{rule scale(0.9)}{ Big Fish, das  Fish Logo and „Witches' Legacy: Drohende Finsternis“ sind sind eingetragenen Warenzeichen von Big Fish Games, Inc. }"/>
+    </block_31>
+    <block_end>
+      <title text="Ende"/>
+    </block_end>
+  </credits>
+  <main_menu>
+    <profile_name text="%PROFILE_NAME%"/>
+    <click_here_text text="Falsches Profil? Profil wechseln"/>
+    <common>
+      <ok text="OK"/>
+      <cancel text="ZURÜCK"/>
+      <yes text="JA"/>
+      <no text="NEIN"/>
+      <back text="ZURÜCK"/>
+      <continue text="FORTFAHREN"/>
+      <exit text="BEENDEN"/>
+      <enter_your_name text="Gib Deinen Namen ein."/>
+      <hit_mouse_button text="Fortfahren ..."/>
+      <loading text="Lädt, bitte warten ..."/>
+    </common>
+    <nosound>
+      <title text="ACHTUNG"/>
+      <text text="Es wurde keine Soundkarte gefunden. Das Spiel wird ohne Ton fortgesetzt."/>
+    </nosound>
+    <delete_profile>
+      <title text="SPIELERPROFIL LÖSCHEN"/>
+      <text text="Möchtest Du dieses Spielerprofil löschen: „%PROFILE_NAME%“?"/>
+    </delete_profile>
+    <bad_profile>
+      <title text="BESCHÄDIGTES PROFIL"/>
+      <text text="Einige Profile waren beschädigt und wurden entfernt."/>
+    </bad_profile>
+    <too_many_profiles>
+      <title text="MAX. ANZAHL AN PROFILEN"/>
+      <text text="Du kannst nicht mehr als 15 Profile anlegen."/>
+    </too_many_profiles>
+    <exit>
+      <title text="BEENDEN?"/>
+      <text text="Möchtest Du das Spiel wirklich beenden?"/>
+    </exit>
+    <confirmation>
+      <title text="BESTÄTIGEN"/>
+      <text text="Möchtest Du das wirklich tun?"/>
+      <wallpaper_set text="Bild als Desktop-Hintergrund festlegen?"/>
+      <wallpaper_save text="Bild speichern?"/>
+      <concept_save text="Bild speichern?"/>
+      <screensaver_set text="Bild als Bildschirmschoner festlegen?"/>
+      <music_save text="Musik speichern?"/>
+    </confirmation>
+    <game_complete>
+      <title text="SPIEL ABGESCHLOSSEN"/>
+      <text text="Herzlichen Glückwunsch! Du hast das Hauptspiel erfolgreich abgeschlossen! Wähle „Spielen“ im Hauptmenü, um das Bonuskapitel zu starten."/>
+      <text_ce text="Glückwunsch! Du hast das Spiel und das Bonuskapitel erfolgreich abgeschlossen."/>
+    </game_complete>
+    <game_extras_note>
+      <title text="EXTRAS"/>
+      <text text="Das Bonuskapitel wird freigeschaltet, sobald Du das Hauptspiel abgeschlossen hast."/>
+      <text_2 text="Die Extras können nur in der Vollversion gespeichert werden."/>
+      <text_3 text="Sammle die Puzzleteile, um das Wallpaper freizuschalten. Wenn Du das Spiel bereits beendet hast, so kannst Du es erneut spielen, um alle Puzzleteile zur Freischaltung des Puzzles zu finden."/>
+    </game_extras_note>
+    <extras_menu>
+      <play text="Spiel"/>
+      <screensavers text="Bildschirmschoner"/>
+      <wallpapers text="Wallpaper"/>
+      <music text="Soundtrack"/>
+      <concept text="Kunstgalerie"/>
+      <puzzle text="Minispiele"/>
+      <puzzle_second_part text=""/>
+      <puzzle_instruction text="ANLEITUNG"/>
+      <puzzle_set text="OK"/>
+      <achievs text="Auszeichnungen"/>
+      <exit text="Zurück"/>
+      <set text="OK"/>
+      <save text="Speichern"/>
+      <play_button text="Spielen"/>
+      <stop_button text="Stopp"/>
+      <complete_text text="Spiel abgeschlossen"/>
+      <complete_title text="Spiel abgeschlossen"/>
+      <button_extras_prev text="Vorschau"/>
+      <button_extras_next text="Weiter"/>
+    </extras_menu>
+    <bonus_content>
+      <music>
+        <track_0 text="Hauptmenümelodie"/>
+        <track_1 text="Bergrauschen"/>
+        <track_2 text="Erinnerungen"/>
+        <track_3 text="Tagebuchmelodie"/>
+        <track_4 text="Ein mysteriöder Ort"/>
+        <track_5 text="SE Intro"/>
+        <track_6 text="Miniaturstadt"/>
+        <track_7 text="Ein schreckliches Geheimnis"/>
+        <track_8 text="Zug-Minispiel"/>
+        <track_9 text="Surrealismus"/>
+        <track_10 text="Brücke"/>
+      </music>
+    </bonus_content>
+    <game_logic>
+      <menu text="MENÜ"/>
+      <guide text="HANDBUCH"/>
+      <calendar_counter text="#_text_update_calendar_counter#"/>
+    </game_logic>
+    <game_logic_exit>
+      <title text="SPIEL BEENDEN?"/>
+      <text text="Der Fortschritt Deines Spiels wird beim Beenden gespeichert."/>
+      <leave text="BEENDEN"/>
+    </game_logic_exit>
+    <game_logic_menu>
+      <title text="MENÜ"/>
+      <restart text="LEVEL ERNEUT SPIELEN"/>
+      <return text="Weiter"/>
+      <return_to_map text="Hauptmenü"/>
+      <options text="Optionen"/>
+      <change_difficulty text="Schwierigkeitsgrad ändern"/>
+      <go_to_map text="KARTE"/>
+    </game_logic_menu>
+    <game_logic_pause>
+      <title text="PAUSE"/>
+      <text text="Das Spiel wurde pausiert."/>
+      <resume text="Fortsetzen"/>
+    </game_logic_pause>
+    <game_logic_restart>
+      <title text="NEU STARTEN?"/>
+      <text text="Möchtest Du das Level wirklich von vorne beginnen?"/>
+    </game_logic_restart>
+    <game_replay>
+      <title text="SPIEL WIEDERHOLEN"/>
+      <button_replay text="Ja"/>
+      <button_exit text="Nein"/>
+      <text text="Du hast das Spiel abgeschlossen. Möchtest Du das Spiel erneut spielen? Du behältst Deine bisherigen Auszeichnungen und kannst sie verbessern. Im Spiel sind dann nur die noch fehlenden Auszeichnungen und Puzzleteile verfügbar."/>
+      <text_ce text="Du hast das Spiel abgeschlossen. Möchtest Du das Spiel erneut spielen? Du behältst Deine bisherigen Auszeichnungen und kannst sie verbessern. Im Spiel sind dann nur die noch fehlenden Auszeichnungen und Puzzleteile verfügbar."/>
+    </game_replay>
+    <main_menu>
+      <main_title text="HALLO"/>
+      <start text="START"/>
+      <options text="OPTIONEN"/>
+      <change_player text="PROFIL WECHSELN"/>
+      <exit text="BEENDEN"/>
+      <more_games text="WEITERE INFOS"/>
+      <credits text="TEAM"/>
+    </main_menu>
+    <new_profile>
+      <title text="NEUES PROFIL"/>
+    </new_profile>
+    <options>
+      <title text="OPTIONEN"/>
+      <sound_volume text="Effektlautstärke"/>
+      <music_volume text="Musiklautstärke"/>
+      <enviroment_volume text="Umgebungslautstärke"/>
+      <voice_volume text="Stimmenlautstärke"/>
+      <fullscreen text="Vollbild"/>
+      <widescreen text="Breitbild"/>
+      <custom_cursor text="Eigener Zeiger"/>
+      <video_mode text="Videomodus"/>
+      <apply text="OK"/>
+      <defaults text="STANDARDEINSTELLUNGEN"/>
+      <credits text="TEAM"/>
+    </options>
+    <select_the_game>
+      <title text="Wähle ein Kapitel:"/>
+      <not_covered text="GESPERRT"/>
+      <play_button text="Spielen"/>
+      <main_story>
+        <title text="Hauptspiel"/>
+        <game_time text="Spielzeit: #MAIN_GAMEPLAY_TIME_HOURS# Stunden, #MAIN_GAMEPLAY_TIME_MINUTES# Minuten"/>
+        <game_progress text="Spielfortschritt: #MAIN_GAMEPLAY_PROGRESS#%"/>
+      </main_story>
+      <bonus_gameplay>
+        <title text="Bonuskapitel"/>
+        <game_time text="Spielzeit: #BONUS_GAMEPLAY_TIME_HOURS# Stunden, #BONUS_GAMEPLAY_TIME_MINUTES# Minuten"/>
+        <game_progress text="Spielfortschritt: #BONUS_GAMEPLAY_PROGRESS#%"/>
+      </bonus_gameplay>
+    </select_the_game>
+    <profile_name_conflict>
+      <title text="NAMENSKONFLIKT"/>
+      <text text="Ein Profil mit diesem Namen existiert bereits."/>
+    </profile_name_conflict>
+    <profiles>
+      <title text="PROFIL AUSWÄHLEN"/>
+      <create text="PROFIL"/>
+      <rename text="ÄNDERN"/>
+      <delete text="LÖSCHEN"/>
+      <done text="OK"/>
+    </profiles>
+    <rename_profile>
+      <title text="PROFIL UMBENENNEN"/>
+    </rename_profile>
+    <welcome>
+      <title text="HALLO"/>
+      <player text="Profil"/>
+    </welcome>
+    <difficulty_level>
+      <description>
+        <text_definition_title_casual text="Für Spieler, die noch nie zuvor ein Wimmelbildabenteuer gespielt haben."/>
+        <text_definition_title_normal text="Für Wimmelbildfans."/>
+        <text_definition_title_hard text="Für Profi-Spieler, die eine Herausforderung suchen."/>
+        <hos_penatly_section>
+          <on text="- Fehlerstrafe in WBS AN"/>
+          <off text="- Fehlerstrafe in WBS AUS"/>
+        </hos_penatly_section>
+        <hos_sparkles_section>
+          <on text="- Hinweisglitzern in WBS AN"/>
+          <off text="- Hinweisglitzern in WBS AUS"/>
+        </hos_sparkles_section>
+        <hint_section>
+          <active text="- Ladezeit für Tipp: #window_difficulty_text# Sek."/>
+          <inactive text="- Tipp deaktiviert"/>
+        </hint_section>
+        <skip_section>
+          <active text="- Ladezeit für „Lösen“: #window_difficulty_text# Sek."/>
+          <inactive text="-„Lösen“ ist deaktiviert."/>
+        </skip_section>
+        <sparkles_section>
+          <active text="- Hinweisfunkeln bei allen aktiven Bereichen und Gegenständen alle #window_difficulty_text# Sek."/>
+          <inactive text="- Hinweisfunkeln bei allen aktiven Bereichen und Gegenständen ist deaktiviert."/>
+        </sparkles_section>
+      </description>
+      <title_select_difficulty_game text="SPIELMODUS AUSWÄHLEN"/>
+      <difficulty_section>
+        <casual text="ENTSPANNT"/>
+        <normal text="NORMAL"/>
+        <hard text="EXPERTE"/>
+        <custom text="INDIVIDUELL"/>
+      </difficulty_section>
+      <difficulty_title>
+        <casual text="ENTSPANNT"/>
+        <normal text="NORMAL"/>
+        <hard text="EXPERTE"/>
+        <custom text="INDIVIDUELL"/>
+      </difficulty_title>
+      <text_definition_custom_section text=""/>
+      <custom_section>
+        <hint_section>
+          <title text="TIPP-AUFLADUNG"/>
+          <quick text="SCHNELL"/>
+          <normal text="NORMAL"/>
+          <inactive text="AUS"/>
+        </hint_section>
+        <skip_section>
+          <title text="„LÖSEN“-AUFLADUNG"/>
+          <quick text="SCHNELL"/>
+          <normal text="NORMAL"/>
+          <inactive text="AUS"/>
+        </skip_section>
+        <sparkles_section>
+          <title text="HINWEISGLITZERN"/>
+          <scenes text="SZENEN"/>
+          <hidden_object text="WIMMELBILDSZENEN"/>
+        </sparkles_section>
+        <hos_penatly_section>
+          <title text="FEHLERSTRAFE"/>
+          <on text="AN"/>
+          <off text="AUS"/>
+        </hos_penatly_section>
+        <hos_sparkles_section>
+          <title text="HINWEISGLITZERN BEI WBS"/>
+          <on text="AN"/>
+          <off text="AUS"/>
+        </hos_sparkles_section>
+      </custom_section>
+      <text_background text="DEN SCHWIERIGKEITSGRAD KANNST DU WÄHREND DES SPIELS JEDERZEIT ANPASSEN."/>
+      <window_difficulty_note>
+        <title text="ANMERKUNG"/>
+        <text text="Du kannst den Schwierigkeitsgrad während des Spiels im Menü ändern."/>
+      </window_difficulty_note>
+    </difficulty_level>
+    <strategy>
+      <title text="Handbuch"/>
+      <base text="Basis"/>
+      <extras text="Extras"/>
+      <back text="Zurück"/>
+    </strategy>
+  </main_menu>
+  <fonts_listener>
+    <title text="AUSZEICHNUNGEN"/>
+    <title_font text="#_achievements_title_font#"/>
+    <title_intersymbol_factor text="#_title_intersymbol_factor#"/>
+    <ABCDEF text="А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9"/>
+    <ABCDEF_2 text="АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзиклмнопрстуфхцчшщъыьэюяΑBCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"/>
+    <ABCDEF_3 text="In Produktion."/>
+  </fonts_listener>
+</texts>

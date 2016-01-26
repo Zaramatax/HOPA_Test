@@ -1,0 +1,3895 @@
+<quests final_quest="final_quest_use_se_artifact_inv_2">
+  
+  <test_scene>
+    <test_scene type="condition" highlight_layer="active_zone_go_back" condition="test_scene_hint='1'">
+      <dependency>
+      </dependency>
+    </test_scene>
+  </test_scene>
+  
+  
+  <!-- 1 -->
+  <se_01>
+    <condit_imp_on_silomer type="condition" highlight_layer="drop_zone_se_rubber_hummer_inv" condition="se_01_hint_imp_on_silomer='1'">
+      <dependency>
+        <condit_collect_imp />
+        <collect_se_rubber_hummer_inv />
+      </dependency>
+    </condit_imp_on_silomer>
+    <use_se_rubber_hummer_inv type="apply_item" inventory_item="se_rubber_hummer_inv" drop_zone="drop_zone_se_rubber_hummer_inv_with_imp">
+      <dependency>
+        <condit_imp_on_silomer />
+        <collect_se_rubber_hummer_inv />
+      </dependency>
+    </use_se_rubber_hummer_inv>
+    <collect_se_figure_lynn_inv type="inventory_item" highlight_layer="video_imp_give/selection" inventory_item="se_figure_lynn_inv">
+      <dependency>
+        <use_se_rubber_hummer_inv />
+      </dependency>
+    </collect_se_figure_lynn_inv>
+    <collect_se_board_center_inv type="inventory_item" inventory_item="se_board_center_inv" highlight_layer="active_zone_go_ho_01">
+      <dependency>
+        <use_se_cross_inv />
+      </dependency>
+    </collect_se_board_center_inv>
+  </se_01>
+  <se_01_sub_entrance>
+    <condit_collect_imp type="condition" highlight_layer="imp/selection" condition="se_01_sub_entrance_hint_collect_imp='1'">
+      <dependency>
+      </dependency>
+    </condit_collect_imp>
+    <click_active_zone_active_zone_rope_1 type="click" click_layer="active_zone_rope_1">
+      <dependency>
+        <condit_collect_imp />
+      </dependency>
+    </click_active_zone_active_zone_rope_1>
+    <click_active_zone_active_zone_rope_3 type="click" click_layer="active_zone_rope_3">
+      <dependency>
+        <click_active_zone_active_zone_rope_1 />
+      </dependency>
+    </click_active_zone_active_zone_rope_3>
+    <click_active_zone_active_zone_rope_5 type="click" click_layer="active_zone_rope_5">
+      <dependency>
+        <click_active_zone_active_zone_rope_3 />
+      </dependency>
+    </click_active_zone_active_zone_rope_5>
+  </se_01_sub_entrance>
+  <se_01_sub_souvenir>
+    <collect_se_matter_rag_inv type="inventory_item" inventory_item="se_matter_rag_inv" />
+    <use_se_coin_inv type="apply_item" inventory_item="se_coin_inv" drop_zone="drop_zone_se_coin_inv">
+      <dependency>
+        <collect_se_matter_rag_inv />
+        <collect_se_coin_inv />
+      </dependency>
+    </use_se_coin_inv>
+    <click_se_01_sub_souvenir_button type="condition" highlight_layer="button/selection" condition="click_se_01_sub_souvenir_button_hint='1'">
+      <dependency>
+        <use_se_coin_inv />
+      </dependency>
+    </click_se_01_sub_souvenir_button>
+    <collect_se_figure_morgana_inv type="inventory_item" inventory_item="se_figure_morgana_inv">
+      <dependency>
+        <click_se_01_sub_souvenir_button />
+      </dependency>
+    </collect_se_figure_morgana_inv>
+  </se_01_sub_souvenir>
+  <se_01_sub_van_door>
+    <use_se_cross_inv type="apply_item" inventory_item="se_cross_inv" drop_zone="drop_zone_se_cross_inv">
+      <dependency>
+        <collect_se_cross_inv />
+      </dependency>
+    </use_se_cross_inv>
+  </se_01_sub_van_door>
+  <se_01_sub_photomachine>
+    <collect_se_edwards_photo_inv type="inventory_item" inventory_item="se_edwards_photo_inv" />
+    <use_se_knife_inv_1 type="apply_item" inventory_item="se_knife_inv" drop_zone="drop_zone_se_knife_inv">
+      <dependency>
+        <collect_se_knife_inv />
+      </dependency>
+    </use_se_knife_inv_1>
+    <click_photo type="click" click_layer="second_photo">
+      <dependency>
+        <use_se_knife_inv_1 />
+      </dependency>
+    </click_photo>
+    <condit_click_big_photo type="condition" highlight_layer="photo_big/selection" condition="se_01_sub_photomachine_close_big_photo_for_hint='1'">
+      <dependency>
+        <click_photo />
+      </dependency>
+    </condit_click_big_photo>
+    <collect_se_pin_inv type="inventory_item" inventory_item="se_pin_inv">
+      <dependency>
+        <condit_click_big_photo />
+      </dependency>
+    </collect_se_pin_inv>
+  </se_01_sub_photomachine>
+  
+  
+  <!-- 2 -->
+  <se_02>
+    <collect_se_cross_inv type="inventory_item" inventory_item="se_cross_inv">
+      <dependency>
+        <click_se_02_main_button />
+      </dependency>
+    </collect_se_cross_inv>
+    <click_shtora_close type="click" highlight_layer="shtora_close/selection" click_layer="shtora_close" />
+    <collect_se_broken_pendent_inv type="inventory_item" inventory_item="se_broken_pendent_inv" />
+  </se_02>
+  <se_02_sub_bag>
+    <click_bag_closed type="click" click_layer="close" />
+    <use_se_lynns_pendent_inv type="apply_item" inventory_item="se_lynns_pendent_inv" drop_zone="drop_zone_se_lynns_pendent_inv">
+      <dependency>
+        <click_bag_closed />
+        <collect_se_lynns_pendent_inv />
+      </dependency>
+    </use_se_lynns_pendent_inv>
+  </se_02_sub_bag>
+  <se_02_sub_puzzle>
+    <complete_se_02_sub_puzzle_1 type="complete_mini_game" mini_game_name="se_02_sub_puzzle_1">
+      <dependency>
+        <use_se_lynns_pendent_inv />
+      </dependency>
+    </complete_se_02_sub_puzzle_1>
+    <complete_se_02_sub_puzzle_2 type="complete_mini_game" mini_game_name="se_02_sub_puzzle_2">
+      <dependency>
+        <complete_se_02_sub_puzzle_1 />
+      </dependency>
+    </complete_se_02_sub_puzzle_2>
+    <complete_se_02_sub_puzzle_3 type="complete_mini_game" mini_game_name="se_02_sub_puzzle_3">
+      <dependency>
+        <complete_se_02_sub_puzzle_2 />
+      </dependency>
+    </complete_se_02_sub_puzzle_3>
+    <collect_se_knife_inv type="inventory_item" inventory_item="se_knife_inv">
+      <dependency>
+        <complete_se_02_sub_puzzle_3 />
+      </dependency>
+    </collect_se_knife_inv>
+    <collect_se_coin_inv type="inventory_item" inventory_item="se_coin_inv">
+      <dependency>
+        <complete_se_02_sub_puzzle_3 />
+      </dependency>
+    </collect_se_coin_inv>
+  </se_02_sub_puzzle>
+  <se_02_sub_box>
+    <click_afisha_to_click type="click" click_layer="afisha_to_click">
+      <dependency>
+        <click_shtora_close />
+      </dependency>
+    </click_afisha_to_click>
+    <condit_click_afisha_big type="condition" highlight_layer="parent_for_offset/afisha_big" condition="se_02_sub_box_afisha_big_click='1'">
+      <dependency>
+        <click_afisha_to_click />
+      </dependency>
+    </condit_click_afisha_big>
+    <condit_second_click_afisha_big type="condition" highlight_layer="parent_for_offset/afisha_big" condition="se_02_sub_box_afisha_big_second_click='1'">
+      <dependency>
+        <condit_click_afisha_big />
+      </dependency>
+    </condit_second_click_afisha_big>
+    <use_se_master_key_inv type="apply_item" inventory_item="se_master_key_inv" drop_zone="drop_zone_se_master_key_inv">
+      <dependency>
+        <condit_second_click_afisha_big />
+        <collect_se_master_key_inv />
+      </dependency>
+    </use_se_master_key_inv>
+    <collect_se_cover_with_points_inv type="inventory_item" inventory_item="se_cover_with_points_inv">
+      <dependency>
+        <use_se_master_key_inv />
+      </dependency>
+    </collect_se_cover_with_points_inv>
+    <click_platie_01 type="click" click_layer="platie_01">
+      <dependency>
+        <collect_se_cover_with_points_inv />
+      </dependency>
+    </click_platie_01>
+    <click_elka_1 type="click" click_layer="elka_1">
+      <dependency>
+        <collect_se_cover_with_points_inv />
+      </dependency>
+    </click_elka_1>
+    <collect_se_rubber_hummer_inv type="inventory_item" inventory_item="se_rubber_hummer_inv">
+      <dependency>
+        <click_elka_1 />
+        <click_platie_01 />
+      </dependency>
+    </collect_se_rubber_hummer_inv>
+  </se_02_sub_box>
+  <se_02_sub_organ>
+    <use_se_figure_lynn_inv type="apply_item" inventory_item="se_figure_lynn_inv" drop_zone="drop_zone_figures">
+      <dependency>
+        <collect_se_figure_lynn_inv />
+      </dependency>
+    </use_se_figure_lynn_inv>
+    <use_se_figure_morgana_inv type="apply_item" inventory_item="se_figure_morgana_inv" drop_zone="drop_zone_figures">
+      <dependency>
+        <collect_se_figure_morgana_inv />
+      </dependency>
+    </use_se_figure_morgana_inv>
+    <click_se_02_main_button type="condition" highlight_layer="main_button/selection" condition="click_se_02_main_button_hint='1'">
+      <dependency>
+        <use_se_figure_morgana_inv />
+        <use_se_figure_lynn_inv />
+      </dependency>
+    </click_se_02_main_button>
+  </se_02_sub_organ>
+  <se_02_sub_case>
+    <use_se_board_center_inv type="apply_item" inventory_item="se_board_center_inv" drop_zone="drop_zone_se_board_center_inv">
+      <dependency>
+        <collect_se_board_center_inv />
+      </dependency>
+    </use_se_board_center_inv>
+  </se_02_sub_case>
+  
+  
+  <!-- 3 -->
+  <se_03>
+    <use_se_mirror_inv type="apply_item" inventory_item="se_mirror_inv" drop_zone="drop_zone_se_mirror_inv">
+      <dependency>
+        <collect_se_mirror_inv />
+      </dependency>
+    </use_se_mirror_inv>
+  </se_03>
+  <se_03_sub_hut>
+    <use_se_scroll_witches_inv type="apply_item" inventory_item="se_scroll_witches_inv" drop_zone="drop_zone_se_scroll_witches_inv">
+      <dependency>
+        <collect_se_scroll_witches_inv />
+      </dependency>
+    </use_se_scroll_witches_inv>
+    <collect_se_broken_hook_inv type="inventory_item" inventory_item="se_broken_hook_inv">
+      <dependency>
+        <use_se_scroll_witches_inv />
+      </dependency>
+    </collect_se_broken_hook_inv>
+    <collect_se_shoes_inv type="inventory_item" inventory_item="se_shoes_inv">
+      <dependency>
+        <collect_se_broken_hook_inv />
+      </dependency>
+    </collect_se_shoes_inv>
+  </se_03_sub_hut>
+  <se_03_sub_flint>
+    <use_se_handle_chest_inv type="apply_item" inventory_item="se_handle_chest_inv" drop_zone="drop_zone_se_handle_chest_inv">
+      <dependency>
+        <collect_se_handle_chest_inv />
+      </dependency>
+    </use_se_handle_chest_inv>
+    <condit_se_03_sub_flint_click_note_hint type="condition" highlight_layer="note_01" condition="se_03_sub_flint_click_note_hint='1'">
+      <dependency>
+        <use_se_handle_chest_inv />
+      </dependency>
+    </condit_se_03_sub_flint_click_note_hint>
+    <condit_se_03_sub_flint_click_note_big_hint type="condition" highlight_layer="note_02" condition="se_03_sub_flint_click_note_big_hint='1'">
+      <dependency>
+        <use_se_handle_chest_inv />
+      </dependency>
+    </condit_se_03_sub_flint_click_note_big_hint>
+    <collect_se_flint_inv type="inventory_item" highlight_layer="flint" inventory_item="se_flint_inv">
+      <dependency>
+        <condit_se_03_sub_flint_click_note_hint />
+      </dependency>
+    </collect_se_flint_inv>
+  </se_03_sub_flint>
+  <se_03_sub_creek>
+    <collect_se_oil_lamp_inv type="inventory_item" inventory_item="se_oil_lamp_inv" />
+    <condit_se_03_sub_creek_show_imp type="condition" highlight_layer="active_zone_imp" condition="se_03_sub_creek_show_imp='1'">
+      <dependency>
+        <collect_se_mask_for_swimming_inv />
+      </dependency>
+    </condit_se_03_sub_creek_show_imp>
+    <use_se_mask_for_swimming_inv type="apply_item" inventory_item="se_mask_for_swimming_inv" drop_zone="drop_zone_se_mask_for_swimming_inv">
+      <dependency>
+        <collect_se_mask_for_swimming_inv />
+      </dependency>
+    </use_se_mask_for_swimming_inv>
+    <collect_se_mirror_inv type="inventory_item" highlight_layer="imp_give/selection" inventory_item="se_mirror_inv">
+      <dependency>
+        <use_se_mask_for_swimming_inv />
+      </dependency>
+    </collect_se_mirror_inv>
+    <use_se_watering_can_inv type="apply_item" inventory_item="se_watering_can_inv" drop_zone="drop_zone_se_watering_can_inv">
+      <dependency>
+        <collect_se_watering_can_inv />
+      </dependency>
+    </use_se_watering_can_inv>
+    <collect_se_watering_with_water_inv type="inventory_item" inventory_item="se_watering_with_water_inv">
+      <dependency>
+        <use_se_watering_can_inv />
+      </dependency>
+    </collect_se_watering_with_water_inv>
+  </se_03_sub_creek>
+  <se_03_sub_pagan_temple>
+    <click_map type="click" click_layer="map" />
+    <use_se_knife_inv_2 type="apply_item" inventory_item="se_knife_inv" drop_zone="drop_zone_knife_inv">
+      <dependency>
+        <click_map />
+        <collect_se_knife_inv />
+      </dependency>
+    </use_se_knife_inv_2>
+    <collect_se_straw_inv type="inventory_item" inventory_item="se_straw_inv">
+      <dependency>
+        <use_se_knife_inv_2 />
+      </dependency>
+    </collect_se_straw_inv>
+    <collect_se_hand_with_a_roll_inv type="inventory_item" inventory_item="se_hand_with_a_roll_inv">
+      <dependency>
+        <complete_se_03_minigame_kamea />
+      </dependency>
+    </collect_se_hand_with_a_roll_inv>
+    <collect_se_turpentine_inv type="inventory_item" inventory_item="se_turpentine_inv">
+      <dependency>
+        <complete_se_03_minigame_kamea />
+      </dependency>
+    </collect_se_turpentine_inv>
+  </se_03_sub_pagan_temple>
+  <se_03_minigame_kamea>
+    <use_se_emblem_throne_inv type="apply_item" inventory_item="se_emblem_throne_inv" drop_zone="drop_zone_se_emblem_throne_inv">
+      <dependency>
+        <collect_se_emblem_throne_inv />
+      </dependency>
+    </use_se_emblem_throne_inv>
+    <complete_se_03_minigame_kamea type="complete_mini_game" mini_game_name="se_03_minigame_kamea">
+      <dependency>
+        <use_se_emblem_throne_inv />
+      </dependency>
+    </complete_se_03_minigame_kamea>
+  </se_03_minigame_kamea>
+  <se_03_sub_mini_ho>
+    <click_se_03_sub_mini_ho_bird_1 type="click" click_layer="bird_1_out">
+      <dependency>
+        <use_se_mirror_inv />
+      </dependency>
+    </click_se_03_sub_mini_ho_bird_1>
+    <click_se_03_sub_mini_ho_bird_2 type="click" click_layer="bird_2_out">
+      <dependency>
+        <use_se_mirror_inv />
+      </dependency>
+    </click_se_03_sub_mini_ho_bird_2>
+    <click_se_03_sub_mini_ho_bird_3 type="click" click_layer="bird_3_out">
+      <dependency>
+        <use_se_mirror_inv />
+      </dependency>
+    </click_se_03_sub_mini_ho_bird_3>
+    <click_se_03_sub_mini_ho_bird_4 type="click" click_layer="bird_4_out">
+      <dependency>
+        <use_se_mirror_inv />
+      </dependency>
+    </click_se_03_sub_mini_ho_bird_4>
+    <click_se_03_sub_mini_ho_bird_5 type="click" click_layer="bird_5_out">
+      <dependency>
+        <use_se_mirror_inv />
+      </dependency>
+    </click_se_03_sub_mini_ho_bird_5>
+    <click_se_03_sub_mini_ho_bird_6 type="click" click_layer="bird_6_out">
+      <dependency>
+        <use_se_mirror_inv />
+      </dependency>
+    </click_se_03_sub_mini_ho_bird_6>
+    <condit_se_03_hint_gate_opened type="condition" highlight_layer="b_sub" condition="se_03_hint_gate_opened='1'">
+      <dependency>
+        <click_se_03_sub_mini_ho_bird_1 />
+        <click_se_03_sub_mini_ho_bird_2 />
+        <click_se_03_sub_mini_ho_bird_3 />
+        <click_se_03_sub_mini_ho_bird_4 />
+        <click_se_03_sub_mini_ho_bird_5 />
+        <click_se_03_sub_mini_ho_bird_6 />
+      </dependency>
+    </condit_se_03_hint_gate_opened>
+  </se_03_sub_mini_ho>
+  
+  
+  <!-- 4 -->
+  <se_04>
+    <collect_se_emblem_of_hats_inv type="inventory_item" highlight_layer="active_zone_collect_se_emblem_of_hats_inv" inventory_item="se_emblem_of_hats_inv">
+      <dependency>
+        <use_se_watering_with_water_inv />
+      </dependency>
+    </collect_se_emblem_of_hats_inv>
+    <collect_se_watering_can_inv type="inventory_item" highlight_layer="active_zone_go_ho_01" inventory_item="se_watering_can_inv">
+      <dependency>
+        <use_se_flint_inv />
+      </dependency>
+    </collect_se_watering_can_inv>
+    <collect_se_pollen_inv type="inventory_item" highlight_layer="active_zone_go_ho_02" inventory_item="se_pollen_inv">
+      <dependency>
+        <collect_se_silhouette_cup_inv />
+      </dependency>
+    </collect_se_pollen_inv>
+  </se_04>
+  <se_04_sub_tree>
+    <collect_se_emblem_throne_inv type="inventory_item" inventory_item="se_emblem_throne_inv" />
+    <use_se_watering_with_water_inv type="apply_item" inventory_item="se_watering_with_water_inv" drop_zone="drop_zone_se_watering_with_water_inv">
+      <dependency>
+        <collect_se_watering_with_water_inv />
+      </dependency>
+    </use_se_watering_with_water_inv>
+  </se_04_sub_tree>
+  <se_04_sub_raven>
+    <use_se_pumpkins_inv type="apply_item" inventory_item="se_pumpkins_inv" drop_zone="drop_zone_se_pumpkins_inv">
+      <dependency>
+        <collect_se_pumpkins_inv />
+      </dependency>
+    </use_se_pumpkins_inv>
+    <collect_se_ring_sorcerer_inv type="inventory_item" inventory_item="se_ring_sorcerer_inv">
+      <dependency>
+        <use_se_pumpkins_inv />
+      </dependency>
+    </collect_se_ring_sorcerer_inv>
+  </se_04_sub_raven>
+  <se_04_sub_door_house>
+    <use_se_hand_with_a_roll_inv type="apply_item" inventory_item="se_hand_with_a_roll_inv" drop_zone="drop_zone_hands">
+      <dependency>
+        <collect_se_hand_with_a_roll_inv />
+      </dependency>
+    </use_se_hand_with_a_roll_inv>
+    <use_se_hand_with_a_feather_inv type="apply_item" inventory_item="se_hand_with_a_feather_inv" drop_zone="drop_zone_hands">
+      <dependency>
+        <collect_se_hand_with_a_feather_inv />
+      </dependency>
+    </use_se_hand_with_a_feather_inv>
+  </se_04_sub_door_house>
+  <se_04_sub_cellar>
+    <use_se_turpentine_inv type="apply_item" inventory_item="se_turpentine_inv" drop_zone="drop_zone_se_turpentine_inv">
+      <dependency>
+        <collect_se_turpentine_inv />
+      </dependency>
+    </use_se_turpentine_inv>
+    <collect_se_scroll_witches_inv type="inventory_item" inventory_item="se_scroll_witches_inv">
+      <dependency>
+        <use_se_turpentine_inv />
+      </dependency>
+    </collect_se_scroll_witches_inv>
+    <use_se_silhouette_cup_inv type="apply_item" inventory_item="se_silhouette_cup_inv" drop_zone="drop_zone_se_silhouette_cup_inv">
+      <dependency>
+        <collect_se_silhouette_cup_inv />
+        <collect_se_scroll_witches_inv />
+      </dependency>
+    </use_se_silhouette_cup_inv>
+    <collect_se_cork_inv type="inventory_item" highlight_layer="kork1" inventory_item="se_cork_inv">
+      <dependency>
+        <use_se_silhouette_cup_inv />
+      </dependency>
+    </collect_se_cork_inv>
+  </se_04_sub_cellar>
+  <se_04_sub_grass>
+    <condit_se_04_sub_grass_imp_in_use type="condition" highlight_layer="drop_zone_se_shoes_inv" condition="se_04_sub_grass_imp_in_use='1'">
+      <dependency>
+        <collect_se_shoes_inv />
+      </dependency>
+    </condit_se_04_sub_grass_imp_in_use>
+    <use_se_shoes_inv type="apply_item" inventory_item="se_shoes_inv" drop_zone="drop_zone_se_shoes_inv">
+      <dependency>
+        <collect_se_shoes_inv />
+      </dependency>
+    </use_se_shoes_inv>
+    <collect_se_handle_chest_inv type="inventory_item" highlight_layer="imp_give/selection" inventory_item="se_handle_chest_inv">
+      <dependency>
+        <use_se_shoes_inv />
+      </dependency>
+    </collect_se_handle_chest_inv>
+  </se_04_sub_grass>
+  <se_04_sub_door_greenhouse>
+    <use_se_flint_inv type="apply_item" inventory_item="se_flint_inv" drop_zone="drop_zone_se_flint_inv">
+      <dependency>
+        <collect_se_flint_inv />
+      </dependency>
+    </use_se_flint_inv>
+  </se_04_sub_door_greenhouse>
+  
+  
+  <!-- 5 -->
+  <se_05>
+  </se_05>
+  <se_05_sub_mezzanine>
+    <use_se_emblem_of_hats_inv type="apply_item" inventory_item="se_emblem_of_hats_inv" drop_zone="drop_zone_se_emblem_of_hats_inv">
+      <dependency>
+        <collect_se_emblem_of_hats_inv />
+      </dependency>
+    </use_se_emblem_of_hats_inv>
+    <use_succinic_mask_inv type="apply_item" inventory_item="se_succinic_mask_inv" drop_zone="drop_zone_se_succinic_mask_inv">
+      <dependency>
+        <collect_se_succinic_mask_inv />
+      </dependency>
+    </use_succinic_mask_inv>
+    <collect_se_casket_inv type="inventory_item" inventory_item="se_casket_inv">
+      <dependency>
+        <use_succinic_mask_inv />
+      </dependency>
+    </collect_se_casket_inv>
+    <collect_se_page_slotted_inv type="inventory_item" inventory_item="se_page_slotted_inv">
+      <dependency>
+        <collect_se_casket_inv />
+      </dependency>
+    </collect_se_page_slotted_inv>
+  </se_05_sub_mezzanine>
+  <se_05_sub_miniho>
+    <click_se_05_sub_miniho_part_01 type="click" click_layer="part_01">
+      <dependency>
+        <use_se_emblem_of_hats_inv />
+      </dependency>
+    </click_se_05_sub_miniho_part_01>
+    <click_se_05_sub_miniho_part_02 type="click" click_layer="part_02">
+      <dependency>
+        <use_se_emblem_of_hats_inv />
+      </dependency>
+    </click_se_05_sub_miniho_part_02>
+    <click_se_05_sub_miniho_part_03 type="click" click_layer="part_03">
+      <dependency>
+        <use_se_emblem_of_hats_inv />
+      </dependency>
+    </click_se_05_sub_miniho_part_03>
+    <click_se_05_sub_miniho_part_04 type="click" click_layer="part_04">
+      <dependency>
+        <use_se_emblem_of_hats_inv />
+      </dependency>
+    </click_se_05_sub_miniho_part_04>
+    <click_se_05_sub_miniho_part_05 type="click" click_layer="part_05">
+      <dependency>
+        <use_se_emblem_of_hats_inv />
+      </dependency>
+    </click_se_05_sub_miniho_part_05>
+    <click_se_05_sub_miniho_part_06 type="click" click_layer="part_06">
+      <dependency>
+        <use_se_emblem_of_hats_inv />
+      </dependency>
+    </click_se_05_sub_miniho_part_06>
+    <collect_se_model_steam_locomotive_inv type="inventory_item" inventory_item="se_model_steam_locomotive_inv">
+      <dependency>
+        <click_se_05_sub_miniho_part_01 />
+        <click_se_05_sub_miniho_part_02 />
+        <click_se_05_sub_miniho_part_03 />
+        <click_se_05_sub_miniho_part_04 />
+        <click_se_05_sub_miniho_part_05 />
+        <click_se_05_sub_miniho_part_06 />
+      </dependency>
+    </collect_se_model_steam_locomotive_inv>
+  </se_05_sub_miniho>
+  <se_05_sub_craft_table>
+    <use_se_paint_and_brush_inv type="apply_item" inventory_item="se_paint_and_brush_inv" drop_zone="drop_zone_se_paint_and_brush_inv">
+      <dependency>
+        <collect_se_paint_and_brush_inv />
+      </dependency>
+    </use_se_paint_and_brush_inv>
+    <use_se_matter_rag_inv type="apply_item" inventory_item="se_matter_rag_inv" drop_zone="drop_zone_se_matter_rag_inv">
+      <dependency>
+        <collect_se_matter_rag_inv />
+      </dependency>
+    </use_se_matter_rag_inv>
+    <condit_se_05_sub_craft_table_right_arm_placed type="condition" highlight_layer="right_arm1|drop_zone_comment_right_arm" condition="se_05_sub_craft_table_right_arm_placed='1'">
+      <dependency>
+        <use_se_paint_and_brush_inv />
+        <use_se_matter_rag_inv />
+      </dependency>
+    </condit_se_05_sub_craft_table_right_arm_placed>
+    <condit_se_05_sub_craft_table_left_leg_placed type="condition" highlight_layer="left_leg1|drop_zone_comment_left_leg" condition="se_05_sub_craft_table_left_leg_placed='1'">
+      <dependency>
+        <use_se_paint_and_brush_inv />
+        <use_se_matter_rag_inv />
+      </dependency>
+    </condit_se_05_sub_craft_table_left_leg_placed>
+    <condit_se_05_sub_craft_table_right_leg_placed type="condition" highlight_layer="right_leg1|drop_zone_comment_right_leg" condition="se_05_sub_craft_table_right_leg_placed='1'">
+      <dependency>
+        <use_se_paint_and_brush_inv />
+        <use_se_matter_rag_inv />
+      </dependency>
+    </condit_se_05_sub_craft_table_right_leg_placed>
+    <condit_se_05_sub_craft_table_left_arm_placed type="condition" highlight_layer="left_arm1|drop_zone_comment_left_arm" condition="se_05_sub_craft_table_left_arm_placed='1'">
+      <dependency>
+        <use_se_paint_and_brush_inv />
+        <use_se_matter_rag_inv />
+      </dependency>
+    </condit_se_05_sub_craft_table_left_arm_placed>
+    <condit_se_05_sub_craft_table_scissors_placed type="condition" highlight_layer="scissors|drop_zone_scissors" condition="se_05_sub_craft_table_scissors_placed='1'">
+      <dependency>
+        <use_se_paint_and_brush_inv />
+        <use_se_matter_rag_inv />
+      </dependency>
+    </condit_se_05_sub_craft_table_scissors_placed>
+    <condit_se_05_sub_craft_table_hair_placed type="condition" highlight_layer="hair1|drop_zone_hair" condition="se_05_sub_craft_table_hair_placed='1'">
+      <dependency>
+        <use_se_paint_and_brush_inv />
+        <use_se_matter_rag_inv />
+      </dependency>
+    </condit_se_05_sub_craft_table_hair_placed>
+    <condit_se_05_sub_craft_table_fabric_placed type="condition" highlight_layer="fabric1|drop_zone_fabric" condition="se_05_sub_craft_table_fabric_placed='1'">
+      <dependency>
+        <condit_se_05_sub_craft_table_right_arm_placed />
+        <condit_se_05_sub_craft_table_left_leg_placed />
+        <condit_se_05_sub_craft_table_right_leg_placed />
+        <condit_se_05_sub_craft_table_left_arm_placed />
+        <condit_se_05_sub_craft_table_scissors_placed />
+      </dependency>
+    </condit_se_05_sub_craft_table_fabric_placed>
+<!--    <condit_se_05_sub_craft_table_brush_picked type="condition" highlight_layer="brush" condition="se_05_sub_craft_table_brush_picked='1'">
+      <dependency>
+        <use_se_paint_and_brush_inv />
+        <use_se_matter_rag_inv />
+      </dependency>
+    </condit_se_05_sub_craft_table_brush_picked>-->
+    <condit_se_05_sub_craft_table_brush_colored type="condition" highlight_layer="brush|drop_zone_kraska" condition="se_05_sub_craft_table_brush_colored='1'">
+      <dependency>
+        <!--<condit_se_05_sub_craft_table_brush_picked />-->
+        <use_se_paint_and_brush_inv />
+        <use_se_matter_rag_inv />
+      </dependency>
+    </condit_se_05_sub_craft_table_brush_colored>
+    <condit_se_05_sub_craft_table_brush_put type="condition" highlight_layer="brush|drop_zone_hair" condition="se_05_sub_craft_table_brush_put='1'">
+      <dependency>
+        <condit_se_05_sub_craft_table_brush_colored />
+        <!--<condit_se_05_sub_craft_table_brush_picked />-->
+        <use_se_paint_and_brush_inv />
+        <use_se_matter_rag_inv />
+      </dependency>
+    </condit_se_05_sub_craft_table_brush_put>
+    <collect_se_sorcerer_doll_inv type="inventory_item" inventory_item="se_sorcerer_doll_inv">
+      <dependency>
+        <condit_se_05_sub_craft_table_brush_put />
+        <condit_se_05_sub_craft_table_fabric_placed />
+        <condit_se_05_sub_craft_table_hair_placed />
+      </dependency>
+    </collect_se_sorcerer_doll_inv>
+  </se_05_sub_craft_table>
+  <se_05_sub_doll>
+    <collect_se_panicle_inv type="inventory_item" highlight_layer="active_zone_broom" inventory_item="se_panicle_inv" />
+  </se_05_sub_doll>
+  <se_05_puzzle_fattochini>
+    <click_se_05_puzzle_fattochini_zanaves type="click" click_layer="shtory_close">
+      <dependency>
+        <collect_se_sorcerer_doll_inv />
+      </dependency>
+    </click_se_05_puzzle_fattochini_zanaves>
+    <use_se_sorcerer_doll_inv type="apply_item" inventory_item="se_sorcerer_doll_inv" drop_zone="drop_zone_se_sorcerer_doll_inv">
+      <dependency>
+        <click_se_05_puzzle_fattochini_zanaves />
+        <collect_se_sorcerer_doll_inv />
+      </dependency>
+    </use_se_sorcerer_doll_inv>
+    <complete_se_05_puzzle_fattochini_lvl_1 type="complete_mini_game" mini_game_name="se_05_puzzle_fattochini_lvl_1">
+      <dependency>
+        <use_se_sorcerer_doll_inv />
+      </dependency>
+    </complete_se_05_puzzle_fattochini_lvl_1>
+    <complete_se_05_puzzle_fattochini_lvl_2 type="complete_mini_game" mini_game_name="se_05_puzzle_fattochini_lvl_2">
+      <dependency>
+        <complete_se_05_puzzle_fattochini_lvl_1 />
+      </dependency>
+    </complete_se_05_puzzle_fattochini_lvl_2>
+    <collect_se_sphere_emblem_inv type="inventory_item" inventory_item="se_sphere_emblem_inv">
+      <dependency>
+        <complete_se_05_puzzle_fattochini_lvl_2 />
+      </dependency>
+    </collect_se_sphere_emblem_inv>
+  </se_05_puzzle_fattochini>
+  <se_05_puzzle_railroad>
+    <use_se_model_steam_locomotive_inv type="apply_item" inventory_item="se_model_steam_locomotive_inv" drop_zone="drop_zone_se_model_steam_locomotive_inv">
+      <dependency>
+        <collect_se_model_steam_locomotive_inv />
+      </dependency>
+    </use_se_model_steam_locomotive_inv>
+    <complete_se_05_puzzle_railroad type="complete_mini_game" mini_game_name="se_05_puzzle_railroad">
+      <dependency>
+        <use_se_model_steam_locomotive_inv />
+      </dependency>
+    </complete_se_05_puzzle_railroad>
+    <collect_se_hand_with_a_feather_inv type="inventory_item" inventory_item="se_hand_with_a_feather_inv">
+      <dependency>
+        <complete_se_05_puzzle_railroad />
+      </dependency>
+    </collect_se_hand_with_a_feather_inv>
+  </se_05_puzzle_railroad>
+  
+  
+  <!-- 6 -->
+  <se_06>
+    <condit_se_06_hint_imp type="condition" highlight_layer="drop_zone_se_flying_panicle_inv_without_imp" condition="se_06_hint_imp='1'">
+      <dependency>
+        <collect_se_flying_panicle_inv />
+      </dependency>
+    </condit_se_06_hint_imp>
+    <use_se_flying_panicle_inv type="apply_item" inventory_item="se_flying_panicle_inv" drop_zone="drop_zone_se_flying_panicle_inv_with_imp">
+      <dependency>
+        <condit_se_06_hint_imp />
+        <collect_se_flying_panicle_inv />
+      </dependency>
+    </use_se_flying_panicle_inv>
+    <collect_se_paint_and_brush_inv type="inventory_item" highlight_layer="imp_give/selection" inventory_item="se_paint_and_brush_inv">
+      <dependency>
+        <use_se_flying_panicle_inv />
+      </dependency>
+    </collect_se_paint_and_brush_inv>
+    <use_se_ring_sorcerer_inv type="apply_item" inventory_item="se_ring_sorcerer_inv" drop_zone="drop_zone_se_ring_sorcerer_inv">
+      <dependency>
+        <collect_se_ring_sorcerer_inv />
+      </dependency>
+    </use_se_ring_sorcerer_inv>
+    <collect_se_potion_of_levitation_inv type="inventory_item" highlight_layer="active_zone_go_ho_01" inventory_item="se_potion_of_levitation_inv">
+      <dependency>
+        <use_se_ring_sorcerer_inv />
+      </dependency>
+    </collect_se_potion_of_levitation_inv>
+    <collect_se_mirror_splinters_inv type="inventory_item" highlight_layer="active_zone_go_ho_02" inventory_item="se_mirror_splinters_inv">
+      <dependency>
+        <collect_se_part_of_a_cover_inv />
+      </dependency>
+    </collect_se_mirror_splinters_inv>
+  </se_06>
+  <se_06_sub_fireplace>
+    <use_se_knife_inv_3_1 type="apply_item" inventory_item="se_knife_inv" drop_zone="drop_zone_knife_inv_2_1">
+      <dependency>
+        <collect_se_knife_inv />
+      </dependency>
+    </use_se_knife_inv_3_1>
+    <use_se_knife_inv_3_2 type="apply_item" inventory_item="se_knife_inv" drop_zone="drop_zone_knife_inv_2_2">
+      <dependency>
+        <use_se_knife_inv_3_1 />
+        <collect_se_knife_inv />
+      </dependency>
+    </use_se_knife_inv_3_2>
+    <use_se_knife_inv_3_3 type="apply_item" inventory_item="se_knife_inv" drop_zone="drop_zone_knife_inv_2_3">
+      <dependency>
+        <use_se_knife_inv_3_2 />
+        <collect_se_knife_inv />
+      </dependency>
+    </use_se_knife_inv_3_3>
+    <condit_se_06_sub_fireplace_candle type="condition" highlight_layer="candle2|drop_zone_candle" condition="se_06_sub_fireplace_candle_placed_hint='1'">
+      <dependency>
+        <use_se_knife_inv_3_3 />
+      </dependency>
+    </condit_se_06_sub_fireplace_candle>
+    <condit_se_06_sub_fireplace_lid type="condition" highlight_layer="pumpkin_lid_01|drop_zone_pumpkin_lid_01" condition="se_06_sub_fireplace_pumpkin_lid_placed_hint='1'">
+      <dependency>
+        <condit_se_06_sub_fireplace_candle />
+      </dependency>
+    </condit_se_06_sub_fireplace_lid>
+    <collect_se_pumpkins_inv type="inventory_item" inventory_item="se_pumpkins_inv">
+      <dependency>
+        <condit_se_06_sub_fireplace_lid />
+      </dependency>
+    </collect_se_pumpkins_inv>
+    <collect_se_cutting_fork_inv type="inventory_item" inventory_item="se_cutting_fork_inv">
+      <dependency>
+        <use_se_chain_with_a_hook_inv />
+      </dependency>
+    </collect_se_cutting_fork_inv>
+    <use_se_watch_on_a_chain_inv type="apply_item" inventory_item="se_watch_on_a_chain_inv" drop_zone="drop_zone_se_watch_on_a_chain_inv">
+      <dependency>
+        <collect_se_watch_on_a_chain_inv />
+      </dependency>
+    </use_se_watch_on_a_chain_inv>
+    <collect_se_key_to_exit_inv type="inventory_item" inventory_item="se_key_to_exit_inv">
+      <dependency>
+        <use_se_watch_on_a_chain_inv />
+      </dependency>
+    </collect_se_key_to_exit_inv>
+    <use_se_part_of_a_cover_inv type="apply_item" inventory_item="se_part_of_a_cover_inv" drop_zone="drop_zone_se_part_of_a_cover_inv">
+      <dependency>
+        <collect_se_key_to_exit_inv />
+        <collect_se_part_of_a_cover_inv />
+      </dependency>
+    </use_se_part_of_a_cover_inv>
+    <collect_se_sieve_inv type="inventory_item" inventory_item="se_sieve_inv">
+      <dependency>
+        <use_se_part_of_a_cover_inv />
+      </dependency>
+    </collect_se_sieve_inv>
+    <collect_se_magic_apple_inv type="inventory_item" inventory_item="se_magic_apple_inv">
+      <dependency>
+        <collect_se_sieve_inv />
+      </dependency>
+    </collect_se_magic_apple_inv>
+  </se_06_sub_fireplace>
+  <se_06_sub_forcefield>
+    <collect_se_edwards_bag_inv type="inventory_item" inventory_item="se_edwards_bag_inv">
+      <dependency>
+      </dependency>
+    </collect_se_edwards_bag_inv>
+    <use_se_sphere_emblem_inv type="apply_item" inventory_item="se_sphere_emblem_inv" drop_zone="drop_zone_se_sphere_emblem_inv">
+      <dependency>
+        <collect_se_sphere_emblem_inv />
+      </dependency>
+    </use_se_sphere_emblem_inv>
+    <collect_se_succinic_mask_inv type="inventory_item" inventory_item="se_succinic_mask_inv">
+      <dependency>
+        <use_se_sphere_emblem_inv />
+      </dependency>
+    </collect_se_succinic_mask_inv>
+    <use_se_page_slotted_inv type="apply_item" inventory_item="se_page_slotted_inv" drop_zone="drop_zone_se_page_slotted_inv">
+      <dependency>
+        <collect_se_page_slotted_inv />
+        <collect_se_succinic_mask_inv />
+      </dependency>
+    </use_se_page_slotted_inv>
+    <condit_se_06_sub_forcefield_key_pressed_1 type="condition" highlight_layer="symbol_01_u" condition="se_06_sub_forcefield_key_pressed_1='1'">
+      <dependency>
+        <collect_se_edwards_bag_inv />
+        <use_se_page_slotted_inv />
+      </dependency>
+    </condit_se_06_sub_forcefield_key_pressed_1>
+    <condit_se_06_sub_forcefield_key_pressed_2 type="condition" highlight_layer="symbol_02_u" condition="se_06_sub_forcefield_key_pressed_2='1'">
+      <dependency>
+        <collect_se_edwards_bag_inv />
+        <use_se_page_slotted_inv />
+      </dependency>
+    </condit_se_06_sub_forcefield_key_pressed_2>
+    <condit_se_06_sub_forcefield_key_pressed_3 type="condition" highlight_layer="symbol_03_u" condition="se_06_sub_forcefield_key_pressed_3='0'">
+      <dependency>
+        <collect_se_edwards_bag_inv />
+        <use_se_page_slotted_inv />
+      </dependency>
+    </condit_se_06_sub_forcefield_key_pressed_3>
+    <condit_se_06_sub_forcefield_key_pressed_4 type="condition" highlight_layer="symbol_04_u" condition="se_06_sub_forcefield_key_pressed_4='0'">
+      <dependency>
+        <collect_se_edwards_bag_inv />
+        <use_se_page_slotted_inv />
+      </dependency>
+    </condit_se_06_sub_forcefield_key_pressed_4>
+    <condit_se_06_sub_forcefield_key_pressed_5 type="condition" highlight_layer="symbol_05_u" condition="se_06_sub_forcefield_key_pressed_5='1'">
+      <dependency>
+        <collect_se_edwards_bag_inv />
+        <use_se_page_slotted_inv />
+      </dependency>
+    </condit_se_06_sub_forcefield_key_pressed_5>
+    <condit_se_06_sub_forcefield_key_pressed_6 type="condition" highlight_layer="symbol_06_u" condition="se_06_sub_forcefield_key_pressed_6='1'">
+      <dependency>
+        <collect_se_edwards_bag_inv />
+        <use_se_page_slotted_inv />
+      </dependency>
+    </condit_se_06_sub_forcefield_key_pressed_6>
+    <condit_se_06_sub_forcefield_key_pressed_7 type="condition" highlight_layer="symbol_07_u" condition="se_06_sub_forcefield_key_pressed_7='0'">
+      <dependency>
+        <collect_se_edwards_bag_inv />
+        <use_se_page_slotted_inv />
+      </dependency>
+    </condit_se_06_sub_forcefield_key_pressed_7>
+    <condit_se_06_sub_forcefield_key_pressed_8 type="condition" highlight_layer="symbol_08_u" condition="se_06_sub_forcefield_key_pressed_8='1'">
+      <dependency>
+        <collect_se_edwards_bag_inv />
+        <use_se_page_slotted_inv />
+      </dependency>
+    </condit_se_06_sub_forcefield_key_pressed_8>
+    <condit_se_06_sub_forcefield_key_pressed_9 type="condition" highlight_layer="symbol_09_u" condition="se_06_sub_forcefield_key_pressed_9='0'">
+      <dependency>
+        <collect_se_edwards_bag_inv />
+        <use_se_page_slotted_inv />
+      </dependency>
+    </condit_se_06_sub_forcefield_key_pressed_9>
+    <condit_se_06_sub_forcefield_key_pressed_10 type="condition" highlight_layer="symbol_010_u" condition="se_06_sub_forcefield_key_pressed_10='0'">
+      <dependency>
+        <collect_se_edwards_bag_inv />
+        <use_se_page_slotted_inv />
+      </dependency>
+    </condit_se_06_sub_forcefield_key_pressed_10>
+    <collect_se_puppet_edward_inv type="inventory_item" inventory_item="se_puppet_edward_inv">
+      <dependency>
+        <condit_se_06_sub_forcefield_key_pressed_1 />
+        <condit_se_06_sub_forcefield_key_pressed_2 />
+        <condit_se_06_sub_forcefield_key_pressed_3 />
+        <condit_se_06_sub_forcefield_key_pressed_4 />
+        <condit_se_06_sub_forcefield_key_pressed_5 />
+        <condit_se_06_sub_forcefield_key_pressed_6 />
+        <condit_se_06_sub_forcefield_key_pressed_7 />
+        <condit_se_06_sub_forcefield_key_pressed_8 />
+        <condit_se_06_sub_forcefield_key_pressed_9 />
+        <condit_se_06_sub_forcefield_key_pressed_10 />
+      </dependency>
+    </collect_se_puppet_edward_inv>
+  </se_06_sub_forcefield>
+  
+  
+  <!-- 7 -->
+  <se_07>
+    <collect_se_recipe_for_casket_inv type="inventory_item" highlight_layer="active_zone_recept" inventory_item="se_recipe_for_casket_inv">
+      <dependency>
+      </dependency>
+    </collect_se_recipe_for_casket_inv>
+    <collect_se_chain_inv type="inventory_item" highlight_layer="se_chain_inv" inventory_item="se_chain_inv">
+      <dependency>
+      </dependency>
+    </collect_se_chain_inv>
+    <use_se_chain_with_a_hook_inv type="apply_item" inventory_item="se_chain_with_a_hook_inv" drop_zone="drop_zone_se_chain_with_a_hook_inv">
+      <dependency>
+        <collect_se_chain_with_a_hook_inv />
+      </dependency>
+    </use_se_chain_with_a_hook_inv>
+    <condit_se_07_click_active_zone_go_se_06_first_time type="condition" highlight_layer="active_zone_go_se_06" condition="se_07_click_active_zone_go_se_06_first_time='1'">
+      <dependency>
+        <use_se_chain_with_a_hook_inv />
+      </dependency>
+    </condit_se_07_click_active_zone_go_se_06_first_time>
+  </se_07>
+  <se_07_sub_watch>
+    <use_se_cutting_fork_inv type="apply_item" inventory_item="se_cutting_fork_inv" drop_zone="drop_zone_se_cutting_fork_inv">
+      <dependency>
+        <collect_se_cutting_fork_inv />
+      </dependency>
+    </use_se_cutting_fork_inv>
+    <collect_se_vial_of_hourglass_inv type="inventory_item" inventory_item="se_vial_of_hourglass_inv">
+      <dependency>
+        <use_se_cutting_fork_inv />
+      </dependency>
+    </collect_se_vial_of_hourglass_inv>
+  </se_07_sub_watch>
+  <se_07_sub_chest>
+    <use_se_magic_apple_inv type="apply_item" inventory_item="se_magic_apple_inv" drop_zone="drop_zone_se_magic_apple_inv">
+      <dependency>
+        <collect_se_magic_apple_inv />
+      </dependency>
+    </use_se_magic_apple_inv>
+    <collect_se_silver_ignot_inv type="inventory_item" inventory_item="se_silver_ignot_inv">
+      <dependency>
+        <use_se_magic_apple_inv />
+      </dependency>
+    </collect_se_silver_ignot_inv>
+    <collect_se_key_with_a_rune_inv type="inventory_item" inventory_item="se_key_with_a_rune_inv">
+      <dependency>
+        <use_se_magic_apple_inv />
+      </dependency>
+    </collect_se_key_with_a_rune_inv>
+  </se_07_sub_chest>
+  <se_07_sub_tomb>
+    <use_idol_1_inv_1 type="condition" highlight_inventory_item="se_idol_1_inv" highlight_layer="drop_zone_1_idol" condition="se_07_sub_tomb_use_idol_1_on_drop_zone_1='1'">
+      <dependency>
+        <collect_se_idol_1_inv />
+      </dependency>
+    </use_idol_1_inv_1>
+    <use_idol_1_inv_2 type="condition" highlight_inventory_item="se_idol_1_inv" highlight_layer="drop_zone_2_idol" condition="se_07_sub_tomb_use_idol_1_on_drop_zone_2='1'">
+      <dependency>
+        <collect_se_idol_1_inv />
+      </dependency>
+    </use_idol_1_inv_2>
+    <use_idol_2_inv_2 type="condition" highlight_inventory_item="se_idol_2_inv" highlight_layer="drop_zone_2_idol" condition="se_07_sub_tomb_use_idol_2_on_drop_zone_2='1'">
+      <dependency>
+        <collect_se_idol_2_inv />
+      </dependency>
+    </use_idol_2_inv_2>
+    <use_idol_2_inv_1 type="condition" highlight_inventory_item="se_idol_2_inv" highlight_layer="drop_zone_1_idol" condition="se_07_sub_tomb_use_idol_2_on_drop_zone_1='1'">
+      <dependency>
+        <collect_se_idol_2_inv />
+      </dependency>
+    </use_idol_2_inv_1>
+    <collect_se_black_plate_inv type="inventory_item" inventory_item="se_black_plate_inv">
+      <dependency>
+        <use_idol_1_inv_1 />
+        <use_idol_1_inv_2 />
+        <use_idol_2_inv_2 />
+        <use_idol_2_inv_1 />
+      </dependency>
+    </collect_se_black_plate_inv>
+  </se_07_sub_tomb>
+  
+  
+  <!-- 8 -->
+  <se_08>
+  </se_08>
+  <se_08_sub_portrait>
+    <use_se_vial_of_hourglass_inv type="apply_item" inventory_item="se_vial_of_hourglass_inv" drop_zone="drop_zone_se_vial_of_hourglass_inv">
+      <dependency>
+        <collect_se_vial_of_hourglass_inv />
+      </dependency>
+    </use_se_vial_of_hourglass_inv>
+    <click_se_08_sub_portrait_scroll_first type="click" click_layer="scroll_first">
+      <dependency>
+        <use_se_vial_of_hourglass_inv />
+      </dependency>
+    </click_se_08_sub_portrait_scroll_first>
+    <condit_se_08_sub_portrait_click_scroll_big type="condition" highlight_layer="scroll_big" condition="se_08_hint_click_scroll_big='1'">
+      <dependency>
+        <click_se_08_sub_portrait_scroll_first />
+      </dependency>
+    </condit_se_08_sub_portrait_click_scroll_big>
+    <collect_se_silhouette_cup_inv type="inventory_item" inventory_item="se_silhouette_cup_inv">
+      <dependency>
+        <condit_se_08_sub_portrait_click_scroll_big />
+      </dependency>
+    </collect_se_silhouette_cup_inv>
+    <collect_se_part_of_a_fresco_inv type="inventory_item" inventory_item="se_part_of_a_fresco_inv">
+      <dependency>
+        <use_se_vial_of_hourglass_inv />
+      </dependency>
+    </collect_se_part_of_a_fresco_inv>
+  </se_08_sub_portrait>
+  <se_08_sub_sub_hourglass>
+    <use_se_pollen_inv type="apply_item" inventory_item="se_pollen_inv" drop_zone="drop_zone_se_pollen_inv">
+      <dependency>
+        <collect_se_pollen_inv />
+      </dependency>
+    </use_se_pollen_inv>
+    <use_se_cork_inv type="apply_item" inventory_item="se_cork_inv" drop_zone="drop_zone_se_cork_inv">
+      <dependency>
+        <collect_se_cork_inv />
+      </dependency>
+    </use_se_cork_inv>
+  </se_08_sub_sub_hourglass>
+  <se_08_puzzle_battle>
+    <complete_se_08_puzzle_battle type="complete_mini_game" mini_game_name="se_08_puzzle_battle">
+      <dependency>
+        <use_se_cork_inv />
+      </dependency>
+    </complete_se_08_puzzle_battle>
+    <collect_se_watch_on_a_chain_inv type="inventory_item" inventory_item="se_watch_on_a_chain_inv">
+      <dependency>
+        <complete_se_08_puzzle_battle />
+      </dependency>
+    </collect_se_watch_on_a_chain_inv>
+  </se_08_puzzle_battle>
+  <se_08_sub_exit>
+    <use_se_key_to_exit_inv type="apply_item" inventory_item="se_key_to_exit_inv" drop_zone="drop_zone_se_key_to_exit_inv">
+      <dependency>
+        <collect_se_key_to_exit_inv />
+      </dependency>
+    </use_se_key_to_exit_inv>
+  </se_08_sub_exit>
+  <se_08_sub_mirror>
+    <use_se_glass_eye_inv type="apply_item" inventory_item="se_glass_eye_inv" drop_zone="drop_zone_se_glass_eye_inv">
+      <dependency>
+        <collect_se_glass_eye_inv/>
+      </dependency>
+    </use_se_glass_eye_inv>
+    <click_se_08_sub_mirror_scroll_first type="click" click_layer="scroll_first">
+      <dependency>
+        <use_se_glass_eye_inv />
+      </dependency>
+    </click_se_08_sub_mirror_scroll_first>
+    <condit_se_08_sub_mirror_click_scroll_big type="condition" highlight_layer="scroll_big" condition="se_08_sub_mirror_hint_click_scroll_big='1'">
+      <dependency>
+        <click_se_08_sub_mirror_scroll_first />
+      </dependency>
+    </condit_se_08_sub_mirror_click_scroll_big>
+    <collect_se_part_of_a_cover_inv type="inventory_item" inventory_item="se_part_of_a_cover_inv">
+      <dependency>
+        <condit_se_08_sub_mirror_click_scroll_big />
+      </dependency>
+    </collect_se_part_of_a_cover_inv>
+    <use_se_silver_ignot_inv type="apply_item" inventory_item="se_silver_ignot_inv" drop_zone="drop_zone_ingridients">
+      <dependency>
+        <collect_se_silver_ignot_inv />
+      </dependency>
+    </use_se_silver_ignot_inv>
+    <use_se_mirror_splinters_inv type="apply_item" inventory_item="se_mirror_splinters_inv" drop_zone="drop_zone_ingridients">
+      <dependency>
+        <collect_se_mirror_splinters_inv />
+      </dependency>
+    </use_se_mirror_splinters_inv>
+    <use_se_black_candle_inv type="apply_item" inventory_item="se_black_candle_inv" drop_zone="drop_zone_ingridients">
+      <dependency>
+        <collect_se_black_candle_inv />
+      </dependency>
+    </use_se_black_candle_inv>
+    <use_se_spell_inv type="apply_item" inventory_item="se_spell_inv" drop_zone="drop_zone_ingridients">
+      <dependency>
+        <collect_se_spell_inv />
+      </dependency>
+    </use_se_spell_inv>
+    
+    <use_se_flint_inv_sub_mirror type="apply_item" inventory_item="se_flint_inv" drop_zone="drop_zone_se_flint_inv_sub_se_08_mirror">
+      <dependency>
+        <collect_se_flint_inv />
+        <use_se_spell_inv />
+        <use_se_silver_ignot_inv />
+        <use_se_mirror_splinters_inv />
+        <use_se_black_candle_inv />
+      </dependency>
+    </use_se_flint_inv_sub_mirror>
+    
+    <condit_se_08_sub_mirror_candle_cat_hint type="condition" highlight_layer="candle_cat|drop_zone_candle_cat" condition="se_08_sub_mirror_candle_cat_hint='1'">
+      <dependency>
+        <use_se_flint_inv_sub_mirror />
+      </dependency>
+    </condit_se_08_sub_mirror_candle_cat_hint>
+  </se_08_sub_mirror>
+  <se_08_puzzle_mirror>
+    <complete_se_08_puzzle_mirror type="complete_mini_game" mini_game_name="se_08_puzzle_mirror">
+      <dependency>
+        <condit_se_08_sub_mirror_candle_cat_hint />
+      </dependency>
+    </complete_se_08_puzzle_mirror>
+    <collect_se_not_loaded_staff_y_inv type="inventory_item" inventory_item="se_not_loaded_staff_y_inv" highlight_layer="active_zone_collect_staff">
+      <dependency>
+        <complete_se_08_puzzle_mirror />
+      </dependency>
+    </collect_se_not_loaded_staff_y_inv>
+  </se_08_puzzle_mirror>
+  <se_08_sub_pedestal>
+    <use_se_key_with_a_rune_inv type="apply_item" inventory_item="se_key_with_a_rune_inv" drop_zone="drop_zone_se_key_with_a_rune_inv">
+      <dependency>
+        <collect_se_key_with_a_rune_inv />
+      </dependency>
+    </use_se_key_with_a_rune_inv>
+    <condit_se_08_sub_pedestal_hint_key_3 type="condition" highlight_layer="active_zone_key_3" condition="se_08_sub_pedestal_hint_key_3='1'">
+      <dependency>
+        <use_se_key_with_a_rune_inv />
+      </dependency>
+    </condit_se_08_sub_pedestal_hint_key_3>
+    <condit_se_08_sub_pedestal_hint_key_4 type="condition" highlight_layer="active_zone_key_4" condition="se_08_sub_pedestal_hint_key_4='1'">
+      <dependency>
+        <condit_se_08_sub_pedestal_hint_key_3 />
+      </dependency>
+    </condit_se_08_sub_pedestal_hint_key_4>
+    <condit_se_08_sub_pedestal_hint_key_6 type="condition" highlight_layer="active_zone_key_6" condition="se_08_sub_pedestal_hint_key_6='1'">
+      <dependency>
+        <condit_se_08_sub_pedestal_hint_key_4 />
+      </dependency>
+    </condit_se_08_sub_pedestal_hint_key_6>
+    <condit_se_08_sub_pedestal_hint_key_7 type="condition" highlight_layer="active_zone_key_7" condition="se_08_sub_pedestal_hint_key_7='1'">
+      <dependency>
+        <condit_se_08_sub_pedestal_hint_key_6 />
+      </dependency>
+    </condit_se_08_sub_pedestal_hint_key_7>
+    <collect_se_black_candle_inv type="inventory_item" inventory_item="se_black_candle_inv">
+      <dependency>
+        <condit_se_08_sub_pedestal_hint_key_7 />
+      </dependency>
+    </collect_se_black_candle_inv>
+    <collect_se_idol_2_inv type="inventory_item" inventory_item="se_idol_2_inv">
+      <dependency>
+        <collect_se_black_candle_inv />
+      </dependency>
+    </collect_se_idol_2_inv>
+  </se_08_sub_pedestal>
+  
+  
+  <!-- 9 -->
+  <se_09 >
+  </se_09>
+  <se_09_sub_statue >
+    <collect_se_idol_1_inv type="inventory_item" inventory_item="se_idol_1_inv">
+      <dependency>
+      </dependency>
+    </collect_se_idol_1_inv>
+    <use_se_part_of_a_necklace_1_inv type="apply_item" inventory_item="se_part_of_a_necklace_1_inv" drop_zone="drop_zone_necklace">
+      <dependency>
+        <collect_se_part_of_a_necklace_1_inv />
+      </dependency>
+    </use_se_part_of_a_necklace_1_inv>
+    <use_se_part_of_a_necklace_2_inv type="apply_item" inventory_item="se_part_of_a_necklace_2_inv" drop_zone="drop_zone_necklace">
+      <dependency>
+        <collect_se_part_of_a_necklace_2_inv />
+      </dependency>
+    </use_se_part_of_a_necklace_2_inv>
+    <collect_se_key_step_part_7_inv type="inventory_item" inventory_item="se_key_step_part_7_inv">
+      <dependency>
+        <use_se_part_of_a_necklace_1_inv/>
+        <use_se_part_of_a_necklace_2_inv/>
+      </dependency>
+    </collect_se_key_step_part_7_inv>
+  </se_09_sub_statue>
+  <se_09_sub_miniho >
+    <click_se_09_sub_miniho_part_01 type="click" click_layer="part_01_out">
+      <dependency>
+      </dependency>
+    </click_se_09_sub_miniho_part_01>
+    <click_se_09_sub_miniho_part_02 type="click" click_layer="part_02_out">
+      <dependency>
+      </dependency>
+    </click_se_09_sub_miniho_part_02>
+    <click_se_09_sub_miniho_part_03 type="click" click_layer="part_03_out">
+      <dependency>
+      </dependency>
+    </click_se_09_sub_miniho_part_03>
+    <click_se_09_sub_miniho_part_04 type="click" click_layer="part_04_out">
+      <dependency>
+      </dependency>
+    </click_se_09_sub_miniho_part_04>
+    <click_se_09_sub_miniho_part_05 type="click" click_layer="part_05_out">
+      <dependency>
+      </dependency>
+    </click_se_09_sub_miniho_part_05>
+    <click_se_09_sub_miniho_part_06 type="click" click_layer="part_06_out">
+      <dependency>
+      </dependency>
+    </click_se_09_sub_miniho_part_06>
+    <condit_se_09_hint_miniho_complete type="condition" highlight_layer="close_button" condition="se_09_hint_miniho_complete='1'">
+      <dependency>
+        <click_se_09_sub_miniho_part_01 />
+        <click_se_09_sub_miniho_part_02 />
+        <click_se_09_sub_miniho_part_03 />
+        <click_se_09_sub_miniho_part_04 />
+        <click_se_09_sub_miniho_part_05 />
+        <click_se_09_sub_miniho_part_06 />
+      </dependency>
+    </condit_se_09_hint_miniho_complete>
+  </se_09_sub_miniho>
+  <se_09_puzzle>
+    <collect_se_yellow_nugget_inv type="inventory_item" inventory_item="se_yellow_nugget_inv">
+      <dependency>
+      </dependency>
+    </collect_se_yellow_nugget_inv>
+    <use_se_magic_staff_b_inv type="apply_item" inventory_item="se_magic_staff_b_inv" drop_zone="drop_zone_se_magic_staff_b_inv">
+      <dependency>
+        <collect_se_magic_staff_b_inv />
+      </dependency>
+    </use_se_magic_staff_b_inv>
+    <complete_se_09_puzzle type="complete_mini_game" mini_game_name="se_09_puzzle">
+      <dependency>
+        <use_se_magic_staff_b_inv />
+      </dependency>
+    </complete_se_09_puzzle>
+  </se_09_puzzle>
+  
+  
+  <!-- 10 -->
+  <se_10 >
+    
+    <condit_se_10_hint_mathias_cutscene type="condition" highlight_layer="active_zone_go_se_16" condition="se_10_hint_mathias_cutscene='1'">
+      <dependency>
+        <collect_se_part_of_an_artefakt_1_inv />
+        <collect_se_part_of_an_artefakt_2_inv />
+      </dependency>
+    </condit_se_10_hint_mathias_cutscene>
+    
+  </se_10>
+  <se_10_sub_evil_press >
+    <collect_se_red_plate_inv type="inventory_item" inventory_item="se_red_plate_inv">
+      <dependency>
+      </dependency>
+    </collect_se_red_plate_inv>
+    <use_se_magic_staff_y_inv type="apply_item" inventory_item="se_magic_staff_y_inv" drop_zone="drop_zone_se_magic_staff_y_inv">
+      <dependency>
+        <collect_se_magic_staff_y_inv />
+        <collect_se_red_plate_inv />
+      </dependency>
+    </use_se_magic_staff_y_inv>
+    <collect_se_not_loaded_staff_l_inv type="inventory_item" inventory_item="se_not_loaded_staff_l_inv">
+      <dependency>
+        <use_se_magic_staff_y_inv />
+      </dependency>
+    </collect_se_not_loaded_staff_l_inv>
+  </se_10_sub_evil_press>
+  <se_10_sub_fresco >
+    <use_se_part_of_a_fresco_inv type="apply_item" inventory_item="se_part_of_a_fresco_inv" drop_zone="drop_zone_se_part_of_a_fresco_inv">
+      <dependency>
+        <collect_se_part_of_a_fresco_inv />
+      </dependency>
+    </use_se_part_of_a_fresco_inv>
+    <condit_se_10_sub_fresco_clicks_count type="condition" highlight_layer="crystal" condition="se_10_sub_fresco_clicks_count='for_hint'">
+      <dependency>
+        <use_se_part_of_a_fresco_inv />
+      </dependency>
+    </condit_se_10_sub_fresco_clicks_count>
+    <condit_se_10_sub_fresco_click_scroll_01 type="condition" highlight_layer="scroll_01" condition="condit_se_10_sub_fresco_click_scroll_01='1'">
+      <dependency>
+        <condit_se_10_sub_fresco_clicks_count />
+      </dependency>
+    </condit_se_10_sub_fresco_click_scroll_01>
+    <condit_se_10_sub_fresco_click_scroll_big type="condition" highlight_layer="scroll_big" condition="condit_se_10_sub_fresco_click_scroll_big='1'">
+      <dependency>
+        <condit_se_10_sub_fresco_click_scroll_01 />
+      </dependency>
+    </condit_se_10_sub_fresco_click_scroll_big>
+    <collect_se_key_step_part_1_inv type="inventory_item" inventory_item="se_key_step_part_1_inv">
+      <dependency>
+        <condit_se_10_sub_fresco_click_scroll_big />
+      </dependency>
+    </collect_se_key_step_part_1_inv>
+    <collect_se_glass_eye_inv type="inventory_item" inventory_item="se_glass_eye_inv">
+      <dependency>
+        <condit_se_10_sub_fresco_clicks_count />
+      </dependency>
+    </collect_se_glass_eye_inv>
+  </se_10_sub_fresco>
+  <se_10_sub_lion >
+    <use_se_magic_staff_l_inv type="apply_item" inventory_item="se_magic_staff_l_inv" drop_zone="drop_zone_se_magic_staff_l_inv">
+      <dependency>
+        <collect_se_magic_staff_l_inv />
+      </dependency>
+    </use_se_magic_staff_l_inv>
+    <collect_se_not_loaded_staff_b_inv type="inventory_item" inventory_item="se_not_loaded_staff_b_inv">
+      <dependency>
+        <use_se_magic_staff_l_inv />
+      </dependency>
+    </collect_se_not_loaded_staff_b_inv>
+  </se_10_sub_lion>
+  <se_10_sub_to_the_lake >
+    <click_active_zone_open_lake_model type="click" click_layer="active_zone_open_lake_model">
+      <dependency>
+        <collect_se_key_step_part_1_inv />
+        <collect_se_key_step_part_2_inv />
+        <collect_se_key_step_part_3_inv />
+        <collect_se_key_step_part_4_inv />
+        <collect_se_key_step_part_5_inv />
+        <collect_se_key_step_part_6_inv />
+        <collect_se_key_step_part_7_inv />
+      </dependency>
+    </click_active_zone_open_lake_model>
+    <use_se_key_step_inv type="apply_item" inventory_item="se_key_step_inv" drop_zone="drop_zone_se_key_step_inv">
+      <dependency>
+        <click_active_zone_open_lake_model />
+        <collect_se_key_step_part_1_inv />
+        <collect_se_key_step_part_2_inv />
+        <collect_se_key_step_part_3_inv />
+        <collect_se_key_step_part_4_inv />
+        <collect_se_key_step_part_5_inv />
+        <collect_se_key_step_part_6_inv />
+        <collect_se_key_step_part_7_inv />
+      </dependency>
+    </use_se_key_step_inv>
+    <use_se_altar_figure_inv type="apply_item" inventory_item="se_altar_figure_inv" drop_zone="drop_zone_se_altar_figure_inv">
+      <dependency>
+        <click_active_zone_open_lake_model />
+        <collect_se_altar_figure_inv />
+      </dependency>
+    </use_se_altar_figure_inv>
+  </se_10_sub_to_the_lake>
+  
+  
+  <!-- 11 -->
+  <se_11 >
+    
+  </se_11>
+  <se_11_sub_well >
+    <click_active_zone_click_wheel_old type="click" click_layer="active_zone_click_wheel_old">
+      <dependency>
+      </dependency>
+    </click_active_zone_click_wheel_old>
+    <collect_se_well_handle_inv type="inventory_item" inventory_item="se_well_handle_inv">
+      <dependency>
+        <click_active_zone_click_wheel_old />
+      </dependency>
+    </collect_se_well_handle_inv>
+    <use_se_handle_wheel_inv type="apply_item" inventory_item="se_handle_wheel_inv" drop_zone="drop_zone_se_handle_wheel_inv">
+      <dependency>
+        <collect_se_handle_wheel_inv />
+        <collect_se_well_handle_inv />
+      </dependency>
+    </use_se_handle_wheel_inv>
+    <condit_se_11_sub_well_show_imp type="condition" highlight_layer="active_zone_imp" condition="se_11_sub_well_show_imp='1'">
+      <dependency>
+        <use_se_handle_wheel_inv />
+      </dependency>
+    </condit_se_11_sub_well_show_imp>
+    <use_se_lit_lamp_inv type="apply_item" inventory_item="se_lit_lamp_inv" drop_zone="drop_zone_se_lit_lamp_inv">
+      <dependency>
+        <collect_se_lit_lamp_inv />
+        <condit_se_11_sub_well_show_imp />
+      </dependency>
+    </use_se_lit_lamp_inv>
+    <collect_se_willow_emblem_inv type="inventory_item" inventory_item="se_willow_emblem_inv">
+      <dependency>
+        <use_se_lit_lamp_inv />
+      </dependency>
+    </collect_se_willow_emblem_inv>
+  </se_11_sub_well>
+  <se_11_sub_mermaid >
+    <collect_se_metal_month_inv type="inventory_item" inventory_item="se_metal_month_inv">
+      <dependency>
+      </dependency>
+    </collect_se_metal_month_inv>
+    <use_se_magic_spindle_inv type="apply_item" inventory_item="se_magic_spindle_inv" drop_zone="drop_zone_se_magic_spindle_inv">
+      <dependency>
+        <collect_se_magic_spindle_inv />
+      </dependency>
+    </use_se_magic_spindle_inv>
+    <collect_se_magic_ball_inv type="inventory_item" inventory_item="se_magic_ball_inv">
+      <dependency>
+        <use_se_magic_spindle_inv />
+      </dependency>
+    </collect_se_magic_ball_inv>
+  </se_11_sub_mermaid>
+  <se_11_sub_sub_shell >
+    <use_se_silver_crab_inv type="apply_item" inventory_item="se_silver_crab_inv" drop_zone="drop_zone_se_silver_crab_inv">
+      <dependency>
+        <collect_se_silver_crab_inv />
+      </dependency>
+    </use_se_silver_crab_inv>
+    <click_phantom_eye type="click" click_layer="phantom_eye">
+      <dependency>
+        <use_se_silver_crab_inv />
+      </dependency>
+    </click_phantom_eye>
+    <collect_se_compass_inv type="inventory_item" inventory_item="se_compass_inv">
+      <dependency>
+        <click_phantom_eye />
+      </dependency>
+    </collect_se_compass_inv>
+  </se_11_sub_sub_shell>
+  <se_11_sub_monster >
+    <use_se_short_sword_inv type="apply_item" inventory_item="se_short_sword_inv" drop_zone="drop_zone_se_short_sword_inv">
+      <dependency>
+        <collect_se_short_sword_inv />
+      </dependency>
+    </use_se_short_sword_inv>
+    <collect_se_arrow_inv type="inventory_item" inventory_item="se_arrow_inv">
+      <dependency>
+        <use_se_short_sword_inv />
+      </dependency>
+    </collect_se_arrow_inv>
+    <collect_se_jaw_of_monster_inv type="inventory_item" inventory_item="se_jaw_of_monster_inv">
+      <dependency>
+        <collect_se_arrow_inv />
+      </dependency>
+    </collect_se_jaw_of_monster_inv>
+    <use_se_scale_monster_inv type="apply_item" inventory_item="se_scale_monster_inv" drop_zone="drop_zone_se_scale_monster_inv">
+      <dependency>
+        <collect_se_jaw_of_monster_inv />
+        <collect_se_scale_monster_inv />
+      </dependency>
+    </use_se_scale_monster_inv>
+    <collect_se_lilac_nugget_inv type="inventory_item" inventory_item="se_lilac_nugget_inv">
+      <dependency>
+        <use_se_scale_monster_inv />
+      </dependency>
+    </collect_se_lilac_nugget_inv>
+    <collect_se_part_of_a_necklace_1_inv type="inventory_item" inventory_item="se_part_of_a_necklace_1_inv">
+      <dependency>
+        <use_se_scale_monster_inv />
+      </dependency>
+    </collect_se_part_of_a_necklace_1_inv>
+  </se_11_sub_monster>
+  <se_11_sub_puzzle >
+    <use_se_magic_sphere_inv type="apply_item" inventory_item="se_magic_sphere_inv" drop_zone="drop_zone_se_magic_sphere_inv">
+      <dependency>
+        <collect_se_magic_sphere_inv />
+      </dependency>
+    </use_se_magic_sphere_inv>
+    <complete_se_11_sub_puzzle type="complete_mini_game" mini_game_name="se_11_sub_puzzle">
+      <dependency>
+        <use_se_magic_sphere_inv />
+      </dependency>
+    </complete_se_11_sub_puzzle>
+    <condit_se_11_to_se_13_hint type="condition" highlight_layer="active_zone_go_se_13" condition="se_11_to_se_13_hint='1'">
+      <dependency>
+        <complete_se_11_sub_puzzle />
+      </dependency>
+    </condit_se_11_to_se_13_hint>
+  </se_11_sub_puzzle>
+  
+  
+  <!-- 12 -->
+  <se_12 >
+    <collect_se_stone_inv type="inventory_item" inventory_item="se_stone_inv" highlight_layer="se_stone_inv">
+      <dependency>
+      </dependency>
+    </collect_se_stone_inv>
+    <collect_se_lampadny_oil_inv type="inventory_item" inventory_item="se_lampadny_oil_inv" highlight_layer="active_zone_ho_01">
+      <dependency>
+      </dependency>
+    </collect_se_lampadny_oil_inv>
+    <collect_se_crossbow_inv type="inventory_item" inventory_item="se_crossbow_inv" highlight_layer="active_zone_ho_02">
+      <dependency>
+        <collect_se_horns_of_deer_inv />
+      </dependency>
+    </collect_se_crossbow_inv>
+    <condit_se_12_to_se_15_hint type="condition" highlight_layer="active_zone_go_se_15" condition="se_12_to_se_15_hint='1'">
+      <dependency>
+        <use_se_forged_diamond_inv />
+      </dependency>
+    </condit_se_12_to_se_15_hint>
+  </se_12>
+  <se_12_sub_hunters >
+    <collect_se_short_sword_inv type="inventory_item" inventory_item="se_short_sword_inv" >
+      <dependency>
+      </dependency>
+    </collect_se_short_sword_inv>
+    <use_se_armor_of_vines_inv type="apply_item" inventory_item="se_armor_of_vines_inv" drop_zone="drop_zone_se_armor_of_vines_inv">
+      <dependency>
+        <collect_se_short_sword_inv />
+        <collect_se_armor_of_vines_inv />
+      </dependency>
+    </use_se_armor_of_vines_inv>
+    <collect_se_forged_diamond_inv type="inventory_item" inventory_item="se_forged_diamond_inv" >
+      <dependency>
+        <use_se_armor_of_vines_inv />
+      </dependency>
+    </collect_se_forged_diamond_inv>
+  </se_12_sub_hunters>
+  <se_12_sub_sub_niche_in_a_stone >
+    <use_se_artifact_figure_inv type="apply_item" inventory_item="se_artifact_figure_inv" drop_zone="drop_zone_se_artifact_figure_inv">
+      <dependency>
+        <collect_se_artifact_figure_inv />
+      </dependency>
+    </use_se_artifact_figure_inv>
+    <collect_se_square_tangram_inv type="inventory_item" inventory_item="se_square_tangram_inv" >
+      <dependency>
+        <use_se_artifact_figure_inv />
+      </dependency>
+    </collect_se_square_tangram_inv>
+  </se_12_sub_sub_niche_in_a_stone>
+  <se_12_sub_weeping_willow >
+    <use_se_willow_emblem_inv type="apply_item" inventory_item="se_willow_emblem_inv" drop_zone="drop_zone_se_willow_emblem_inv">
+      <dependency>
+        <collect_se_willow_emblem_inv />
+      </dependency>
+    </use_se_willow_emblem_inv>
+    <collect_se_magic_sphere_inv type="inventory_item" inventory_item="se_magic_sphere_inv" >
+      <dependency>
+        <use_se_willow_emblem_inv />
+      </dependency>
+    </collect_se_magic_sphere_inv>
+    <use_se_horns_of_deer_inv type="apply_item" inventory_item="se_horns_of_deer_inv" drop_zone="drop_zone_se_horns_of_deer_inv">
+      <dependency>
+        <collect_se_horns_of_deer_inv />
+      </dependency>
+    </use_se_horns_of_deer_inv>
+    <collect_se_rock_top_inv type="inventory_item" inventory_item="se_rock_top_inv" >
+      <dependency>
+        <use_se_horns_of_deer_inv />
+      </dependency>
+    </collect_se_rock_top_inv>
+  </se_12_sub_weeping_willow>
+  <se_12_sub_cartwheel >
+    <use_se_jaw_of_monster_inv type="apply_item" inventory_item="se_jaw_of_monster_inv" drop_zone="drop_zone_se_jaw_of_monster_inv">
+      <dependency>
+        <collect_se_jaw_of_monster_inv />
+      </dependency>
+    </use_se_jaw_of_monster_inv>
+    <collect_se_wheel_inv type="inventory_item" highlight_layer="se_wheel_inv/selection" inventory_item="se_wheel_inv" >
+      <dependency>
+        <use_se_jaw_of_monster_inv />
+      </dependency>
+    </collect_se_wheel_inv>
+    <collect_se_minute_hand_inv type="inventory_item" inventory_item="se_minute_hand_inv" >
+      <dependency>
+        <collect_se_wheel_inv />
+      </dependency>
+    </collect_se_minute_hand_inv>
+    <use_se_vial_inv type="apply_item" inventory_item="se_vial_inv" drop_zone="drop_zone_bottle">
+      <dependency>
+        <collect_se_vial_inv />
+        <collect_se_wheel_inv />
+      </dependency>
+    </use_se_vial_inv>
+    <collect_se_willow_sap_inv type="inventory_item" inventory_item="se_willow_sap_inv" >
+      <dependency>
+        <use_se_vial_inv />
+      </dependency>
+    </collect_se_willow_sap_inv>
+  </se_12_sub_cartwheel>
+  <se_12_sub_entrance_to_the_ruins >
+    <use_se_forged_diamond_inv type="apply_item" inventory_item="se_forged_diamond_inv" drop_zone="drop_zone_se_forged_diamond_inv">
+      <dependency>
+        <collect_se_forged_diamond_inv />
+      </dependency>
+    </use_se_forged_diamond_inv>
+    <condit_se_12_to_se_15_hint_from_sub type="condition" highlight_layer="active_zone_go_se_15" condition="se_12_to_se_15_hint='1'">
+      <dependency>
+        <use_se_forged_diamond_inv />
+      </dependency>
+    </condit_se_12_to_se_15_hint_from_sub>
+  </se_12_sub_entrance_to_the_ruins>
+  <se_12_ho_01 />
+  <se_12_ho_02 />
+  
+  
+  <!-- 13 -->
+  <se_13>
+    <collect_se_pulled_out_page_inv type="inventory_item" inventory_item="se_pulled_out_page_inv" highlight_layer="active_zone_ho_01">
+      <dependency>
+        <condit_se_13_sub_printer_hint_paper_big />
+      </dependency>
+    </collect_se_pulled_out_page_inv>
+    <collect_se_press_inv type="inventory_item" inventory_item="se_press_inv" highlight_layer="active_zone_ho_02">
+      <dependency>
+        <collect_se_willow_sap_inv />
+      </dependency>
+    </collect_se_press_inv>
+  </se_13>
+  <se_13_sub_table>
+    <use_se_bookmark_inv type="apply_item" inventory_item="se_bookmark_inv" drop_zone="drop_zone_se_bookmark_inv">
+      <dependency>
+        <collect_se_bookmark_inv />
+      </dependency>
+    </use_se_bookmark_inv>
+    <se_13_sub_table_glue_placed type="condition" highlight_layer="glue|drop_zone_glue" condition="se_13_sub_table_hint_glue='1'">
+      <dependency>
+        <use_se_bookmark_inv />
+      </dependency>
+    </se_13_sub_table_glue_placed>
+    <use_se_pulled_out_page_inv type="apply_item" inventory_item="se_pulled_out_page_inv" drop_zone="drop_zone_se_pulled_out_page_inv">
+      <dependency>
+        <se_13_sub_table_glue_placed />
+        <collect_se_pulled_out_page_inv />
+      </dependency>
+    </use_se_pulled_out_page_inv>
+    <se_13_sub_table_bookmark_placed type="condition" highlight_layer="bookmark|drop_zone_bookmark" condition="se_13_sub_table_hint_bookmark='1'">
+      <dependency>
+        <use_se_pulled_out_page_inv />
+      </dependency>
+    </se_13_sub_table_bookmark_placed>
+    <se_13_sub_table_awl_placed type="condition" highlight_layer="awl|drop_zone_awl_finger" condition="se_13_sub_table_hint_awl='1'">
+      <dependency>
+        <se_13_sub_table_bookmark_placed />
+      </dependency>
+    </se_13_sub_table_awl_placed>
+    <se_13_sub_table_threads_and_needle_placed type="condition" highlight_layer="threads_and_needle|drop_zone_threads_and_needle" condition="se_13_sub_table_hint_threads_and_needle='1'">
+      <dependency>
+        <se_13_sub_table_awl_placed />
+      </dependency>
+    </se_13_sub_table_threads_and_needle_placed>
+    <click_active_zone_book_big_open type="click" click_layer="active_zone_book_big_open">
+      <dependency>
+        <se_13_sub_table_threads_and_needle_placed />
+      </dependency>
+    </click_active_zone_book_big_open>
+    <se_13_sub_table_book_big_click_1 type="condition" highlight_layer="book_opened_big" condition="se_13_sub_table_book_big_click_1='1'">
+      <dependency>
+        <click_active_zone_book_big_open />
+      </dependency>
+    </se_13_sub_table_book_big_click_1>
+    <se_13_sub_table_book_big_click_2 type="condition" highlight_layer="book_opened_big" condition="se_13_sub_table_book_big_click_2='1'">
+      <dependency>
+        <se_13_sub_table_book_big_click_1 />
+      </dependency>
+    </se_13_sub_table_book_big_click_2>
+    <collect_se_star_maps_inv type="condition" highlight_layer="se_star_maps_inv" condition="se_13_sub_table_hint_se_star_maps_inv_collected='1'">
+      <dependency>
+        <se_13_sub_table_book_big_click_2 />
+      </dependency>
+    </collect_se_star_maps_inv>
+    <click_table_glow type="click" click_layer="table_glow">
+      <dependency>
+        <collect_se_star_maps_inv />
+      </dependency>
+    </click_table_glow>
+    <use_se_willow_sap_inv type="apply_item" inventory_item="se_willow_sap_inv" drop_zone="drop_zone_se_willow_sap_inv">
+      <dependency>
+        <click_table_glow />
+        <collect_se_willow_sap_inv />
+      </dependency>
+    </use_se_willow_sap_inv>
+    <collect_se_key_step_part_3_inv type="inventory_item" inventory_item="se_key_step_part_3_inv">
+      <dependency>
+        <use_se_willow_sap_inv />
+      </dependency>
+    </collect_se_key_step_part_3_inv>
+    <collect_se_graphite_inv type="inventory_item" inventory_item="se_graphite_inv">
+      <dependency>
+        <use_se_willow_sap_inv />
+      </dependency>
+    </collect_se_graphite_inv>
+  </se_13_sub_table>
+  <se_13_sub_tubes>
+    <collect_se_astrolabe_inv type="inventory_item" inventory_item="se_astrolabe_inv">
+      <dependency>
+      </dependency>
+    </collect_se_astrolabe_inv>
+    <use_se_birch_print_inv type="apply_item" inventory_item="se_birch_print_inv" drop_zone="drop_zone_se_birch_print_inv">
+      <dependency>
+        <collect_se_astrolabe_inv />
+        <collect_se_birch_print_inv />
+      </dependency>
+    </use_se_birch_print_inv>
+    <click_se_13_map_1 type="click" click_layer="map1">
+      <dependency>
+        <use_se_birch_print_inv />
+      </dependency>
+    </click_se_13_map_1>
+    <click_se_13_map_2 type="click" click_layer="map2">
+      <dependency>
+        <click_se_13_map_1 />
+      </dependency>
+    </click_se_13_map_2>
+    <collect_se_parchment_inv type="inventory_item" inventory_item="se_parchment_inv">
+      <dependency>
+        <click_se_13_map_2/>
+      </dependency>
+    </collect_se_parchment_inv>
+    <collect_se_claw_inv type="inventory_item" inventory_item="se_claw_inv">
+      <dependency>
+        <collect_se_parchment_inv/>
+      </dependency>
+    </collect_se_claw_inv>
+  </se_13_sub_tubes>
+  <se_13_sub_printer>
+    <use_se_drop_cap_inv type="apply_item" inventory_item="se_drop_cap_inv" drop_zone="drop_zone_se_drop_cap_inv">
+      <dependency>
+        <collect_se_drop_cap_inv />
+      </dependency>
+    </use_se_drop_cap_inv>
+    <condit_se_13_sub_printer_hint_roller type="condition" highlight_layer="roller|drop_zone_roller" condition="se_13_sub_printer_hint_roller='1'">
+      <dependency>
+        <use_se_drop_cap_inv />
+      </dependency>
+    </condit_se_13_sub_printer_hint_roller>
+    <condit_se_13_sub_printer_hint_paper type="condition" highlight_layer="paper|drop_zone_paper" condition="se_13_sub_printer_hint_paper='1'">
+      <dependency>
+        <use_se_drop_cap_inv />
+      </dependency>
+    </condit_se_13_sub_printer_hint_paper>
+    <condit_se_13_sub_printer_hint_paper_big type="condition" highlight_layer="paper_big" condition="se_13_sub_printer_hint_paper_big='1'">
+      <dependency>
+        <condit_se_13_sub_printer_hint_roller />
+        <condit_se_13_sub_printer_hint_paper />
+      </dependency>
+    </condit_se_13_sub_printer_hint_paper_big>
+  </se_13_sub_printer>
+  <se_13_sub_dial>
+    <use_se_minute_hand_inv type="apply_item" inventory_item="se_minute_hand_inv" drop_zone="drop_zone_hands">
+      <dependency>
+        <collect_se_minute_hand_inv />
+      </dependency>
+    </use_se_minute_hand_inv>
+    <use_se_hour_hand_inv type="apply_item" inventory_item="se_hour_hand_inv" drop_zone="drop_zone_hands">
+      <dependency>
+        <collect_se_hour_hand_inv />
+      </dependency>
+    </use_se_hour_hand_inv>
+  </se_13_sub_dial>
+  <se_13_sub_miniho>
+    <click_se_13_sub_miniho_part_01 type="click" click_layer="part1">
+      <dependency>
+      </dependency>
+    </click_se_13_sub_miniho_part_01>
+    <click_se_13_sub_miniho_part_02 type="click" click_layer="part2">
+      <dependency>
+      </dependency>
+    </click_se_13_sub_miniho_part_02>
+    <click_se_13_sub_miniho_part_03 type="click" click_layer="part3">
+      <dependency>
+      </dependency>
+    </click_se_13_sub_miniho_part_03>
+    <click_se_13_sub_miniho_part_04 type="click" click_layer="part4">
+      <dependency>
+      </dependency>
+    </click_se_13_sub_miniho_part_04>
+    <click_se_13_sub_miniho_part_05 type="click" click_layer="part5">
+      <dependency>
+      </dependency>
+    </click_se_13_sub_miniho_part_05>
+    <click_se_13_sub_miniho_part_06 type="click" click_layer="part6">
+      <dependency>
+      </dependency>
+    </click_se_13_sub_miniho_part_06>
+    <condit_se_13_hint_miniho_complete type="condition" highlight_layer="close_button" condition="se_13_sub_miniho_hint_completed='1'">
+      <dependency>
+        <click_se_13_sub_miniho_part_01 />
+        <click_se_13_sub_miniho_part_02 />
+        <click_se_13_sub_miniho_part_03 />
+        <click_se_13_sub_miniho_part_04 />
+        <click_se_13_sub_miniho_part_05 />
+        <click_se_13_sub_miniho_part_06 />
+      </dependency>
+    </condit_se_13_hint_miniho_complete>
+  </se_13_sub_miniho>
+  <se_13_puzzle_watch>
+    <complete_se_13_puzzle_watch type="complete_mini_game" mini_game_name="se_13_puzzle_watch">
+      <dependency>
+        <use_se_minute_hand_inv />
+        <use_se_hour_hand_inv />
+      </dependency>
+    </complete_se_13_puzzle_watch>
+    <collect_se_silver_crab_inv type="inventory_item" inventory_item="se_silver_crab_inv">
+      <dependency>
+        <complete_se_13_puzzle_watch/>
+      </dependency>
+    </collect_se_silver_crab_inv>
+    <collect_se_magic_needle_inv type="inventory_item" inventory_item="se_magic_needle_inv">
+      <dependency>
+        <complete_se_13_puzzle_watch/>
+      </dependency>
+    </collect_se_magic_needle_inv>
+  </se_13_puzzle_watch>
+  <se_13_ho_01 />
+  <se_13_ho_02 />
+  
+  
+  <!-- 14 -->
+  <se_14 >
+    
+  </se_14>
+  <se_14_sub_bureau>
+    <use_se_astrolabe_inv type="apply_item" inventory_item="se_astrolabe_inv" drop_zone="drop_zone_se_astrolabe_inv">
+      <dependency>
+        <collect_se_astrolabe_inv />
+      </dependency>
+    </use_se_astrolabe_inv>
+    <click_se_14_sub_bureau_balls1 type="click" click_layer="balls1">
+      <dependency>
+        <use_se_astrolabe_inv />
+      </dependency>
+    </click_se_14_sub_bureau_balls1>
+    <click_se_14_sub_bureau_balls2 type="click" click_layer="balls2">
+      <dependency>
+        <click_se_14_sub_bureau_balls1 />
+      </dependency>
+    </click_se_14_sub_bureau_balls2>
+    <click_se_14_sub_bureau_balls3 type="click" click_layer="balls3">
+      <dependency>
+        <click_se_14_sub_bureau_balls2 />
+      </dependency>
+    </click_se_14_sub_bureau_balls3>
+    <collect_se_hour_hand_inv type="inventory_item" inventory_item="se_hour_hand_inv">
+      <dependency>
+        <click_se_14_sub_bureau_balls3/>
+      </dependency>
+    </collect_se_hour_hand_inv>
+    <use_se_compass_inv type="apply_item" inventory_item="se_compass_inv" drop_zone="drop_zone_se_compass_inv">
+      <dependency>
+        <collect_se_compass_inv />
+      </dependency>
+    </use_se_compass_inv>
+    <click_se_14_sub_bureau_stars1 type="click" click_layer="stars1">
+      <dependency>
+        <use_se_compass_inv />
+      </dependency>
+    </click_se_14_sub_bureau_stars1>
+    <click_se_14_sub_bureau_stars2 type="click" click_layer="stars2">
+      <dependency>
+        <click_se_14_sub_bureau_stars1 />
+      </dependency>
+    </click_se_14_sub_bureau_stars2>
+    <click_se_14_sub_bureau_stars3 type="click" click_layer="stars3">
+      <dependency>
+        <click_se_14_sub_bureau_stars2 />
+      </dependency>
+    </click_se_14_sub_bureau_stars3>
+    <collect_se_drop_cap_inv type="inventory_item" inventory_item="se_drop_cap_inv">
+      <dependency>
+        <click_se_14_sub_bureau_stars3/>
+      </dependency>
+    </collect_se_drop_cap_inv>
+    <collect_se_bookmark_inv type="inventory_item" inventory_item="se_bookmark_inv">
+      <dependency>
+        <click_se_14_sub_bureau_stars3/>
+      </dependency>
+    </collect_se_bookmark_inv>
+  </se_14_sub_bureau>
+  <se_14_sub_hourglass>
+    <use_se_claw_inv type="apply_item" inventory_item="se_claw_inv" drop_zone="drop_zone_se_claw_inv">
+      <dependency>
+        <collect_se_claw_inv />
+      </dependency>
+    </use_se_claw_inv>
+    <click_closed_hourglass type="click" click_layer="closed_hourglass">
+      <dependency>
+        <use_se_claw_inv />
+      </dependency>
+    </click_closed_hourglass>
+    <collect_se_spindle_with_gaps_inv type="inventory_item" inventory_item="se_spindle_with_gaps_inv">
+      <dependency>
+        <click_closed_hourglass/>
+      </dependency>
+    </collect_se_spindle_with_gaps_inv>
+    <click_se_14_sub_hourglass_active_zone_imp type="click" click_layer="active_zone_imp">
+      <dependency>
+        <collect_se_spindle_with_gaps_inv />
+      </dependency>
+    </click_se_14_sub_hourglass_active_zone_imp>
+    <use_se_sieve_inv type="apply_item" inventory_item="se_sieve_inv" drop_zone="drop_zone_se_sieve_inv">
+      <dependency>
+        <collect_se_sieve_inv />
+        <click_se_14_sub_hourglass_active_zone_imp />
+      </dependency>
+    </use_se_sieve_inv>
+    <collect_se_malachite_beads_inv type="inventory_item" highlight_layer="imp_give/selection" inventory_item="se_malachite_beads_inv">
+      <dependency>
+        <use_se_sieve_inv/>
+      </dependency>
+    </collect_se_malachite_beads_inv>
+  </se_14_sub_hourglass>
+  <se_14_puzzle_globe>
+    <use_se_star_maps_inv type="apply_item" inventory_item="se_star_maps_inv" drop_zone="drop_zone_se_star_maps_inv">
+      <dependency>
+        <collect_se_star_maps_inv />
+      </dependency>
+    </use_se_star_maps_inv>
+    <complete_se_14_puzzle_globe type="complete_mini_game" mini_game_name="se_14_puzzle_globe">
+      <dependency>
+        <use_se_star_maps_inv />
+      </dependency>
+    </complete_se_14_puzzle_globe>
+    <collect_se_birch_print_inv type="inventory_item" inventory_item="se_birch_print_inv">
+      <dependency>
+        <complete_se_14_puzzle_globe/>
+      </dependency>
+    </collect_se_birch_print_inv>
+  </se_14_puzzle_globe>
+  
+  
+  <!-- 15 -->
+  <se_15>
+    <condit_se_15_sphere_01_on_place type="condition" highlight_layer="sphere_01|drop_zone_sphere" condition="se_15_sphere_01_on_place='1'">
+      <dependency>
+      </dependency>
+    </condit_se_15_sphere_01_on_place>
+    <condit_se_15_sphere_02_on_place type="condition" highlight_layer="sphere_02|drop_zone_sphere" condition="se_15_sphere_02_on_place='1'">
+      <dependency>
+      </dependency>
+    </condit_se_15_sphere_02_on_place>
+    <condit_se_15_sphere_03_on_place type="condition" highlight_layer="sphere_03|drop_zone_sphere" condition="se_15_sphere_03_on_place='1'">
+      <dependency>
+      </dependency>
+    </condit_se_15_sphere_03_on_place>
+    <collect_se_horns_of_deer_inv type="inventory_item" inventory_item="se_horns_of_deer_inv">
+      <dependency>
+        <condit_se_15_sphere_01_on_place/>
+        <condit_se_15_sphere_02_on_place/>
+        <condit_se_15_sphere_03_on_place/>
+      </dependency>
+    </collect_se_horns_of_deer_inv>
+  </se_15>
+  <se_15_sub_failure_in_the_floor>
+    <use_se_crossbows_and_arrows_inv type="apply_item" inventory_item="se_crossbows_and_arrows_inv" drop_zone="drop_zone_se_crossbows_and_arrows_inv">
+      <dependency>
+        <collect_se_crossbows_and_arrows_inv />
+      </dependency>
+    </use_se_crossbows_and_arrows_inv>
+    <use_se_stone_inv type="apply_item" inventory_item="se_stone_inv" drop_zone="drop_zone_stone">
+      <dependency>
+        <use_se_crossbows_and_arrows_inv />
+        <collect_se_stone_inv />
+      </dependency>
+    </use_se_stone_inv>
+    <collect_se_triangle_tangram_inv type="inventory_item" inventory_item="se_triangle_tangram_inv">
+      <dependency>
+        <use_se_stone_inv/>
+      </dependency>
+    </collect_se_triangle_tangram_inv>
+  </se_15_sub_failure_in_the_floor>
+  <se_15_sub_broken_ball>
+    <use_se_rock_top_inv type="apply_item" inventory_item="se_rock_top_inv" drop_zone="drop_zone_se_rock_top_inv">
+      <dependency>
+        <collect_se_rock_top_inv />
+      </dependency>
+    </use_se_rock_top_inv>
+    <click_se_15_sub_broken_ball_note type="click" click_layer="note">
+      <dependency>
+        <use_se_rock_top_inv />
+      </dependency>
+    </click_se_15_sub_broken_ball_note>
+    <condit_se_15_sub_broken_ball_note_big type="condition" highlight_layer="note_big" condition="se_15_sub_broken_ball_hint_note_big='1'">
+      <dependency>
+        <click_se_15_sub_broken_ball_note />
+      </dependency>
+    </condit_se_15_sub_broken_ball_note_big>
+    <collect_se_artifact_figure_inv type="inventory_item" inventory_item="se_artifact_figure_inv">
+      <dependency>
+        <condit_se_15_sub_broken_ball_note_big />
+      </dependency>
+    </collect_se_artifact_figure_inv>
+  </se_15_sub_broken_ball>
+  <se_15_sub_tethys_corner>
+    <use_se_parchment_inv type="apply_item" inventory_item="se_parchment_inv" drop_zone="drop_zone_se_parchment_inv">
+      <dependency>
+        <collect_se_parchment_inv />
+      </dependency>
+    </use_se_parchment_inv>
+    <use_se_graphite_inv type="apply_item" inventory_item="se_graphite_inv" drop_zone="drop_zone_se_graphite_inv">
+      <dependency>
+        <collect_se_graphite_inv />
+        <use_se_parchment_inv />
+      </dependency>
+    </use_se_graphite_inv>
+    <collect_se_scheme_key_inv type="inventory_item" inventory_item="se_scheme_key_inv">
+      <dependency>
+        <use_se_graphite_inv />
+      </dependency>
+    </collect_se_scheme_key_inv>
+    <use_se_press_key_inv type="apply_item" inventory_item="se_press_key_inv" drop_zone="drop_zone_se_press_key_inv">
+      <dependency>
+        <collect_se_press_key_inv />
+      </dependency>
+    </use_se_press_key_inv>
+    <collect_se_sceptre_queen_inv type="inventory_item" inventory_item="se_sceptre_queen_inv">
+      <dependency>
+        <use_se_press_key_inv />
+      </dependency>
+    </collect_se_sceptre_queen_inv>
+    <condit_se_15_skull1_on_place type="condition" highlight_layer="skull1|drop_zone_scull1" condition="se_15_scull1_on_place='1'">
+      <dependency>
+        <collect_se_sceptre_queen_inv />
+      </dependency>
+    </condit_se_15_skull1_on_place>
+    <condit_se_15_skull2_on_place type="condition" highlight_layer="skull2|drop_zone_scull2" condition="se_15_scull2_on_place='1'">
+      <dependency>
+        <collect_se_sceptre_queen_inv />
+      </dependency>
+    </condit_se_15_skull2_on_place>
+    <condit_se_15_skull3_on_place type="condition" highlight_layer="skull3|drop_zone_scull3" condition="se_15_scull3_on_place='1'">
+      <dependency>
+        <collect_se_sceptre_queen_inv />
+      </dependency>
+    </condit_se_15_skull3_on_place>
+    <condit_se_15_skull4_on_place type="condition" highlight_layer="skull4|drop_zone_scull4" condition="se_15_scull4_on_place='1'">
+      <dependency>
+        <collect_se_sceptre_queen_inv />
+      </dependency>
+    </condit_se_15_skull4_on_place>
+    <condit_se_15_skull5_on_place type="condition" highlight_layer="skull5|drop_zone_scull5" condition="se_15_scull5_on_place='1'">
+      <dependency>
+        <collect_se_sceptre_queen_inv />
+      </dependency>
+    </condit_se_15_skull5_on_place>
+    <condit_se_15_skull6_on_place type="condition" highlight_layer="skull6|drop_zone_scull6" condition="se_15_scull6_on_place='1'">
+      <dependency>
+        <collect_se_sceptre_queen_inv />
+      </dependency>
+    </condit_se_15_skull6_on_place>
+    <collect_se_key_step_part_2_inv type="inventory_item" inventory_item="se_key_step_part_2_inv">
+      <dependency>
+        <condit_se_15_skull1_on_place />
+        <condit_se_15_skull2_on_place />
+        <condit_se_15_skull3_on_place />
+        <condit_se_15_skull4_on_place />
+        <condit_se_15_skull5_on_place />
+        <condit_se_15_skull6_on_place />
+      </dependency>
+    </collect_se_key_step_part_2_inv>
+    <collect_se_scale_monster_inv type="inventory_item" inventory_item="se_scale_monster_inv">
+      <dependency>
+        <collect_se_key_step_part_2_inv />
+      </dependency>
+    </collect_se_scale_monster_inv>
+  </se_15_sub_tethys_corner>
+  <se_15_puzzle_altar>
+    <use_se_triangle_tangram_inv type="apply_item" inventory_item="se_triangle_tangram_inv" drop_zone="drop_zone_se_triangle_tangram_inv">
+      <dependency>
+        <collect_se_triangle_tangram_inv />
+      </dependency>
+    </use_se_triangle_tangram_inv>
+    <use_se_square_tangram_inv type="apply_item" inventory_item="se_square_tangram_inv" drop_zone="drop_zone_se_square_tangram_inv">
+      <dependency>
+        <collect_se_square_tangram_inv />
+      </dependency>
+    </use_se_square_tangram_inv>
+    <complete_se_15_puzzle_altar type="complete_mini_game" mini_game_name="se_15_puzzle_altar">
+      <dependency>
+        <use_se_square_tangram_inv />
+        <use_se_triangle_tangram_inv />
+      </dependency>
+    </complete_se_15_puzzle_altar>
+    <collect_se_shawl_inv type="inventory_item" inventory_item="se_shawl_inv">
+      <dependency>
+        <complete_se_15_puzzle_altar />
+      </dependency>
+    </collect_se_shawl_inv>
+    <collect_se_vial_inv type="inventory_item" inventory_item="se_vial_inv">
+      <dependency>
+        <collect_se_shawl_inv />
+      </dependency>
+    </collect_se_vial_inv>
+  </se_15_puzzle_altar>
+  
+  
+  <!-- 16 -->
+  <se_16>
+    <condit_se_16_show_imp type="condition" highlight_layer="active_zone_imp" condition="se_16_show_imp='1'">
+      <dependency>
+        <collect_se_pogo_stick_inv />
+      </dependency>
+    </condit_se_16_show_imp>
+    <use_se_pogo_stick_inv type="apply_item" inventory_item="se_pogo_stick_inv" drop_zone="drop_zone_se_pogo_stick_inv">
+      <dependency>
+        <condit_se_16_show_imp />
+        <collect_se_pogo_stick_inv />
+      </dependency>
+    </use_se_pogo_stick_inv>
+    <collect_se_stucco_moulding_inv type="inventory_item" highlight_layer="imp_give/selection" inventory_item="se_stucco_moulding_inv">
+      <dependency>
+        <use_se_pogo_stick_inv/>
+      </dependency>
+    </collect_se_stucco_moulding_inv>
+<!--    <use_se_artifact_inv_1 type="apply_item" inventory_item="se_artifact_inv" drop_zone="drop_zone_se_artifact_inv">-->
+    <use_se_artifact_inv_1 type="condition" highlight_layer="drop_zone_se_artifact_inv" condition="condit_use_se_artifact_inv_1='1'">
+      <dependency>
+        <collect_se_artifact_inv />
+        <condit_se_10_hint_mathias_cutscene />
+      </dependency>
+    </use_se_artifact_inv_1>
+    <collect_se_morganas_brooch_inv type="inventory_item" inventory_item="se_morganas_brooch_inv" highlight_layer="active_zone_ho_01">
+      <dependency>
+        <condit_se_16_hint_mini_ho_complete />
+      </dependency>
+    </collect_se_morganas_brooch_inv>
+    <collect_se_gold_spur_inv type="inventory_item" inventory_item="se_gold_spur_inv" highlight_layer="active_zone_ho_02">
+      <dependency>
+        <use_se_artifact_inv_1 />
+      </dependency>
+    </collect_se_gold_spur_inv>
+  </se_16>
+  <se_16_sub_armor_monster>
+    <condit_active_zone_bbt_guard_click type="condition" highlight_layer="active_zone_bbt_guard" condition="condit_active_zone_bbt_guard_click='1'">
+      <dependency>
+      </dependency>
+    </condit_active_zone_bbt_guard_click>
+    <use_se_bracelet_with_thorns_inv type="apply_item" inventory_item="se_bracelet_with_thorns_inv" drop_zone="drop_zone_se_bracelet_with_thorns_inv">
+      <dependency>
+        <condit_active_zone_bbt_guard_click />
+        <collect_se_bracelet_with_thorns_inv />
+      </dependency>
+    </use_se_bracelet_with_thorns_inv>
+    <collect_se_broken_sword_inv type="inventory_item" inventory_item="se_broken_sword_inv">
+      <dependency>
+        <use_se_bracelet_with_thorns_inv />
+      </dependency>
+    </collect_se_broken_sword_inv>
+    <use_se_visor_inv type="apply_item" inventory_item="se_visor_inv" drop_zone="drop_zone_se_visor_inv">
+      <dependency>
+        <condit_active_zone_bbt_guard_click />
+        <collect_se_visor_inv />
+      </dependency>
+    </use_se_visor_inv>
+    <collect_se_metal_bat_inv type="inventory_item" inventory_item="se_metal_bat_inv">
+      <dependency>
+        <use_se_visor_inv />
+      </dependency>
+    </collect_se_metal_bat_inv>
+  </se_16_sub_armor_monster>
+  <se_16_puzzle>
+    <collect_se_thorn_inv type="inventory_item" inventory_item="se_thorn_inv">
+      <dependency>
+      </dependency>
+    </collect_se_thorn_inv>
+    <use_se_moonstone_inv type="apply_item" inventory_item="se_moonstone_inv" drop_zone="drop_zone_se_moonstone_inv">
+      <dependency>
+        <collect_se_moonstone_inv />
+      </dependency>
+    </use_se_moonstone_inv>
+    <complete_se_16_puzzle type="complete_mini_game" mini_game_name="se_16_puzzle">
+      <dependency>
+        <use_se_moonstone_inv />
+      </dependency>
+    </complete_se_16_puzzle>
+  </se_16_puzzle>
+  <se_16_sub_throne>
+    <use_se_sceptre_queen_inv type="apply_item" inventory_item="se_sceptre_queen_inv" drop_zone="drop_zone_queen">
+      <dependency>
+        <collect_se_sceptre_queen_inv />
+      </dependency>
+    </use_se_sceptre_queen_inv>
+    <use_se_orb_queen_inv type="apply_item" inventory_item="se_orb_queen_inv" drop_zone="drop_zone_queen">
+      <dependency>
+        <collect_se_orb_queen_inv />
+      </dependency>
+    </use_se_orb_queen_inv>
+  </se_16_sub_throne>
+  <se_16_sub_miniho>
+    <click_se_16_sub_mini_ho_part_1 type="click" click_layer="part_01_out">
+      <dependency>
+        <use_se_orb_queen_inv />
+        <use_se_sceptre_queen_inv />
+      </dependency>
+    </click_se_16_sub_mini_ho_part_1>
+    <click_se_16_sub_mini_ho_part_2 type="click" click_layer="part_02_out">
+      <dependency>
+        <use_se_orb_queen_inv />
+        <use_se_sceptre_queen_inv />
+      </dependency>
+    </click_se_16_sub_mini_ho_part_2>
+    <click_se_16_sub_mini_ho_part_3 type="click" click_layer="part_03_out">
+      <dependency>
+        <use_se_orb_queen_inv />
+        <use_se_sceptre_queen_inv />
+      </dependency>
+    </click_se_16_sub_mini_ho_part_3>
+    <click_se_16_sub_mini_ho_part_4 type="click" click_layer="part_04_out">
+      <dependency>
+        <use_se_orb_queen_inv />
+        <use_se_sceptre_queen_inv />
+      </dependency>
+    </click_se_16_sub_mini_ho_part_4>
+    <click_se_16_sub_mini_ho_part_5 type="click" click_layer="part_05_out">
+      <dependency>
+        <use_se_orb_queen_inv />
+        <use_se_sceptre_queen_inv />
+      </dependency>
+    </click_se_16_sub_mini_ho_part_5>
+    <click_se_16_sub_mini_ho_part_6 type="click" click_layer="part_06_out">
+      <dependency>
+        <use_se_orb_queen_inv />
+        <use_se_sceptre_queen_inv />
+      </dependency>
+    </click_se_16_sub_mini_ho_part_6>
+    <condit_se_16_hint_mini_ho_complete type="condition" highlight_layer="close_button" condition="se_16_hint_mini_ho_complete='1'">
+      <dependency>
+        <click_se_16_sub_mini_ho_part_1 />
+        <click_se_16_sub_mini_ho_part_2 />
+        <click_se_16_sub_mini_ho_part_3 />
+        <click_se_16_sub_mini_ho_part_4 />
+        <click_se_16_sub_mini_ho_part_5 />
+        <click_se_16_sub_mini_ho_part_6 />
+      </dependency>
+    </condit_se_16_hint_mini_ho_complete>
+  </se_16_sub_miniho>
+  <se_16_sub_symbols>
+    <use_se_morganas_brooch_inv type="apply_item" inventory_item="se_morganas_brooch_inv" drop_zone="drop_zone_se_morganas_brooch_inv">
+      <dependency>
+        <collect_se_morganas_brooch_inv />
+      </dependency>
+    </use_se_morganas_brooch_inv>
+    <collect_se_steel_raven_inv type="inventory_item" inventory_item="se_steel_raven_inv">
+      <dependency>
+        <use_se_morganas_brooch_inv/>
+      </dependency>
+    </collect_se_steel_raven_inv>
+    <use_se_ruby_inv type="apply_item" inventory_item="se_ruby_inv" drop_zone="drop_zone_se_ruby_inv">
+      <dependency>
+        <collect_se_ruby_inv />
+      </dependency>
+    </use_se_ruby_inv>
+    <collect_se_canine_on_lace_inv type="inventory_item" inventory_item="se_canine_on_lace_inv">
+      <dependency>
+        <use_se_ruby_inv/>
+      </dependency>
+    </collect_se_canine_on_lace_inv>
+    
+    <collect_se_altar_figure_inv type="inventory_item" inventory_item="se_altar_figure_inv">
+      <dependency>
+        <use_se_artifact_inv_1/>
+      </dependency>
+    </collect_se_altar_figure_inv>
+  </se_16_sub_symbols>
+  
+  
+  <!-- 17 -->
+  <se_17>
+    <collect_se_pedal_organ_inv type="inventory_item" highlight_layer="active_zone_go_ho_01" inventory_item="se_pedal_organ_inv">
+      <dependency>
+      </dependency>
+    </collect_se_pedal_organ_inv>
+    <collect_se_handle_inv type="inventory_item" highlight_layer="active_zone_go_ho_02" inventory_item="se_handle_inv">
+      <dependency>
+        <collect_se_sickle_inv/>
+      </dependency>
+    </collect_se_handle_inv>
+  </se_17>
+  <se_17_sub_gobelin>
+    <collect_se_spring_inv type="inventory_item" inventory_item="se_spring_inv">
+      <dependency>
+      </dependency>
+    </collect_se_spring_inv>
+    <click_pillow_01 type="click" click_layer="pillow_01">
+      <dependency>
+        <condit_collect_imp />
+      </dependency>
+    </click_pillow_01>
+        <use_se_metal_bat_inv type="apply_item" inventory_item="se_metal_bat_inv" drop_zone="drop_zone_bat">
+      <dependency>
+        <collect_se_metal_bat_inv />
+        <click_pillow_01 />
+      </dependency>
+    </use_se_metal_bat_inv>
+    <use_se_metal_month_inv type="apply_item" inventory_item="se_metal_month_inv" drop_zone="drop_zone_bat">
+      <dependency>
+        <collect_se_metal_month_inv />
+        <click_pillow_01 />
+      </dependency>
+    </use_se_metal_month_inv>
+    <collect_se_key_step_part_5_inv type="inventory_item" inventory_item="se_key_step_part_5_inv">
+      <dependency>
+        <use_se_metal_month_inv/>
+        <use_se_metal_bat_inv/>
+      </dependency>
+    </collect_se_key_step_part_5_inv>
+    <condit_se_17_embroidery_yellow type="condition" highlight_layer="needle_yellow|drop_zone_needle_yellow" condition="se_13_sub_table_hint_embroidery_yellow='1'">
+      <dependency>
+        <use_se_metal_month_inv/>
+        <use_se_metal_bat_inv/>
+      </dependency>
+    </condit_se_17_embroidery_yellow>
+    <condit_se_17_embroidery_green type="condition" highlight_layer="needle_green|drop_zone_needle_green" condition="se_13_sub_table_hint_embroidery_green='1'">
+      <dependency>
+        <use_se_metal_month_inv/>
+        <use_se_metal_bat_inv/>
+      </dependency>
+    </condit_se_17_embroidery_green>
+    <condit_se_17_embroidery_brown type="condition" highlight_layer="needle_brown|drop_zone_needle_brown" condition="se_13_sub_table_hint_embroidery_brown='1'">
+      <dependency>
+        <use_se_metal_month_inv/>
+        <use_se_metal_bat_inv/>
+      </dependency>
+    </condit_se_17_embroidery_brown>
+    <collect_se_orb_queen_inv type="inventory_item" inventory_item="se_orb_queen_inv">
+      <dependency>
+        <condit_se_17_embroidery_yellow/>
+        <condit_se_17_embroidery_green/>
+        <condit_se_17_embroidery_brown/>
+      </dependency>
+    </collect_se_orb_queen_inv>
+    <use_se_steel_raven_inv type="apply_item" inventory_item="se_steel_raven_inv" drop_zone="drop_zone_se_steel_raven_inv">
+      <dependency>
+        <collect_se_steel_raven_inv />
+        <condit_se_17_embroidery_yellow/>
+        <condit_se_17_embroidery_green/>
+        <condit_se_17_embroidery_brown/>
+      </dependency>
+    </use_se_steel_raven_inv>
+    <click_matryoshka1 type="click" click_layer="matryoshka1">
+      <dependency>
+        <use_se_steel_raven_inv />
+      </dependency>
+    </click_matryoshka1>
+    <click_matryoshka2 type="click" click_layer="matryoshka2">
+      <dependency>
+        <click_matryoshka1 />
+      </dependency>
+    </click_matryoshka2>
+    <click_matryoshka3 type="click" click_layer="matryoshka3">
+      <dependency>
+        <click_matryoshka2 />
+      </dependency>
+    </click_matryoshka3>
+    <collect_se_moonstone_inv type="inventory_item" inventory_item="se_moonstone_inv">
+      <dependency>
+        <click_matryoshka3/>
+      </dependency>
+    </collect_se_moonstone_inv>
+  </se_17_sub_gobelin>
+  <se_17_sub_fruit>
+    <use_se_sickle_inv type="apply_item" inventory_item="se_sickle_inv" drop_zone="drop_zone_se_sickle_inv">
+      <dependency>
+        <collect_se_sickle_inv />
+      </dependency>
+    </use_se_sickle_inv>
+    <collect_se_strange_fruit_inv type="inventory_item" inventory_item="se_strange_fruit_inv">
+      <dependency>
+        <use_se_sickle_inv/>
+      </dependency>
+    </collect_se_strange_fruit_inv>
+    <use_se_thorn_inv type="apply_item" inventory_item="se_thorn_inv" drop_zone="drop_zone_se_thorn_inv">
+      <dependency>
+        <collect_se_thorn_inv />
+      </dependency>
+    </use_se_thorn_inv>
+    <collect_se_bracelet_with_thorns_inv type="inventory_item" inventory_item="se_bracelet_with_thorns_inv">
+      <dependency>
+        <use_se_thorn_inv/>
+      </dependency>
+    </collect_se_bracelet_with_thorns_inv>
+  </se_17_sub_fruit>
+  <se_17_sub_fontain>
+    <use_se_strange_fruit_inv type="apply_item" inventory_item="se_strange_fruit_inv" drop_zone="drop_zone_stupka">
+      <dependency>
+        <collect_se_strange_fruit_inv />
+      </dependency>
+    </use_se_strange_fruit_inv>
+    <use_se_charcoal_inv type="apply_item" inventory_item="se_charcoal_inv" drop_zone="drop_zone_stupka">
+      <dependency>
+        <collect_se_charcoal_inv />
+      </dependency>
+    </use_se_charcoal_inv>
+    <condit_se_17_sub_fontain_hint_pestik_put type="condition" highlight_layer="pestik|drop_zone_pestik" condition="se_17_sub_fontain_hint_pestik_put='1'">
+      <dependency>
+        <use_se_charcoal_inv/>
+        <use_se_strange_fruit_inv/>
+      </dependency>
+    </condit_se_17_sub_fontain_hint_pestik_put>
+    <condit_se_17_sub_fontain_hint_mixture_put type="condition" highlight_layer="mixture_01|drop_zone_mixture" condition="se_17_sub_fontain_hint_mixture_put='1'">
+      <dependency>
+        <condit_se_17_sub_fontain_hint_pestik_put/>
+      </dependency>
+    </condit_se_17_sub_fontain_hint_mixture_put>
+    <collect_se_clear_water_inv type="inventory_item" highlight_layer="active_zone_clear_water" inventory_item="se_clear_water_inv">
+      <dependency>
+        <condit_se_17_sub_fontain_hint_mixture_put/>
+      </dependency>
+    </collect_se_clear_water_inv>
+  </se_17_sub_fontain>
+  <se_17_puzzle_sofa>
+    <use_se_stucco_moulding_inv type="apply_item" inventory_item="se_stucco_moulding_inv" drop_zone="drop_zone_se_stucco_moulding_inv">
+      <dependency>
+        <collect_se_stucco_moulding_inv />
+      </dependency>
+    </use_se_stucco_moulding_inv>
+    <complete_se_17_puzzle_sofa type="complete_mini_game" mini_game_name="se_17_puzzle_sofa">
+      <dependency>
+        <use_se_stucco_moulding_inv />
+      </dependency>
+    </complete_se_17_puzzle_sofa>
+    <collect_se_visor_inv type="inventory_item" inventory_item="se_visor_inv">
+      <dependency>
+        <complete_se_17_puzzle_sofa/>
+      </dependency>
+    </collect_se_visor_inv>
+  </se_17_puzzle_sofa>
+  
+  
+  <!-- 18 -->
+  <se_18>
+    <collect_se_planch_inv type="inventory_item" highlight_layer="active_zone_collect_se_planch_inv" inventory_item="se_planch_inv">
+      <dependency>
+      </dependency>
+    </collect_se_planch_inv>
+    <use_se_handle_inv type="apply_item" inventory_item="se_handle_inv" drop_zone="drop_zone_se_handle_inv">
+      <dependency>
+        <collect_se_handle_inv />
+      </dependency>
+    </use_se_handle_inv>
+    <condit_se_18_ray_on_mg type="condition" highlight_layer="active_zone_handle" condition="se_18_current_lens='4'">
+      <dependency>
+        <use_se_handle_inv/>
+        <use_se_clear_water_inv/>
+        <use_se_shawl_inv/>
+      </dependency>
+    </condit_se_18_ray_on_mg>
+  </se_18>
+  <se_18_sub_window>
+    <collect_se_ruby_inv type="inventory_item" inventory_item="se_ruby_inv">
+      <dependency>
+      </dependency>
+    </collect_se_ruby_inv>
+    <use_se_shawl_inv type="apply_item" inventory_item="se_shawl_inv" drop_zone="drop_zone_se_shawl_inv">
+      <dependency>
+        <collect_se_shawl_inv />
+        <collect_se_ruby_inv />
+      </dependency>
+    </use_se_shawl_inv>
+  </se_18_sub_window>
+  <se_18_sub_prizm>
+    <collect_se_straw_bunch_inv type="inventory_item" highlight_layer="active_zone_collect_se_straw_bunch_inv" inventory_item="se_straw_bunch_inv">
+      <dependency>
+      </dependency>
+    </collect_se_straw_bunch_inv>
+    <use_se_clear_water_inv type="apply_item" inventory_item="se_clear_water_inv" drop_zone="drop_zone_se_clear_water_inv">
+      <dependency>
+        <collect_se_straw_bunch_inv />
+        <collect_se_clear_water_inv />
+      </dependency>
+    </use_se_clear_water_inv>
+  </se_18_sub_prizm>
+  <se_18_sub_artefakt>
+    <use_se_gold_canine_inv type="apply_item" inventory_item="se_gold_canine_inv" drop_zone="drop_zone_se_gold_canine_inv">
+      <dependency>
+        <collect_se_gold_canine_inv />
+      </dependency>
+    </use_se_gold_canine_inv>
+    <se_18_sub_artefakt_click_canine1 type="click" click_layer="canine1_01_to_click">
+      <dependency>
+      </dependency>
+    </se_18_sub_artefakt_click_canine1>
+    <se_18_sub_artefakt_click_canine2 type="click" click_layer="canine2_01_to_click">
+      <dependency>
+      </dependency>
+    </se_18_sub_artefakt_click_canine2>
+    <se_18_sub_artefakt_click_canine3 type="click" click_layer="canine3_01_to_click">
+      <dependency>
+      </dependency>
+    </se_18_sub_artefakt_click_canine3>
+    <se_18_sub_artefakt_click_canine4 type="click" click_layer="canine4_01_to_click">
+      <dependency>
+      </dependency>
+    </se_18_sub_artefakt_click_canine4>
+    <se_18_sub_artefakt_click_canine5 type="click" click_layer="canine5_01_to_click">
+      <dependency>
+      </dependency>
+    </se_18_sub_artefakt_click_canine5>
+    <se_18_sub_artefakt_click_canine6 type="click" click_layer="canine6_01_to_click">
+      <dependency>
+      </dependency>
+    </se_18_sub_artefakt_click_canine6>
+    <se_18_sub_artefakt_click_canine7 type="click" click_layer="canine7_01_to_click">
+      <dependency>
+      </dependency>
+    </se_18_sub_artefakt_click_canine7>
+    <condit_se_18_sub_artefakt_hint_all_canines_found type="condition" highlight_layer="canine7_01_to_click" condition="se_18_sub_artefakt_hint_all_canines_found='1'">
+      <dependency>
+        <use_se_gold_canine_inv/>
+        <se_18_sub_artefakt_click_canine1 />
+        <se_18_sub_artefakt_click_canine2 />
+        <se_18_sub_artefakt_click_canine3 />
+        <se_18_sub_artefakt_click_canine4 />
+        <se_18_sub_artefakt_click_canine5 />
+        <se_18_sub_artefakt_click_canine6 />
+        <se_18_sub_artefakt_click_canine7 />
+      </dependency>
+    </condit_se_18_sub_artefakt_hint_all_canines_found>
+    <collect_se_sickle_inv type="inventory_item" inventory_item="se_sickle_inv">
+      <dependency>
+        <condit_se_18_sub_artefakt_hint_all_canines_found />
+      </dependency>
+    </collect_se_sickle_inv>
+    <collect_se_key_step_part_4_inv type="inventory_item" inventory_item="se_key_step_part_4_inv">
+      <dependency>
+        <condit_se_18_sub_artefakt_hint_all_canines_found />
+      </dependency>
+    </collect_se_key_step_part_4_inv>
+    <use_se_burned_image_inv type="apply_item" inventory_item="se_burned_image_inv" drop_zone="drop_zone_se_burned_image_inv">
+      <dependency>
+        <collect_se_burned_image_inv />
+        <condit_se_18_sub_artefakt_hint_all_canines_found />
+      </dependency>
+    </use_se_burned_image_inv>
+    <collect_se_part_of_an_artefakt_1_inv type="inventory_item" inventory_item="se_part_of_an_artefakt_1_inv">
+      <dependency>
+        <use_se_burned_image_inv />
+      </dependency>
+    </collect_se_part_of_an_artefakt_1_inv>
+    <se_18_sub_artefakt_click_note_01 type="click" click_layer="note_01">
+      <dependency>
+        <collect_se_part_of_an_artefakt_1_inv />
+      </dependency>
+    </se_18_sub_artefakt_click_note_01>
+    <condit_se_18_sub_artefakt_click_note_big type="condition" highlight_layer="note_big" condition="se_18_sub_artefakt_hint_click_big='1'">
+      <dependency>
+        <se_18_sub_artefakt_click_note_01/>
+      </dependency>
+    </condit_se_18_sub_artefakt_click_note_big>
+    <collect_se_blue_nugget_inv type="inventory_item" inventory_item="se_blue_nugget_inv">
+      <dependency>
+        <condit_se_18_sub_artefakt_click_note_big />
+      </dependency>
+    </collect_se_blue_nugget_inv>
+  </se_18_sub_artefakt>
+  <se_18_puzzle_burner>
+    <complete_se_18_puzzle_burner type="complete_mini_game" mini_game_name="se_18_puzzle_burner">
+      <dependency>
+        <condit_se_18_ray_on_mg />
+      </dependency>
+    </complete_se_18_puzzle_burner>
+    <collect_se_burned_image_inv type="inventory_item" inventory_item="se_burned_image_inv">
+      <dependency>
+        <complete_se_18_puzzle_burner />
+      </dependency>
+    </collect_se_burned_image_inv>
+  </se_18_puzzle_burner>
+  
+  
+  <!-- 19 -->
+  <se_19>
+    <condit_se_19_hint_imp type="condition" highlight_layer="active_zone_imp_to_bridge" condition="se_19_hint_imp='1'"><!-- это просто клик -->
+      <dependency>
+        <collect_se_rope_inv/>
+        <complete_se_19_puzzle_broken_bridge/>
+      </dependency>
+    </condit_se_19_hint_imp>
+    <use_se_rope_inv type="apply_item" inventory_item="se_rope_inv" drop_zone="drop_zone_se_rope_inv">
+      <dependency>
+        <collect_se_rope_inv />
+        <condit_se_19_hint_imp />
+        <complete_se_19_puzzle_broken_bridge />
+      </dependency>
+    </use_se_rope_inv>
+    <collect_se_amulet_witches_inv type="inventory_item" highlight_layer="active_zone_ho_01" inventory_item="se_amulet_witches_inv">
+      <dependency>
+      </dependency>
+    </collect_se_amulet_witches_inv>
+    <collect_se_growth_potion_inv type="inventory_item" highlight_layer="active_zone_ho_02" inventory_item="se_growth_potion_inv">
+      <dependency>
+        <collect_se_black_gem_inv />
+      </dependency>
+    </collect_se_growth_potion_inv>
+  </se_19>
+  <se_19_sub_raspberry_bush>
+    <use_se_mitten_inv type="apply_item" inventory_item="se_mitten_inv" drop_zone="drop_zone_se_mitten_inv">
+      <dependency>
+        <collect_se_mitten_inv/>
+      </dependency>
+    </use_se_mitten_inv>
+    <collect_se_raspberry_inv type="inventory_item" inventory_item="se_raspberries_inv">
+      <dependency>
+        <use_se_mitten_inv />
+      </dependency>
+    </collect_se_raspberry_inv>
+    <use_se_black_gem_inv type="apply_item" inventory_item="se_black_gem_inv" drop_zone="drop_zone_se_black_gem_inv">
+      <dependency>
+        <use_se_mitten_inv/>
+        <collect_se_black_gem_inv/>
+      </dependency>
+    </use_se_black_gem_inv>
+    <se_19_sub_raspberry_bush_card1_01_click_card1_01 type="click" click_layer="card1_01">
+      <dependency>
+        <use_se_black_gem_inv />
+      </dependency>
+    </se_19_sub_raspberry_bush_card1_01_click_card1_01>
+    <se_19_sub_raspberry_bush_card1_01_click_card2_01 type="click" click_layer="card2_01">
+      <dependency>
+        <se_19_sub_raspberry_bush_card1_01_click_card1_01 />
+      </dependency>
+    </se_19_sub_raspberry_bush_card1_01_click_card2_01>
+    <se_19_sub_raspberry_bush_card1_01_click_card3_01 type="click" click_layer="card3_01">
+      <dependency>
+        <se_19_sub_raspberry_bush_card1_01_click_card2_01 />
+      </dependency>
+    </se_19_sub_raspberry_bush_card1_01_click_card3_01>
+    <collect_se_sign_flame_inv type="inventory_item" inventory_item="se_sign_flame_inv">
+      <dependency>
+        <se_19_sub_raspberry_bush_card1_01_click_card3_01 />
+      </dependency>
+    </collect_se_sign_flame_inv>
+  </se_19_sub_raspberry_bush>
+  <se_19_sub_stone_plate>
+    <collect_se_chisel_inv type="inventory_item" inventory_item="se_chisel_inv">
+      <dependency>
+      </dependency>
+    </collect_se_chisel_inv>
+    <use_se_tongue_demon_inv type="apply_item" inventory_item="se_tongue_demon_inv" drop_zone="drop_zone_se_tongue_demon_inv">
+      <dependency>
+        <collect_se_tongue_demon_inv/>
+      </dependency>
+    </use_se_tongue_demon_inv>
+    <collect_se_flagstone_inv type="inventory_item" inventory_item="se_flagstone_inv">
+      <dependency>
+        <use_se_tongue_demon_inv />
+      </dependency>
+    </collect_se_flagstone_inv>
+    <collect_se_shovel_with_sand_inv type="inventory_item" inventory_item="se_shovel_with_sand_inv">
+      <dependency>
+        <use_se_tongue_demon_inv />
+      </dependency>
+    </collect_se_shovel_with_sand_inv>
+    <use_se_basket_with_herbs_inv type="apply_item" inventory_item="se_basket_with_herbs_inv" drop_zone="drop_zone_se_basket_with_herbs_inv">
+      <dependency>
+        <collect_se_basket_with_herbs_inv/>
+      </dependency>
+    </use_se_basket_with_herbs_inv>
+    <collect_se_grail_inv type="inventory_item" inventory_item="se_grail_inv">
+      <dependency>
+        <use_se_basket_with_herbs_inv />
+      </dependency>
+    </collect_se_grail_inv>
+  </se_19_sub_stone_plate>
+  <se_19_puzzle_broken_bridge>
+    <use_se_boards_inv type="apply_item" inventory_item="se_boards_inv" drop_zone="drop_zone_se_boards_inv">
+      <dependency>
+        <collect_se_boards_inv/>
+      </dependency>
+    </use_se_boards_inv>
+    <complete_se_19_puzzle_broken_bridge type="complete_mini_game" mini_game_name="se_19_puzzle_broken_bridge">
+      <dependency>
+        <use_se_boards_inv />
+      </dependency>
+    </complete_se_19_puzzle_broken_bridge>
+  </se_19_puzzle_broken_bridge>
+  
+  
+  <!-- 20 -->
+  <se_20 >
+    <collect_se_lens_inv type="inventory_item" inventory_item="se_lens_inv">
+      <dependency>
+        <complete_se_20_sub_sub_puzzle />
+      </dependency>
+    </collect_se_lens_inv>
+  </se_20>
+  <se_20_sub_shelf >
+    <se_20_sub_shelf_click_feather_fan_01 type="click" click_layer="feather_fan_01">
+      <dependency>
+      </dependency>
+    </se_20_sub_shelf_click_feather_fan_01>
+    <se_20_sub_shelf_click_feather_fan_02 type="click" click_layer="feather_fan_02">
+      <dependency>
+      </dependency>
+    </se_20_sub_shelf_click_feather_fan_02>
+    <se_20_sub_shelf_click_feather_fan_03 type="click" click_layer="feather_fan_03">
+      <dependency>
+      </dependency>
+    </se_20_sub_shelf_click_feather_fan_03>
+    <se_20_sub_shelf_click_feather_fan_04 type="click" click_layer="feather_fan_04">
+      <dependency>
+      </dependency>
+    </se_20_sub_shelf_click_feather_fan_04>
+    <se_20_sub_shelf_click_feather_fan_05 type="click" click_layer="feather_fan_05">
+      <dependency>
+      </dependency>
+    </se_20_sub_shelf_click_feather_fan_05>
+    <collect_se_crow_feathers_inv type="inventory_item" inventory_item="se_crow_feathers_inv">
+      <dependency>
+        <se_20_sub_shelf_click_feather_fan_01 />
+        <se_20_sub_shelf_click_feather_fan_02 />
+        <se_20_sub_shelf_click_feather_fan_03 />
+        <se_20_sub_shelf_click_feather_fan_04 />
+        <se_20_sub_shelf_click_feather_fan_05 />
+      </dependency>
+    </collect_se_crow_feathers_inv>
+    <use_se_amulet_witches_inv type="apply_item" inventory_item="se_amulet_witches_inv" drop_zone="drop_zone_se_amulet_witches_inv">
+      <dependency>
+        <se_20_sub_shelf_click_feather_fan_01 />
+        <se_20_sub_shelf_click_feather_fan_02 />
+        <se_20_sub_shelf_click_feather_fan_03 />
+        <se_20_sub_shelf_click_feather_fan_04 />
+        <se_20_sub_shelf_click_feather_fan_05 />
+        <collect_se_amulet_witches_inv />
+      </dependency>
+    </use_se_amulet_witches_inv>
+    <collect_se_key_step_part_6_inv type="inventory_item" highlight_layer="se_key_step_part_6_inv/selection" inventory_item="se_key_step_part_6_inv">
+      <dependency>
+        <use_se_amulet_witches_inv />
+      </dependency>
+    </collect_se_key_step_part_6_inv>
+    <collect_se_mitten_inv type="inventory_item" inventory_item="se_mitten_inv">
+      <dependency>
+        <use_se_amulet_witches_inv />
+      </dependency>
+    </collect_se_mitten_inv>
+  </se_20_sub_shelf>
+  <se_20_sub_basement >
+    <use_se_raspberry_inv type="apply_item" inventory_item="se_raspberries_inv" drop_zone="drop_zone_se_raspberries_inv">
+      <dependency>
+        <collect_se_raspberry_inv />
+      </dependency>
+    </use_se_raspberry_inv>
+    <collect_se_tongue_demon_inv type="inventory_item" inventory_item="se_tongue_demon_inv">
+      <dependency>
+        <use_se_raspberry_inv />
+      </dependency>
+    </collect_se_tongue_demon_inv>
+    <use_se_flagstone_inv type="apply_item" inventory_item="se_flagstone_inv" drop_zone="drop_zone_se_flagstone_inv">
+      <dependency>
+        <use_se_raspberry_inv />
+        <collect_se_flagstone_inv  />
+      </dependency>
+    </use_se_flagstone_inv>
+    <collect_se_boards_inv type="inventory_item" inventory_item="se_boards_inv">
+      <dependency>
+        <use_se_flagstone_inv />
+      </dependency>
+    </collect_se_boards_inv>
+    <collect_se_rope_inv type="inventory_item" inventory_item="se_rope_inv">
+      <dependency>
+        <use_se_flagstone_inv />
+      </dependency>
+    </collect_se_rope_inv>
+  </se_20_sub_basement>
+  <se_20_sub_furnace >
+    <use_se_flame_emblem_inv type="apply_item" inventory_item="se_flame_emblem_inv" drop_zone="drop_zone_se_flame_emblem_inv">
+      <dependency>
+        <use_se_raspberry_inv />
+        <collect_se_flame_emblem_inv  />
+      </dependency>
+    </use_se_flame_emblem_inv>
+    <use_se_shovel_with_sand_inv type="apply_item" inventory_item="se_shovel_with_sand_inv" drop_zone="drop_zone_se_shovel_with_sand_inv">
+      <dependency>
+        <use_se_flame_emblem_inv  />
+        <collect_se_shovel_with_sand_inv  />
+      </dependency>
+    </use_se_shovel_with_sand_inv>
+  </se_20_sub_furnace>
+  <se_20_sub_sub_puzzle >
+    <complete_se_20_sub_sub_puzzle type="complete_mini_game" mini_game_name="se_20_sub_sub_puzzle">
+      <dependency>
+        <use_se_shovel_with_sand_inv />
+      </dependency>
+    </complete_se_20_sub_sub_puzzle>
+  </se_20_sub_sub_puzzle>
+  <se_20_sub_telescope >
+    <use_se_lens_inv type="apply_item" inventory_item="se_lens_inv" drop_zone="drop_zone_se_lens_inv">
+      <dependency>
+        <collect_se_lens_inv  />
+      </dependency>
+    </use_se_lens_inv>
+    <complete_se_20_sub_telescope_puzzle type="complete_mini_game" mini_game_name="se_20_sub_telescope_puzzle">
+      <dependency>
+        <collect_se_lens_inv />
+      </dependency>
+    </complete_se_20_sub_telescope_puzzle>
+    <!--<condit_se_20_sub_telescope_collected_rune_1 type="condition" highlight_layer="clip_scene21/scene21/rune1/selection" condition="se_20_sub_telescope_collected_rune_1='1'">
+      <dependency>
+        <condit_se_20_sub_telescope_hint_rune_is_on_screen_1/>
+      </dependency>
+    </condit_se_20_sub_telescope_collected_rune_1>
+    <condit_se_20_sub_telescope_collected_rune_2 type="condition" highlight_layer="clip_scene21/scene21/rune2/selection" condition="se_20_sub_telescope_collected_rune_2='1'">
+      <dependency>
+        <condit_se_20_sub_telescope_hint_rune_is_on_screen_2/>
+      </dependency>
+    </condit_se_20_sub_telescope_collected_rune_2>
+    <condit_se_20_sub_telescope_collected_rune_3 type="condition" highlight_layer="clip_scene21/scene21/rune3/selection" condition="se_20_sub_telescope_collected_rune_3='1'">
+      <dependency>
+        <condit_se_20_sub_telescope_hint_rune_is_on_screen_3/>
+      </dependency>
+    </condit_se_20_sub_telescope_collected_rune_3>
+    <condit_se_20_sub_telescope_collected_rune_4 type="condition" highlight_layer="clip_scene21/scene21/rune4/selection" condition="se_20_sub_telescope_collected_rune_4='1'">
+      <dependency>
+        <condit_se_20_sub_telescope_hint_rune_is_on_screen_4/>
+      </dependency>
+    </condit_se_20_sub_telescope_collected_rune_4>
+    <condit_se_20_sub_telescope_collected_rune_5 type="condition" highlight_layer="clip_scene21/scene21/rune5/selection" condition="se_20_sub_telescope_collected_rune_5='1'">
+      <dependency>
+        <condit_se_20_sub_telescope_hint_rune_is_on_screen_5/>
+      </dependency>
+    </condit_se_20_sub_telescope_collected_rune_5>-->
+    
+<!--    <condit_se_20_sub_telescope_hint_rune_is_on_screen_1 type="condition" highlight_layer="hint_layer_buttons" condition="se_20_sub_telescope_hint_rune_is_on_screen_1='1'">
+      <dependency>
+        <use_se_lens_inv/>
+      </dependency>
+    </condit_se_20_sub_telescope_hint_rune_is_on_screen_1>
+    <condit_se_20_sub_telescope_hint_rune_is_on_screen_2 type="condition" highlight_layer="hint_layer_buttons" condition="se_20_sub_telescope_hint_rune_is_on_screen_2='1'">
+      <dependency>
+        <use_se_lens_inv/>
+      </dependency>
+    </condit_se_20_sub_telescope_hint_rune_is_on_screen_2>
+    <condit_se_20_sub_telescope_hint_rune_is_on_screen_3 type="condition" highlight_layer="hint_layer_buttons" condition="se_20_sub_telescope_hint_rune_is_on_screen_3='1'">
+      <dependency>
+        <use_se_lens_inv/>
+      </dependency>
+    </condit_se_20_sub_telescope_hint_rune_is_on_screen_3>
+    <condit_se_20_sub_telescope_hint_rune_is_on_screen_4 type="condition" highlight_layer="hint_layer_buttons" condition="se_20_sub_telescope_hint_rune_is_on_screen_4='1'">
+      <dependency>
+        <use_se_lens_inv/>
+      </dependency>
+    </condit_se_20_sub_telescope_hint_rune_is_on_screen_4>
+    <condit_se_20_sub_telescope_hint_rune_is_on_screen_5 type="condition" highlight_layer="hint_layer_buttons" condition="se_20_sub_telescope_hint_rune_is_on_screen_5='1'">
+      <dependency>
+        <use_se_lens_inv/>
+      </dependency>
+    </condit_se_20_sub_telescope_hint_rune_is_on_screen_5>-->
+    
+    <!--<condit_se_20_sub_telescope_hint_interactive type="condition" highlight_layer="hint_layer_buttons" condition="se_20_sub_telescope_hint_interactive='1'">
+      <dependency>
+        <condit_se_20_sub_telescope_collected_rune_1/>
+        <condit_se_20_sub_telescope_collected_rune_2/>
+        <condit_se_20_sub_telescope_collected_rune_3/>
+        <condit_se_20_sub_telescope_collected_rune_4/>
+        <condit_se_20_sub_telescope_collected_rune_5/>
+      </dependency>
+    </condit_se_20_sub_telescope_hint_interactive>-->
+    
+    <collect_se_lens_with_runes_inv type="inventory_item" inventory_item="se_lens_with_runes_inv">
+      <dependency>
+        <complete_se_20_sub_telescope_puzzle />
+      </dependency>
+    </collect_se_lens_with_runes_inv>
+  </se_20_sub_telescope>
+  
+  
+  <!-- 21 -->
+  <se_21 >
+    <condit_se_21_hint_go_to_se_22_main type="condition" highlight_layer="active_zone_go_to_se_22" condition="se_21_hint_go_to_se_22='1'">
+      <dependency>
+        <click_video_fireball_idle/>
+      </dependency>
+    </condit_se_21_hint_go_to_se_22_main>
+  </se_21>
+  <se_21_sub_stone_dwarf >
+    <use_se_straw_bunch_inv type="apply_item" inventory_item="se_straw_bunch_inv" drop_zone="drop_zone_se_straw_bunch_inv">
+      <dependency>
+        <collect_se_straw_bunch_inv  />
+      </dependency>
+    </use_se_straw_bunch_inv>
+    <se_21_sub_stone_dwarf_hint_plant_put1 type="condition" highlight_layer="plant1_01|drop_zone_plants" condition="se_21_sub_stone_dwarf_hint_plant_put1='1'">
+      <dependency>
+        <use_se_straw_bunch_inv/>
+      </dependency>
+    </se_21_sub_stone_dwarf_hint_plant_put1>
+    <se_21_sub_stone_dwarf_hint_plant_put2 type="condition" highlight_layer="plant2_01|drop_zone_plants" condition="se_21_sub_stone_dwarf_hint_plant_put2='1'">
+      <dependency>
+        <use_se_straw_bunch_inv/>
+      </dependency>
+    </se_21_sub_stone_dwarf_hint_plant_put2>
+    <se_21_sub_stone_dwarf_hint_plant_put3 type="condition" highlight_layer="plant3_01|drop_zone_plants" condition="se_21_sub_stone_dwarf_hint_plant_put3='1'">
+      <dependency>
+        <use_se_straw_bunch_inv/>
+      </dependency>
+    </se_21_sub_stone_dwarf_hint_plant_put3>
+    <se_21_sub_stone_dwarf_hint_plant_put4 type="condition" highlight_layer="plant4_01|drop_zone_plants" condition="se_21_sub_stone_dwarf_hint_plant_put4='1'">
+      <dependency>
+        <use_se_straw_bunch_inv/>
+      </dependency>
+    </se_21_sub_stone_dwarf_hint_plant_put4>
+    <se_21_sub_stone_dwarf_hint_plant_put5 type="condition" highlight_layer="plant5_01|drop_zone_plants" condition="se_21_sub_stone_dwarf_hint_plant_put5='1'">
+      <dependency>
+        <use_se_straw_bunch_inv/>
+      </dependency>
+    </se_21_sub_stone_dwarf_hint_plant_put5>
+    <se_21_sub_stone_dwarf_hint_plant_put6 type="condition" highlight_layer="plant6_01|drop_zone_plants" condition="se_21_sub_stone_dwarf_hint_plant_put6='1'">
+      <dependency>
+        <use_se_straw_bunch_inv/>
+      </dependency>
+    </se_21_sub_stone_dwarf_hint_plant_put6>
+    <collect_se_basket_with_herbs_inv type="inventory_item" inventory_item="se_basket_with_herbs_inv">
+      <dependency>
+        <se_21_sub_stone_dwarf_hint_plant_put1 />
+        <se_21_sub_stone_dwarf_hint_plant_put2 />
+        <se_21_sub_stone_dwarf_hint_plant_put3 />
+        <se_21_sub_stone_dwarf_hint_plant_put4 />
+        <se_21_sub_stone_dwarf_hint_plant_put5 />
+        <se_21_sub_stone_dwarf_hint_plant_put6 />
+      </dependency>
+    </collect_se_basket_with_herbs_inv>
+    <use_se_growth_potion_inv type="apply_item" inventory_item="se_growth_potion_inv" drop_zone="drop_zone_se_growth_potion_inv">
+      <dependency>
+        <collect_se_growth_potion_inv  />
+      </dependency>
+    </use_se_growth_potion_inv>
+    <collect_se_bushhammer_inv type="inventory_item" inventory_item="se_bushhammer_inv">
+      <dependency>
+        <use_se_growth_potion_inv />
+      </dependency>
+    </collect_se_bushhammer_inv>
+  </se_21_sub_stone_dwarf>
+  <se_21_sub_sphinxs >
+    <use_se_grail_inv type="apply_item" inventory_item="se_grail_inv" drop_zone="drop_zone_se_grail_inv">
+      <dependency>
+        <collect_se_grail_inv  />
+      </dependency>
+    </use_se_grail_inv>
+    <click_video_fireball_idle type="click" highlight_layer="video_fireball_idle/selection" click_layer="video_fireball_idle">
+      <dependency>
+        <se_21_sub_miniho_grail_hint_riddle_4 />
+      </dependency>
+    </click_video_fireball_idle>
+    <condit_se_21_hint_go_to_se_22 type="condition" highlight_layer="active_zone_sub_sphinxs_go_to_se_22" condition="se_21_hint_go_to_se_22='1'">
+      <dependency>
+        <click_video_fireball_idle/>
+      </dependency>
+    </condit_se_21_hint_go_to_se_22>
+  </se_21_sub_sphinxs>
+  <se_21_sub_miniho_grail >
+    <se_21_sub_miniho_grail_hint_riddle_1 type="condition" highlight_layer="part_7_item/selection" condition="se_21_sub_miniho_grail_hint_riddle_1='1'">
+      <dependency>
+      </dependency>
+    </se_21_sub_miniho_grail_hint_riddle_1>
+    <se_21_sub_miniho_grail_hint_riddle_2 type="condition" highlight_layer="part_1_item/selection" condition="se_21_sub_miniho_grail_hint_riddle_2='1'">
+      <dependency>
+        <se_21_sub_miniho_grail_hint_riddle_1/>
+      </dependency>
+    </se_21_sub_miniho_grail_hint_riddle_2>
+    <se_21_sub_miniho_grail_hint_riddle_3 type="condition" highlight_layer="part_12_item/selection" condition="se_21_sub_miniho_grail_hint_riddle_3='1'">
+      <dependency>
+        <se_21_sub_miniho_grail_hint_riddle_2/>
+      </dependency>
+    </se_21_sub_miniho_grail_hint_riddle_3>
+    <se_21_sub_miniho_grail_hint_riddle_4 type="condition" highlight_layer="part_11_item/selection" condition="se_21_sub_miniho_grail_hint_riddle_4='1'">
+      <dependency>
+        <se_21_sub_miniho_grail_hint_riddle_3/>
+      </dependency>
+    </se_21_sub_miniho_grail_hint_riddle_4>
+  </se_21_sub_miniho_grail>
+  <se_21_sub_hiding_place >
+    <use_se_stone_witch_inv type="apply_item" inventory_item="se_stone_witch_inv" drop_zone="drop_zone_se_stone_witch_inv">
+      <dependency>
+        <collect_se_stone_witch_inv  />
+      </dependency>
+    </use_se_stone_witch_inv>
+    <use_se_stone_witcher_inv type="apply_item" inventory_item="se_stone_witcher_inv" drop_zone="drop_zone_se_stone_witcher_inv">
+      <dependency>
+        <collect_se_stone_witcher_inv  />
+      </dependency>
+    </use_se_stone_witcher_inv>
+    <collect_se_trident_inv type="inventory_item" inventory_item="se_trident_inv">
+      <dependency>
+        <use_se_stone_witcher_inv />
+        <use_se_stone_witch_inv />
+      </dependency>
+    </collect_se_trident_inv>
+  </se_21_sub_hiding_place>
+  <se_21_puzzle_mechanical_monster >
+    <use_se_counter_part_inv type="apply_item" inventory_item="se_counter_part_inv" drop_zone="drop_zone_se_counter_part_inv">
+      <dependency>
+        <collect_se_counter_part_inv  />
+      </dependency>
+    </use_se_counter_part_inv>
+    <complete_se_21_puzzle_mechanical_monster type="complete_mini_game" mini_game_name="se_21_puzzle_mechanical_monster">
+      <dependency>
+        <use_se_counter_part_inv />
+      </dependency>
+    </complete_se_21_puzzle_mechanical_monster>
+    <collect_se_crystal_key_inv type="inventory_item" inventory_item="se_crystal_key_inv">
+      <dependency>
+        <complete_se_21_puzzle_mechanical_monster />
+      </dependency>
+    </collect_se_crystal_key_inv>
+  </se_21_puzzle_mechanical_monster>
+  <se_21_sub_stone_of_transformations >
+    <use_se_griffin_inv type="apply_item" inventory_item="se_griffin_inv" drop_zone="drop_zone_se_griffin_inv">
+      <dependency>
+        <collect_se_griffin_inv  />
+      </dependency>
+    </use_se_griffin_inv>
+    <use_se_sign_flame_inv type="apply_item" inventory_item="se_sign_flame_inv" drop_zone="drop_zone_se_sign_flame_inv">
+      <dependency>
+        <use_se_griffin_inv  />
+        <collect_se_sign_flame_inv  />
+      </dependency>
+    </use_se_sign_flame_inv>
+    <collect_se_flame_emblem_inv type="inventory_item" inventory_item="se_flame_emblem_inv">
+      <dependency>
+        <use_se_sign_flame_inv />
+      </dependency>
+    </collect_se_flame_emblem_inv>
+  </se_21_sub_stone_of_transformations>
+  
+  
+  <!-- 22 -->
+  <se_22 >
+    <collect_se_stone_witcher_inv type="inventory_item" highlight_layer="active_zone_ho_01" inventory_item="se_stone_witcher_inv">
+      <dependency>
+        <se_22_sub_artefact_click_active_zone_water_click />
+      </dependency>
+    </collect_se_stone_witcher_inv>
+    <collect_se_stone_with_a_griffin_inv type="inventory_item" highlight_layer="active_zone_ho_02" inventory_item="se_stone_with_a_griffin_inv">
+      <dependency>
+        <collect_se_bushhammer_inv />
+      </dependency>
+    </collect_se_stone_with_a_griffin_inv>
+  </se_22>
+  <se_22_sub_artefact >
+    <se_22_sub_artefact_click_active_zone_water_click type="click" click_layer="active_zone_water_click">
+      <dependency>
+      </dependency>
+    </se_22_sub_artefact_click_active_zone_water_click>
+    <collect_se_stone_witch_inv type="inventory_item" inventory_item="se_stone_witch_inv">
+      <dependency>
+        <se_22_sub_artefact_click_active_zone_water_click />
+      </dependency>
+    </collect_se_stone_witch_inv>
+    <use_se_lens_with_runes_inv type="apply_item" inventory_item="se_lens_with_runes_inv" drop_zone="drop_zone_se_lens_with_runes_inv">
+      <dependency>
+        <se_22_sub_artefact_click_active_zone_water_click  />
+        <collect_se_lens_with_runes_inv  />
+      </dependency>
+    </use_se_lens_with_runes_inv>
+  </se_22_sub_artefact>
+  <se_22_puzzle_crater >
+    <complete_se_22_puzzle_crater type="complete_mini_game" mini_game_name="se_22_puzzle_crater">
+      <dependency>
+        <use_se_lens_with_runes_inv />
+      </dependency>
+    </complete_se_22_puzzle_crater>
+    <collect_se_part_of_a_necklace_2_inv type="inventory_item" inventory_item="se_part_of_a_necklace_2_inv">
+      <dependency>
+        <complete_se_22_puzzle_crater />
+      </dependency>
+    </collect_se_part_of_a_necklace_2_inv>
+    <collect_se_part_of_an_artefakt_2_inv type="inventory_item" inventory_item="se_part_of_an_artefakt_2_inv">
+      <dependency>
+        <collect_se_part_of_a_necklace_2_inv />
+      </dependency>
+    </collect_se_part_of_an_artefakt_2_inv>
+  </se_22_puzzle_crater>
+  <se_22_sub_crystals >
+    <use_se_fork_inv type="apply_item" inventory_item="se_fork_inv" drop_zone="drop_zone_se_fork_inv">
+      <dependency>
+        <collect_se_fork_inv  />
+      </dependency>
+    </use_se_fork_inv>
+    <collect_se_crystals_inv type="inventory_item" inventory_item="se_crystals_inv">
+      <dependency>
+        <use_se_fork_inv />
+      </dependency>
+    </collect_se_crystals_inv>
+    <collect_se_counter_part_inv type="inventory_item" inventory_item="se_counter_part_inv">
+      <dependency>
+        <collect_se_crystals_inv />
+      </dependency>
+    </collect_se_counter_part_inv>
+    <use_se_crystal_key_inv type="apply_item" inventory_item="se_crystal_key_inv" drop_zone="drop_zone_se_crystal_key_inv">
+      <dependency>
+        <collect_se_counter_part_inv  />
+        <collect_se_crystal_key_inv  />
+      </dependency>
+    </use_se_crystal_key_inv>
+    <collect_se_black_gem_inv type="inventory_item" inventory_item="se_black_gem_inv">
+      <dependency>
+        <use_se_crystal_key_inv />
+      </dependency>
+    </collect_se_black_gem_inv>
+  </se_22_sub_crystals>
+  <se_22_sub_stone_processing >
+    <use_se_bushhammer_inv type="apply_item" inventory_item="se_bushhammer_inv" drop_zone="drop_zone_tools">
+      <dependency>
+        <collect_se_bushhammer_inv  />
+      </dependency>
+    </use_se_bushhammer_inv>
+    <use_se_chisel_inv type="apply_item" inventory_item="se_chisel_inv" drop_zone="drop_zone_tools">
+      <dependency>
+        <collect_se_chisel_inv  />
+      </dependency>
+    </use_se_chisel_inv>
+    <use_se_stone_with_a_griffin_inv type="apply_item" inventory_item="se_stone_with_a_griffin_inv" drop_zone="drop_zone_tools">
+      <dependency>
+        <collect_se_stone_with_a_griffin_inv  />
+      </dependency>
+    </use_se_stone_with_a_griffin_inv>
+    <se_22_sub_stone_processing_hint_interactive_1 type="condition" highlight_layer="zone_1|active_zone_interactive" condition="se_22_sub_stone_processing_hint_interactive_1='1'">
+      <dependency>
+        <collect_se_bushhammer_inv/>
+        <use_se_chisel_inv/>
+        <use_se_stone_with_a_griffin_inv/>
+      </dependency>
+    </se_22_sub_stone_processing_hint_interactive_1>
+    <se_22_sub_stone_processing_hint_interactive_2 type="condition" highlight_layer="zone_2|active_zone_interactive" condition="se_22_sub_stone_processing_hint_interactive_2='1'">
+      <dependency>
+        <se_22_sub_stone_processing_hint_interactive_1/>
+      </dependency>
+    </se_22_sub_stone_processing_hint_interactive_2>
+    <se_22_sub_stone_processing_hint_interactive_3 type="condition" highlight_layer="zone_3|active_zone_interactive" condition="se_22_sub_stone_processing_hint_interactive_3='1'">
+      <dependency>
+        <se_22_sub_stone_processing_hint_interactive_2/>
+      </dependency>
+    </se_22_sub_stone_processing_hint_interactive_3>
+    <se_22_sub_stone_processing_hint_interactive_4 type="condition" highlight_layer="zone_4|active_zone_interactive" condition="se_22_sub_stone_processing_hint_interactive_4='1'">
+      <dependency>
+        <se_22_sub_stone_processing_hint_interactive_3/>
+      </dependency>
+    </se_22_sub_stone_processing_hint_interactive_4>
+    <collect_se_griffin_inv type="inventory_item" inventory_item="se_griffin_inv">
+      <dependency>
+        <se_22_sub_stone_processing_hint_interactive_4 />
+      </dependency>
+    </collect_se_griffin_inv>
+  </se_22_sub_stone_processing>
+  <se_22_ho_01 />
+  <se_22_ho_02 />
+  
+  
+  <!-- 23 -->
+  <se_23 >
+    
+  </se_23>
+  <se_23_sub_mechanisms >
+    <collect_se_branch_inv type="inventory_item" inventory_item="se_branch_inv">
+      <dependency>
+      </dependency>
+    </collect_se_branch_inv>
+    <se_23_sub_mechanisms_hint_active_zone_mechanism type="condition" highlight_layer="active_zone_mechanism" condition="se_23_sub_mechanisms_hint_active_zone_mechanism='1'">
+      <dependency>
+        <collect_se_branch_inv/>
+        <collect_se_terrible_mask_inv/>
+      </dependency>
+    </se_23_sub_mechanisms_hint_active_zone_mechanism>
+    <use_se_terrible_mask_inv type="apply_item" inventory_item="se_terrible_mask_inv" drop_zone="drop_zone_se_terrible_mask_inv">
+      <dependency>
+        <se_23_sub_mechanisms_hint_active_zone_mechanism  />
+        <collect_se_terrible_mask_inv  />
+      </dependency>
+    </use_se_terrible_mask_inv>
+    <se_23_sub_mechanisms_button_03_pushed type="condition" highlight_layer="button_03" condition="se_23_sub_mechanisms_hint_btn_dont='1'">
+      <dependency>
+        <use_se_terrible_mask_inv/>
+      </dependency>
+    </se_23_sub_mechanisms_button_03_pushed>
+    <collect_se_activation_lever_inv type="inventory_item" inventory_item="se_activation_lever_inv">
+      <dependency>
+        <se_23_sub_mechanisms_button_03_pushed />
+      </dependency>
+    </collect_se_activation_lever_inv>
+     <use_se_charged_crystals_inv type="apply_item" inventory_item="se_charged_crystals_inv" drop_zone="drop_zone_se_charged_crystals_inv">
+      <dependency>
+        <collect_se_activation_lever_inv  />
+        <collect_se_charged_crystals_inv  />
+      </dependency>
+    </use_se_charged_crystals_inv>
+  </se_23_sub_mechanisms>
+  <se_23_sub_coast >
+    <use_se_net_inv type="apply_item" inventory_item="se_net_inv" drop_zone="drop_zone_se_net_inv">
+      <dependency>
+        <collect_se_net_inv  />
+      </dependency>
+    </use_se_net_inv>
+    <collect_se_electric_eel_inv type="inventory_item" highlight_layer="se_electric_eel_inv/selection" inventory_item="se_electric_eel_inv">
+      <dependency>
+        <use_se_net_inv />
+      </dependency>
+    </collect_se_electric_eel_inv>
+  </se_23_sub_coast>
+  <se_23_puzzle_rubber >
+    <use_se_glass_vessel_inv type="apply_item" inventory_item="se_glass_vessel_inv" drop_zone="drop_zone_se_glass_vessel_inv">
+      <dependency>
+        <collect_se_glass_vessel_inv  />
+      </dependency>
+    </use_se_glass_vessel_inv>
+    <use_se_form_for_a_wing_inv type="apply_item" inventory_item="se_form_for_a_wing_inv" drop_zone="drop_zone_se_form_for_a_wing_inv">
+      <dependency>
+        <collect_se_form_for_a_wing_inv  />
+      </dependency>
+    </use_se_form_for_a_wing_inv>
+    <complete_se_23_puzzle_rubber type="complete_mini_game" mini_game_name="se_23_puzzle_rubber">
+      <dependency>
+        <use_se_form_for_a_wing_inv />
+        <use_se_glass_vessel_inv />
+      </dependency>
+    </complete_se_23_puzzle_rubber>
+    <se_23_puzzle_rubber_hint_bottle_full type="condition" highlight_layer="bottle_full|drop_zone_bottle_full" condition="se_23_puzzle_rubber_hint_bottle_full='1'">
+      <dependency>
+        <complete_se_23_puzzle_rubber />
+      </dependency>
+    </se_23_puzzle_rubber_hint_bottle_full>
+    <se_23_puzzle_rubber_hint_bowl_full type="condition" highlight_layer="bowl_full|drop_zone_bowl_full" condition="se_23_puzzle_rubber_hint_bowl_full='1'">
+      <dependency>
+        <se_23_puzzle_rubber_hint_bottle_full />
+      </dependency>
+    </se_23_puzzle_rubber_hint_bowl_full>
+    <collect_se_rubber_wing_inv type="inventory_item" inventory_item="se_rubber_wing_inv">
+      <dependency>
+        <se_23_puzzle_rubber_hint_bowl_full />
+      </dependency>
+    </collect_se_rubber_wing_inv>
+  </se_23_puzzle_rubber>
+  <se_23_sub_altar_on_island >
+    <final_quest_use_se_artifact_inv_2 type="apply_item" inventory_item="se_artifact_inv" drop_zone="drop_zone_se_artifact_inv_2">
+      <dependency>
+        <collect_se_artifact_inv  />
+      </dependency>
+    </final_quest_use_se_artifact_inv_2>
+  </se_23_sub_altar_on_island>
+  
+  
+  <!-- 24 -->
+  <se_24>
+    <use_se_activation_lever_inv type="apply_item" inventory_item="se_activation_lever_inv" drop_zone="drop_zone_se_activation_lever_inv">
+      <dependency>
+        <collect_se_activation_lever_inv  />
+      </dependency>
+    </use_se_activation_lever_inv>
+  </se_24>
+  <se_24_puzzle_mehacrystals>
+    <use_se_crystals_inv type="apply_item" inventory_item="se_crystals_inv" drop_zone="drop_zone_se_crystals_inv">
+      <dependency>
+        <collect_se_crystals_inv  />
+      </dependency>
+    </use_se_crystals_inv>
+    <collect_se_glass_vessel_inv type="inventory_item" inventory_item="se_glass_vessel_inv">
+      <dependency>
+        <use_se_crystals_inv />
+      </dependency>
+    </collect_se_glass_vessel_inv>
+    <complete_se_24_puzzle_mehacrystals type="complete_mini_game" mini_game_name="se_24_puzzle_mehacrystals">
+      <dependency>
+        <use_se_crystals_inv />
+        <use_se_activation_lever_inv />
+        <use_se_electric_eel_inv />
+      </dependency>
+    </complete_se_24_puzzle_mehacrystals>
+    <collect_se_charged_crystals_inv type="inventory_item" inventory_item="se_charged_crystals_inv">
+      <dependency>
+        <complete_se_24_puzzle_mehacrystals />
+      </dependency>
+    </collect_se_charged_crystals_inv>
+  </se_24_puzzle_mehacrystals>
+  <se_24_sub_window>
+    <use_se_gold_spur_inv_2 type="apply_item" inventory_item="se_gold_spur_inv" drop_zone="drop_zone_se_gold_spur_inv_2">
+      <dependency>
+        <collect_se_gold_spur_inv  />
+      </dependency>
+    </use_se_gold_spur_inv_2>
+    <collect_se_network_inv type="inventory_item" inventory_item="se_network_inv">
+      <dependency>
+        <use_se_gold_spur_inv_2 />
+      </dependency>
+    </collect_se_network_inv>
+  </se_24_sub_window>
+  <se_24_sub_vessel>
+    <use_se_electric_eel_inv type="apply_item" inventory_item="se_electric_eel_inv" drop_zone="drop_zone_se_electric_eel_inv">
+      <dependency>
+        <collect_se_electric_eel_inv  />
+      </dependency>
+    </use_se_electric_eel_inv>
+    <collect_se_form_for_a_wing_inv type="inventory_item" inventory_item="se_form_for_a_wing_inv">
+      <dependency>
+        <use_se_electric_eel_inv />
+      </dependency>
+    </collect_se_form_for_a_wing_inv>
+  </se_24_sub_vessel>
+  <se_24_sub_curbstone>
+    <use_se_rubber_wing_inv type="apply_item" inventory_item="se_rubber_wing_inv" drop_zone="drop_zone_se_rubber_wing_inv">
+      <dependency>
+        <collect_se_rubber_wing_inv  />
+      </dependency>
+    </use_se_rubber_wing_inv>
+    <use_se_gold_spur_inv type="apply_item" inventory_item="se_gold_spur_inv" drop_zone="drop_zone_se_gold_spur_inv">
+      <dependency>
+        <use_se_rubber_wing_inv  />
+        <collect_se_gold_spur_inv  />
+      </dependency>
+    </use_se_gold_spur_inv>
+    <use_se_crow_feathers_inv type="apply_item" inventory_item="se_crow_feathers_inv" drop_zone="drop_zone_se_crow_feathers_inv">
+      <dependency>
+        <use_se_rubber_wing_inv  />
+        <collect_se_crow_feathers_inv  />
+      </dependency>
+    </use_se_crow_feathers_inv>
+    <se_24_sub_curbstone_hint_feather_01 type="condition" highlight_layer="feather_01|drop_zone_feathers" condition="se_24_sub_curbstone_hint_feather_01='1'">
+      <dependency>
+        <use_se_crow_feathers_inv />
+        <use_se_gold_spur_inv />
+      </dependency>
+    </se_24_sub_curbstone_hint_feather_01>
+    <se_24_sub_curbstone_hint_feather_02 type="condition" highlight_layer="feather_02|drop_zone_feathers" condition="se_24_sub_curbstone_hint_feather_02='1'">
+      <dependency>
+        <use_se_crow_feathers_inv />
+        <use_se_gold_spur_inv />
+      </dependency>
+    </se_24_sub_curbstone_hint_feather_02>
+    <se_24_sub_curbstone_hint_feather_03 type="condition" highlight_layer="feather_03|drop_zone_feathers" condition="se_24_sub_curbstone_hint_feather_03='1'">
+      <dependency>
+        <use_se_crow_feathers_inv />
+        <use_se_gold_spur_inv />
+      </dependency>
+    </se_24_sub_curbstone_hint_feather_03>
+    <se_24_sub_curbstone_hint_feather_04 type="condition" highlight_layer="feather_04|drop_zone_feathers" condition="se_24_sub_curbstone_hint_feather_04='1'">
+      <dependency>
+        <use_se_crow_feathers_inv />
+        <use_se_gold_spur_inv />
+      </dependency>
+    </se_24_sub_curbstone_hint_feather_04>
+    <se_24_sub_curbstone_hint_feather_05 type="condition" highlight_layer="feather_05|drop_zone_feathers" condition="se_24_sub_curbstone_hint_feather_05='1'">
+      <dependency>
+        <use_se_crow_feathers_inv />
+        <use_se_gold_spur_inv />
+      </dependency>
+    </se_24_sub_curbstone_hint_feather_05>
+    <se_24_sub_curbstone_hint_rope_placed type="condition" highlight_layer="rope|drop_zone_rope" condition="se_24_sub_curbstone_hint_rope_placed='1'">
+      <dependency>
+        <se_24_sub_curbstone_hint_feather_01 />
+        <se_24_sub_curbstone_hint_feather_02 />
+        <se_24_sub_curbstone_hint_feather_03 />
+        <se_24_sub_curbstone_hint_feather_04 />
+        <se_24_sub_curbstone_hint_feather_05 />
+        <use_se_gold_spur_inv />
+        <use_se_crow_feathers_inv />
+      </dependency>
+    </se_24_sub_curbstone_hint_rope_placed>
+    <collect_se_terrible_mask_inv type="inventory_item" inventory_item="se_terrible_mask_inv">
+      <dependency>
+        <se_24_sub_curbstone_hint_rope_placed />
+      </dependency>
+    </collect_se_terrible_mask_inv>
+  </se_24_sub_curbstone>
+  
+  
+  <iss_se_pin_inv>
+    <click_iss_se_pin_inv_active_zone_click_1 type="condition" highlight_layer="active_zone_click" condition="iss_se_pin_inv_hint_1='1'" />
+    <click_iss_se_pin_inv_active_zone_click_2 type="condition" highlight_layer="active_zone_click" condition="iss_se_pin_inv_hint_2='1'">
+      <dependency>
+        <click_iss_se_pin_inv_active_zone_click_1 />
+      </dependency>
+    </click_iss_se_pin_inv_active_zone_click_2>
+    <collect_se_master_key_inv type="inventory_item" inventory_item="se_master_key_inv">
+      <dependency>
+        <click_iss_se_pin_inv_active_zone_click_2 />
+      </dependency>
+    </collect_se_master_key_inv>
+  </iss_se_pin_inv>
+  
+  <iss_se_broken_pendent_inv>
+    <use_se_edwards_photo_inv type="apply_item" inventory_item="se_edwards_photo_inv" drop_zone="drop_zone_se_edwards_photo_inv">
+      <dependency>
+        <collect_se_edwards_photo_inv />
+      </dependency>
+    </use_se_edwards_photo_inv>
+    <collect_se_lynns_pendent_inv type="inventory_item" inventory_item="se_lynns_pendent_inv">
+      <dependency>
+        <use_se_edwards_photo_inv />
+      </dependency>
+    </collect_se_lynns_pendent_inv>
+  </iss_se_broken_pendent_inv>
+  
+  <iss_se_cover_with_points_inv>
+    <click_iss_se_cover_with_points_inv_cover_closed type="condition" highlight_layer="cover_closed" condition="iss_se_cover_with_points_inv_hint_click_cover_closed='1'" />
+    <click_iss_se_cover_with_points_inv_glass_01 type="condition" highlight_layer="glass_01" condition="iss_se_cover_with_points_inv_hint_click_glass_01='1'" >
+      <dependency>
+        <click_iss_se_cover_with_points_inv_cover_closed />
+      </dependency>
+    </click_iss_se_cover_with_points_inv_glass_01>
+    <use_se_straw_inv type="apply_item" inventory_item="se_straw_inv" drop_zone="drop_zone_se_straw_inv">
+      <dependency>
+        <click_iss_se_cover_with_points_inv_glass_01 />
+        <collect_se_straw_inv />
+      </dependency>
+    </use_se_straw_inv>
+    <collect_se_mask_for_swimming_inv type="inventory_item" inventory_item="se_mask_for_swimming_inv">
+      <dependency>
+        <use_se_straw_inv />
+      </dependency>
+    </collect_se_mask_for_swimming_inv>
+  </iss_se_cover_with_points_inv>
+  
+  <iss_se_panicle_inv>
+    <use_se_potion_of_levitation_inv type="apply_item" inventory_item="se_potion_of_levitation_inv" drop_zone="drop_zone_se_potion_of_levitation_inv">
+      <dependency>
+        <collect_se_potion_of_levitation_inv />
+      </dependency>
+    </use_se_potion_of_levitation_inv>
+    <collect_se_flying_panicle_inv type="inventory_item" inventory_item="se_flying_panicle_inv">
+      <dependency>
+        <use_se_potion_of_levitation_inv />
+      </dependency>
+    </collect_se_flying_panicle_inv>
+  </iss_se_panicle_inv>
+  
+  <iss_se_casket_inv>
+    <condit_iss_se_casket_inv_click type="condition" highlight_layer="casket_01" condition="condit_iss_se_casket_inv_hint_click='1'" />
+    <condit_iss_se_casket_inv_hint_recept type="condition" highlight_layer="recept" condition="iss_se_casket_inv_hint_recept=''" />
+    <use_se_recipe_for_casket_inv type="apply_item" inventory_item="se_recipe_for_casket_inv" drop_zone="drop_zone_se_recipe_for_casket_inv">
+      <dependency>
+        <condit_iss_se_casket_inv_click />
+        <collect_se_recipe_for_casket_inv />
+      </dependency>
+    </use_se_recipe_for_casket_inv>
+    <use_se_puppet_edward_inv type="apply_item" inventory_item="se_puppet_edward_inv" drop_zone="drop_zone_se_puppet_edward_inv">
+      <dependency>
+        <condit_iss_se_casket_inv_click />
+        <collect_se_puppet_edward_inv />
+      </dependency>
+    </use_se_puppet_edward_inv>
+    <condit_iss_se_casket_inv_living_tree type="condition" highlight_layer="iss_casket_tree_out|drop_zone_kofemolka" condition="iss_se_casket_inv_hint_living_tree='1'">
+      <dependency>
+        <use_se_recipe_for_casket_inv />
+        <use_se_puppet_edward_inv />
+      </dependency>
+    </condit_iss_se_casket_inv_living_tree>
+    <condit_iss_se_casket_inv_ember type="condition" highlight_layer="iss_casket_amber_out|drop_zone_kofemolka" condition="iss_se_casket_inv_hint_ember='1'">
+      <dependency>
+        <use_se_recipe_for_casket_inv />
+        <use_se_puppet_edward_inv />
+      </dependency>
+    </condit_iss_se_casket_inv_ember>
+    <condit_iss_se_casket_inv_place_smes_on_edward type="condition" highlight_layer="iss_casket_box_out|drop_zone_box_out" condition="iss_se_casket_inv_hint_smes_on_edward='1'">
+      <dependency>
+        <condit_iss_se_casket_inv_ember />
+        <condit_iss_se_casket_inv_living_tree />
+      </dependency>
+    </condit_iss_se_casket_inv_place_smes_on_edward>
+    <condit_iss_se_casket_inv_oroshenie type="condition" highlight_layer="iss_casket_flakon_out|drop_zone_flakon" condition="iss_se_casket_inv_hint_oroshenie='1'">
+      <dependency>
+        <condit_iss_se_casket_inv_place_smes_on_edward />
+      </dependency>
+    </condit_iss_se_casket_inv_oroshenie>
+    <collect_se_master_edward_inv type="inventory_item" inventory_item="se_master_edward_inv">
+      <dependency>
+        <condit_iss_se_casket_inv_oroshenie />
+      </dependency>
+    </collect_se_master_edward_inv>
+  </iss_se_casket_inv>
+  
+  <iss_se_chain_inv>
+    <use_se_hook_inv type="apply_item" inventory_item="se_hook_inv" drop_zone="drop_zone_se_hook_inv">
+      <dependency>
+        <collect_se_hook_inv />
+      </dependency>
+    </use_se_hook_inv>
+    <collect_se_chain_with_a_hook_inv type="inventory_item" inventory_item="se_chain_with_a_hook_inv">
+      <dependency>
+        <use_se_hook_inv />
+      </dependency>
+    </collect_se_chain_with_a_hook_inv>
+  </iss_se_chain_inv>
+  
+  <iss_se_red_plate_inv>
+    <use_se_black_plate_inv type="apply_item" inventory_item="se_black_plate_inv" drop_zone="drop_zone_se_black_plate_inv">
+      <dependency>
+        <collect_se_black_plate_inv />
+      </dependency>
+    </use_se_black_plate_inv>
+    <collect_se_spell_inv type="inventory_item" inventory_item="se_spell_inv">
+      <dependency>
+        <use_se_black_plate_inv />
+      </dependency>
+    </collect_se_spell_inv>
+  </iss_se_red_plate_inv>
+  
+  <iss_se_not_loaded_staff_b_inv>
+    <use_se_blue_nugget_inv type="apply_item" inventory_item="se_blue_nugget_inv" drop_zone="drop_zone_se_blue_nugget_inv">
+      <dependency>
+        <collect_se_blue_nugget_inv />
+      </dependency>
+    </use_se_blue_nugget_inv>
+    <collect_se_magic_staff_b_inv type="inventory_item" inventory_item="se_magic_staff_b_inv">
+      <dependency>
+        <use_se_blue_nugget_inv />
+      </dependency>
+    </collect_se_magic_staff_b_inv>
+  </iss_se_not_loaded_staff_b_inv>
+  <iss_se_not_loaded_staff_y_inv>
+    <use_se_yellow_nugget_inv type="apply_item" inventory_item="se_yellow_nugget_inv" drop_zone="drop_zone_se_yellow_nugget_inv">
+      <dependency>
+        <collect_se_yellow_nugget_inv />
+      </dependency>
+    </use_se_yellow_nugget_inv>
+    <collect_se_magic_staff_y_inv type="inventory_item" inventory_item="se_magic_staff_y_inv">
+      <dependency>
+        <use_se_yellow_nugget_inv />
+      </dependency>
+    </collect_se_magic_staff_y_inv>
+  </iss_se_not_loaded_staff_y_inv>
+  <iss_se_not_loaded_staff_l_inv>
+    <use_se_lilac_nugget_inv type="apply_item" inventory_item="se_lilac_nugget_inv" drop_zone="drop_zone_se_lilac_nugget_inv">
+      <dependency>
+        <collect_se_lilac_nugget_inv />
+      </dependency>
+    </use_se_lilac_nugget_inv>
+    <collect_se_magic_staff_l_inv type="inventory_item" inventory_item="se_magic_staff_l_inv">
+      <dependency>
+        <use_se_lilac_nugget_inv />
+      </dependency>
+    </collect_se_magic_staff_l_inv>
+  </iss_se_not_loaded_staff_l_inv>
+  
+  <iss_se_magic_ball_inv>
+    <use_se_magic_needle_inv type="apply_item" inventory_item="se_magic_needle_inv" drop_zone="drop_zone_se_magic_needle_inv">
+      <dependency>
+        <collect_se_magic_needle_inv />
+      </dependency>
+    </use_se_magic_needle_inv>
+    <collect_se_armor_of_vines_inv type="inventory_item" inventory_item="se_armor_of_vines_inv">
+      <dependency>
+        <use_se_magic_needle_inv />
+      </dependency>
+    </collect_se_armor_of_vines_inv>
+  </iss_se_magic_ball_inv>
+  
+  <iss_se_part_of_an_artefakt_1_inv>
+    <use_se_part_of_an_artefakt_2_inv type="apply_item" inventory_item="se_part_of_an_artefakt_2_inv" drop_zone="drop_zone_se_part_of_an_artefakt_2_inv">
+      <dependency>
+        <collect_se_part_of_an_artefakt_2_inv  />
+      </dependency>
+    </use_se_part_of_an_artefakt_2_inv>
+    <collect_se_artifact_inv type="inventory_item" inventory_item="se_artifact_inv">
+      <dependency>
+        <use_se_part_of_an_artefakt_2_inv />
+      </dependency>
+    </collect_se_artifact_inv>
+  </iss_se_part_of_an_artefakt_1_inv>
+  
+  <iss_se_planch_inv>
+    <use_se_flint_inv_2 type="apply_item" inventory_item="se_flint_inv" drop_zone="drop_zone_flint_inv">
+      <dependency>
+        <collect_se_flint_inv  />
+      </dependency>
+    </use_se_flint_inv_2>
+    <collect_se_charcoal_inv type="inventory_item" inventory_item="se_charcoal_inv">
+      <dependency>
+        <use_se_flint_inv_2 />
+      </dependency>
+    </collect_se_charcoal_inv>
+  </iss_se_planch_inv>
+  
+  <iss_se_canine_on_lace_inv>
+    <iss_se_canine_on_lace_inv_click_active_zone_laces type="condition" highlight_layer="active_zone_laces" condition="iss_se_canine_on_lace_inv_hint_click_active_zone_laces='1'" >
+      <dependency>
+      </dependency>
+    </iss_se_canine_on_lace_inv_click_active_zone_laces>
+    <iss_se_canine_on_lace_inv_click_bead1 type="condition" highlight_layer="bead1" condition="iss_se_canine_on_lace_inv_hint_click_bead1='1'" >
+      <dependency>
+        <iss_se_canine_on_lace_inv_click_active_zone_laces />
+      </dependency>
+    </iss_se_canine_on_lace_inv_click_bead1>
+    <iss_se_canine_on_lace_inv_click_bead2  type="condition" highlight_layer="bead2" condition="iss_se_canine_on_lace_inv_hint_click_bead2='1'" >
+      <dependency>
+        <iss_se_canine_on_lace_inv_click_active_zone_laces />
+      </dependency>
+    </iss_se_canine_on_lace_inv_click_bead2>
+    <collect_se_gold_canine_inv type="inventory_item" inventory_item="se_gold_canine_inv">
+      <dependency>
+        <iss_se_canine_on_lace_inv_click_bead1 />
+        <iss_se_canine_on_lace_inv_click_bead2 />
+      </dependency>
+    </collect_se_gold_canine_inv>
+  </iss_se_canine_on_lace_inv>
+    
+  <iss_se_oil_lamp_inv>
+    <iss_se_oil_lamp_inv_click_closed type="condition" highlight_layer="closed" condition="iss_se_oil_lamp_inv_hint_click_closed='1'" >
+      <dependency>
+        <condit_se_11_sub_well_show_imp />
+      </dependency>
+    </iss_se_oil_lamp_inv_click_closed>
+    <use_se_lampadny_oil_inv type="apply_item" inventory_item="se_lampadny_oil_inv" drop_zone="drop_zone_se_lampadny_oil_inv">
+      <dependency>
+        <iss_se_oil_lamp_inv_click_closed  />
+        <collect_se_lampadny_oil_inv  />
+      </dependency>
+    </use_se_lampadny_oil_inv>
+    <use_se_flint_inv_3 type="apply_item" inventory_item="se_flint_inv" drop_zone="drop_zone_flint_2_inv">
+      <dependency>
+        <use_se_lampadny_oil_inv  />
+        <collect_se_flint_inv  />
+      </dependency>
+    </use_se_flint_inv_3>
+    <collect_se_lit_lamp_inv type="inventory_item" inventory_item="se_lit_lamp_inv">
+      <dependency>
+        <use_se_flint_inv_3 />
+      </dependency>
+    </collect_se_lit_lamp_inv>
+  </iss_se_oil_lamp_inv>
+  
+  <iss_se_wheel_inv>
+    <use_se_well_handle_inv type="apply_item" inventory_item="se_well_handle_inv" drop_zone="drop_zone_se_well_handle_inv">
+      <dependency>
+        <collect_se_well_handle_inv  />
+      </dependency>
+    </use_se_well_handle_inv>
+    <collect_se_handle_wheel_inv type="inventory_item" inventory_item="se_handle_wheel_inv">
+      <dependency>
+        <use_se_well_handle_inv />
+      </dependency>
+    </collect_se_handle_wheel_inv>
+  </iss_se_wheel_inv>
+  
+  <iss_se_crossbow_inv >
+    <iss_se_crossbow_inv_click_active_zone_arrow type="condition" highlight_layer="active_zone_arrow" condition="iss_se_crossbow_inv_hint_click_closed='1'" >
+      <dependency>
+      </dependency>
+    </iss_se_crossbow_inv_click_active_zone_arrow>
+    <use_se_arrow_inv type="apply_item" inventory_item="se_arrow_inv" drop_zone="drop_zone_se_arrow_inv">
+      <dependency>
+        <collect_se_arrow_inv />
+        <iss_se_crossbow_inv_click_active_zone_arrow />
+      </dependency>
+    </use_se_arrow_inv>
+    <collect_se_crossbows_and_arrows_inv type="inventory_item" inventory_item="se_crossbows_and_arrows_inv">
+      <dependency>
+        <use_se_arrow_inv />
+      </dependency>
+    </collect_se_crossbows_and_arrows_inv>
+  </iss_se_crossbow_inv>
+  
+  <iss_se_branch_inv>
+    <iss_se_branch_inv_click_active_zone_click_01 type="condition" highlight_layer="active_zone_click_01" condition="iss_se_branch_inv_click_active_zone_click_01='1'" >
+      <dependency>
+      </dependency>
+    </iss_se_branch_inv_click_active_zone_click_01>
+    <iss_se_branch_inv_click_active_zone_click_02 type="condition" highlight_layer="active_zone_click_02" condition="iss_se_branch_inv_click_active_zone_click_02='1'" >
+      <dependency>
+      </dependency>
+    </iss_se_branch_inv_click_active_zone_click_02>
+    <iss_se_branch_inv_click_active_zone_click_03 type="condition" highlight_layer="active_zone_click_03" condition="iss_se_branch_inv_click_active_zone_click_03='1'" >
+      <dependency>
+      </dependency>
+    </iss_se_branch_inv_click_active_zone_click_03>
+    <use_se_network_inv type="apply_item" inventory_item="se_network_inv" drop_zone="drop_zone_se_network_inv">
+      <dependency>
+        <collect_se_network_inv />
+        <iss_se_branch_inv_click_active_zone_click_01 />
+        <iss_se_branch_inv_click_active_zone_click_02 />
+        <iss_se_branch_inv_click_active_zone_click_03 />
+      </dependency>
+    </use_se_network_inv>
+    <collect_se_net_inv type="inventory_item" inventory_item="se_net_inv">
+      <dependency>
+        <iss_se_branch_inv_click_active_zone_click_01 />
+        <iss_se_branch_inv_click_active_zone_click_02 />
+        <iss_se_branch_inv_click_active_zone_click_03 />
+        <use_se_network_inv />
+      </dependency>
+    </collect_se_net_inv>
+  </iss_se_branch_inv>
+  
+  <iss_se_spindle_with_gaps_inv>
+    <use_se_malachite_beads_inv type="apply_item" inventory_item="se_malachite_beads_inv" drop_zone="drop_zone_se_malachite_beads_inv">
+      <dependency>
+        <collect_se_malachite_beads_inv />
+      </dependency>
+    </use_se_malachite_beads_inv>
+    <iss_se_spindle_with_gaps_inv_part_placed_1 type="condition" highlight_layer="iss_spindle_part_1_out|drop_zone_part1" condition="iss_se_spindle_with_gaps_inv_part_placed_1='1'">
+      <dependency>
+        <use_se_malachite_beads_inv/>
+      </dependency>
+    </iss_se_spindle_with_gaps_inv_part_placed_1>
+    <iss_se_spindle_with_gaps_inv_part_placed_2 type="condition" highlight_layer="iss_spindle_part_2_out|drop_zone_part2" condition="iss_se_spindle_with_gaps_inv_part_placed_2='1'">
+      <dependency>
+        <use_se_malachite_beads_inv/>
+      </dependency>
+    </iss_se_spindle_with_gaps_inv_part_placed_2>
+    <iss_se_spindle_with_gaps_inv_part_placed_3 type="condition" highlight_layer="iss_spindle_part_3_out|drop_zone_part3" condition="iss_se_spindle_with_gaps_inv_part_placed_3='1'">
+      <dependency>
+        <use_se_malachite_beads_inv/>
+      </dependency>
+    </iss_se_spindle_with_gaps_inv_part_placed_3>
+    <iss_se_spindle_with_gaps_inv_part_placed_4 type="condition" highlight_layer="iss_spindle_part_4_out|drop_zone_part4" condition="iss_se_spindle_with_gaps_inv_part_placed_4='1'">
+      <dependency>
+        <use_se_malachite_beads_inv/>
+      </dependency>
+    </iss_se_spindle_with_gaps_inv_part_placed_4>
+    <iss_se_spindle_with_gaps_inv_part_placed_5 type="condition" highlight_layer="iss_spindle_part_5_out|drop_zone_part5" condition="iss_se_spindle_with_gaps_inv_part_placed_5='1'">
+      <dependency>
+        <use_se_malachite_beads_inv/>
+      </dependency>
+    </iss_se_spindle_with_gaps_inv_part_placed_5>
+    <collect_se_magic_spindle_inv type="inventory_item" inventory_item="se_magic_spindle_inv">
+      <dependency>
+        <iss_se_spindle_with_gaps_inv_part_placed_1 />
+        <iss_se_spindle_with_gaps_inv_part_placed_2 />
+        <iss_se_spindle_with_gaps_inv_part_placed_3 />
+        <iss_se_spindle_with_gaps_inv_part_placed_4 />
+        <iss_se_spindle_with_gaps_inv_part_placed_5 />
+      </dependency>
+    </collect_se_magic_spindle_inv>
+  </iss_se_spindle_with_gaps_inv>
+  
+  <iss_se_master_edward_inv>
+    <use_se_edwards_bag_inv type="apply_item" inventory_item="se_edwards_bag_inv" drop_zone="drop_zone_se_edwards_bag_inv">
+      <dependency>
+        <collect_se_edwards_bag_inv />
+      </dependency>
+    </use_se_edwards_bag_inv>
+    <use_se_broken_hook_inv type="apply_item" inventory_item="se_broken_hook_inv" drop_zone="drop_zone_items">
+      <dependency>
+        <use_se_edwards_bag_inv />
+        <collect_se_broken_hook_inv />
+      </dependency>
+    </use_se_broken_hook_inv>
+    <collect_se_hook_inv type="inventory_item" inventory_item="se_hook_inv">
+      <dependency>
+        <use_se_broken_hook_inv />
+      </dependency>
+    </collect_se_hook_inv>
+    
+    <use_se_scheme_key_inv type="apply_item" inventory_item="se_scheme_key_inv" drop_zone="drop_zone_items">
+      <dependency>
+        <collect_se_scheme_key_inv />
+      </dependency>
+    </use_se_scheme_key_inv>
+    <use_se_press_inv type="apply_item" inventory_item="se_press_inv" drop_zone="drop_zone_items">
+      <dependency>
+        <collect_se_press_inv />
+      </dependency>
+    </use_se_press_inv>
+    <collect_se_press_key_inv type="inventory_item" inventory_item="se_press_key_inv">
+      <dependency>
+        <use_se_press_inv />
+        <use_se_scheme_key_inv />
+      </dependency>
+    </collect_se_press_key_inv>
+    
+    <use_se_spring_inv type="apply_item" inventory_item="se_spring_inv" drop_zone="drop_zone_items">
+      <dependency>
+        <collect_se_spring_inv />
+      </dependency>
+    </use_se_spring_inv>
+    <use_se_pedal_organ_inv type="apply_item" inventory_item="se_pedal_organ_inv" drop_zone="drop_zone_items">
+      <dependency>
+        <collect_se_pedal_organ_inv />
+      </dependency>
+    </use_se_pedal_organ_inv>
+    <use_se_broken_sword_inv type="apply_item" inventory_item="se_broken_sword_inv" drop_zone="drop_zone_items">
+      <dependency>
+        <collect_se_broken_sword_inv />
+      </dependency>
+    </use_se_broken_sword_inv>
+    <collect_se_pogo_stick_inv type="inventory_item" inventory_item="se_pogo_stick_inv">
+      <dependency>
+        <use_se_broken_sword_inv />
+        <use_se_pedal_organ_inv />
+        <use_se_spring_inv />
+      </dependency>
+    </collect_se_pogo_stick_inv>
+    
+    <use_se_trident_inv type="apply_item" inventory_item="se_trident_inv" drop_zone="drop_zone_items">
+      <dependency>
+        <collect_se_trident_inv />
+      </dependency>
+    </use_se_trident_inv>
+    <collect_se_fork_inv type="inventory_item" inventory_item="se_fork_inv">
+      <dependency>
+        <use_se_trident_inv />
+      </dependency>
+    </collect_se_fork_inv>
+    
+    <condit_iss_se_master_edward_inv_hint_opened type="condition" highlight_layer="close_button" condition="iss_se_master_edward_inv_hint_opened=''">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_iss_se_master_edward_inv_hint_opened>
+    
+    <condit_iss_se_master_edward_inv_close_button_state_se_07 type="condition" highlight_layer="close_button" condition="condit_iss_se_master_edward_inv_close_button_state='se_07'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_iss_se_master_edward_inv_close_button_state_se_07>
+    <condit_iss_se_master_edward_inv_close_button_state_se_15_sub_tethys_corner type="condition" highlight_layer="close_button" condition="condit_iss_se_master_edward_inv_close_button_state='se_15_sub_tethys_corner'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_iss_se_master_edward_inv_close_button_state_se_15_sub_tethys_corner>
+    <condit_iss_se_master_edward_inv_close_button_state_se_16 type="condition" highlight_layer="close_button" condition="condit_iss_se_master_edward_inv_close_button_state='se_16'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_iss_se_master_edward_inv_close_button_state_se_16>
+    <condit_iss_se_master_edward_inv_close_button_state_se_22_sub_crystals type="condition" highlight_layer="close_button" condition="condit_iss_se_master_edward_inv_close_button_state='se_22_sub_crystals'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_iss_se_master_edward_inv_close_button_state_se_22_sub_crystals>
+    
+    <condit_iss_se_master_edward_inv_available type="condition" highlight_layer="close_button" condition="condit_iss_se_master_edward_inv_available='1'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_iss_se_master_edward_inv_available>
+    
+  </iss_se_master_edward_inv>
+  
+  
+  <current_place>
+    <condit_current_place_se_01 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_01'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_01>
+    <condit_current_place_se_02 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_02'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_02>
+    <condit_current_place_se_03 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_03'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_03>
+    <condit_current_place_se_04 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_04'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_04>
+    <condit_current_place_se_05 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_05'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_05>
+    <condit_current_place_se_06 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_06'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_06>
+    <condit_current_place_se_07 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_07'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_07>
+    <condit_current_place_se_08 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_08'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_08>
+    <condit_current_place_se_09 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_09'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_09>
+    <condit_current_place_se_10 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_10'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_10>
+    <condit_current_place_se_11 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_11'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_11>
+    <condit_current_place_se_12 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_12'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_12>
+    <condit_current_place_se_13 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_13'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_13>
+    <condit_current_place_se_14 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_14'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_14>
+    <condit_current_place_se_15 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_15'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_15>
+    <condit_current_place_se_16 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_16'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_16>
+    <condit_current_place_se_17 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_17'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_17>
+    <condit_current_place_se_18 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_18'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_18>
+    <condit_current_place_se_19 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_19'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_19>
+    <condit_current_place_se_20 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_20'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_20>
+    <condit_current_place_se_21 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_21'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_21>
+    <condit_current_place_se_22 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_22'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_22>
+    <condit_current_place_se_23 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_23'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_23>
+    <condit_current_place_se_24 type="condition" highlight_layer="close_button" condition="current_place_for_iss_hint='se_24'">
+      <dependency>
+        <final_quest_use_se_artifact_inv_2 />
+      </dependency>
+    </condit_current_place_se_24>
+  </current_place>
+  
+</quests>

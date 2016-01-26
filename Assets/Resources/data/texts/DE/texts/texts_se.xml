@@ -1,0 +1,1165 @@
+﻿<texts language="english">
+  <input_letters letters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"/>
+  <gameplay>
+    <map>
+      <location_titles>
+        <se_09 text="Kreuzung der Hexen"/>
+        <se_10 text="Schloss"/>
+        <se_11 text="Am Brunnen"/>
+        <se_12 text="Altes Schlachtfeld"/>
+        <se_13 text="Hexenarchiv"/>
+        <se_14 text="Observatorium"/>
+        <se_15 text="Ruinen von Morganas Anwesen"/>
+        <se_16 text="Thronsaal"/>
+        <se_17 text="Plateau"/>
+        <se_18 text="Geheime Kammer"/>
+        <se_19 text="Brücke"/>
+        <se_20 text="Baumhaus"/>
+        <se_21 text="Höhleneingang"/>
+        <se_22 text="Höhle"/>
+        <se_23 text="Am See"/>
+        <se_24 text="Maschinenschuppen"/>
+      </location_titles>
+    </map>
+    <diary>
+    </diary>
+    <ho_items>
+      <se_12_ho_01>
+        <boot>
+          <_1 text="Stiefel"/>
+        </boot>
+        <axe>
+          <_1 text="Axt"/>
+        </axe>
+        <se_lampadny_oil_inv>
+          <_1 text="Öl"/>
+        </se_lampadny_oil_inv>
+        <horseshoe>
+          <_1 text="Hufeisen"/>
+        </horseshoe>
+        <cork>
+          <_1 text="Korken"/>
+        </cork>
+        <mortar>
+          <_1 text="Mörser und Stößel"/>
+        </mortar>
+        <magnifier>
+          <_1 text="Lupe"/>
+        </magnifier>
+        <shuriken>
+          <_1 text="Shuriken"/>
+        </shuriken>
+        <poison>
+          <_1 text="Gift"/>
+        </poison>
+        <chalice>
+          <_1 text="Kelch"/>
+        </chalice>
+        <lizard>
+          <_1 text="Eidechse"/>
+        </lizard>
+        <bat>
+          <_1 text="Fledermaus"/>
+        </bat>
+      </se_12_ho_01>
+      <se_12_ho_02>
+        <coins>
+          <_1 text="Münzen"/>
+        </coins>
+        <bracers>
+          <_1 text="Armschutz"/>
+        </bracers>
+        <dreamcatcher>
+          <_1 text="Traumfänger"/>
+        </dreamcatcher>
+        <wand>
+          <_1 text="Zauberstab"/>
+        </wand>
+        <inkwell>
+          <_1 text="Tintenfass"/>
+        </inkwell>
+        <books>
+          <_1 text="Bücher"/>
+        </books>
+        <birdcage>
+          <_1 text="Vogelkäfig"/>
+        </birdcage>
+        <basket>
+          <_1 text="Korb"/>
+        </basket>
+        <dices>
+          <_1 text="Würfel"/>
+        </dices>
+        <medallion>
+          <_1 text="Medaillon"/>
+        </medallion>
+        <candlestick>
+          <_1 text="Kerzenständer"/>
+        </candlestick>
+        <stake>
+          <_1 text="Pflock"/>
+        </stake>
+        <se_crossbow_inv>
+          <_1 text="Armbrust"/>
+        </se_crossbow_inv>
+      </se_12_ho_02>
+      <se_13_ho_01>
+        <threads>
+          <_1 text="Garn"/>
+        </threads>
+        <lock>
+          <_1 text="Schloss"/>
+        </lock>
+        <typewriter>
+          <_1 text="Schreibmaschine"/>
+        </typewriter>
+        <contract>
+          <_1 text="Vertrag"/>
+        </contract>
+        <runes>
+          <_1 text="Runen"/>
+        </runes>
+        <bracelet>
+          <_1 text="Armband"/>
+        </bracelet>
+        <pipe>
+          <_1 text="Pfeife"/>
+        </pipe>
+        <cane>
+          <_1 text="Gehstock"/>
+        </cane>
+        <portrait>
+          <_1 text="Porträt"/>
+        </portrait>
+        <glasses>
+          <_1 text="Brille"/>
+        </glasses>
+        <hand_fan>
+          <_1 text="Fächer"/>
+        </hand_fan>
+        <owl>
+          <_1 text="Eule"/>
+        </owl>
+        <se_pulled_out_page_inv>
+          <_1 text="Bedruckte Seite"/>
+        </se_pulled_out_page_inv>
+      </se_13_ho_01>
+      <se_13_ho_02>
+        <elf>
+          <_1 text="Elfe"/>
+        </elf>
+        <woman_with_wings>
+          <_1 text="Frau mit Flügeln"/>
+        </woman_with_wings>
+        <dragon>
+          <_1 text="Drache"/>
+        </dragon>
+        <totem>
+          <_1 text="Totem"/>
+        </totem>
+        <eye>
+          <_1 text="Auge"/>
+        </eye>
+        <caduceus>
+          <_1 text="Hermesstab"/>
+        </caduceus>
+        <feather>
+          <_1 text="Feder"/>
+        </feather>
+        <axe>
+          <_1 text="Axt"/>
+        </axe>
+        <green_ink>
+          <_1 text="Grüne Tinte"/>
+        </green_ink>
+        <cards>
+          <_1 text="Karten"/>
+        </cards>
+        <comb>
+          <_1 text="Kamm"/>
+        </comb>
+        <coins>
+          <_1 text="Münzen"/>
+        </coins>
+        <star>
+          <_1 text="Stern"/>
+        </star>
+        <paw>
+          <_1 text="Pfote"/>
+        </paw>
+        <se_press_inv>
+          <_1 text="Stempel"/>
+        </se_press_inv>
+      </se_13_ho_02>
+      <se_16_ho_01>
+        <se_morganas_brooch_inv>
+          <_1 text="Krone"/>
+        </se_morganas_brooch_inv>
+        <fish>
+          <_1 text="Fisch"/>
+        </fish>
+        <wings>
+          <_1 text="Flügel"/>
+        </wings>
+        <pawn>
+          <_1 text="Bauer"/>
+        </pawn>
+        <banner>
+          <_1 text="Fähnchen"/>
+        </banner>
+        <mirror>
+          <_1 text="Spiegel"/>
+        </mirror>
+        <comb>
+          <_1 text="Kamm"/>
+        </comb>
+        <diadem>
+          <_1 text="Diadem"/>
+        </diadem>
+        <musket>
+          <_1 text="Muskete"/>
+        </musket>
+        <necklace>
+          <_1 text="Kette"/>
+        </necklace>
+        <ballerina>
+          <_1 text="Ballerina"/>
+        </ballerina>
+        <bat>
+          <_1 text="Fledermaus"/>
+        </bat>
+        <genie>
+          <_1 text="Flaschengeist"/>
+        </genie>
+      </se_16_ho_01>
+      <se_16_ho_02>
+        <se_gold_spur_inv>
+          <_1 text="Goldene Spore"/>
+        </se_gold_spur_inv>
+        <casket>
+          <_1 text="Kästchen"/>
+        </casket>
+        <apple>
+          <_1 text="Apfel"/>
+        </apple>
+        <rose>
+          <_1 text="Rose"/>
+        </rose>
+        <glove>
+          <_1 text="Handschuh"/>
+        </glove>
+        <fan>
+          <_1 text="Fächer"/>
+        </fan>
+        <elephant>
+          <_1 text="Elefant"/>
+        </elephant>
+        <bell>
+          <_1 text="Glöckchen"/>
+        </bell>
+        <wine_cup>
+          <_1 text="Weinkelch"/>
+        </wine_cup>
+        <chick>
+          <_1 text="Küken"/>
+        </chick>
+        <birdcage>
+          <_1 text="Vogelkäfig"/>
+        </birdcage>
+        <helmet>
+          <_1 text="Helm"/>
+        </helmet>
+        <candlestick>
+          <_1 text="Kerzenständer"/>
+        </candlestick>
+      </se_16_ho_02>
+      <se_17_ho_01>
+        <se_pedal_organ_inv>
+          <_1 text="Orgelpedalen"/>
+        </se_pedal_organ_inv>
+        <violin>
+          <_1 text="Violine"/>
+        </violin>
+        <rose>
+          <_1 text="Rose"/>
+        </rose>
+        <rigid_fan>
+          <_1 text="Pfauenfächer"/>
+        </rigid_fan>
+        <hand_fan>
+          <_1 text="Papierfächer"/>
+        </hand_fan>
+        <bell>
+          <_1 text="Glöckchen"/>
+        </bell>
+        <broom>
+          <_1 text="Besen"/>
+        </broom>
+        <drum>
+          <_1 text="Trommel"/>
+        </drum>
+        <salamander>
+          <_1 text="Salamander"/>
+        </salamander>
+        <notes_complete>
+          <_1 text="Musiknoten"/>
+        </notes_complete>
+        <cat>
+          <_1 text="Katze"/>
+        </cat>
+        <skull>
+          <_1 text="Schädel"/>
+        </skull>
+        <watch>
+          <_1 text="Uhr"/>
+        </watch>
+      </se_17_ho_01>
+      <se_17_ho_02>
+        <se_handle_inv>
+          <_1 text="Kurbel"/>
+        </se_handle_inv>
+        <shaman>
+          <_1 text="Schamane"/>
+        </shaman>
+        <music_sheet>
+          <_1 text="Notenblatt"/>
+        </music_sheet>
+        <magic_ball>
+          <_1 text="Kristallkugel"/>
+        </magic_ball>
+        <kerosene_lamp>
+          <_1 text="Petroleumlampe"/>
+        </kerosene_lamp>
+        <gargoyle>
+          <_1 text="Gargoyle"/>
+        </gargoyle>
+        <bagpipes>
+          <_1 text="Dudelsack"/>
+        </bagpipes>
+        <snail>
+          <_1 text="Schnecke"/>
+        </snail>
+        <cheese>
+          <_1 text="Käse"/>
+        </cheese>
+        <hourglass>
+          <_1 text="Sanduhr"/>
+        </hourglass>
+        <mouse>
+          <_1 text="Maus"/>
+        </mouse>
+        <wind_chimes>
+          <_1 text="Windspiel"/>
+        </wind_chimes>
+        <bat>
+          <_1 text="Fledermaus"/>
+        </bat>
+      </se_17_ho_02>
+      <se_19_ho_01>
+        <salamander>
+          <_1 text="Salamander"/>
+        </salamander>
+        <horseshoe>
+          <_1 text="Hufeisen"/>
+        </horseshoe>
+        <starfish>
+          <_1 text="Seestern"/>
+        </starfish>
+        <mask>
+          <_1 text="Maske"/>
+        </mask>
+        <doll>
+          <_1 text="Puppe"/>
+        </doll>
+        <kettle>
+          <_1 text="Teekanne"/>
+        </kettle>
+        <owl>
+          <_1 text="Eule"/>
+        </owl>
+        <corn>
+          <_1 text="Mais"/>
+        </corn>
+        <garlic>
+          <_1 text="Knoblauch"/>
+        </garlic>
+        <clew>
+          <_1 text="Garnknäuel"/>
+        </clew>
+        <gingerbread>
+          <_1 text="Lebkuchen"/>
+        </gingerbread>
+        <se_amulet_witches_inv>
+          <_1 text="Hexenamulett"/>
+        </se_amulet_witches_inv>
+        <beetle>
+          <_1 text="Käfer"/>
+        </beetle>
+      </se_19_ho_01>
+      <se_19_ho_02>
+        <keys>
+          <_1 text="Schlüssel"/>
+        </keys>
+        <mortar>
+          <_1 text="Mörser und Stößel"/>
+        </mortar>
+        <se_growth_potion_inv>
+          <_1 text="Wachstumselixier"/>
+        </se_growth_potion_inv>
+        <dragonfly>
+          <_1 text="Libelle"/>
+        </dragonfly>
+        <mirror>
+          <_1 text="Spiegel"/>
+        </mirror>
+        <watch>
+          <_1 text="Uhr"/>
+        </watch>
+        <flute>
+          <_1 text="Flöte"/>
+        </flute>
+        <rolling_pin>
+          <_1 text="Nudelholz"/>
+        </rolling_pin>
+        <tree_cone>
+          <_1 text="Tannenzapfen"/>
+        </tree_cone>
+        <snail>
+          <_1 text="Schnecke"/>
+        </snail>
+        <crab>
+          <_1 text="Krabbe"/>
+        </crab>
+        <pitchfork>
+          <_1 text="Heugabel"/>
+        </pitchfork>
+        <arrow>
+          <_1 text="Pfeil"/>
+        </arrow>
+      </se_19_ho_02>
+      <se_22_ho_01>
+        <se_stone_witcher_inv>
+          <_1 text="Hexe"/>
+        </se_stone_witcher_inv>
+        <leaf>
+          <_1 text="Blatt"/>
+        </leaf>
+        <elephant>
+          <_1 text="Elefant"/>
+        </elephant>
+        <canoe>
+          <_1 text="Kanu"/>
+        </canoe>
+        <deer>
+          <_1 text="Hirsch"/>
+        </deer>
+        <jug>
+          <_1 text="Krug"/>
+        </jug>
+        <tomahawk>
+          <_1 text="Tomahawk"/>
+        </tomahawk>
+        <paw>
+          <_1 text="Pfote"/>
+        </paw>
+        <dagger>
+          <_1 text="Dolch"/>
+        </dagger>
+        <jellyfish>
+          <_1 text="Qualle"/>
+        </jellyfish>
+        <ladybug>
+          <_1 text="Marienkäfer"/>
+        </ladybug>
+        <camel>
+          <_1 text="Kamel"/>
+        </camel>
+        <owl>
+          <_1 text="Eule"/>
+        </owl>
+      </se_22_ho_01>
+      <se_22_ho_02>
+        <se_stone_with_a_griffin_inv>
+          <_1 text="Steintafel mit Greif"/>
+        </se_stone_with_a_griffin_inv>
+        <palm>
+          <_1 text="Palme"/>
+        </palm>
+        <spruce>
+          <_1 text="Fichte"/>
+        </spruce>
+        <monkey>
+          <_1 text="Affe"/>
+        </monkey>
+        <mammoth>
+          <_1 text="Mammut"/>
+        </mammoth>
+        <man_with_weights>
+          <_1 text="Mann mit Gewichten"/>
+        </man_with_weights>
+        <eye>
+          <_1 text="Auge"/>
+        </eye>
+        <arrow>
+          <_1 text="Pfeil"/>
+        </arrow>
+        <fish>
+          <_1 text="Fisch"/>
+        </fish>
+        <symbol_with_dots>
+          <_1 text="Symbol mit Punkten"/>
+        </symbol_with_dots>
+        <human_with_shield>
+          <_1 text="Mensch mit Schild"/>
+        </human_with_shield>
+        <giraffe>
+          <_1 text="Giraffe"/>
+        </giraffe>
+        <snake>
+          <_1 text="Schlange"/>
+        </snake>
+      </se_22_ho_02>
+    </ho_items>
+    <inventory_items>
+      <se_ruby_inv text="Rubin"/>
+      <se_shawl_inv text="Tuch"/>
+      <se_gold_canine_inv text="Goldener Reißzahn"/>
+      <se_sickle_inv text="Sichel"/>
+      <se_key_step_inv text="Blaue Pyramide"/>
+      <se_burned_image_inv text="Markiertes Holzbrett"/>
+      <se_part_of_an_artefakt_1_inv text="Artefaktfragment"/>
+      <se_part_of_an_artefakt_2_inv text="Artefaktfragment"/>
+      <se_blue_nugget_inv text="Blaues Juwel"/>
+      <se_straw_bunch_inv text="Büschel Stroh"/>
+      <se_crow_feathers_inv text="Schwarze Federn"/>
+      <se_mitten_inv text="Fäustlinge"/>
+      <se_amulet_witches_inv text="Hexenamulett"/>
+      <se_raspberries_inv text="Himbeeren"/>
+      <se_tongue_demon_inv text="Dämonenzunge"/>
+      <se_flagstone_inv text="Stein mit Inschrift"/>
+      <se_boards_inv text="Bretter"/>
+      <se_rope_inv text="Seil"/>
+      <se_lens_inv text="Linse"/>
+      <se_lens_with_runes_inv text="Linse mit Runen"/>
+      <se_flame_emblem_inv text="Flammenemblem"/>
+      <se_shovel_with_sand_inv text="Schaufel mit Sand"/>
+      <se_part_of_a_necklace_1_inv text="Kettenfragment"/>
+      <se_part_of_a_necklace_2_inv text="Kettenfragment"/>
+      <se_clear_water_inv text="Sauberes Wasser"/>
+      <se_planch_inv text="Brett"/>
+      <se_handle_inv text="Kurbel"/>
+      <se_yellow_nugget_inv text="Gelbes Juwel"/>
+      <se_not_loaded_staff_b_inv text="Stab"/>
+      <se_not_loaded_staff_l_inv text="Stab"/>
+      <se_not_loaded_staff_y_inv text="Stab"/>
+      <se_magic_staff_b_inv text="Zauberstab"/>
+      <se_magic_staff_l_inv text="Zauberstab"/>
+      <se_magic_staff_y_inv text="Zauberstab"/>
+      <se_bookmark_inv text="Lesezeichen"/>
+      <se_pulled_out_page_inv text="Bedruckte Seite"/>
+      <se_star_maps_inv text="Sternenkarte"/>
+      <se_willow_sap_inv text="Harz"/>
+      <se_graphite_inv text="Zauberstift"/>
+      <se_astrolabe_inv text="Astrolabium"/>
+      <se_parchment_inv text="Pergament"/>
+      <se_claw_inv text="Klaue"/>
+      <se_birch_print_inv text="Stempel"/>
+      <se_drop_cap_inv text="Buchstabe"/>
+      <se_altar_figure_inv text="Altaraufsatz"/>
+      <se_hour_hand_inv text="Stundenzeiger"/>
+      <se_minute_hand_inv text="Minutenzeiger"/>
+      <se_silver_crab_inv text="Silberne Krabbe"/>
+      <se_magic_needle_inv text="Magische Stricknadeln"/>
+      <se_press_inv text="Stempel"/>
+      <se_red_plate_inv text="Tontafel"/>
+      <se_pedal_organ_inv text="Orgelpedalen"/>
+      <se_orb_queen_inv text="Portraithälfte"/>
+      <se_charcoal_inv text="Holzkohle"/>
+      <se_visor_inv text="Visier"/>
+      <se_spring_inv text="Sprungfeder"/>
+      <se_bracelet_with_thorns_inv text="Armband"/>
+      <se_metal_bat_inv text="Fledermaus"/>
+      <se_metal_month_inv text="Mondsichel"/>
+      <se_moonstone_inv text="Mondstein"/>
+      <se_thorn_inv text="Metallspitze"/>
+      <se_strange_fruit_inv text="Stachlige Frucht"/>
+      <se_steel_raven_inv text="Krähe"/>
+      <se_jaw_of_monster_inv text="Metallzähne"/>
+      <se_arrow_inv text="Bolzen"/>
+      <se_lilac_nugget_inv text="Violettes Juwel"/>
+      <se_short_sword_inv text="Degen"/>
+      <se_scale_monster_inv text="Metallzunge"/>
+      <se_magic_spindle_inv text="Magische Spindel"/>
+      <se_magic_ball_inv text="Efeuknäuel"/>
+      <se_compass_inv text="Kompass"/>
+      <se_well_handle_inv text="Kurbelstück"/>
+      <se_handle_wheel_inv text="Rad mit Griff"/>
+      <se_lit_lamp_inv text="Brennende Lampe"/>
+      <se_willow_emblem_inv text="Baumemblem"/>
+      <se_magic_sphere_inv text="Kristallkugel"/>
+      <se_wheel_inv text="Rad"/>
+      <se_forged_diamond_inv text="Raute"/>
+      <se_stucco_moulding_inv text="Roter Pfeilknopf"/>
+      <se_horns_of_deer_inv text="Hirschgeweih"/>
+      <se_rock_top_inv text="Felsspitze"/>
+      <se_artifact_figure_inv text="Rundes Emblem"/>
+      <se_square_tangram_inv text="Viereck"/>
+      <se_broken_sword_inv text="Abgebrochenes Schwert"/>
+      <se_canine_on_lace_inv text="Zahnkette"/>
+      <se_morganas_brooch_inv text="Morganas Krone"/>
+      <se_black_gem_inv text="Kreuz-Symbol"/>
+      <se_chisel_inv text="Meißel"/>
+      <se_pogo_stick_inv text="Springstock"/>
+      <se_basket_with_herbs_inv text="Korb mit Kräutern"/>
+      <se_growth_potion_inv text="Wachstumselixier"/>
+      <se_grail_inv text="Gral"/>
+      <se_stone_witch_inv text="Hexe"/>
+      <se_stone_witcher_inv text="Hexe"/>
+      <se_trident_inv text="Dreizack"/>
+      <se_griffin_inv text="Greif"/>
+      <se_sign_flame_inv text="Zettel mit Flammensymbol"/>
+      <se_counter_part_inv text="Display"/>
+      <se_crystal_key_inv text="Kristallschlüssel"/>
+      <se_bushhammer_inv text="Steinhammer"/>
+      <se_spindle_with_gaps_inv text="Spindel"/>
+      <se_malachite_beads_inv text="Malachitsteine"/> 
+      <se_armor_of_vines_inv text="Magische Hemden"/> 
+      <se_crystals_inv text="Kristalle"/>
+      <se_stone_with_a_griffin_inv text="Steintafel mit Greif"/>
+      <se_lampadny_oil_inv text="Petroleum"/>
+      <se_crossbow_inv text="Armbrust"/>
+      <se_sceptre_queen_inv text="Portraithälfte"/>
+      <se_artifact_inv text="Drachenartefakt"/>
+      <se_terrible_mask_inv text="Gruselige Maske"/>
+      <se_glass_vessel_inv text="Kräuterglas"/>
+      <se_electric_eel_inv text="Zitteraal"/>
+      <se_activation_lever_inv text="Hebel"/>
+      <se_acute_sink_inv text="Becken"/>
+      <se_network_inv text="Netz"/>
+      <se_net_inv text="Kescher"/>
+      <se_form_for_a_wing_inv text="Gussform"/>
+      <se_rubber_wing_inv text="Flügel"/>
+      <se_gold_spur_inv text="Goldene Spore"/>
+      <se_charged_crystals_inv text="Aufgeladene Kristalle"/>
+      <se_crossbows_and_arrows_inv text="Geladene Armbrust"/>
+      <se_triangle_tangram_inv text="Dreieck"/>
+      <se_scheme_key_inv text="Zeichnung"/>
+      <se_press_key_inv text="Zauberstempel"/>
+      <se_branch_inv text="Ast"/>
+      <se_vial_inv text="Flakon"/>
+      <se_fork_inv text="Stimmgabel"/>
+      <se_stone_inv text="Stein"/>
+    </inventory_items>
+    <comments>
+        <item_misuse>
+          <se_shawl_inv>
+            <drop_zone_se_shawl_inv_fake>
+              <text_00 text="Das nehme ich mir. "/>
+            </drop_zone_se_shawl_inv_fake>
+          </se_shawl_inv>
+          <se_magic_staff_y_inv>
+            <drop_zone_se_magic_staff_b_inv>
+              <text_00 text="Ein Spannungsfeld ..."/>
+            </drop_zone_se_magic_staff_b_inv>
+          </se_magic_staff_y_inv>
+          <se_flint_inv>
+            <drop_zone_se_lampadny_oil_inv>
+              <text_00 text="Ich sollte erst mal Petroleum hineinfüllen."/>
+            </drop_zone_se_lampadny_oil_inv>
+          </se_flint_inv>
+          <se_pulled_out_page_inv>
+            <drop_zone_glue>
+              <text_00 text="Erst mal der Klebstoff."/>
+            </drop_zone_glue>
+            <drop_zone_bookmark>
+              <text_00 text="Da würde ein Lesezeichen gut reinpassen."/>
+            </drop_zone_bookmark>
+          </se_pulled_out_page_inv>
+        <se_network_inv>
+            <active_zone_click_01>
+              <text_00 text="Ich muss erst mal die überzähligen Zweige entfernen."/>
+            </active_zone_click_01>
+            <active_zone_click_02>
+              <text_00 text="Ich muss erst mal die überzähligen Zweige entfernen."/>
+            </active_zone_click_02>
+            <active_zone_click_03>
+              <text_00 text="Ich muss erst mal die überzähligen Zweige entfernen."/>
+            </active_zone_click_03>
+          </se_network_inv>
+        </item_misuse>
+        <scenes>
+          <iss>
+            <se_part_of_an_artefakt_1_inv>
+              <comment_drop_zone_se_part_of_an_artefakt_2_inv text="Ich muss das Artefakt wieder zusammensetzen."/>
+            </se_part_of_an_artefakt_1_inv>
+            <se_planch_inv>
+              <comment_drop_zone_flint_inv text="Müsste gut brennen."/>
+            </se_planch_inv>
+            <se_crossbow_inv>
+              <comment_drop_zone_se_arrow_inv text="Ich brauche einen Bolzen."/>
+            </se_crossbow_inv>
+            <se_not_loaded_staff_b_inv>
+              <comment_drop_zone_se_blue_nugget_inv text="Um den Stab mit Magie aufzuladen, brauche ich die fehlenden Steine."/>
+            </se_not_loaded_staff_b_inv>
+            <se_not_loaded_staff_l_inv>
+              <comment_drop_zone_se_lilac_nugget_inv text="Um den Stab mit Magie aufzuladen, brauche ich die fehlenden Steine."/>
+            </se_not_loaded_staff_l_inv>
+            <se_not_loaded_staff_y_inv>
+              <comment_drop_zone_se_yellow_nugget_inv text="Um den Stab mit Magie aufzuladen, brauche ich die fehlenden Steine."/>
+            </se_not_loaded_staff_y_inv>
+            <se_oil_lamp_inv>
+              <comment_drop_zone_se_lampadny_oil_inv text="Ohne Petroleum kann ich die Lampe nicht brauchen."/>
+              <comment_drop_zone_flint_2_inv text="Jetzt muss ich sie nur noch anzünden."/>
+            </se_oil_lamp_inv>
+            <se_red_plate_inv>
+              <comment_drop_zone_se_black_plate_inv text="Das sollte ich reparieren."/>
+            </se_red_plate_inv>
+            <se_wheel_inv>
+              <comment_drop_zone_se_well_handle_inv text="Ich muss das Rad samt Griff reparieren."/>
+            </se_wheel_inv>
+            <se_spindle_with_gaps_inv>
+              <comment_drop_zone_se_malachite_beads_inv text="Wo sind die Steine?"/>
+              <comment_drop_zone_part text="Da ist alles durcheinander."/>
+              <comment_bad_drop_zone_part text="Der passt hier nicht hin."/>
+            </se_spindle_with_gaps_inv>
+            <se_magic_ball_inv>
+              <comment_drop_zone_se_magic_needle_inv text="Ich brauche etwas Magisches."/>
+            </se_magic_ball_inv>
+            <se_branch_inv>
+              <comment_drop_zone_se_network_inv text="Daraus ließe sich ein Netz basteln."/>
+            </se_branch_inv>
+          </iss>
+          <se_08>
+            <comment_se_08_sub_pedestal_instruction text="Wiederhole die Melodie, indem Du die Tasten in der richtigen Reihenfolge auswählst."/>
+            <comment_drop_zone_se_flint_inv_sub_se_08_mirror text="Besser anzünden."/>
+          </se_08>
+          <se_09>
+            <comment_voiced_first_visit text="Jetzt verstehe ich, warum sie Lynn brauchen. Ich muss sie retten!"/>
+            <comment_voiced_after_mihi_ho text="Dieses Ritual ist vom Schicksal bestimmt! Du kannst es nicht verhindern!"/>
+            <count_text_label text="Objekte: #se_09_sub_miniho_count_item#/6"/>
+            <comment_drop_zone_necklace text="Irgendwie fehlt da was."/>
+            <comment_close_grille text="Die Stäbe sind im Weg."/>
+          </se_09>
+          <se_09_puzzle>
+            <comment_drop_zone_se_magic_staff_b_inv text="Autsch! Ein Spannungsfeld!"/>
+          </se_09_puzzle>
+          <se_10>
+            <comment_drop_zone_se_part_of_a_fresco_inv text="Ich habe etwas, das hier passen könnte."/>
+            <comment_drop_zone_se_key_step_inv text="Ich muss mich nach den passenden Objekten umsehen."/>
+            <comment_drop_zone_se_altar_figure_inv text="Etwas Schmales würde in die Nische passen."/>
+            <comment_drop_zone_se_magic_staff_y_inv text="Noch ein Spannungsfeld."/>
+            <comment_drop_zone_se_magic_staff_l_inv text="Da muss ich irgendwie durch."/>
+          </se_10>
+          <se_11>
+            <comment_drop_zone_se_short_sword_inv text="Das Ding hat was im Maul."/>
+            <comment_drop_zone_se_scale_monster_inv text="Vielleicht komme ich da ran, wenn ich das fehlende Teil auftreibe."/>
+            <comment_drop_zone_se_magic_spindle_inv text="Moment mal ... Das scheinen giftigen Dämpfe zu sein ..."/>
+            <comment_voiced_loza text="Besser davonbleiben. Verzaubert!"/>
+            <comment_drop_zone_se_silver_crab_inv text="Außer mir schert sich keiner um fehlende Dinge."/>
+            <comment_drop_zone_se_lit_lamp_inv text="Puh, ist das dunkel da unten."/>
+            <comment_drop_zone_se_handle_wheel_inv text="Die Winde hat auch schon bessere Tage gesehen."/>
+            <comment_drop_zone_se_magic_sphere_inv text="Solange ich das Ding nicht habe, muss ich leider draußen bleiben."/>
+            <comment_about_willow_emblem text="Oh nein! Ich kann nicht erkennen, wo es hin ist. Da muss mir jemand helfen."/>
+            <comment_no_way text="Hier komme ich nicht durch."/>
+          </se_11>
+          <se_12>
+            <comment_voiced_battleground text="Ein Schlachtfeld! Das Drachenartefakt muss hier irgendwo sein ... "/>
+            <comment_voiced_after_cutscene_hunters text="Endlich haben ihre Seelen ihren wohlverdienten Frieden gefunden. "/>
+            <comment_drop_zone_se_jaw_of_monster_inv text="Die Wurzeln sind darüber gewachsen."/>
+            <comment_drop_zone_se_willow_emblem_inv text="Ich brauche das richtige Emblem."/>
+            <comment_drop_zone_se_horns_of_deer_inv text="Habe ich so einen nicht schon gesehen? Das war mal ein Hirsch."/>
+            <comment_drop_zone_se_forged_diamond_inv text="Hier würde ein Diamant oder etwas rautenförmiges passen."/>
+            <comment_drop_zone_se_armor_of_vines_inv text="Also kann nur ein bestimmtes Kleidungsstück die Versteinerung aufheben."/>
+            <comment_drop_zone_se_artifact_figure_inv text="Das Artefakt ist weg!"/>
+            <comment_active_zone_bottle text="Ich wünschte, ich könnte das Harz auffangen."/>
+            <comment_active_zone_bbt_forged_diamond_stoned text="Sitzt felsenfest."/>
+          </se_12>
+          <se_12_ho_01>
+            <comment_dragon_1 text="Ich muss den Drachen wieder zusammensetzen."/>
+            <comment_dragon_2 text="Etwas fehlt."/>
+            <comment_dragon_3 text="Etwas fehlt."/>
+            <comment_dragon_4 text="Etwas fehlt."/>
+            <comment_dragon_5 text="Etwas fehlt."/>
+            <comment_knife text="Mit bloßen Händen geht das nicht."/>
+            <comment_flask_01 text="Wenn ich Wasser reingieße, schwimmt das Ding nach oben."/>
+          </se_12_ho_01>
+          <se_12_ho_02>
+            <comment_item_0 text="Das ist schon fast eine richtige Armbrust."/>
+            <comment_item_1 text="Das ist schon fast eine richtige Armbrust."/>
+            <comment_item_2 text="Das ist schon fast eine richtige Armbrust."/>
+            <comment_item_3 text="Das ist schon fast eine richtige Armbrust."/>
+            <comment_wand_pommel_01 text="Aber das ist nur ein Teil."/>
+            <comment_book1_01 text="Ich muss alle Bücher finden."/>
+            <comment_book2_01 text="Ich muss alle Bücher finden."/>
+            <comment_book3_01 text="Ich muss alle Bücher finden."/>
+            <comment_book4_01 text="Ich muss alle Bücher finden."/>
+            <comment_broom text="Zwischen all den Blättern könnte etwas versteckt sein."/>
+          </se_12_ho_02>
+          <se_13>
+            <comment_voiced_after_book text="Jetzt kann ich die Jäger retten. Aber zunächst brauche ich eine magische Spindel."/>
+            <comment_voiced_lynn_is_ours text="Du kannst das Ritual nicht aufhalten! Lynn gehört uns!"/>
+            <comment_voiced_find_page text="Ich brauche bloß die fehlende Seite zu finden. Dann kann ich den Fluch der Jäger brechen."/>
+            <comment_voiced_stop_ritual text="Noch gibt es eine Chance! Wir können das Ritual aufhalten!"/>
+            <count_text_label text="Teile gefunden: #se_13_sub_miniho_count_item#/6"/>
+            <drop_zone_se_pulled_out_page_inv_use text="Und jetzt zu dieser Seite ..."/>
+            <comment_drop_zone_se_bookmark_inv text="Das ist der Umriss eines Lesezeichens."/>
+            <comment_glue text="Ich glaube, ich sollte mit Kleber anfangen."/>
+            <comment_page text="Jetzt kann ich die fehlende Seite einfügen."/>
+            <comment_bookmark text="Und etwas, das sie an Ort und Stelle hält."/>
+            <comment_awl text="Zeit für Nadel und Faden! Aber zuerst muss ich Löcher reinstechen."/>
+            <comment_threads_and_needle text="Und jetzt das Ganze zusammennähen."/>
+            <comment_drop_zone_se_birch_print_inv text="Ohne den Stempel werde ich wohl nicht hineinsehen können."/>
+            <comment_paper text="Wenn man was drucken will, braucht man natürlich auch Papier."/>
+            <comment_roller text="Und eine Farbwalze ..."/>
+            <comment_drop_zone_se_drop_cap_inv text="Ein Buchstabe fehlt."/>
+            <comment_drop_zone_hands text="So kann man die Zeit nicht ablesen."/>
+            <comment_drop_zone_se_willow_sap_inv text="Hmm... Wenn man ein bestimmtes Elixier hineinschüttet, öffnet sich die Schublade."/>
+          </se_13>
+          <se_13_puzzle_watch>
+            <instruction_label text="ANLEITUNG"/>
+            <button_continue text="FORTFAHREN"/>
+            <instruction_mg1 text="Suche nach Paaren, um Scherben zu entfernen."/>
+            <instruction_mg2 text="Stelle auf jeder Uhr die richtige Zeit ein. Wenn die Zeiger an der richtigen Stelle sind, leuchten sie gelb auf."/>
+            <instruction_mg3 text="Vertausche die Kacheln, um das Bild wiederherzustellen. Verwende das freie Feld, um sie zu verschieben."/>
+            <instruction_mg4 text="Vertausche die Teile, um das Bild zusammenzustezen."/>
+            <instruction_use_next_mg_part text="Schiebe sie von hier aus zum nächsten Abschnitt der Maschine. "/>
+            <instruction_central_watch text="Stelle die richtige Zeit auf der Uhr in der Mitte ein."/>
+            <comment_bbt_after_game text="Jetzt weiß ich, wie ich Edward von dem Fluch befreien kann. Ich muss den Stab des Zauberers zerstören. &#xD;&#xA; Aber dafür werde ich das Artefakt brauchen. Ich darf ihn nicht unterschätzen."/>
+            <comment_mg2_dial2_main text="Etwas fehlt."/>
+            <comment_mg3_plate_main text="Etwas fehlt."/>
+            <comment_mg4_detail_5_main text="Etwas fehlt."/>
+            <comment_minute_hand_for_interactive text="So kann man die Zeit nicht ablesen."/>
+          </se_13_puzzle_watch>
+          <se_13_ho_01>
+            <comment_contract_feather_02 text="Er ist nur mit Unterschrift gültig."/>
+            <comment_rubber_stamp_02 text="Da muss ein Stempel drauf."/>
+            <comment_sponge_01 text="Zu schmutzig. Man kann nichts erkennen."/>
+            <comment_typewriter_keys_01 text="Ohne die fehlenden Tasten kann ich nichts tippen."/>
+            <comment_active_zone_comment_owl text="Da scheint was drin zu sein."/>
+          </se_13_ho_01>
+          <se_13_ho_02>
+            <comment_wrench text="Ich brauche ein Werkzeug."/>
+            <comment_bottle_blue text="Aus zwei Farben kann man eine neue mischen. "/>
+          </se_13_ho_02>
+          <se_14>
+            <comment_drop_zone_se_astrolabe_inv text="Sesam öffne Dich! War zumindest einen Versuch wert."/>
+            <comment_drop_zone_se_compass_inv text="Natürlich auch zu."/>
+            <comment_drop_zone_se_claw_inv text="Dafür braucht man schon Klauen."/>
+            <comment_drop_zone_se_sieve_inv text="Sieben ginge schneller."/>
+            <comment_voiced_artefakts text="Was für ein seltsamer Ort ..."/>
+          </se_14>
+          <se_14_puzzle_globe>
+            <comment_drop_zone_se_star_maps_inv text="Ich brauche eine Sternenkarte."/>
+            <riddle_text_lvl_1 text="Mit langem Haar und einer beeindruckenden Pose ist er ein imposantes Tier. "/>
+            <riddle_text_lvl_2 text="Die beiden sind unzertrennlich, wenn sie durch das Tal galoppieren."/>
+            <riddle_text_lvl_3 text="Es speit Feuer und gebietet Ehrfurcht."/>
+          <text_after_lvl_1 text="Es war die große Hexe Thetis, die Allmacht über die Welt der Menschen anstrebte."/>
+            <text_after_lvl_2 text="Die Leute erkannten, dass ihre Kräfte nicht ausreichten, um sie zu besiegen. So schickten sie einen Boten zur Höhle eines alten Drachen."/>
+            <text_after_lvl_3 text="Drachen und Hexen bekämpfen sich bereits seit Jahrtausenden. Die Drachen spiehen Feuer und ein Schild aus Flammen materialisierte. So wurde das Artefakt geschaffen. "/>
+          </se_14_puzzle_globe>
+          <se_15>
+            <comment_voiced_first_visit text=" Ganz klar! Hier hat Morgana gewohnt."/>
+            <comment_voiced_note_complete text=" Wenn das stimmt, dann hat Morgana das Artefakt irgendwo weiter oben im Schloss versteckt. &#xD;&#xA; Ich muss irgendwie in den ersten Stock gelangen."/>
+            <comment_sphere_01 text="Ich sollte das Netz noch weiter beschweren."/>
+            <comment_sphere_02 text="Ich sollte das Netz noch weiter beschweren."/>
+            <comment_sphere_03 text="Ich sollte das Netz noch weiter beschweren."/>
+            <comment_skull1 text="Da gehört auf jeden fall ein Totenkopf hin."/>
+            <comment_skull2 text="Da gehört auf jeden fall ein Totenkopf hin."/>
+            <comment_skull3 text="Da gehört auf jeden fall ein Totenkopf hin."/>
+            <comment_skull4 text="Da gehört auf jeden fall ein Totenkopf hin."/>
+            <comment_skull5 text="Da gehört auf jeden fall ein Totenkopf hin."/>
+            <comment_skull6 text="Da gehört auf jeden fall ein Totenkopf hin."/>
+            <comment_drop_zone_stone text="Ich brauche etwas zum Schneiden."/>
+            <comment_drop_zone_se_parchment_inv text="Ich bräuchte etwas Papier ..."/>
+            <comment_drop_zone_se_graphite_inv text="Einen Stift, oder etwas in der Art, brauche ich auch."/>
+            <comment_drop_zone_se_press_key_inv text="Das lässt sich nur mit einem ganz bestimmten Siegel öffnen."/>
+            <comment_drop_zone_se_crossbows_and_arrows_inv text="Da muss ich mir was einfallen lassen."/>
+            <comment_drop_zone_se_rock_top_inv text="Ich muss das fehlende Teil finden."/>
+          </se_15>
+          <se_15_puzzle_altar>
+            <comment_drop_zone_se_triangle_tangram_inv text="Ein Tangram. Aber einige Formen fehlen."/>
+            <comment_drop_zone_se_square_tangram_inv text="Ein Tangram. Aber einige Formen fehlen."/>
+          </se_15_puzzle_altar>
+          <se_16>
+            <comment_voiced_bbt_first_visit text="Die Deko ist so garstig. Das muss der Thronsaal sein. Das Artefakt ist sicher hier irgendwo in der Nähe."/>
+            <comment_voiced_bbt_use_bracelet text="Bald ist das Ritual abgeschlossen."/>
+            <comment_poisonous_monster text="Igitt! Der sabbert ja! Und vermutlich ist sein Speichel giftig! Vielleicht sollte ich da was drübertun."/>
+            <comment_drop_zone_se_pogo_stick_inv text="Ich muss ihn da irgendwie hochkatapultieren."/>
+            <comment_drop_zone_se_bracelet_with_thorns_inv text="Wenn ich dieses Armband finde, lässt er vielleicht das Schwert los."/>
+            <comment_drop_zone_se_visor_inv text="Die Fledermaus brauche ich."/>
+            <comment_drop_zone_se_morganas_brooch_inv text="Das könnte Morganas Krone sein."/>
+            <comment_drop_zone_se_ruby_inv text="Mit zwei Augen sieht man besser."/>
+            <comment_drop_zone_queen text="Ich glaube, da gehört ein Portrait hin."/>
+            <comment_active_zone_bbt_guard text="Das war mal eine Wache Morganas. Scheint aber kein Leben mehr drin zu sein."/>
+            <count_text_label text="Objekte: #se_16_sub_miniho_count_item#/6"/>
+          </se_16>
+          <se_16_puzzle>
+            <comment_drop_zone_se_moonstone_inv text="Ich brauche einen Mondstein."/>
+          </se_16_puzzle>
+          <se_16_ho_01>
+            <comment_need_pearls text="Ich sollte die fehlenden Perlen finden."/>
+            <comment_base_item_part_0 text="Da gehört irgendein Tier drauf."/>
+            <comment_base_item_part_1 text="Da gehört irgendein Tier drauf."/>
+            <comment_base_item_part_2 text="Da gehört irgendein Tier drauf."/>
+            <comment_base_item_part_3 text="Da gehört irgendein Tier drauf."/>
+          </se_16_ho_01>
+          <se_16_ho_02>
+            <comment_corkscrew text="Der Korken will nicht."/>
+            <comment_vine_bottle text="Da ist kein Wein drin."/>
+          </se_16_ho_02>
+          <se_17>
+            <comment_drop_zone_stupka text="Da braucht man ein Elixer mit Superreinigungskraft!"/>
+            <comment_drop_zone_se_thorn_inv text="Eine Metallspitze ist abgefallen."/>
+            <comment_drop_zone_se_sickle_inv text="Autsch! Die Dornen sind ganz schön spitz!"/>
+            <comment_drop_zone_bat text="Da ist klar, was fehlt."/>
+            <comment_drop_zone_se_steel_raven_inv text="Ein gewöhnlicher Schlüssel passt hier nicht."/>
+            <comment_mixture_01 text="Das Wasser ist ja ekelhaft!"/>
+            <comment_pestik text="Jetzt muss ich sie nur noch zerstoßen."/>
+            <comment_needle_yellow text="Ich brauche gelbes Garn."/>
+            <comment_needle_green text="Hier brauche ich grünes Garn."/>
+            <comment_needle_brown text="Und jetzt noch ein wenig braunes."/>
+            <comment_needle_missuse text="Das passt nicht so recht."/>
+            <comment_voiced_after_gobelin_wrapp text="So so. Da ist ganz sicher das Artefakt."/>
+          </se_17>
+          <se_17_puzzle_sofa>
+            <comment_drop_zone_se_stucco_moulding_inv text="Das brauche ich."/>
+          </se_17_puzzle_sofa>
+          <se_17_ho_01>
+            <comment_drumstick1 text="Welche Melodie mag das wohl sein? Ich muss die fehlenden Noten finden."/>
+            <comment_needle_full text="Eine Trommel mit einem Riss kann man nicht brauchen."/>
+          </se_17_ho_01>
+          <se_17_ho_02>
+            <comment_note1_on_scene text="Hier gehört ein Musikant hin."/>
+            <comment_note2_on_scene text="Hier gehört ein Musikant hin."/>
+            <comment_item_0_in_nisha text="Hier gehört ein Musikant hin."/>
+            <comment_item_1_in_nisha text="Hier gehört ein Musikant hin."/>
+            <comment_item_2_in_nisha text="Hier gehört ein Musikant hin."/>
+            <comment_item_3_in_nisha text="Der Musikant braucht ein Instrument."/>
+            <comment_shaman_tambourine_01 text="Ein Schamane ohne Tamburin? Wie soll er denn so die Geister anrufen?"/>
+            <comment_shaman_wolfskin_01 text="Wo ist denn der Wolfspelz?"/>
+            <comment_bagpipes_tube1_01 text="Ohne alle Pfeifen kann man darauf nicht spielen."/>
+            <comment_bagpipes_tube2_01 text="Ohne alle Pfeifen kann man darauf nicht spielen."/>
+            <comment_bagpipes_tube3_01 text="Ohne alle Pfeifen kann man darauf nicht spielen."/>
+            <comment_bagpipes_tube4_01 text="Ohne alle Pfeifen kann man darauf nicht spielen."/>
+          </se_17_ho_02>
+          <se_18>
+            <comment_drop_zone_se_handle_inv text="Ohne eine Kurbel kann man die Linse nicht einstellen."/>
+            <comment_drop_zone_se_shawl_inv text="So dreckig wie das Ding ist, dringt da kein Licht durch."/>
+            <comment_drop_zone_se_gold_canine_inv text="Bin zwar kein Zahnarzt, aber die Zähne kann ich wieder einsetzen."/>
+            <comment_drop_zone_se_burned_image_inv text="Ich brauche etwas, mit einem ähnlichen Muster."/>
+            <comment_drop_zone_se_clear_water_inv text="Nicht genug Wasser drin."/>
+            <comment_voiced_morgana text="Morgana war schlau! Das heißt, ich habe nur einen Teil des Artefakts. Und ich muss in der Höhle nach dem zweiten Teil suchen. Der Waldweg führt zur Höhle."/>
+          </se_18>
+          <se_19>
+            <comment_voiced_first_visit text="Ich kann die Höhle auf der anderen Seite sehen. Da muss die andere Hälfte des Artefakts sein. Ich muss die Brücke instandsetzen."/>
+            <comment_voiced_puzzle_complete text="Fast geschafft! Aber auf den losen Brettern sollte Ich den Abgrund nicht überqueren. Ich muss sie irgendwie befestigen."/>
+            <comment_drop_zone_se_mitten_inv text="Die pieken so. Ein Paar Handschuhe wäre jetzt toll."/>
+            <comment_drop_zone_se_black_gem_inv text="Ein Kartenhai bin ich nicht, aber das Symbol sollte ich finden können."/>
+            <comment_drop_zone_se_tongue_demon_inv text="Mit den Händen würde das zu lange dauern."/>
+            <comment_drop_zone_se_basket_with_herbs_inv text="Verstehe! Er möchte einen Korb mit Kräutern."/>
+            <comment_drop_zone_se_rope_inv text="Mein kleiner Kobold kann mir bei der Reparatur helfen, aber er braucht ein Seil."/>
+            <comment_zone_entrance_to_a_cave text="So kann ich die Brücke nicht überqueren."/>
+            <comment_grail text="Ein schicker Gral. Aber heilig ist er vermutlich nicht."/>
+          </se_19>
+          <se_19_puzzle_broken_bridge>
+            <comment_drop_zone_se_boards_inv text="Die Bretter sind weg."/>
+          </se_19_puzzle_broken_bridge>
+          <se_19_ho_01>
+            <comment_pincers text="Autsch! Der ist noch sehr heiß."/>
+          </se_19_ho_01>
+          <se_19_ho_02>
+            <comment_toad_01 text="Hier kann man doch sicher eine Libelle fangen."/>
+            <comment_item_0 text="„Heute back' ich, morgen brau ich ...“"/>
+            <comment_item_1 text="„Heute back' ich, morgen brau ich ...“"/>
+            <comment_item_2 text="„Heute back' ich, morgen brau ich ...“"/>
+            <comment_item_3 text="„Heute back' ich, morgen brau ich ...“"/>
+            <comment_voiced_potion_complete text="Wow! Die ist ja geradezu in Lichtgeschwindigkeit gewachsen! Das muss ein Wachstumselixier sein."/>
+          <comment_dragonfly text="Wie soll ich sie nur einfangen? Ich brauche einen kleinen Helfer."/>
+          </se_19_ho_02>
+          <se_20>
+            <comment_voiced_first_visit text="Alle Achtung! Das ist kein normales Baumhaus, sondern ein regelrechter Ausguck. Die Hexen haben sicher von hier aus die Höhle beobachtet."/>
+            <comment_drop_zone_se_amulet_witches_inv text="Die Form kenne ich doch."/>
+            <comment_drop_zone_se_raspberries_inv text="Lecker."/>
+            <comment_drop_zone_se_flagstone_inv text="So leicht kriege ich die Kiste nicht kaputt."/>
+            <comment_drop_zone_se_lens_inv text="Ohne Linse ist dieses Ding nutzlos."/>
+            <comment_drop_zone_se_flame_emblem_inv text="Mit dem richtigen Emblem bekomme ich das Ding auch auf."/>
+            <comment_drop_zone_se_shovel_with_sand_inv text="Ich sollte etwas Sand darauf verteilen."/>
+          </se_20>
+          <se_21>
+            <count_text_label text="Teile gefunden: #se_21_sub_miniho_grail_count_item#/4"/>
+            <count_text_label_plants text="Kräuter eingesammelt: #se_21_sub_stone_dwarf_picked_plants_count#/6"/>
+            <comment_drop_zone_se_stone_witch_inv text="Die zwei sind vielleicht ein Paar."/>
+            <comment_drop_zone_se_stone_witcher_inv text="Die zwei sind vielleicht ein Paar."/>
+            <comment_drop_zone_se_grail_inv text="An denen komme ich nicht vorbei. Ich muss tun, was sie verlangen."/>
+            <comment_drop_zone_se_straw_bunch_inv text="Das ist mehr ein Sieb, als ein Korb. So viele Löcher."/>
+            <comment_drop_zone_se_growth_potion_inv text="Den Hammer hätte ich gern, aber wie?"/>
+            <comment_drop_zone_se_griffin_inv text="Da fehlt einer."/>
+            <comment_drop_zone_se_sign_flame_inv text="Vielen Dank für die Anleitung, wer auch immer Du bist."/>
+            <comment_plant1_01 text="Ich muss den Korb mit Kräutern füllen."/>
+            <comment_plant2_01 text="Ich muss den Korb mit Kräutern füllen."/>
+            <comment_plant3_01 text="Ich muss den Korb mit Kräutern füllen."/>
+            <comment_plant4_01 text="Ich muss den Korb mit Kräutern füllen."/>
+            <comment_plant5_01 text="Ich muss den Korb mit Kräutern füllen."/>
+            <comment_plant6_01 text="Ich muss den Korb mit Kräutern füllen."/>
+            <riddle_lion text="Der König der Tiere mit Mähne und Pranken."/>
+            <riddle_torch text="Ihre helle Flamme erleuchtet Deinen Weg."/>
+            <riddle_fox text="In rotem Kleid und mit goldenem Schwanz, wird diesem schlauen Gesellen niemals kalt."/>
+            <riddle_book text="Ich habe einen Rücken und zwei Seiten, doch weder Gesicht noch Knochen."/>
+          </se_21>
+          <se_21_puzzle_mechanical_monster>
+            <comment_drop_zone_se_counter_part_inv text="Ziemlich kaputt, das Ding."/>
+            <comment_minigame_failed text="Keine weiteren Züge verfügbar."/>
+          </se_21_puzzle_mechanical_monster>
+          <se_22>
+            <comment_voiced_first_visit text="Ich wette, die andere Hälfte des Artefakts ist hier."/>
+            <comment_drop_zone_se_lens_with_runes_inv text="Hier gehört eine Linse rein."/>
+            <comment_drop_zone_se_fork_inv text="Vielleicht kann man die Kristalle mit Schwingungen zerbrechen. Edward könnte mir helfen ..."/>
+            <comment_drop_zone_se_crystal_key_inv text="Ein gewöhnlicher Schlüssel passt hier nicht."/>
+            <comment_drop_zone_se_bushhammer_inv text="Zunächst muss ich die grobe Form heruasschlagen."/>
+            <comment_drop_zone_se_chisel_inv text="Zeit für den Meißel."/>
+            <comment_drop_zone_se_stone_with_a_griffin_inv text="Sehr praktisch!"/>
+            <comment_drop_zone_tools text="Nur sind die Werkzeuge weg."/>
+            <comment_voiced_scene_complete text="Das Artefakt ist komplett. Jetzt brauche ich nur noch die letzte Pyramide. Jetzt kann ich ihn besiegen!"/>
+          </se_22>
+          <se_23>
+            <comment_voiced_first_visit_sub_mechanisms text="Damit wird die Treppe aktiviert!!"/>
+            <comment_drop_zone_se_terrible_mask_inv text="Mein kleiner Kobold könnte sich doch statt einer Statuette da hinstellen."/>
+            <comment_drop_zone_se_charged_crystals_inv text="Ich brauche wohl einige Kristalle."/>
+            <comment_drop_zone_se_net_inv text="Ein Zitteraal!"/>
+            <comment_drop_zone_se_artifact_inv text="Edward braucht das Artefakt!"/>
+            <comment_zone_beam text="Das sieht nicht gut aus ..."/>
+          </se_23>
+          <se_23_sub_altar_on_island>
+            <comment_drop_zone_se_artifact_inv text="Edward braucht das Artefakt!"/>
+          </se_23_sub_altar_on_island>
+          <se_23_puzzle_rubber>
+            <comment_bottle_full text="Jetzt noch der Sirup ..."/>
+            <comment_bowl_full text="Das ist die Gussform."/>
+            <comment_drop_zone_se_glass_vessel_inv text="Ich brauche ein Kräuterglas."/>
+            <comment_drop_zone_se_form_for_a_wing_inv text="Da gehört wohl die Gussform hin."/>
+          </se_23_puzzle_rubber>
+          <se_24>
+            <comment_drop_zone_se_activation_lever_inv text="Der Hebel ist nicht mehr da."/>
+            <comment_drop_zone_se_acute_sink_inv text="Ich kann das Netz nicht herausziehen."/>
+            <comment_drop_zone_se_electric_eel_inv text="Wir brauchen etwas, das Elektrizität erzeugt."/>
+            <comment_drop_zone_feathers_on_mask text="Mit der Maske stimmt was nicht."/>
+            <comment_drop_zone_se_rubber_wing_inv text="Ein Flügel fehlt."/>
+            <comment_drop_zone_se_gold_spur_inv text="Ich muss sie vorsichtig ausschneiden."/>
+            <comment_drop_zone_se_crow_feathers_inv text="Jetzt muss der Kobold sie aufsetzen."/>
+            <comment_edward_dnd text="Edward tut sein Bestes. Ich sollte ihn nicht unterbrechen."/>
+            <comment_voiced_edward_repair text="Ich bin gleich soweit."/>
+            <comment_instead_of_dialog_with_edward_crystals text="Gut gemacht. Die Kristalle sind aufgeladen. Jetzt müssen wir sie in den Apparat stecken."/>
+            <comment_rope text="Etwas fehlt."/>
+          </se_24>
+          <se_24_puzzle_mehacrystals>
+            <comment_drop_zone_se_crystals_inv text="Die Kristalle gehören da hinein."/>
+            <comment_crystal_cant_move text="Die Kristalle können nur in eine Richtung bewegt werden und da ist kein Platz."/>
+            <comment_lost text="Es ist kein Platz da, um die Kristalle zu bewegen. Ich sollte noch einmal von vorn beginnen."/>
+            <comment_need_to_charge_crystals text="Ich muss die Kristalle aufladen."/>
+          </se_24_puzzle_mehacrystals>
+        </scenes>
+    </comments>
+    <dialogs>
+      <se_08_dialog_cutscene_mirror_repair>
+        <someone_1_0 text="Ein Ganzes wird aus Teilen geschaffen. Wir wollen uns die anderen Welten ansehen."/>
+      </se_08_dialog_cutscene_mirror_repair>
+      <se_08_dialog_with_wolfgang_1>
+        <wolfgang_1_0 text="Was hast Du gesagt? Morgana hat Lynn verschleppt und will Thethis zum Leben erwecken? Du musst sie aufhalten! Wenn sie es schafft., das Ritual abzuschließen, bedeutet das das Ende der Welt."/>
+        <wolfgang_1_1 text="Einer der ersten Hexenjäger schuf das Drachenartefakt, dem solche Macht innewohnte, dass kein Zauber ihr widerstehen konnte. Doch bei einer Schlacht hier in der Nähe ging es verloren. Hier, nimm dies. Es wird Dir bei der Suche nach dem Drachenartefakt helfen."/>
+      </se_08_dialog_with_wolfgang_1>
+      <se_08_dialog_with_wolfgang_2>
+        <wolfgang_2_0 text="Dieser Stab kann verzauberte Türen öffnen. Aber er funktioniert nur, wenn die verzauberten Edelsteine eingesetzt sind. Ich muss nun gehen. Aber ich glaube fest an Dich!"/>
+      </se_08_dialog_with_wolfgang_2>
+      <se_10_dialog_edward_first>
+        <edward_1_0 text="Hier haben sie Lynn durchgezerrt. Wir müssen diesen Durchgang öffnen!"/>
+      </se_10_dialog_edward_first>
+      <se_10_dialog_edward_second>
+        <edward_2_0 text="Ich weiß, wer das Ritual stoppen könnte: Wolfgang. Immerhin hat er diesen Hexen schon einmal gegenüber gestanden."/>
+        <edward_2_1 text="Komm, lass uns zurück zum Hexenhaus gehen. Wir können Wolfgang durch den Zauberspiegel kontaktieren."/>
+      </se_10_dialog_edward_second>
+      <se_10_cutscene_witcher>
+        <_1_mathias_1_0 text="Zu spät!"/>
+        <_2_carry_1_0 text="Das Artefakt beschützt mich! Du kannst mir nichts zuleide tun! Gib mir die Pyramiden!"/>
+      </se_10_cutscene_witcher>
+      <se_12_dialog_hunter_1>
+        <_1_hunter_1_0 text="Ich vernehme das Gekeife von Menschen. Was hat ein Mensch hier verloren? Sie sollte besser von hier verschwinden ..."/>
+        <_2_heroine_1_2 text="Ich habe mir das doch nicht eingebildet! Die Statue spricht ..."/>
+        <_3_hunter_1_3 text="Fürchte Dich nicht, wir tun Dir nichts. Wir haben vor langer Zeit in diesem Wald gegen Thetis gekämpft. Doch die Hexen lockten uns in einen Hinterhalt. Sie vernichteten unsere gesamte Truppe. Mein Bruder und ich wurden versteinert. Ich verlor mein Augenlicht und mein Bruder seine Sprache."/> 
+        <_4_heroine_1_4 text="Das muss das Schlachtfeld sein, von dem Wolfgang sprach. Bitte verrate mir, wo sich das Drachenartefakt befindet. Ich muss die Heraufbeschwörung Thetis' verhindern. Die Hexen haben meine Tochter entführt. Ihr Körper soll die Seele Thetis' aufnehmen. Wenn ich sie nicht aufhalte, wird die Welt vernichtet! Das Artefakt ist unsere letzte Hoffnung."/> 
+        <_5_hunter_1_5 text="Es tut mir so leid, aber das Artefakt ging in der Schlacht verloren. Mein Bruder sollte es aufbewahren. Er könnte Dir sagen, wo er es zuletzt gesehen hat, wenn der Fluch gebrochen ist. Es gibt da ein Archiv, in dem die Hexen ihr gesamtes Wissen horten. Dort müsstest Du herausfinden können, wie sich der Fluch brechen lässt."/>
+      </se_12_dialog_hunter_1>
+      <se_12_dialog_hunter_2>
+        <hunter_2_0 text="Endlich sind wir frei! Danke! Morgana hat das Drachenartefakt gestohlen. Sie besaß einmal ein Haus hier in der Nähe. Wenn es noch steht ... das Artefakt müsste dort versteckt sein. Leider kann ich Dir nicht mehr sagen."/>
+      </se_12_dialog_hunter_2>
+      <se_12_dialog_hunter_final>
+        <hunter_3_0 text="Danke!"/>
+      </se_12_dialog_hunter_final>
+      <se_13_dialog_with_book>
+        <book_1_0 text="Ich weiß, warum Du hier bist, aber das kannst Du Dir abschminken. Es wird Dir nicht gelingen, den Fluch der Jäger zu brechen. Das gelingt keinem außer mir! Und selbst ich habe den Zauber vergessen ... Ein gewissenloser Schurke hat die Seite gestohlen! So ein Pech aber auch. Hey!"/>
+      </se_13_dialog_with_book>
+      <se_16_dialog_cutscene_battle_mathias>
+        <edward_1_0 text="Was sehe ich da? Na bitte. Ich glaube, jetzt sind sie vollzählig. Nun können wir den Durchgang öffnen."/>
+      </se_16_dialog_cutscene_battle_mathias>
+      <se_18_dialog_edward_about_chest>
+        <edward_1_0 text="Diese Tasche erkenne ich wieder. Solche trugen die Hexenjäger vergangener Zeiten mit sich herum. Und dort ist auch das Artefakt, da bin ich mir sicher."/>
+      </se_18_dialog_edward_about_chest>
+      <se_21_dialog_with_sphinx>
+        <sphinx_1_0 text="Bist Du es, der den Gral stahl? Der Zutritt sei Dir verwehrt. Der Feuertod soll Dich ereilen. Wir dulden keine Fremden. Wir verlangen nach unserem Gral."/>
+      </se_21_dialog_with_sphinx>
+      <se_21_dialog_with_sphinx_2>
+        <sphinx_2_0 text="Bringst Du uns unseren Gral? So sei es. Wir wollen Dich verschonen., doch bevor Dir der Zutritt gewährt wird, beantworte unsere Rätsel."/>
+      </se_21_dialog_with_sphinx_2>
+      <se_23_dialog_edward_island>
+        <edward_1_0 text="Noch ist es nicht zu spät! Wir können es noch schaffen! Wir müssen nur diese Insel erreichen!"/>
+      </se_23_dialog_edward_island>
+      <se_23_dialog_cutscene_ritual_on_island>
+        <edward_1_0 text="Schnell! Gib mir das Artefakt!"/>
+      </se_23_dialog_cutscene_ritual_on_island>
+      <se_24_dialog_with_edward_about_mechanizm>
+        <edward_1_0 text="Was für eine unglaubliche Apparatur! Sieh Dir das einmal an! Der Orden der Hexenjäger benutzte früher ähnliche Maschinen ... Damit lassen sich Kristalle aufladen. Hmm... Sie scheint nicht zu funktionieren. Ich werde versuchen, sie zu reparieren. Sieh Du Dich nach einer Energiequelle um."/>
+      </se_24_dialog_with_edward_about_mechanizm>
+      <se_24_dialog_with_edward_about_repair>
+        <edward_2_0 text="Ich habe es geschafft, Carrie! Ich habe den Apparat repariert! Komm, wir wollen versuchen, ihn in Gang zu setzen."/>
+      </se_24_dialog_with_edward_about_repair>
+      <se_24_dialog_with_edward_crystals>
+        <edward_3_0 text="Gut gemacht, Carrie! Du hast die Kristalle aufgeladen. Nun müssen wir sie einsetzen."/>
+      </se_24_dialog_with_edward_crystals>
+      <final_movie_dialog>
+        <_1_wolfgang_1_0 text="Ihr habt über das Böse triumphiert! Morgana ist vernichtet und durch ihren Tod hat meine Seele ihre Freiheit gewonnen. Es ist bedauerlich, dass sie diesen Pfad für sich wählte ... Es hätte alles so anders sein können ... Doch uns blieb keine andere Wahl. Ich wünsche Euch alles Gute."/>
+        <_2_heroine_1_0 text="Ich glaube, nun haben wir das Böse ein für allemal verbannt. Jetzt können Edward und Lynn endlich in Frieden leben."/>
+      </final_movie_dialog>
+    </dialogs>
+    <mini_games_descriptions>
+      <se_08_puzzle_mirror text="Setze die Spiegelscherben an der passenden Stelle ein. Berühre sie erneut, um Wolfgangs Spiegelbild wiederherzustellen."/>
+      <se_09_puzzle text="Verbinde gleichfarbige Schlösser. Ihre Ketten dürfen sich nicht überschneiden. "/>
+      <se_11_sub_puzzle text="Überspringe mit den Figuren alle anderen Figuren, bis nur noch eine übrigbleibt. Du kannst in alle Richtungen, aber nur benachbarte Figuren überspringen. "/>
+      <se_13_puzzle_watch text="Finde die richtige Uhrzeit heraus und stelle dann die Uhr in der Mitte. Löse zunächst alle integrierten Minispiele. Beginne oben links und suche nach Paaren unter den Scherben."/>
+      <se_14_puzzle_globe text="Betrachte die Konstellationen links und suche die heraus, die am besten zu dem Hinweis darunter passt. Verbinde dann die Sterne auf der Karte zu diesem Sternbild. Wähle eine Linie erneut aus, um sie auszuradieren. "/>
+      <se_15_puzzle_altar text="Fülle die kerzenförmige Aussparung links mit den Tangramfromen. In dem leeren Feld oben kannst Du sie mit Hilfe der Pfeile drehen. Formen der gleichen Farbe dürfen sich nicht berühren."/>
+      <se_20_sub_sub_puzzle text="Drehe die Dreiecke, um einen Pfad für den Sand zu bilden."/>
+      <se_16_puzzle text="Bringe alle Steine zum Leuchten. Der Mondstein ist die Quelle des Lichts und die farbigen Kugeln beeinflussen die Farbe des Lichtstrahls. Die Pfeile lenken die Strahlen. Du kannst die Pfeile, den Mondstein und die Kugeln, jedoch nicht die Steine, beliebig platzieren."/>
+      <se_17_puzzle_sofa text="Tausche die Kreise mit Hilfe der Pfeiltasten aus und stelle das Bild wieder her."/>
+      <se_18_puzzle_burner text="Verbrenne in jeder Spalte und Reihe die den Zahlen entsprechende Anzahl von Feldern. Zwischen jeder Kette verbrannter Felder muss ein freies Feld bleiben. Wenn die richtigen Felder verbrannt sind, leuchten die Zahlen grün auf."/>
+      <se_19_puzzle_broken_bridge text="Befestige die Bretter an der Brücke. Sie sollen nicht überlappen. "/>
+      <se_20_sub_telescope_puzzle text="Finde die versteckten Runen in der Höhle. Verwende die Pfeile, um das Teleskop auszurichten."/>
+      <se_21_puzzle_mechanical_monster text="Dirigiere die Hand des Roboters mit Hilfe der Pfeile, um die Blöcke zu entfernen und an den Schlüssel zu gelangen. Dir steht nur eine begrenzte Anzahl von Zügen zur Verfügung. "/>
+      <se_22_puzzle_crater text="Füge die Runensteine an den passenden Stellen ein, bis alle Pfade leuchten. "/>
+      <se_23_puzzle_rubber text="Sammle alle Pflanzen ein. Wähle die Pfeile aus, um die Öffnung des Glases über eine Pflanze zu stülpen. Wenn Du eine auslässt, musst Du von vorne beginnen."/>
+      <se_24_puzzle_mehacrystals text="Stecke die Kristalle in die farblich passenden Trichter. Wähle einen Kristall aus und dann den leeren Trichter, in den Du ihn stecken möchtest. Die Kristalle können sich nur in Pfeilrichtung bewegen und nur einen weiteren Kristall überspringen."/>
+    </mini_games_descriptions>
+    <task_from_imp>
+      <task_10 text="Gelange ins Schloss und finden einen Weg, Lynn zu retten."/>
+      <task_11 text="Restauriere den Spiegel und kontaktiere Wolfgang."/>
+      <task_12 text="Finde das Schlachtfeld"/>
+      <task_13 text="Befreie die Jäger von ihrem Fluch."/>
+      <task_14 text="Verschaffe Dir Zutritt zu Morganas Anwesen und finde heraus, wo das Drachenartefakt versteckt ist."/>
+      <task_15 text="Verschaffe Dir Zutritt zum oberen Stock des Schlosses."/>
+      <task_16 text="Finde das Drachenartefakt."/>
+      <task_17 text="Finde den Weg durch den Wald zur Höhle."/>
+      <task_18 text="Gelange auf die andere Seite und finde die Höhle."/>
+      <task_19 text="Finde die zweite Hälfte des Artefakts."/>
+      <task_20 text="Öffne die Tür im Schloss."/>
+      <task_21 text="Erreiche die Insel und rette Lynn."/>
+    </task_from_imp>
+  </gameplay>
+</texts>

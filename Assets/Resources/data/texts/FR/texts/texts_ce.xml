@@ -1,0 +1,584 @@
+﻿<texts language="english">
+  <input_letters letters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"/>
+  <gameplay>
+    <map>
+      <location_titles>
+        <ce_01 text="La grotte"/>
+        <ce_02 text="Chemin montagneux"/>
+        <ce_03 text="Rive du lac"/>
+        <ce_04 text="Cabanon du lac"/>
+        <ce_05 text="Sanctuaire du savoir"/>
+        <ce_06 text="Salle des sacrements"/>
+        <ce_07 text="Sanctuaire"/>
+        <ce_08 text="Caverne"/>
+        <ce_09 text="Salle souterraine"/>
+      </location_titles>
+    </map>
+    <diary/>
+    <ho_items>
+      <ce_01_ho_01>
+        <ax>
+          <_1 text="Hache"/>
+        </ax>
+        <tiara>
+          <_1 text="Diadème"/>
+        </tiara>
+        <garlic>
+          <_1 text="Ail"/>
+        </garlic>
+        <caduceus>
+          <_1 text="Caducée"/>
+        </caduceus>
+        <ce_blue_flower_inv>
+          <_1 text="Fleur bleue"/>
+        </ce_blue_flower_inv>
+        <key>
+          <_1 text="Clé"/>
+        </key>
+        <glasses>
+          <_1 text="Lunettes"/>
+        </glasses>
+        <witch>
+          <_1 text="Sorcière"/>
+        </witch>
+        <rose>
+          <_1 text="Rose"/>
+        </rose>
+        <thread>
+          <_1 text="Bobine de fil"/>
+        </thread>
+        <scales>
+          <_1 text="Balance"/>
+        </scales>
+        <shell>
+          <_1 text="Coquillage"/>
+        </shell>
+      </ce_01_ho_01>
+      <ce_01_ho_02>
+        <chalice>
+          <_1 text="Calice"/>
+        </chalice>
+        <voodoo_doll>
+          <_1 text="Poupée vaudoue"/>
+        </voodoo_doll>
+        <magic_ball>
+          <_1 text="Sphère magique"/>
+        </magic_ball>
+        <candle>
+          <_1 text="Bougie"/>
+        </candle>
+        <scroll>
+          <_1 text="Parchemin"/>
+        </scroll>
+        <pomegranate>
+          <_1 text="Grenade"/>
+        </pomegranate>
+        <tarot>
+          <_1 text="Lames de tarot"/>
+        </tarot>
+        <spider>
+          <_1 text="Araignée"/>
+        </spider>
+        <order>
+          <_1 text="Médaille"/>
+        </order>
+        <shackles>
+          <_1 text="Fers"/>
+        </shackles>
+        <hourglass>
+          <_1 text="Sablier"/>
+        </hourglass>
+        <ce_rubellite_inv>
+          <_1 text="Pierre précieuse"/>
+        </ce_rubellite_inv>
+      </ce_01_ho_02>
+      <ce_02_ho_01>
+        <ce_explosive_potion_inv>
+          <_1 text="Potion explosive"/>
+        </ce_explosive_potion_inv>
+        <conifer_cones>
+          <_1 text="Pommes de pin"/>
+        </conifer_cones>
+        <hell>
+          <_1 text="Coquille"/>
+        </hell>
+        <top_hat>
+          <_1 text="Haut-de-forme"/>
+        </top_hat>
+        <kettle>
+          <_1 text="Bouilloire"/>
+        </kettle>
+        <little_chest>
+          <_1 text="Petit coffre"/>
+        </little_chest>
+        <keys>
+          <_1 text="Clés"/>
+        </keys>
+        <boot>
+          <_1 text="Botte"/>
+        </boot>
+        <vinyl_record>
+          <_1 text="33 tours"/>
+        </vinyl_record>
+        <watch>
+          <_1 text="Horloge"/>
+        </watch>
+        <cup>
+          <_1 text="Tasse"/>
+        </cup>
+        <towel>
+          <_1 text="Serviette"/>
+        </towel>
+      </ce_02_ho_01>
+      <ce_09_ho_01>
+        <nutcracker>
+          <_1 text="Casse-noix"/>
+        </nutcracker>
+        <mortar>
+          <_1 text="Mortier"/>
+        </mortar>
+        <skull>
+          <_1 text="Crâne"/>
+        </skull>
+        <comb>
+          <_1 text="Peigne"/>
+        </comb>
+        <ce_chip_with_a_boat_inv>
+          <_1 text="Médaillon du coffre"/>
+        </ce_chip_with_a_boat_inv>
+        <horse>
+          <_1 text="Cheval"/>
+        </horse>
+        <kettle>
+          <_1 text="Bouilloire"/>
+        </kettle>
+        <butterfly>
+          <_1 text="Papillon"/>
+        </butterfly>
+        <owl>
+          <_1 text="Hibou"/>
+        </owl>
+        <hat>
+          <_1 text="Chapeau"/>
+        </hat>
+        <dreamcatcher>
+          <_1 text="Attrape-rêves"/>
+        </dreamcatcher>
+        <beetle>
+          <_1 text="Scarabée"/>
+        </beetle>
+      </ce_09_ho_01>
+      <ce_09_ho_02>
+        <dollhouse>
+          <_1 text="Maison de poupée"/>
+        </dollhouse>
+        <letter>
+          <_1 text="Lettre"/>
+        </letter>
+        <gear>
+          <_1 text="Rouage"/>
+        </gear>
+        <ce_vial_inv>
+          <_1 text="Fiole"/>
+        </ce_vial_inv>
+        <spades>
+          <_1 text="As de pique"/>
+        </spades>
+        <brush>
+          <_1 text="Pinceau"/>
+        </brush>
+        <book>
+          <_1 text="Livre"/>
+        </book>
+        <thimble>
+          <_1 text="Dé à coudre"/>
+        </thimble>
+        <umbrella>
+          <_1 text="Parapluie"/>
+        </umbrella>
+        <shoe>
+          <_1 text="Chaussure"/>
+        </shoe>
+        <imp>
+          <_1 text="Lutin"/>
+        </imp>
+        <ring>
+          <_1 text="Bague"/>
+        </ring>
+      </ce_09_ho_02>
+      <ce_04_ho_01>
+        <sword>
+          <_1 text="Epée"/>
+        </sword>
+        <the_eiffel_tower>
+          <_1 text="Tour Eiffel"/>
+        </the_eiffel_tower>
+        <statuette_girl>
+          <_1 text="Statue de fillette"/>
+        </statuette_girl>
+        <flag>
+          <_1 text="Drapeau"/>
+        </flag>
+        <claw>
+          <_1 text="Griffe"/>
+        </claw>
+        <rooster>
+          <_1 text="Coq"/>
+        </rooster>
+        <caduceus>
+          <_1 text="Caducée"/>
+        </caduceus>
+        <scroll>
+          <_1 text="Parchemin"/>
+        </scroll>
+        <shield>
+          <_1 text="Bouclier"/>
+        </shield>
+        <crate>
+          <_1 text="Caisse"/>
+        </crate>
+        <golden_ring>
+          <_1 text="Anneau d'or"/>
+        </golden_ring>
+        <saturn>
+          <_1 text="Saturne"/>
+        </saturn>
+        <bucket>
+          <_1 text="Seau"/>
+        </bucket>
+      </ce_04_ho_01>
+      <ce_04_ho_02>
+        <lookout_tower>
+          <_1 text="Tour de guet"/>
+        </lookout_tower>
+        <mouse>
+          <_1 text="Souris"/>
+        </mouse>
+        <watch>
+          <_1 text="Horloge"/>
+        </watch>
+        <key>
+          <_1 text="Clé"/>
+        </key>
+        <dragon>
+          <_1 text="Dragon"/>
+        </dragon>
+        <pumpkin>
+          <_1 text="Citrouille"/>
+        </pumpkin>
+        <lizard>
+          <_1 text="Lézard"/>
+        </lizard>
+        <crescent>
+          <_1 text="Croissant"/>
+        </crescent>
+        <cauldron>
+          <_1 text="Chaudron"/>
+        </cauldron>
+        <picture>
+          <_1 text="Tableau"/>
+        </picture>
+        <chest>
+          <_1 text="Coffre"/>
+        </chest>
+        <chalice>
+          <_1 text="Calice"/>
+        </chalice>
+        <horse_harness>
+          <_1 text="Attelage"/>
+        </horse_harness>
+      </ce_04_ho_02>
+    </ho_items>
+    <inventory_items>
+      <ce_white_crystall_inv text="Cristal blanc"/>
+      <ce_chain_inv text="Chaîne"/>
+      <ce_golden_threads_inv text="Fils d'or"/>
+      <ce_red_rune_inv text="Rune rouge"/>
+      <ce_green_rune_inv text="Rune verte"/>
+      <ce_blue_rune_inv text="Rune bleue"/>
+      <ce_part_of_the_obelisk_1_inv text="Incrustation de menhir"/>
+      <ce_explosive_potion_inv text="Potion explosive"/>
+      <ce_lamp_with_fireflies_inv text="Lampe à lucioles"/>
+      <ce_mirror_plate_inv text="Miroir"/>
+      <ce_gaff_inv text="Gaffe"/>
+      <ce_basket_inv text="Panier"/>
+      <ce_1_part_of_leaf_inv text="Morceau de parchemin"/>
+      <ce_2_part_of_leaf_inv text="Morceau de parchemin"/>
+      <ce_3_part_of_leaf_inv text="Morceau de parchemin"/>
+      <ce_bracelet_inv text="Bracelet"/>
+      <ce_chip_with_a_boat_inv text="Médaillon du coffre"/>
+      <ce_rope_inv text="Corde"/>
+      <ce_stoned_ball_inv text="Boule de pierre"/>
+      <ce_board_inv text="Planche"/>
+      <ce_rope_with_hook_inv text="Grappin"/>
+      <ce_bracetel_for_shoulder_inv text="Bijou d'épaule"/>
+      <ce_stoned_sun_inv text="Soleil brillant"/>
+      <ce_spell_of_portals_inv text="Sortilège du portail"/>
+      <ce_code_catalog_c3_inv text="Morceau de code 1"/>
+      <ce_code_catalog_a14_inv text="Morceau de code 2"/>
+      <ce_enchanted_bark_inv text="Ecorce magique"/>
+      <ce_fern_inv text="Fougère"/>
+      <ce_leather_charm_inv text="Tresse de cuir"/>
+      <ce_part_of_the_obelisk_2_inv text="Incrustation de menhir"/>
+      <ce_part_of_the_obelisk_3_inv text="Incrustation de menhir"/>
+      <ce_red_pantahedron_inv text="Pentaèdre rouge"/>
+      <ce_stamp_of_a_bat_inv text="Sceau de chauve-souris"/>
+      <ce_stamp_of_a_wolf_inv text="Sceau au loup"/>
+      <ce_stamp_of_a_eagle_inv text="Sceau à l'aigle "/>
+      <ce_stone_island_inv text="Ile de pierre"/>
+      <ce_screwdriver_inv text="Tournevis"/>
+      <ce_necklace_inv text="Collier"/>
+      <ce_pearls_inv text="Perles"/>
+      <ce_mathias_figure_inv text="Figurine de Mathias"/>
+      <ce_mosaic_part_inv text="Fragment de mosaïque"/>
+      <ce_manuscript_inv text="Manuscrit"/>
+      <ce_burnt_book_inv text="Livre carbonisé"/>
+      <ce_hook_inv text="Crochet"/>
+      <ce_stick_inv text="Bâton"/>
+      <ce_tiara_inv text="Diadème"/>
+      <ce_old_key_inv text="Clé ancienne"/>
+      <ce_fireproof_gloves_inv text="Gants ignifugés"/>
+      <ce_oil_inv text="Huile"/>
+      <ce_vial_inv text="Fiole"/>
+      <ce_figure_of_a_man_inv text="Figurine d'homme"/>
+      <ce_part_of_a_lock_inv text="Partie de serrure"/>
+      <ce_knife_inv text="Couteau"/>
+      <ce_badge_with_a_dragon_inv text="Ecusson de dragon"/>
+      <ce_bracelet_with_rubellite_inv text="Bracelet orné"/>
+      <ce_solar_belt_inv text="Anneau solaire"/>
+      <ce_blue_pantahedron_inv text="Pentaèdre bleu"/>
+      <ce_sphere_from_mechanism_inv text="Sphère"/>
+      <ce_shawl_inv text="Châle"/>
+      <ce_rubellite_inv text="Pierre précieuse"/>
+      <ce_ice_spell_inv text="Sortilège de glace"/>
+      <ce_leather_belt_inv text="Ceinture en cuir"/>
+      <ce_ringed_crystal_inv text="Cristal bagué"/>
+      <ce_leather_scraps_inv text="Lanières de cuir"/>
+      <ce_hook_cat_inv text="Grappin"/>
+      <ce_spring_water_inv text="Eau de source"/>
+      <ce_magic_fruit_inv text="Fruit magique"/>
+      <ce_portrait_of_mathias_inv text="Portrait de Mathias"/>
+      <ce_light_crystal_inv text="Cristal de lumière"/>
+      <ce_silver_cup_inv text="Coupe en argent"/>
+      <ce_gold_ring_inv text="Anneau d'or"/>
+      <ce_light_spell_inv text="Sortilège de lumière"/>
+      <ce_grimoire_lynn_inv text="Grimoire"/>
+      <ce_spell_of_portals_inv text="Sortilège du portail"/>
+      <ce_chest_inv text="Coffret"/>
+      <ce_blue_flower_inv text="Fleur bleue"/>
+    </inventory_items>
+    <comments>
+      <item_misuse>
+        <se_flint_inv>
+          <drop_zone_items>
+            <text_00 text="Pas question ! Ce n'est pas du tout mon genre."/>
+          </drop_zone_items>
+        </se_flint_inv>
+        <ce_stoned_sun_inv>
+          <drop_zone_ce_golden_threads_inv>
+            <text_00 text="Je dois d'abord mettre le fil."/>
+          </drop_zone_ce_golden_threads_inv>
+        </ce_stoned_sun_inv>
+      </item_misuse>
+      <scenes>
+        <iss>
+          <ce_stick_inv>
+            <comment_drop_zone_ce_hook_inv text="Un crochet... et le tour sera joué."/>
+          </ce_stick_inv>
+          <ce_chest_inv>
+            <comment_drop_zone_ce_chip_with_a_boat_inv text="Il faut un médaillon pour l'ouvrir. "/>
+          </ce_chest_inv>
+          <ce_white_crystall_inv>
+            <comment_drop_zone_ce_gold_ring_inv text="Je devrais lui mettre une bague."/>
+          </ce_white_crystall_inv>
+          <ce_stoned_ball_inv>
+            <comment_drop_zone_ce_solar_belt_inv text="Encore un petit coup de pouce et cela fera un beau soleil."/>
+          </ce_stoned_ball_inv>
+          <ce_bracelet_inv>
+            <comment_drop_zone_ce_rubellite_inv text="La pierre précieuse a disparu."/>
+          </ce_bracelet_inv>
+          <ce_leather_belt_inv>
+            <comment_drop_zone_ce_knife_inv text="Il faut que je coupe cette ceinture en lanières."/>
+          </ce_leather_belt_inv>
+          <ce_chain_inv>
+            <comment_drop_zone_ce_leather_scraps_inv text="Il me faut du cuir pour en faire une tresse."/>
+            <comment_drop_zone_ce_pearls_inv text="Maintenant, la parure..."/>
+          </ce_chain_inv>
+          <ce_hook_cat_inv>
+            <comment_drop_zone_ce_rope_inv text="Ce serait parfait avec une corde."/>
+          </ce_hook_cat_inv>
+          <ce_grimoire_lynn>
+            <comment_drop_zone_ce_blue_flower_inv text="C'est un emplacement pour quelque chose de fleuri."/>
+            <comment_drop_zone_ce_light_crystal_inv text="Il faut mettre un cristal ici."/>
+            <comment_drop_zone_ce_blue_rune_inv text="Il me faut une pierre runique bleue."/>
+            <comment_drop_zone_ce_fern_inv text="J'ai affaire à un amateur de botanique."/>
+            <drop_zone_lian_flower_wrong_flower text="Ça ne marche pas."/>
+            <drop_zone_lian_flower text="C'est là qu'il faut mettre des fleurs."/>
+          </ce_grimoire_lynn>
+        </iss>
+        <ce_01>
+          <count_text_label text="Objets trouvés : #ce_01_sub_miniho_count_item#/6"/>
+          <comment_drop_zone_ce_shawl_inv text="Le lutin doit être allergique au pollen. Je peux peut-être lui trouver un foulard pour protéger son nez."/>
+          <comment_drop_zone_ce_ice_spell_inv text="Il me faut quelque chose pour écarter ces obstacles."/>
+          <comment_drop_zone_ce_part_of_the_obelisk_inv text="Pierres symboliques. Il m'en faut."/>
+          <comment_drop_zone_ce_oil_inv text="Hum... La ceinture s'est desséchée sur sa taille et maintenant, elle est collée."/>
+          <comment_dialog_with_herself_grimoire text="Edward a laissé tomber son grimoire, comme si une part de lui voulait me retrouver. Si je pouvais le remettre en état, je pourrais me servir de ses formules magiques."/>
+        </ce_01>
+        <ce_01_puzzle_temple>
+          <comment_drop_zone_ce_mirror_plate_inv text="Ici, il faut mettre une sorte de miroir."/>
+          <comment_drop_zone_ce_ringed_crystal_inv text="Un cristal a disparu."/>
+        </ce_01_puzzle_temple>
+        <ce_01_ho_01>
+          <comment_witch_book_01 text="Il lui manque son grimoire."/>
+          <comment_witch_cauldron_01 text="Il lui manque un chaudron."/>
+          <comment_potion text="Qu'est-ce qu'il faut pour cette recette ?"/>
+          <comment_wrong_potion text="Mince. Ça ne va pas."/>
+        </ce_01_ho_01>
+        <ce_01_ho_02>
+          <comment_chalice_part1 text="Je vais réparer ce calice."/>
+          <comment_chalice_part2 text="Je vais réparer ce calice."/>
+          <comment_chalice_part3 text="Je vais réparer ce calice."/>
+          <comment_chalice_part4 text="Je vais réparer ce calice."/>
+          <comment_chalice_part5 text="Je vais réparer ce calice."/>
+        </ce_01_ho_02>
+        <ce_02>
+          <comment_drop_zone_ce_green_rune_inv text="Il n'y a qu'une rune verte qui peut aller ici."/>
+          <comment_drop_zone_ce_red_rune_inv text="La pierre runique rouge est indispensable."/>
+          <comment_drop_zone_ce_gaff_inv text="Je dois ramener cet objet sur la rive."/>
+          <comment_drop_zone_ce_explosive_potion_inv text="Hum... Je peux peut-être détruire les planches."/>
+          <comment_drop_zone_ce_lamp_with_fireflies_inv text="Il fait noir comme dans un four là-dedans."/>
+          <voiced_bbt_dialog_with_herself_cursed_lake text="Oh non... Je suis revenue à cet affreux lac. Est-ce une machination d'Edward ? &#xD;&#xA; Je dois découvrir ce qui se passe. Mais d'abord, je dois le rejoindre."/>
+          <voiced_bbt_after_cutscene_portal_open text="Le portail semble stabilisé. Il devrait tenir assez longtemps."/>
+        </ce_02>
+        <ce_03>
+          
+          <count_text_label text="Lucioles rassemblées : #ce_03_sub_miniho_count_item#/8"/>
+          <comment_drop_zone_ce_stone_island_inv text="Nul homme n'est une île, un tout en soi..."/>
+          <comment_drop_zone_ce_screwdriver_inv text="Un outil commun devrait suffire."/>
+          <comment_drop_zone_ce_leather_charm_inv text="Pour annuler le sortilège, il faut réparer cette tresse de cuir."/>
+          <comment_drop_zone_ce_basket_inv text="Il faut une embarcation à mon lutin."/>
+          <comment_drop_zone_ce_spell_of_portals_inv text="On se croirait à Carnac... Je parie qu'il y a un portail ici. Il suffit de l'activer."/>
+          <voiced_bbt_dialog_with_herself_return_of_the_old_enemy text="Non... Mathias est vivant. Enfin, je comprends. Edward doit être sous son influence. &#xD;&#xA; Je dois faire vite. Minuit approche."/>
+          <voiced_bbt_dialog_with_herself_golem_on_open text="Ce doit être l'œuvre de Mathias. Mais je ne veux pas le blesser. J'ai le sentiment que cette créature fut humaine. Je peux peut-être plutôt essayer de l'aider.  "/>
+          <voiced_bbt_dialog_with_herself_after_cutscene_golem_free text=" Il a dû rester dans cet état pendant trop longtemps... &#xD;&#xA; au moins, son âme est enfin en paix. Oh ! Il m'a laissé quelque chose ! "/>
+        </ce_03>
+        <ce_04>
+          <comment_need_stamps text="Ma prochaine mission est de trouver tous les sceaux."/>
+          <comment_need_table_items text="C'est donc un rituel. Voici l'endroit où je dois placer les objets."/>
+          <comment_need_part_of_lock text="Ce doit être la meilleure partie de lui-même."/>
+          <comment_need_silver_cup text="C'est l'emplacement pour un calice de cérémonie."/>
+          <comment_need_badge text="Edward est prisonnier, mais plus pour longtemps."/>
+          <comment_need_light_spell text="Tu ne peux pas me détruire ! J'aurai le sort de lumière dans un instant."/>
+        </ce_04>
+        <ce_04_ho_01>
+          <comment_saturn_ring text="En y ajoutant quelques anneaux, c'est exactement la planète qu'il me faut."/>
+        </ce_04_ho_01>
+        <ce_04_ho_02>
+          <comment_drop_zone_lookout_tower text="Il manque quelque chose à cette tour."/>
+          <comment_drop_zone_horse text="Sans chevaux, cet attelage n'ira nulle part."/>
+        </ce_04_ho_02>
+        <ce_05>
+          <comment_drop_zone_ce_old_key_inv text="Il me faut une clé spéciale."/>
+          <comment_drop_zone_ce_burnt_book_inv text="C'est pratique pour poser un livre."/>
+          <comment_drop_zone_ce_figure_of_a_man_inv text="Pour une fois, j'ai besoin d'un homme."/>
+          <comment_drop_zone_ce_mathias_figure_inv text="Je suppose que j'ai aussi besoin de ce personnage qui donne la chair de poule."/>
+          <comment_drop_zone_ce_code_catalog_c3_inv text="Il me faut le code du dossier."/>
+          <comment_drop_zone_ce_code_catalog_a14_inv text="Il me faut le code du dossier."/>
+          <comment_about_golem text="Cet homme dans le livre, c'est la pauvre victime de Mathias !"/>
+          <comment_voiced_dialog_with_herself_wisdom_storage text="Ce doit être le sanctuaire du savoir ! Je dois y trouver le moyen de tirer Edward de cette situation."/>
+          <comment_voiced_dialog_with_herself_ingridients text="Je dois trouver tous ces ingrédients pour sauver Edward."/>
+        </ce_05>
+        <ce_06>
+          <comment_voiced_after_book text="Ainsi, je dois trouver ce que Mathias a pris à Edward et à cette pauvre créature de bois. Leur rendre ce qui leur appartient devrait les faire revenir."/>
+          <comment_drop_zone_ce_manuscript_inv text="Ce n'est pas une façon de traiter les livres."/>
+          <comment_drop_zone_ce_fireproof_gloves_inv text="Ces flammes sont magiques. Il ne faut pas les toucher à mains nues."/>
+        </ce_06>
+        <ce_06_puzzle>
+          <comment_drop_zone_ce_mosaic_part_inv text="Une mosaïque doit avoir tous ses morceaux."/>
+        </ce_06_puzzle>
+        <ce_07>
+          <comment_voiced_ce_07_first_visit text="Pauvre arbre... Il est complètement desséché. Et ces statues... Furent-elles humaines ?"/>
+          <comment_voiced_ce_07_need_hurry text="Décidément ! Mathias a vraiment tout fait pour cacher cet endroit. Je dois me dépêcher."/>
+          <comment_tree text="Les racines sont à sec."/>
+        </ce_07>
+        <ce_07_puzzle_water_lock>
+          <comment_drop_zone_pantahedron text="Il manque plusieurs pentaèdres ici."/>
+          <comment_not_working text="Cela ne fonctionne pas correctement."/>
+          <comment_need_sphere text="Hum... Il manque encore quelque chose ici sur la droite."/>
+          <comment_drop_zone_ce_sphere_from_mechanism_inv text="Pour démarrer le mécanisme, il me faut une sphère."/>
+        </ce_07_puzzle_water_lock>
+        <ce_07_puzzle_box>
+          <comment_drop_zone_ce_bracelet_with_rubellite_inv text="Son bracelet de force a disparu."/>
+        </ce_07_puzzle_box>
+        <ce_08>
+          <comment_drop_zone_parts_of_leaf_inv text="Il me faut le reste du parchemin."/>
+          <comment_drop_zone_ce_chip_with_a_boat_inv text="Le médaillon a disparu."/>
+          <comment_drop_zone_ce_board_inv text="Mon lutin a besoin d'un gué."/>
+          <comment_drop_zone_ce_rope_with_hook_inv text="Il lui faut aussi quelque chose pour se tenir."/>
+          <comment_voiced_dialog_with_herself_underground_river text=" Je dois arrêter le courant d'une façon ou d'une autre. "/>
+          <count_text_label text="Eléments trouvés : #ce_08_sub_miniho_count_item#/7"/>
+        </ce_08>
+        <ce_09>
+          <comment_voiced_after_dialog_ally text=" Je ferai tout ce que je peux pour vous aider."/>
+          <comment_bbt_first_open_sub_table text="On dirait qu'Allie a essayer de réparer son collier ici."/>
+          <comment_drop_zone_ce_golden_threads_inv text="Ces planètes ressemblent à des perles, mais il n'y a rien pour les enfiler."/>
+          <comment_drop_zone_ce_stoned_sun_inv text="Il manque le centre du système solaire."/>
+          <comment_drop_zone_elli text="Peut-être qu'avec ses bijoux, elle pourrait retrouver ses pouvoirs."/>
+          <comment_drop_zone_ce_vial_inv text="Que puis-je utiliser pour transporter de l'eau ?"/>
+          <comment_wooden_elli text="La voilà libérée de l'emprise de Mathias."/>
+        </ce_09>
+        <ce_09_ho_01>
+          <comment_horse_head_01 text="Un cheval à bascule sans tête ? C'est sinistre."/>
+        </ce_09_ho_01>
+        <ce_09_ho_02>
+          <comment_gem_01 text="Il faut mettre une pierre sur cette bague."/>
+        </ce_09_ho_02>
+      </scenes>
+    </comments>
+    <dialogs>
+      <ce_intro_dialog>
+        <intro_1_0 text="Quelques semaines après ces évènements, Lynn et Edward partirent en week-end aux cascades."/>
+      </ce_intro_dialog>
+      <ce_03_dialog_cutscene_mathias_return>
+        <_1_mathias_1_0 text="Ah, te voici ! Je présume que tu as fait ce que tu devais."/>
+        <_2_empty_1_0 text=""/>
+        <_3_mathias_1_1 text="Quand la nuit tombera, mes sorts seront irrévocables. Tu seras alors mon loyal serviteur pour l'éternité. N'est-ce-pas que cela va être merveilleux ?"/>
+      </ce_03_dialog_cutscene_mathias_return>
+      <ce_03_dialog_cutscene_golem_free>
+        <_1_golem_1_0 text="Ah ! Mon âme est libérée. Tenez. Prenez ceci. C'est tout ce que je peux vous donner."/>
+      </ce_03_dialog_cutscene_golem_free>
+      <ce_04_dialog_edward>
+        <_1_edward_1_0 text="Lynn ! Ne reste pas ici. Pour moi, il n'y a plus d'espoir. Je ne suis plus moi-même."/>
+        <_2_lynn_1_0 text="Il reste toujours de l'espoir, Edward. Je te promets de trouver le moyen de te sauver."/>
+      </ce_04_dialog_edward>
+      <ce_04_dialog_mathias>
+        <_1_mathias_1_0 text="Tu croyais pouvoir m'affronter ? Ah ! Thetis sera vengée. Je vais te détruire !"/>
+      </ce_04_dialog_mathias>
+      <ce_09_dialog_with_ally>
+        <_1_heroine_1_0 text="Qui êtes-vous ? Que voulez-vous ?"/>
+        <_2_ally_1_0 text="Je m'appelle Allie. Je fus autrefois fiancée à Mathias. Juste avant le mariage, j'appris qu'il avait passé un pacte avec une sorcière. J'ai essayé de l'aider."/>
+        <_3_heroine_2_0 text="C'est lui qui vous a fait ça ?"/>
+        <_4_ally_1_1 text="Oui. Il fut furieux quand il a découvert que j'étais au courant. Il... il m'a ensorcelée. Mais si vous réussissez à me rapporter tous mes bijoux, mon âme pourra enfin être libérée."/>
+      </ce_09_dialog_with_ally>
+      <ce_09_dialog_cutscene_transformation>
+        <ally_2_0 text="Oh... merci ! Je suis enfin en paix !"/>
+      </ce_09_dialog_cutscene_transformation>
+    </dialogs>
+    <mini_games_descriptions>
+      <ce_01_puzzle_temple text="Allumez tous les cristaux en utilisant les boutons de symboles du bas. Appuyer sur certains boutons en affectera d'autres. "/>
+      <ce_03_sub_miniho_puzzle text="Déplacez votre souris pour attraper les lucioles. Elles sont timides et chercheront à fuir."/>
+      <ce_04_puzzle_battle text="Repoussez les attaques du sorcier. Appuyez sur les éléments runiques sur les côtés. Reconstituez la rune d'attaque du sorcier avec les trois bons éléments runiques pour annuler les attaques."/>
+      <ce_06_puzzle text="Reconstituez la mosaïque. Prenez les pièces et posez-les au bon endroit."/>
+      <ce_07_puzzle_box text="Démêlez les ficelles pour qu'elles ne se croisent plus. Pour cela, il faut déplacer les fleurs. Une fois démêlées, les ficelles deviendront vertes."/>
+      <ce_07_puzzle_water_lock text="Déplacez chaque élément dans le disque de la couleur correspondante. Utilisez les flèches pour faire tourner les disques. "/>
+    </mini_games_descriptions>
+    <task_from_imp>
+      <task_30 text="Sortez de la grotte."/>
+      <task_31 text="Consolidez le portail."/>
+      <task_32 text="Annulez le sort du garde et entrez dans le cabanon."/>
+      <task_33 text="Découvrez comment sauver Edward."/>
+      <task_34 text="Rassemblez les ingrédients et sauvez Edward."/>
+      <task_35 text="Anéantissez Mathias."/>
+    </task_from_imp>
+  </gameplay>
+</texts>

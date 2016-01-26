@@ -12,6 +12,7 @@ namespace Framework {
 
         void OpenSub() {
             if (subLocation) {
+                subLocation.gameObject.SetActive(true);
                 subLocation.gameObject.GetComponent<SubLocation>().Open();
             }
         }

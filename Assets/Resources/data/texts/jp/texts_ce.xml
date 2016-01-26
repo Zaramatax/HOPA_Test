@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="unicode"?>
+
+<texts language="english">
+  <input_letters letters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"/>
+  <gameplay>
+    <map>
+      <location_titles>
+        <ce_01 text="洞窟"/>
+        <ce_02 text="山道"/>
+        <ce_03 text="湖"/>
+        <ce_04 text="湖のそばの家"/>
+        <ce_05 text="知識の宝庫"/>
+        <ce_06 text="サクラメント"/>
+        <ce_07 text="聖なる場所"/>
+        <ce_08 text="洞穴"/>
+        <ce_09 text="湖の下の洞窟"/>
+      </location_titles>
+    </map>
+    <diary/>
+    <ho_items>
+      <ce_01_ho_01>
+        <ax>
+          <_1 text="斧"/>
+        </ax>
+        <tiara>
+          <_1 text="ティアラ"/>
+        </tiara>
+        <garlic>
+          <_1 text="にんにく"/>
+        </garlic>
+        <caduceus>
+          <_1 text="カドゥケウス"/>
+        </caduceus>
+        <ce_blue_flower_inv>
+          <_1 text="青い花"/>
+        </ce_blue_flower_inv>
+        <key>
+          <_1 text="鍵"/>
+        </key>
+        <glasses>
+          <_1 text="眼鏡"/>
+        </glasses>
+        <witch>
+          <_1 text="魔女"/>
+        </witch>
+        <rose>
+          <_1 text="バラ"/>
+        </rose>
+        <thread>
+          <_1 text="糸"/>
+        </thread>
+        <scales>
+          <_1 text="天秤"/>
+        </scales>
+        <shell>
+          <_1 text="貝殻"/>
+        </shell>
+      </ce_01_ho_01>
+      <ce_01_ho_02>
+        <chalice>
+          <_1 text="聖杯"/>
+        </chalice>
+        <voodoo_doll>
+          <_1 text="呪術人形"/>
+        </voodoo_doll>
+        <magic_ball>
+          <_1 text="水晶玉"/>
+        </magic_ball>
+        <candle>
+          <_1 text="ロウソク"/>
+        </candle>
+        <scroll>
+          <_1 text="巻物"/>
+        </scroll>
+        <pomegranate>
+          <_1 text="ザクロ"/>
+        </pomegranate>
+        <tarot>
+          <_1 text="タロットカード"/>
+        </tarot>
+        <spider>
+          <_1 text="クモ"/>
+        </spider>
+        <order>
+          <_1 text="勲章"/>
+        </order>
+        <shackles>
+          <_1 text="手錠"/>
+        </shackles>
+        <hourglass>
+          <_1 text="砂時計"/>
+        </hourglass>
+        <ce_rubellite_inv>
+          <_1 text="宝石"/>
+        </ce_rubellite_inv>
+      </ce_01_ho_02>
+      <ce_02_ho_01>
+        <ce_explosive_potion_inv>
+          <_1 text="爆破ポーション"/>
+        </ce_explosive_potion_inv>
+        <conifer_cones>
+          <_1 text="松ぼっくり"/>
+        </conifer_cones>
+        <hell>
+          <_1 text="貝殻"/>
+        </hell>
+        <top_hat>
+          <_1 text="シルクハット"/>
+        </top_hat>
+        <kettle>
+          <_1 text="やかん"/>
+        </kettle>
+        <little_chest>
+          <_1 text="小箱"/>
+        </little_chest>
+        <keys>
+          <_1 text="鍵束"/>
+        </keys>
+        <boot>
+          <_1 text="ブーツ"/>
+        </boot>
+        <vinyl_record>
+          <_1 text="レコード"/>
+        </vinyl_record>
+        <watch>
+          <_1 text="時計"/>
+        </watch>
+        <cup>
+          <_1 text="カップ"/>
+        </cup>
+        <towel>
+          <_1 text="タオル"/>
+        </towel>
+      </ce_02_ho_01>
+      <ce_09_ho_01>
+        <nutcracker>
+          <_1 text="くるみ割り人形"/>
+        </nutcracker>
+        <mortar>
+          <_1 text="乳鉢"/>
+        </mortar>
+        <skull>
+          <_1 text="頭蓋骨"/>
+        </skull>
+        <comb>
+          <_1 text="くし"/>
+        </comb>
+        <ce_chip_with_a_boat_inv>
+          <_1 text="小箱のメダル"/>
+        </ce_chip_with_a_boat_inv>
+        <horse>
+          <_1 text="馬"/>
+        </horse>
+        <kettle>
+          <_1 text="やかん"/>
+        </kettle>
+        <butterfly>
+          <_1 text="蝶"/>
+        </butterfly>
+        <owl>
+          <_1 text="フクロウ"/>
+        </owl>
+        <hat>
+          <_1 text="帽子"/>
+        </hat>
+        <dreamcatcher>
+          <_1 text="ドリームキャッチャー"/>
+        </dreamcatcher>
+        <beetle>
+          <_1 text="甲虫"/>
+        </beetle>
+      </ce_09_ho_01>
+      <ce_09_ho_02>
+        <dollhouse>
+          <_1 text="人形の家"/>
+        </dollhouse>
+        <letter>
+          <_1 text="手紙"/>
+        </letter>
+        <gear>
+          <_1 text="歯車"/>
+        </gear>
+        <ce_vial_inv>
+          <_1 text="小瓶"/>
+        </ce_vial_inv>
+        <spades>
+          <_1 text="スペード"/>
+        </spades>
+        <brush>
+          <_1 text="ブラシ"/>
+        </brush>
+        <book>
+          <_1 text="本"/>
+        </book>
+        <thimble>
+          <_1 text="指貫"/>
+        </thimble>
+        <umbrella>
+          <_1 text="傘"/>
+        </umbrella>
+        <shoe>
+          <_1 text="靴"/>
+        </shoe>
+        <imp>
+          <_1 text="小悪魔"/>
+        </imp>
+        <ring>
+          <_1 text="指輪"/>
+        </ring>
+      </ce_09_ho_02>
+      <ce_04_ho_01>
+        <sword>
+          <_1 text="剣"/>
+        </sword>
+        <the_eiffel_tower>
+          <_1 text="エッフェル塔"/>
+        </the_eiffel_tower>
+        <statuette_girl>
+          <_1 text="少女の置物"/>
+        </statuette_girl>
+        <flag>
+          <_1 text="旗"/>
+        </flag>
+        <claw>
+          <_1 text="かぎ爪"/>
+        </claw>
+        <rooster>
+          <_1 text="オンドリ"/>
+        </rooster>
+        <caduceus>
+          <_1 text="カドゥケウス"/>
+        </caduceus>
+        <scroll>
+          <_1 text="巻物"/>
+        </scroll>
+        <shield>
+          <_1 text="盾"/>
+        </shield>
+        <crate>
+          <_1 text="木箱"/>
+        </crate>
+        <golden_ring>
+          <_1 text="金のリング"/>
+        </golden_ring>
+        <saturn>
+          <_1 text="土星"/>
+        </saturn>
+        <bucket>
+          <_1 text="バケツ"/>
+        </bucket>
+      </ce_04_ho_01>
+      <ce_04_ho_02>
+        <lookout_tower>
+          <_1 text="見張り塔"/>
+        </lookout_tower>
+        <mouse>
+          <_1 text="ネズミ"/>
+        </mouse>
+        <watch>
+          <_1 text="時計"/>
+        </watch>
+        <key>
+          <_1 text="鍵"/>
+        </key>
+        <dragon>
+          <_1 text="ドラゴン"/>
+        </dragon>
+        <pumpkin>
+          <_1 text="カボチャ"/>
+        </pumpkin>
+        <lizard>
+          <_1 text="トカゲ"/>
+        </lizard>
+        <crescent>
+          <_1 text="三日月"/>
+        </crescent>
+        <cauldron>
+          <_1 text="大鍋"/>
+        </cauldron>
+        <picture>
+          <_1 text="絵画"/>
+        </picture>
+        <chest>
+          <_1 text="小箱"/>
+        </chest>
+        <chalice>
+          <_1 text="聖杯"/>
+        </chalice>
+        <horse_harness>
+          <_1 text="馬車"/>
+        </horse_harness>
+      </ce_04_ho_02>
+    </ho_items>
+    <inventory_items>
+      <ce_white_crystall_inv text="白の水晶"/>
+      <ce_chain_inv text="チェーン"/>
+      <ce_golden_threads_inv text="金の紐"/>
+      <ce_red_rune_inv text="赤のルーン"/>
+      <ce_green_rune_inv text="緑のルーン"/>
+      <ce_blue_rune_inv text="青のルーン"/>
+      <ce_part_of_the_obelisk_1_inv text="シンボルのついた石"/>
+      <ce_explosive_potion_inv text="爆発ポーション"/>
+      <ce_lamp_with_fireflies_inv text="ホタルの入ったランプ"/>
+      <ce_mirror_plate_inv text="鏡"/>
+      <ce_gaff_inv text="かぎ竿"/>
+      <ce_basket_inv text="かご"/>
+      <ce_1_part_of_leaf_inv text="巻物の一部"/>
+      <ce_2_part_of_leaf_inv text="巻物の一部"/>
+      <ce_3_part_of_leaf_inv text="巻物の一部"/>
+      <ce_bracelet_inv text="ブレスレット"/>
+      <ce_chip_with_a_boat_inv text="小箱のメダル"/>
+      <ce_rope_inv text="ロープ"/>
+      <ce_stoned_ball_inv text="石の玉"/>
+      <ce_board_inv text="板"/>
+      <ce_rope_with_hook_inv text="フック付きロープ"/>
+      <ce_bracetel_for_shoulder_inv text="肩につけるジュエリー"/>
+      <ce_stoned_sun_inv text="輝く太陽"/>
+      <ce_spell_of_portals_inv text="ポータルの呪文"/>
+      <ce_code_catalog_c3_inv text="目録のラベル"/>
+      <ce_code_catalog_a14_inv text="目録のラベル"/>
+      <ce_enchanted_bark_inv text="魔法の樹皮"/>
+      <ce_fern_inv text="シダ"/>
+      <ce_leather_charm_inv text="アミュレットの首飾り"/>
+      <ce_part_of_the_obelisk_2_inv text="シンボルのついた石"/>
+      <ce_part_of_the_obelisk_3_inv text="シンボルのついた石"/>
+      <ce_red_pantahedron_inv text="赤の円盤"/>
+      <ce_stamp_of_a_bat_inv text="コウモリの印章"/>
+      <ce_stamp_of_a_wolf_inv text="オオカミの印章"/>
+      <ce_stamp_of_a_eagle_inv text="ワシの印章 "/>
+      <ce_stone_island_inv text="石の島"/>
+      <ce_screwdriver_inv text="ドライバー"/>
+      <ce_necklace_inv text="ネックレス"/>
+      <ce_pearls_inv text="真珠"/>
+      <ce_mathias_figure_inv text="マティアスの置物"/>
+      <ce_mosaic_part_inv text="モザイクのパーツ"/>
+      <ce_manuscript_inv text="破れたページ"/>
+      <ce_burnt_book_inv text="焦げた本"/>
+      <ce_hook_inv text="フック"/>
+      <ce_stick_inv text="木の棒"/>
+      <ce_tiara_inv text="ティアラ"/>
+      <ce_old_key_inv text="古い鍵"/>
+      <ce_fireproof_gloves_inv text="耐火手袋"/>
+      <ce_oil_inv text="油"/>
+      <ce_vial_inv text="小瓶"/>
+      <ce_figure_of_a_man_inv text="男性の置物"/>
+      <ce_part_of_a_lock_inv text="ロックの一部"/>
+      <ce_knife_inv text="ナイフ"/>
+      <ce_badge_with_a_dragon_inv text="ドラゴンの紋章"/>
+      <ce_bracelet_with_rubellite_inv text="宝石のついたブレスレット"/>
+      <ce_solar_belt_inv text="太陽のベルト"/>
+      <ce_blue_pantahedron_inv text="青の円盤"/>
+      <ce_sphere_from_mechanism_inv text="装置のスフィア"/>
+      <ce_shawl_inv text="ショール"/>
+      <ce_rubellite_inv text="宝石"/>
+      <ce_ice_spell_inv text="氷の呪文"/>
+      <ce_leather_belt_inv text="革のベルト"/>
+      <ce_ringed_crystal_inv text="リングのついた水晶"/>
+      <ce_leather_scraps_inv text="革紐"/>
+      <ce_hook_cat_inv text="フック"/>
+      <ce_spring_water_inv text="泉の水"/>
+      <ce_magic_fruit_inv text="魔法の果実"/>
+      <ce_portrait_of_mathias_inv text="マティアスの絵"/>
+      <ce_light_crystal_inv text="光の水晶"/>
+      <ce_silver_cup_inv text="銀のカップ"/>
+      <ce_gold_ring_inv text="金のリング"/>
+      <ce_light_spell_inv text="光の呪文"/>
+      <ce_grimoire_lynn_inv text="魔法書"/>
+      <ce_spell_of_portals_inv text="ポータルの呪文"/>
+      <ce_chest_inv text="小箱"/>
+      <ce_blue_flower_inv text="青い花"/>
+    </inventory_items>
+    <comments>
+      <item_misuse>
+        <se_flint_inv>
+          <drop_zone_items>
+            <text_00 text="まさか！私はそんな人間じゃないわ。 "/>
+          </drop_zone_items>
+        </se_flint_inv>
+        <ce_stoned_sun_inv>
+          <drop_zone_ce_golden_threads_inv>
+            <text_00 text="先に紐を使わないと。 "/>
+          </drop_zone_ce_golden_threads_inv>
+        </ce_stoned_sun_inv>
+      </item_misuse>
+      <scenes>
+        <iss>
+          <ce_stick_inv>
+            <comment_drop_zone_ce_hook_inv text="フックがあれば便利な道具ができそう。 "/>
+          </ce_stick_inv>
+          <ce_chest_inv>
+            <comment_drop_zone_ce_chip_with_a_boat_inv text="メダルをはめないと開かないようね。 "/>
+          </ce_chest_inv>
+          <ce_white_crystall_inv>
+            <comment_drop_zone_ce_gold_ring_inv text="これにリングをはめなくちゃ。 "/>
+          </ce_white_crystall_inv>
+          <ce_stoned_ball_inv>
+            <comment_drop_zone_ce_solar_belt_inv text="これに何かを足せば太陽になるわ。 "/>
+          </ce_stoned_ball_inv>
+          <ce_bracelet_inv>
+            <comment_drop_zone_ce_rubellite_inv text="宝石がついていない。 "/>
+          </ce_bracelet_inv>
+          <ce_leather_belt_inv>
+            <comment_drop_zone_ce_knife_inv text="ベルトを細く切らないと。 "/>
+          </ce_leather_belt_inv>
+          <ce_chain_inv>
+            <comment_drop_zone_ce_leather_scraps_inv text="巻きつける革紐が必要だわ。 "/>
+            <comment_drop_zone_ce_pearls_inv text="後は飾りをつけて… "/>
+          </ce_chain_inv>
+          <ce_hook_cat_inv>
+            <comment_drop_zone_ce_rope_inv text="ロープがあれば役立つ道具になるわ。 "/>
+          </ce_hook_cat_inv>
+          <ce_grimoire_lynn>
+            <comment_drop_zone_ce_blue_flower_inv text="ここには花がはまるようだわ。 "/>
+            <comment_drop_zone_ce_light_crystal_inv text="ここには水晶がはまるみたい。 "/>
+            <comment_drop_zone_ce_blue_rune_inv text="青のルーンが必要ね。 "/>
+            <comment_drop_zone_ce_fern_inv text="ここには植物がはまるみたい。 "/>
+            <drop_zone_lian_flower_wrong_flower text="うまくいかない。 "/>
+            <drop_zone_lian_flower text="ここに花を戻せばいいのね。 "/>
+          </ce_grimoire_lynn>
+        </iss>
+        <ce_01>
+          <count_text_label text="発見したパーツ： #ce_01_sub_miniho_count_item#/6 "/>
+          <comment_drop_zone_ce_shawl_inv text="花粉アレルギーみたいね。スカーフがあれば鼻を覆うことができるわ。 "/>
+          <comment_drop_zone_ce_ice_spell_inv text="このツタを取り除くには強力な呪文が必要だわ。 "/>
+          <comment_drop_zone_ce_part_of_the_obelisk_inv text="シンボルのついた石がはまっていたようね。 "/>
+          <comment_drop_zone_ce_oil_inv text="あら…サビのせいでベルトが外れない。 "/>
+          <comment_dialog_with_herself_grimoire text="エドワードは魔法書を落としていった。まるで私に助けを差し伸べているかのように…本を直せば書いてある呪文を使うことができる。 "/>
+        </ce_01>
+        <ce_01_puzzle_temple>
+          <comment_drop_zone_ce_mirror_plate_inv text="ここには反射するものがはまるようだわ。 "/>
+          <comment_drop_zone_ce_ringed_crystal_inv text="水晶が1つなくなっている。 "/>
+        </ce_01_puzzle_temple>
+        <ce_01_ho_01>
+          <comment_witch_book_01 text="釜と呪文の本を持っていない。 "/>
+          <comment_witch_cauldron_01 text="釜と呪文の本を持っていない。 "/>
+          <comment_potion text="必要な材料は何？ "/>
+          <comment_wrong_potion text="おっと。これはまずいわ。 "/>
+        </ce_01_ho_01>
+        <ce_01_ho_02>
+          <comment_chalice_part1 text="聖杯を直さないと。 "/>
+          <comment_chalice_part2 text="聖杯を直さないと。 "/>
+          <comment_chalice_part3 text="聖杯を直さないと。 "/>
+          <comment_chalice_part4 text="聖杯を直さないと。 "/>
+          <comment_chalice_part5 text="聖杯を直さないと。 "/>
+        </ce_01_ho_02>
+        <ce_02>
+          <comment_drop_zone_ce_green_rune_inv text="ここには緑のルーンしかはまらない。 "/>
+          <comment_drop_zone_ce_red_rune_inv text="赤のルーンが必要だわ。 "/>
+          <comment_drop_zone_ce_gaff_inv text="向こう岸にあるものを引き寄せたいわね。 "/>
+          <comment_drop_zone_ce_explosive_potion_inv text="う～ん…手っ取り早く板を取り除く方法はないかしら。 "/>
+          <comment_drop_zone_ce_lamp_with_fireflies_inv text="中は真っ暗ね。 "/>
+          <voiced_bbt_dialog_with_herself_cursed_lake text="えっ…あの忌まわしい湖に戻ってきちゃったわ。エドワードはここに来るつもりだったの？&#xD;&#xA;何が起こっているのか突き止めないと…でもまずはエドワードを見つけなくちゃ。 "/>
+          <voiced_bbt_after_cutscene_portal_open text="ポータルは安定しているわ…しばらくの間、消えることはないでしょう。 "/>
+        </ce_02>
+        <ce_03>
+          
+          <count_text_label text="集めたホタル： #ce_03_sub_miniho_count_item#/8 "/>
+          <comment_drop_zone_ce_stone_island_inv text="島の形のくぼみ… "/>
+          <comment_drop_zone_ce_screwdriver_inv text="よくある道具で開けそうだわ。 "/>
+          <comment_drop_zone_ce_leather_charm_inv text="彼の呪いを解くには、アミュレットの首飾りを戻してあげればいいのだと思う。 "/>
+          <comment_drop_zone_ce_basket_inv text="水に浮くものが必要だわ。 "/>
+          <comment_drop_zone_ce_spell_of_portals_inv text="ストーンヘンジみたい…きっとここにポータルがあったはず。どうしたら開けるかしら。 "/>
+          <voiced_bbt_dialog_with_herself_return_of_the_old_enemy text="まさか…マティアスは生きていたの？！わかったわ…エドワードは彼に操られているのね。&#xD;&#xA;急いでエドワードを助けなくちゃ。あっという間に夜の12時になってしまう！ "/>
+          <voiced_bbt_dialog_with_herself_golem_on_open text="これはマティアスの魔法ね。でも…傷つけたくないわ。この生き物はもともと人間だったはず。彼を助けることはできないかしら？ "/>
+          <voiced_bbt_dialog_with_herself_after_cutscene_golem_free text=" あまりにも長い間ゴーレムの姿でいたのね…&#xD;&#xA;でも少なくとも魂は自由になった。あら？彼は何かを置いていったわ。 "/>
+        </ce_03>
+        <ce_04>
+          <comment_need_stamps text="ここにはまる印章を見つけなくちゃならないわ。 "/>
+          <comment_need_table_items text="ここで儀式を行うのね。必要なものをここに置けばいいわ。 "/>
+          <comment_need_part_of_lock text="半分なくなっている。 "/>
+          <comment_need_silver_cup text="儀式に使う聖杯がここにはまりそうね。 "/>
+          <comment_need_badge text="エドワードは身動きが取れない。もうすぐ自由にしてあげるからね！ "/>
+          <comment_need_light_spell text="私を倒すことはできないわ！光の呪文をすぐに手に入れないと！ "/>
+        </ce_04>
+        <ce_04_ho_01>
+          <comment_saturn_ring text="これに輪をつければあの惑星になる。 "/>
+        </ce_04_ho_01>
+        <ce_04_ho_02>
+          <comment_drop_zone_lookout_tower text="この塔は未完成のようね。 "/>
+          <comment_drop_zone_horse text="馬がいなくては馬車は進まない。 "/>
+        </ce_04_ho_02>
+        <ce_05>
+          <comment_drop_zone_ce_old_key_inv text="鍵がないと開かない。 "/>
+          <comment_drop_zone_ce_burnt_book_inv text="ここに本を置けるわ。 "/>
+          <comment_drop_zone_ce_figure_of_a_man_inv text="男性の置物が必要だわ。 "/>
+          <comment_drop_zone_ce_mathias_figure_inv text="マティアスの置物も必要なのね。 "/>
+          <comment_drop_zone_ce_code_catalog_c3_inv text="目録のラベルが必要だわ。 "/>
+          <comment_drop_zone_ce_code_catalog_a14_inv text="目録のラベルが必要だわ。 "/>
+          <comment_about_golem text="この本に描かれている人がゴーレムの姿に変えられたのね！ "/>
+          <comment_voiced_dialog_with_herself_wisdom_storage text="ここが知識の宝庫ね！エドワードを救う手がかりを見つけなくちゃ。 "/>
+          <comment_voiced_dialog_with_herself_ingridients text="エドワードを助けるために必要な材料をすべて見つけないと… "/>
+        </ce_05>
+        <ce_06>
+          <comment_voiced_after_book text="マティアスがエドワードとゴーレムにされてしまった人から奪ったものを取り戻せばいいのね。 "/>
+          <comment_drop_zone_ce_manuscript_inv text="本を破るなんて最低ね。 "/>
+          <comment_drop_zone_ce_fireproof_gloves_inv text="これは魔法の炎だわ…素手じゃ触れないほうがいい。 "/>
+        </ce_06>
+        <ce_06_puzzle>
+          <comment_drop_zone_ce_mosaic_part_inv text="足りない部分があるからモザイクを修復できない。 "/>
+        </ce_06_puzzle>
+        <ce_07>
+          <comment_voiced_ce_07_first_visit text="かわいそうに…干上がっているわ。ここにある像は…元は人間だったのかしら？ "/>
+          <comment_voiced_ce_07_need_hurry text="マティアスはこの場所を本当に誰にも見つけられなくなかったのね…急がないと！ "/>
+          <comment_tree text="根が干上がっている。 "/>
+        </ce_07>
+        <ce_07_puzzle_water_lock>
+          <comment_drop_zone_pantahedron text="この装置には円盤がはまっていたみたいだわ。 "/>
+          <comment_not_working text="動かないわ… "/>
+          <comment_need_sphere text="う～ん。右にも何かを置かなくちゃならないのかもしれない。 "/>
+          <comment_drop_zone_ce_sphere_from_mechanism_inv text="装置を稼動するにはスフィアが必要だわ。 "/>
+        </ce_07_puzzle_water_lock>
+        <ce_07_puzzle_box>
+          <comment_drop_zone_ce_bracelet_with_rubellite_inv text="彼は強力なブレスレットを身に着けていたようね。 "/>
+        </ce_07_puzzle_box>
+        <ce_08>
+          <comment_drop_zone_parts_of_leaf_inv text="巻物を完成させないと。 "/>
+          <comment_drop_zone_ce_chip_with_a_boat_inv text="メダルがなくなっている。 "/>
+          <comment_drop_zone_ce_board_inv text="小鬼が歩く場所がないわ。 "/>
+          <comment_drop_zone_ce_rope_with_hook_inv text="つかまるところを作ってあげないと。 "/>
+          <comment_voiced_dialog_with_herself_underground_river text=" 水の流れを止めないと。 "/>
+          <count_text_label text="発見したパーツ： #ce_08_sub_miniho_count_item#/7 "/>
+        </ce_08>
+        <ce_09>
+          <comment_voiced_after_dialog_ally text=" 力になれることなら何でもするわ。 "/>
+          <comment_bbt_first_open_sub_table text="アリーはここでネックレスを直そうとしたようね。 "/>
+          <comment_drop_zone_ce_golden_threads_inv text="惑星の形をしたビーズがあれけど、通す紐がないわ。 "/>
+          <comment_drop_zone_ce_stoned_sun_inv text="太陽系の中心になるものがない。 "/>
+          <comment_drop_zone_elli text="ジュエリーを戻せばアリーは力を取り戻せるかもしれない。 "/>
+          <comment_drop_zone_ce_vial_inv text="水を運ぶための入れ物が必要だわ。 "/>
+          <comment_wooden_elli text="これでアリーはマティアスの呪いから解放された。 "/>
+        </ce_09>
+        <ce_09_ho_01>
+          <comment_horse_head_01 text="頭のない木馬？不気味だわ。 "/>
+        </ce_09_ho_01>
+        <ce_09_ho_02>
+          <comment_gem_01 text="指輪に宝石がはまっていない。 "/>
+        </ce_09_ho_02>
+      </scenes>
+    </comments>
+    <dialogs>
+      <ce_intro_dialog>
+        <intro_1_0 text="あの一件の数週間後、リンとエドワードは滝を見るために休暇に出発した。"/>
+      </ce_intro_dialog>
+      <ce_03_dialog_cutscene_mathias_return>
+        <_1_mathias_1_0 text="ここにいたのか。与えられた任務を果たしたようだな。"/>
+        <_2_empty_1_0 text=""/>
+        <_3_mathias_1_1 text="真夜中になればこの呪文の効果は永久に変わる。お前は永遠に私の忠実なしもべとなるのだ！すばらしいじゃないか…"/>
+      </ce_03_dialog_cutscene_mathias_return>
+      <ce_03_dialog_cutscene_golem_free>
+        <_1_golem_1_0 text="あぁ…やっと自由になれた。これをどうぞ。あげられるものはこれしかないんだけど。"/>
+      </ce_03_dialog_cutscene_golem_free>
+      <ce_04_dialog_edward>
+        <_1_edward_1_0 text="リン！今すぐここを去るんだ！僕は終わりだ。自分を抑制できないんだ！"/>
+        <_2_lynn_1_0 text="エドワード。どんな時だって望みはあるものよ。あなたを助ける方法を見つけてみせる！"/>
+      </ce_04_dialog_edward>
+      <ce_04_dialog_mathias>
+        <_1_mathias_1_0 text="私に勝てると思ったのか？フンッ！テティス様は復讐をお遂げになるのだ…お前など私が始末してやる！"/>
+      </ce_04_dialog_mathias>
+      <ce_09_dialog_with_ally>
+        <_1_heroine_1_0 text="あなたは誰？なぜここにいるの？"/>
+        <_2_ally_1_0 text="私はアリー。その昔…私とマティアスは婚約をしていたわ…でも結婚式を行う前に、私は彼が魔女と契約を交わしたことを知ったの。彼を助けようとしたのだけど…"/>
+        <_3_heroine_2_0 text="彼があなたをこんな目に？！"/>
+        <_4_ally_1_1 text="そうよ…私が契約のことを知っていたことに気づいた彼は怒り狂ったわ。そして…私に呪いをかけたの。でも私のジュエリーを取り戻してくれたら、私の魂は解放されるわ。"/>
+      </ce_09_dialog_with_ally>
+      <ce_09_dialog_cutscene_transformation>
+        <ally_2_0 text="あぁ…ありがとう！これでついに自由よ！"/>
+      </ce_09_dialog_cutscene_transformation>
+    </dialogs>
+    <mini_games_descriptions>
+      <ce_01_puzzle_temple text="下にあるシンボルのボタンを選択してすべての水晶を点灯させてください。 "/>
+      <ce_03_sub_miniho_puzzle text="マウスを使ってホタルをランプに集めてください。ホタルはおびえやすいので、すぐにあなたから逃げてしまいます。"/>
+      <ce_04_puzzle_battle text="魔術師の攻撃をかわしてください。魔術師が攻撃に使ってくるシンボルを構成する3つのルーンを周りから探しましょう。"/>
+      <ce_06_puzzle text="モザイクを修復してください。ピースを選択してふさわしい場所に動かしてください。"/>
+      <ce_07_puzzle_box text="重なる部分がなくなるように花を動かして紐の絡まりを解いてください。重なった部分がなくなると紐は緑に点灯します。"/>
+      <ce_07_puzzle_water_lock text="同じ色の円盤にはまるように各エレメントを配置してください。矢印を使って円盤を回転させたり、エレメントを入れ替えることができます。 "/>
+    </mini_games_descriptions>
+    <task_from_imp>
+      <task_30 text="洞窟から出る。"/>
+      <task_31 text="ポータルを開く。"/>
+      <task_32 text="ゴーレムの呪いを解き、家の中に入る。"/>
+      <task_33 text="エドワードを救う手段を見つける。"/>
+      <task_34 text="すべての材料を集めてエドワードを救う。"/>
+      <task_35 text="マティアスを倒す。"/>
+    </task_from_imp>
+  </gameplay>
+</texts>
