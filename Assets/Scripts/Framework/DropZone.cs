@@ -11,7 +11,6 @@ namespace Framework {
         public string clickMessage;
 
         public UnityEvent onUse;
-
         private InventoryManager inventory;
 
         void Start() {

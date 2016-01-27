@@ -62,10 +62,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Framework\BlackStripes.cs" />
     <Compile Include="Assets\Scripts\Framework\CloseSubLocation.cs" />
     <Compile Include="Assets\Scripts\Framework\CommentManager.cs" />
     <Compile Include="Assets\Scripts\Framework\CommentZone.cs" />
     <Compile Include="Assets\Scripts\Framework\CursorManager.cs" />
+    <Compile Include="Assets\Scripts\Framework\Dialogues\Dialogue.cs" />
+    <Compile Include="Assets\Scripts\Framework\Dialogues\DialogueManager.cs" />
+    <Compile Include="Assets\Scripts\Framework\Dialogues\DialogueStage.cs" />
     <Compile Include="Assets\Scripts\Framework\DropZone.cs" />
     <Compile Include="Assets\Scripts\Framework\GlobalVariables.cs" />
     <Compile Include="Assets\Scripts\Framework\GoToLocation.cs" />
