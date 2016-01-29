@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using System;
+using System.Xml;
 
 namespace Framework {
     [System.Serializable]
@@ -52,5 +53,15 @@ namespace Framework {
 
             textField.text = phrases[currentPhrase].message;
         }
+
+        public void SaveToXML (XmlNode dialogueNode, XmlDocument doc) {
+            XmlAttribute phraseAttr = doc.CreateAttribute("phrase");
+            phraseAttr.Value = currentPhrase.ToString();
+            dialogueNode.Attributes.Append(phraseAttr);
+        }
+
+        public void LoadFromXML(XmlNode dialogueNode) {
+            currentPhrase = int.Parse(dialogueNode.Attributes["phrase"].Value) - 1;
+        } 
     }
 }

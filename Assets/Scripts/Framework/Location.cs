@@ -8,7 +8,7 @@ namespace Framework {
 		
         protected InventoryManager inventory;
 		protected TimerManager timerManager;
-        protected List<Dialogue> dialogues;
+        protected DialoguesOnScene dialogues;
 
         public LayerMask layerMask;
         public List<SubLocation> subLocations;
@@ -24,9 +24,11 @@ namespace Framework {
 
         virtual protected void Awake() {
 			timerManager = new TimerManager ();
+            dialogues = new DialoguesOnScene();
         }
 
         virtual protected void Start() {
+
             inventory = InventoryManager.instance;
             locationName = gameObject.name;
 
@@ -59,6 +61,7 @@ namespace Framework {
 
             SaveLocationState(doc);
 			timerManager.Save(doc);
+            dialogues.Save();
             
             ProfileSaver.Save(doc, locationName);
         }
@@ -69,6 +72,7 @@ namespace Framework {
             if (ProfileSaver.Load(doc, locationName)) {
                 LoadLocationState(doc);
 				timerManager.Load(doc);
+                dialogues.Load(locationName);
             }
         }
 
@@ -81,18 +85,6 @@ namespace Framework {
         void LoadLocationState(XmlDocument doc) {
             XmlNode locationState = doc.DocumentElement.SelectSingleNode("location_state");
             LocationState.LoadFromXML(transform, locationState, doc);
-        }
-
-        void SaveDialogues(XmlDocument doc) {
-            XmlNode dialoguesState = doc.CreateElement("dialogues");
-
-            foreach(Dialogue dialogue in dialogues) {
-
-            }
-        }
-
-        void LoadDialogues(XmlDocument doc) {
-
         }
 
         protected List<HintInfo> CreateHints() {
@@ -162,6 +154,14 @@ namespace Framework {
 
         public string GetName() {
             return locationName;
+        }
+
+        protected void StartDialogue (string name) {
+            StartDialogue(dialogues.GetDialogue(name));
+        }
+
+        protected void StartDialogue(DialogueEvent dialogue) {
+            DialogueManager.instance.Show(dialogue);
         }
     }
 }

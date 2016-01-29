@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\Framework\Dialogues\Dialogue.cs" />
     <Compile Include="Assets\Scripts\Framework\Dialogues\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\Framework\Dialogues\DialogueStage.cs" />
+    <Compile Include="Assets\Scripts\Framework\Dialogues\DialoguesOnScene.cs" />
     <Compile Include="Assets\Scripts\Framework\DropZone.cs" />
     <Compile Include="Assets\Scripts\Framework\GlobalVariables.cs" />
     <Compile Include="Assets\Scripts\Framework\GoToLocation.cs" />
