@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.EventSystems;
 
 namespace Framework {
-    public class CommentZone : MonoBehaviour {
+    public class CommentZone : MonoBehaviour, IPointerClickHandler {
 
         [LocalizationString]
         public string comment;
@@ -13,7 +13,7 @@ namespace Framework {
             commentManager = CommentManager.instance;
         }
 
-        void OnMouseDown() {
+        public void OnPointerClick (PointerEventData eventData) {
             commentManager.Show(comment);
         }
     }

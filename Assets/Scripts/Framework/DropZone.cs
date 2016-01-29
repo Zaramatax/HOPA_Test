@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 namespace Framework {
-    public class DropZone : MonoBehaviour {
+    public class DropZone : MonoBehaviour, IPointerClickHandler {
 
         public InventoryItem requiredItem;
         public int itemsCount = 1;
@@ -17,7 +18,7 @@ namespace Framework {
             inventory = InventoryManager.instance;
         }
 
-        void OnMouseDown() {
+        public void OnPointerClick (PointerEventData eventData) {
             if (inventory.GetSelectedItem() == requiredItem.itemId && itemsCount == inventory.GetItemsCount(requiredItem.itemId)) {
                 onUse.Invoke();
                 inventory.RemoveItem(requiredItem.itemId);

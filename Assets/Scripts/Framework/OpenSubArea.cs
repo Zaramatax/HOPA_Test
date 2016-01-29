@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.EventSystems;
 
 namespace Framework {
-    public class OpenSubArea : MonoBehaviour {
+    public class OpenSubArea : MonoBehaviour, IPointerClickHandler {
 
         public SubLocation subLocation;
 
-        void OnMouseDown() {
+        public void OnPointerClick (PointerEventData eventData) {
             OpenSub();
         }
 

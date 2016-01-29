@@ -1,23 +1,28 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.EventSystems;
+using UnityEngine.Assertions;
 
 namespace Framework {
-    public class DialogueManager : MonoBehaviour {
+    public class DialogueManager : MonoBehaviour, IPointerClickHandler {
 
         private static string dialoguesPath = "Prefabs/Dialogues/";
+        private static string showInventory = "open";
+        private static string hideInventory = "close";
 
         public BlackStripes blackStripes;
         public Text textField;
 
         public static DialogueManager instance;
 
-        private Dialogue activeDialog;
+        private Dialogue activeDialogue;
         private Action onComplete;
-        private bool isActive;
+        private bool isDialogueActive;
+        private GameObject inventoryPanelGO;
 
         void Awake() {
-            isActive = false;
+            isDialogueActive = false;
         }
 
         void Start() {
@@ -27,6 +32,10 @@ namespace Framework {
 
             blackStripes.onShow += OnBlackStripesShow;
             blackStripes.onHide += OnBlackStripesHide;
+
+            inventoryPanelGO = GameObject.Find("BottomPanel");
+
+            Assert.IsNotNull(textField, "Error: dialogue text field not found");
         }
 
         void OnDestroy() {
@@ -34,36 +43,49 @@ namespace Framework {
             blackStripes.onHide -= OnBlackStripesHide;
         }
 
-        void Update() {
-            if(Input.GetMouseButtonDown(0) && isActive) {
+        public void OnPointerClick (PointerEventData eventData) {
+            if(isDialogueActive) {
                 ShowNext();
             }
         }
 
-        public void Show(string dialogName, Action onComplete) {
-            Dialogue dialog = Resources.Load<Dialogue>(dialoguesPath + dialogName);
-            activeDialog = Instantiate(dialog, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity) as Dialogue;
-            activeDialog.transform.SetParent(transform);
-            
-            activeDialog.onComplete += Complete;
+        public void Show(string dialogueName, Action onComplete) {
+            Dialogue dialogue = Resources.Load<Dialogue>(dialoguesPath + dialogueName);
 
-            this.onComplete = onComplete;
+            if (dialogue) {
+                activeDialogue = Instantiate(dialogue, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity) as Dialogue;
+                activeDialogue.transform.SetParent(transform);
 
-            isActive = true;
+                activeDialogue.onComplete += Complete;
 
-            blackStripes.Show();
+                this.onComplete = onComplete;
+
+                textField.gameObject.SetActive(true);
+                isDialogueActive = true;
+
+                blackStripes.Show();
+
+                if(inventoryPanelGO) {
+                    inventoryPanelGO.GetComponent<Animator>().Play(hideInventory);
+                }
+            }
         }
 
         void Complete() {
-            Destroy(activeDialog);
+            Destroy(activeDialogue.gameObject);
 
-            isActive = false;
+            textField.gameObject.SetActive(false);
+            isDialogueActive = false;
 
             blackStripes.Hide();
+
+            if (inventoryPanelGO) {
+                inventoryPanelGO.GetComponent<Animator>().Play(showInventory);
+            }
         }
 
         void OnBlackStripesShow() {
-            activeDialog.SetTextField(textField);
+            activeDialogue.SetTextField(textField);
             ShowNext();
         }
 
@@ -74,8 +96,8 @@ namespace Framework {
         }
 
         void ShowNext() {
-            if(activeDialog) {
-                activeDialog.ShowNext();
+            if(activeDialogue) {
+                activeDialogue.ShowNext();
             }
         }
     }

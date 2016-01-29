@@ -1,12 +1,14 @@
 using UnityEngine;
 using System.Xml;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 
 namespace Framework {
-    public class Location : MonoBehaviour {
+    public class Location : MonoBehaviour, IPointerClickHandler {
 		
         protected InventoryManager inventory;
 		protected TimerManager timerManager;
+        protected List<Dialogue> dialogues;
 
         public LayerMask layerMask;
         public List<SubLocation> subLocations;
@@ -14,6 +16,7 @@ namespace Framework {
         virtual protected void OnGameObjectClicked(GameObject layer) { }
         virtual protected void Cheat() { }
         virtual protected void CreateTimers() { }
+        virtual protected void CreateDialogues() { }
         virtual protected void AddTransferZone(List<HintInfo> result) { }
         virtual protected void AddCustomHints(List<HintInfo> result) { }
 
@@ -32,6 +35,7 @@ namespace Framework {
             }
 
             CreateTimers();
+            CreateDialogues();
             Load();
             Cheat();
         }
@@ -40,15 +44,11 @@ namespace Framework {
             Save();
         }
 
+        public void OnPointerClick (PointerEventData eventData) {
+            OnGameObjectClicked(eventData.rawPointerPress);
+        }
+
         virtual protected void Update() {
-            if (Input.GetMouseButtonDown(0)) {
-                RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector3.forward, Mathf.Infinity, layerMask);
-
-                if (hit.collider) {
-                    OnGameObjectClicked(hit.collider.gameObject);
-                }
-            }
-
 			timerManager.UpdateTimers(Time.deltaTime);
         }
 
@@ -81,6 +81,18 @@ namespace Framework {
         void LoadLocationState(XmlDocument doc) {
             XmlNode locationState = doc.DocumentElement.SelectSingleNode("location_state");
             LocationState.LoadFromXML(transform, locationState, doc);
+        }
+
+        void SaveDialogues(XmlDocument doc) {
+            XmlNode dialoguesState = doc.CreateElement("dialogues");
+
+            foreach(Dialogue dialogue in dialogues) {
+
+            }
+        }
+
+        void LoadDialogues(XmlDocument doc) {
+
         }
 
         protected List<HintInfo> CreateHints() {

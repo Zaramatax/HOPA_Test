@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 namespace Framework {
     public class LocationLoader : MonoBehaviour {
@@ -8,7 +9,7 @@ namespace Framework {
         }
 
         IEnumerator Load() {
-            Application.LoadLevelAsync(LocationManager.instance.GetLocationToLoad());
+            SceneManager.LoadSceneAsync(LocationManager.instance.GetLocationToLoad());
             yield return null;
             LocationManager.instance.LocationLoaded();
         }

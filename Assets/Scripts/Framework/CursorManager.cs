@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 namespace Framework {
     public class CursorManager : MonoBehaviour {
@@ -43,6 +44,7 @@ namespace Framework {
             this.originParent = draggableObject.transform.parent.gameObject;
             this.originPosition = draggableObject.transform.position;
             this.offset = offset;
+            this.draggableObject.GetComponent<Image>().raycastTarget = false;
 
             draggableObject.transform.SetParent(transform);
         }
@@ -54,6 +56,7 @@ namespace Framework {
         public void Detach() {
             draggableObject.transform.position = originPosition;
             draggableObject.transform.SetParent(originParent.transform);
+            draggableObject.GetComponent<Image>().raycastTarget = true;
 
             draggableObject = null;
         }

@@ -1,16 +1,17 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.EventSystems;
 
 namespace Framework {
-    public class CloseSubLocation : MonoBehaviour {
-        void OnMouseDown() {
-            CloseSub();
-        }
+    public class CloseSubLocation : MonoBehaviour, IPointerClickHandler {
 
         void CloseSub() {
             if (transform.parent.gameObject) {
                 transform.parent.gameObject.GetComponent<SubLocation>().Close();
             }
+        }
+
+        public void OnPointerClick (PointerEventData eventData) {
+            CloseSub();
         }
     }
 }

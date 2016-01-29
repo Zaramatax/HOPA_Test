@@ -37,6 +37,7 @@ namespace Framework {
         public void ShowNext() {
             if(currentStage < 0) {
                 ShowNextStage();
+                return;
             }
 
             stages[currentStage].ShowNext();

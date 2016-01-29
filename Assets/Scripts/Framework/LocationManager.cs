@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
 namespace Framework {
@@ -63,7 +63,7 @@ namespace Framework {
                     fade.GetComponent<Image>().color = Color.black;
                     state = State.Idle;
 
-                    Application.LoadLevel("Loading");
+                    SceneManager.LoadScene("Loading");
                 }
             }
         }

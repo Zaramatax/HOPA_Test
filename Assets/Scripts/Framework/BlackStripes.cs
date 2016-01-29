@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 namespace Framework {
     public class BlackStripes : MonoBehaviour {
@@ -8,7 +9,7 @@ namespace Framework {
 
         public Action onShow;
         public Action onHide;
-
+        
         public void Show() {
             gameObject.GetComponent<Animator>().Play(showBlackStripes);
         }
@@ -27,6 +28,10 @@ namespace Framework {
             if (onHide != null) {
                 onHide();
             }
+        }
+
+        void OnMouseDown() {
+            int i = 0; ++i;
         }
     }
 }

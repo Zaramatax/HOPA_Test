@@ -42,8 +42,6 @@ namespace Framework {
 
         public void ShowNext() {
             ++currentPhrase;
-
-            textField.text = phrases[currentPhrase].message;
             
             if (currentPhrase == phrases.Count) {
                 if(onStageComplete != null) {
@@ -51,6 +49,8 @@ namespace Framework {
                     return;
                 }
             }
+
+            textField.text = phrases[currentPhrase].message;
         }
     }
 }
