@@ -22,8 +22,9 @@ namespace Framework {
         private Action onComplete;
         private bool isDialogueActive;
         private GameObject inventoryPanelGO;
+        private bool raycastTarget;
 
-        private XmlNode loadNode;
+        private XmlNode loadNode; //Remove this some beautiful sunny day
 
         void Awake() {
             isDialogueActive = false;
@@ -39,6 +40,9 @@ namespace Framework {
             blackStripes.onHide += OnBlackStripesHide;
 
             inventoryPanelGO = GameObject.Find("BottomPanel");
+
+            raycastTarget = gameObject.GetComponent<Image>().raycastTarget;
+            raycastTarget = false;
 
             Assert.IsNotNull(textField, "Error: dialogue text field not found");
         }
@@ -73,6 +77,7 @@ namespace Framework {
 
                 textField.gameObject.SetActive(true);
                 isDialogueActive = true;
+                raycastTarget = true;
 
                 blackStripes.Show();
 
@@ -87,6 +92,7 @@ namespace Framework {
 
             textField.gameObject.SetActive(false);
             isDialogueActive = false;
+            raycastTarget = false;
 
             blackStripes.Hide();
 
