@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.IO;
 using System;
+using System.Xml;
 
 namespace Framework 
 {
@@ -52,5 +53,26 @@ namespace Framework
         public static T ParseEnum<T>(string value) {
             return (T)Enum.Parse(typeof(T), value, true);
         }
-	}
+
+
+        // for use with xml documents
+        public static XmlNode GetDocRootNode(string pathName) {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(pathName);
+
+            return doc.DocumentElement;
+        }
+
+        public static string GetAttribute(XmlNode node, string name) {
+            if (node.Attributes.GetNamedItem(name) == null) return null;
+            return node.Attributes.GetNamedItem(name).Value;
+        }
+
+        public static XmlNode GetElement(XmlNode node, string name) {
+            foreach (XmlNode element in node.ChildNodes)
+                if (element.Name == name) return element;
+
+            return null;
+        }
+    }
 }
