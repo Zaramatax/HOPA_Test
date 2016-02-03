@@ -68,8 +68,8 @@ namespace Framework
             return node.Attributes.GetNamedItem(name).Value;
         }
 
-        public static XmlNode GetElement(XmlNode node, string name) {
-            foreach (XmlNode element in node.ChildNodes)
+        public static XmlElement GetElement(XmlNode node, string name) {
+            foreach (XmlElement element in node.ChildNodes)
                 if (element.Name == name) return element;
 
             return null;

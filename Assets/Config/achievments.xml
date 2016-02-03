@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<root>
-	<achievments>
-		<achievment id="complete_game" total_count="1"/>
-		<achievment id="ho_master" total_count="20"/>
-		<achievment id="all_collections" total_count="25"/>
-	</achievments>
-</root>
