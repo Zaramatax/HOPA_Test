@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Text;
 using System.Xml;
-using System.Xml.Serialization;
 using UnityEngine;
 
 namespace Framework{
@@ -41,6 +38,7 @@ namespace Framework{
         void Update() {
             if (Input.GetMouseButtonUp(0)) {
                 GiveAchievment("curious");
+                Save();
             }
         }
 
@@ -68,23 +66,24 @@ namespace Framework{
             scorePoints += value;
         }
 
-        public void CollectItem(string collectionId, string itemId) {
-            var collection = collections.Find(col => col.id == collectionId);
-            if (collection == null) throw new Exception("Unknown collection ID '" + collectionId + "'.");
-
-            var item = collection.items.Find(it => it.id == itemId);
-            if(item == null) throw new Exception("Unknown collection item ID '" + itemId + "'.");
-
-            item.collected = true;
-        }
-
-        public bool IsCollected(string collectionId, string itemId) {
+        public CollectionItem GetCollectionItem(string collectionId, string itemId) {
             var collection = collections.Find(col => col.id == collectionId);
             if (collection == null) throw new Exception("Unknown collection ID '" + collectionId + "'.");
 
             var item = collection.items.Find(it => it.id == itemId);
             if (item == null) throw new Exception("Unknown collection item ID '" + itemId + "'.");
 
+            return item;
+        }
+
+        public void CollectItem(string collectionId, string itemId) {
+            var item = GetCollectionItem(collectionId, itemId);
+            item.collected = true;
+            AddScorePoints(item.score);
+        }
+
+        public bool IsCollected(string collectionId, string itemId) {
+            var item = GetCollectionItem(collectionId, itemId);
             return item.collected;
         }
 
@@ -101,6 +100,14 @@ namespace Framework{
             achievments.ForEach(x => achievmentsNode.AppendChild(x.Save(doc)));
             root.AppendChild(achievmentsNode);
 
+            XmlNode achievmentsForBannerNode = doc.CreateElement("achievments_for_banner");
+            foreach(AchievmentInfo info in achievmentsForBanner) {
+                XmlElement achievmentInfo = doc.CreateElement(info.id);
+                achievmentInfo.SetAttribute("count", Convert.ToString(info.currentCount));
+                achievmentsForBannerNode.AppendChild(achievmentInfo);
+            }
+            root.AppendChild(achievmentsForBannerNode);
+
             XmlNode collectionsNode = doc.CreateElement("collections");
             collections.ForEach(x => collectionsNode.AppendChild(x.Save(doc)));
             root.AppendChild(collectionsNode);
@@ -116,43 +123,55 @@ namespace Framework{
 
             XmlElement scoreNode = Utils.GetElement(root, "score_points");
             if(scoreNode != null) {
-                scorePoints = Convert.ToInt32(scoreNode.GetAttribute("value"));
+                var scorePointsValue = scoreNode.GetAttribute("value");
+                if (scorePointsValue != null)
+                    scorePoints = Convert.ToInt32(scorePointsValue);
             }
 
-            XmlNode achievmentsNode = Utils.GetElement(root, "achievments");
+            XmlElement achievmentsNode = Utils.GetElement(root, "achievments");
             if (achievmentsNode != null) {
-                foreach (XmlElement achievElement in achievmentsNode) {
-                    var currentAchievment = achievments.Find(x => x.id == achievElement.Name);
+                foreach (XmlElement achievmentInfo in achievmentsNode) {
+                    var currentAchievment = achievments.Find(x => x.id == achievmentInfo.Name);
                     if (currentAchievment == null) continue;
 
-                    currentAchievment.currentCount = Convert.ToInt32(achievElement.GetAttribute("current_count"));
+                    currentAchievment.Load(achievmentInfo);
+                }
+            }
+
+            XmlElement achievmentsForBannerNode = Utils.GetElement(root, "achievments_for_banner");
+            if(achievmentsForBannerNode != null) {
+                foreach (XmlElement achievmentsForBannerInfo in achievmentsForBannerNode) {
+                    var currentAchievment = achievments.Find(x => x.id == achievmentsForBannerInfo.Name);
+                    if (currentAchievment == null) continue;
+
+                    var countValue = achievmentsForBannerInfo.GetAttribute("count");
+                    if (countValue == null) continue;
+
+                    var currentAchievmentInfo = currentAchievment.GetInfo();
+                    currentAchievmentInfo.currentCount = Convert.ToInt32(countValue);
+                    achievmentsForBanner.Enqueue(currentAchievmentInfo);
                 }
             }
 
             XmlNode collectionsNode = Utils.GetElement(root, "collections");
             if (collectionsNode != null) {
-                foreach (XmlElement collectionElement in collectionsNode) {
-                    var currentCollection = collections.Find(x => x.id == collectionElement.Name);
+                foreach (XmlElement collectionInfo in collectionsNode) {
+                    var currentCollection = collections.Find(x => x.id == collectionInfo.Name);
                     if (currentCollection == null) continue;
 
-                    foreach (XmlElement itemElement in collectionElement) {
-                        var currentItem = currentCollection.items.Find(x => x.id == itemElement.Name);
-                        if (currentItem == null) continue;
-
-                        currentItem.collected = Convert.ToBoolean(itemElement.GetAttribute("collected"));
-                    }
+                    currentCollection.Load(collectionInfo);
                 }
             }
         }
 
         private void SetupAchievments() {
             achievments = Resources.LoadAll<Achievment>("Prefabs/Achievments").ToList();
-            achievments.ForEach(x => x.currentCount = 0);
+            achievments.ForEach(x => x.Init());
         }
 
         private void SetupCollections() {
             collections = Resources.LoadAll<Collection>("Prefabs/Collections").ToList();
-            collections.ForEach(col => col.items.ForEach(it => it.collected = false));
+            collections.ForEach(col => col.Init());
         }
     }
 }

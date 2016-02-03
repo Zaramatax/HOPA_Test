@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Xml;
 using UnityEngine;
 
@@ -20,6 +17,10 @@ namespace Framework {
         public string titlePath { get; private set; }
         public string descriptionPath { get; private set; }
 
+        public void Init() {
+            currentCount = 0;
+        }
+
         public AchievmentInfo GetInfo() {
             return new AchievmentInfo {
                 id = id,
@@ -29,7 +30,6 @@ namespace Framework {
                 descriptionPath = "{" + textPath + "/" + id + "/description}",
                 iconNormal = iconNormal,
                 iconGlow = iconGlow
-
             };
         }
 
@@ -37,6 +37,15 @@ namespace Framework {
             XmlElement achievment = doc.CreateElement(id);
             achievment.SetAttribute("current_count", Convert.ToString(currentCount));
             return achievment;
+        }
+
+        public void Load(XmlElement achievmentInfo) {
+            if (achievmentInfo == null) return;
+
+            var currentCountValue = achievmentInfo.GetAttribute("current_count");
+            if (currentCountValue == null) return;
+
+            currentCount = Convert.ToInt32(currentCountValue);
         }
 
         public override string ToString() {
