@@ -43,17 +43,6 @@ namespace Framework {
             for(int i = 0; i < items.Count; i++) {
                 items[i].Load((XmlElement)collection.ChildNodes[i]);
             }
-
-            //foreach(CollectionItem item in items) {
-            //    collection.
-            //}
-
-            //foreach (XmlElement item in collection) {
-            //    var currentItem = items.Find(x => x.id == item.Name);
-            //    if (currentItem == null) continue;
-
-            //    currentItem.Load(item);
-            //}
         }
     }
 

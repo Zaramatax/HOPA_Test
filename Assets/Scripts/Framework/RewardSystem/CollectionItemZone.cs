@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace Framework {
@@ -8,7 +9,6 @@ namespace Framework {
 
         void Start() {
             var item = RewardManager.Instance.GetCollection(collectionId).GetItem(itemIndex);
-
             if (item.collected)
                 gameObject.SetActive(false);
         }

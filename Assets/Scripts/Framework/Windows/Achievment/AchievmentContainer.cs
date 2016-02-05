@@ -24,6 +24,7 @@ namespace Framework {
         }
 
         public void RefreshDisplay() {
+            counter.text = achievment.currentCount + "/" + achievment.TotalCount;
             if (achievment.currentCount == achievment.TotalCount) {
                 icon.sprite = achievment.IconGlow;
             }

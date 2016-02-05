@@ -34,6 +34,10 @@ namespace Framework {
             Hide();
         }
 
+        void Start() {
+            RewardManager.Instance.NewReward += OnNewRewardGiven;
+        }
+
         public void ShowAchievmentWindow() {
             Show();
         }
@@ -65,6 +69,10 @@ namespace Framework {
             gameObject.SetActive(false);
         }
 
+        public void OnNewRewardGiven(object reward, EventArgs e) {
+            RefreshDisplay();
+        }
+
         private void SetupContent() {
             SetupAchievments();
             SetupCollections();
@@ -73,21 +81,23 @@ namespace Framework {
         }
 
         private void SetupAchievments() {
-            for (int i = 0; i < RewardManager.Instance.AchievmentsCount; i++) {
+            var achievments = RewardManager.Instance.GetAchievments();
+            for (int i = 0; i < achievments.Count; i++) {
                 var go = GameObject.Instantiate<GameObject>(achievmentPrefab);
                 go.transform.SetParent(achievmentsContent.transform, false);
                 var achievmentContainer = go.GetComponent<AchievmentContainer>();
-                achievmentContainer.Setup(RewardManager.Instance.GetAchievment(i));
+                achievmentContainer.Setup(achievments[i]);
                 achievmentInst.Add(achievmentContainer);
             }
         }
 
         private void SetupCollections() {
-            for (int i = 0; i < RewardManager.Instance.CollectionsCount; i++) {
+            var collections = RewardManager.Instance.GetCollections();
+            for (int i = 0; i < collections.Count; i++) {
                 var go = GameObject.Instantiate<GameObject>(collectionPrefab);
                 go.transform.SetParent(collectionsContent.transform, false);
                 var collectionContainer = go.GetComponent<CollectionContainer>();
-                collectionContainer.Setup(RewardManager.Instance.GetCollection(i));
+                collectionContainer.Setup(collections[i]);
 
                 collectionsInst.Add(collectionContainer);
             }

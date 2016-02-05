@@ -18,9 +18,6 @@ namespace Framework{
         private List<Achievment> achievments;
         private List<Collection> collections;
 
-        public int CollectionsCount { get { return collections.Count; } }
-        public int AchievmentsCount { get { return achievments.Count; } }
-
         void Awake() {
             if (Instance != null) {
                 DestroyImmediate(gameObject);
@@ -55,6 +52,7 @@ namespace Framework{
         public void AddAchievmentBanner(AchievmentBanner banner) {
             achievmentBanner = banner;
             achievmentBanner.MoveComplete += CheckNotGivenAchievmentReward;
+            CheckNotGivenAchievmentReward();
         }
 
         public void CheckNotGivenAchievmentReward() {
@@ -88,6 +86,15 @@ namespace Framework{
             GetCollection(collectionId).GetItem(itemIndex).MarkAsCollected();
         }
 
+        public IList<Achievment> GetAchievments() {
+            return achievments.AsReadOnly();
+        }
+
+        public IList<Collection> GetCollections() {
+            return collections.AsReadOnly();
+        }
+
+
         private void AddScorePoints(int value) {
             scorePoints += value;
         }
@@ -98,26 +105,10 @@ namespace Framework{
             return achievment;
         }
 
-        public Achievment GetAchievment(int index) {
-            try {
-                return achievments[index];
-            } catch {
-                throw new Exception("Achievment Index is out of range: index = '" + index + "'.");
-            }
-        }
-
         public Collection GetCollection(string id) {
             var collection = collections.Find(col => col.id == id);
             if (collection == null) throw new Exception("Unknown collection ID '" + id + "'.");
             return collection;
-        }
-
-        public Collection GetCollection(int index) {
-            try {
-                return collections[index];
-            } catch {
-                throw new Exception("Collection Index is out of range: index = '" + index + "'.");
-            }
         }
 
         public void Save() {

@@ -44,7 +44,6 @@ namespace Framework {
             rewardManager = RewardManager.Instance;
             rewardManager.NewReward += OnNewReward;
             rewardManager.AddAchievmentBanner(this);
-            rewardManager.CheckNotGivenAchievmentReward();
         }
 
         public void OnNewReward(object reward, EventArgs e) {
