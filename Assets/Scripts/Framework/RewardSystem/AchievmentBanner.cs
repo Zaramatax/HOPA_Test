@@ -46,6 +46,10 @@ namespace Framework {
             rewardManager.AddAchievmentBanner(this);
         }
 
+        void OnDestroy() {
+            rewardManager.NewReward -= OnNewReward;
+        }
+
         public void OnNewReward(object reward, EventArgs e) {
             currentAchievment = reward as Achievment;
             if(currentAchievment != null)

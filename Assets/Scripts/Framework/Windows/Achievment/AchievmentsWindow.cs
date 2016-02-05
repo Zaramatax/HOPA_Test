@@ -10,6 +10,15 @@ namespace Framework {
 
     public class AchievmentsWindow : MonoBehaviour {
 
+        public const string showAnimName = "show_ahievment_window";
+        public const string hideAnimName = "hide_ahievment_window";
+
+        public Animator animator;
+
+        private int showState;
+        private int hideState;
+        private int currentState;
+
         public GameObject collectionsPanel;
         public Transform collectionsContent;
         public GameObject collectionPrefab;
@@ -24,18 +33,22 @@ namespace Framework {
         public Inset inset;
         private List<CollectionContainer> collectionsInst;
         private List<AchievmentContainer> achievmentInst;
- 
+
         void Awake() {
             collectionsInst = new List<CollectionContainer>();
             achievmentInst = new List<AchievmentContainer>();
 
             SetupContent();
             ChangeInset(0);
-            Hide();
+            //Hide();
         }
 
         void Start() {
             RewardManager.Instance.NewReward += OnNewRewardGiven;
+        }
+
+        void OnDestroy() {
+            RewardManager.Instance.NewReward -= OnNewRewardGiven;
         }
 
         public void ShowAchievmentWindow() {
@@ -62,11 +75,13 @@ namespace Framework {
 
         public void Show() {
             RefreshDisplay();
-            gameObject.SetActive(true);
+            animator.Play(showAnimName);
+            //gameObject.SetActive(true);
         }
 
         public void Hide() {
-            gameObject.SetActive(false);
+            animator.Play(hideAnimName);
+            //gameObject.SetActive(false);
         }
 
         public void OnNewRewardGiven(object reward, EventArgs e) {

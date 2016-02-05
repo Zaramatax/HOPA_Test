@@ -39,15 +39,25 @@ namespace Framework{
             
         }
 
-        void Update() {
-            if (Input.GetMouseButtonUp(0)) {
-                GiveAchievment("curious");
-            }
-        }
+        //void Update() {
+        //    if (Input.GetMouseButtonUp(0)) {
+        //        GiveAchievment("curious");
+        //    }
+        //}
 
         void OnDestroy() {
             Save();
+            achievmentBanner.MoveComplete -= CheckNotGivenAchievmentReward;
         }
+
+        ///////////////////////////
+        ///----==== For test ===---
+        ///////////////////////////
+        public void GiveRandomAchievment() {
+            int index = UnityEngine.Random.Range(0, achievments.Count);
+            GiveAchievment(achievments[index].id);
+        }
+        ///////////////////////////
 
         public void AddAchievmentBanner(AchievmentBanner banner) {
             achievmentBanner = banner;
@@ -59,6 +69,7 @@ namespace Framework{
             foreach (Achievment achievment in achievments) {
                 if (achievment.CheckNotGiven()) {
                     achievment.TryGiveReward();
+                    return;
                 }
             }
         }
