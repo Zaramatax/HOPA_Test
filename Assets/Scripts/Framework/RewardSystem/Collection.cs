@@ -5,12 +5,30 @@ using UnityEngine;
 
 namespace Framework {
     public class Collection : MonoBehaviour {
-        public string id;
-        public Sprite icon;
-        public List<CollectionItem> items;
+        public const string textPath = "gameplay/collections";
+
+        [SerializeField]
+        private Sprite icon;
+        [SerializeField]
+        private List<CollectionItem> items;
+
+        public string id { get; private set; }
+
+        public int ItemsCount { get { return items.Count; } }
+        public Sprite Icon { get { return icon; } }
+        public string Title { get { return "{" + textPath + "/" + id + "/title}"; } }
 
         public void Init() {
+            id = name;
             items.ForEach(x => x.Init());
+        }
+
+        public CollectionItem GetItem(int index) {
+            try {
+                return items[index];
+            } catch {
+                throw new Exception("Collection item Index is out of range: index = '" + index + "', collection = '" + id + "'.");
+            }
         }
 
         public XmlNode Save(XmlDocument doc) {
@@ -19,42 +37,66 @@ namespace Framework {
             return collection;
         }
 
-        public void Load(XmlElement collectionInfo) {
-            if (collectionInfo == null) return;
+        public void Load(XmlElement collection) {
+            if (collection == null) return;
 
-            foreach (XmlElement itemInfo in collectionInfo) {
-                var currentItem = items.Find(x => x.id == itemInfo.Name);
-                if (currentItem == null) continue;
-
-                currentItem.Load(itemInfo);
+            for(int i = 0; i < items.Count; i++) {
+                items[i].Load((XmlElement)collection.ChildNodes[i]);
             }
+
+            //foreach(CollectionItem item in items) {
+            //    collection.
+            //}
+
+            //foreach (XmlElement item in collection) {
+            //    var currentItem = items.Find(x => x.id == item.Name);
+            //    if (currentItem == null) continue;
+
+            //    currentItem.Load(item);
+            //}
         }
     }
 
-    [Serializable]
-    public class CollectionItem {
-        public string id;
-        public Sprite icon;
-        public int score;
 
-        [HideInInspector]
-        public bool collected;
+    [Serializable]
+    public class CollectionItem : IReward {
+        [SerializeField]
+        private Sprite icon;
+        [SerializeField]
+        private int score;
+
+        public Sprite Icon { get { return icon; } }
+
+        public bool collected { get; private set; }
 
         public void Init() {
             collected = false;
         }
 
+        public void MarkAsCollected() {
+            collected = true;
+            TryGiveReward();
+        }
+
+        public void TryGiveReward() {
+            RewardManager.Instance.GiveReward(this);
+        }
+
+        public int GetScore() {
+            return score;
+        }
+
         public XmlNode Save(XmlDocument doc) {
-            XmlElement item = doc.CreateElement(id);
+            XmlElement item = doc.CreateElement("collection_item");
             item.SetAttribute("collected", Convert.ToString(collected));
             return item;
         }
 
-        public void Load(XmlElement itemInfo) {
-            if (itemInfo == null) return;
+        public void Load(XmlElement item) {
+            if (item == null) return;
 
-            var collectedValue = itemInfo.GetAttribute("collected");
-            if(collectedValue != null)
+            var collectedValue = item.GetAttribute("collected");
+            if (collectedValue != null)
                 collected = Convert.ToBoolean(collectedValue);
         }
     }

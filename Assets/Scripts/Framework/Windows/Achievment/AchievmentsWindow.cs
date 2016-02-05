@@ -1,0 +1,107 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace Framework {
+    public enum Inset { ACHIEVMENT, COLLECTIONS }
+
+    public class AchievmentsWindow : MonoBehaviour {
+
+        public GameObject collectionsPanel;
+        public Transform collectionsContent;
+        public GameObject collectionPrefab;
+
+        public GameObject achievmentPanel;
+        public Transform achievmentsContent;
+        public GameObject achievmentPrefab;
+
+        public Text score;
+
+        [HideInInspector]
+        public Inset inset;
+        private List<CollectionContainer> collectionsInst;
+        private List<AchievmentContainer> achievmentInst;
+ 
+        void Awake() {
+            collectionsInst = new List<CollectionContainer>();
+            achievmentInst = new List<AchievmentContainer>();
+
+            SetupContent();
+            ChangeInset(0);
+            Hide();
+        }
+
+        public void ShowAchievmentWindow() {
+            Show();
+        }
+
+        public void ChangeInset(int insetInsex) {
+            inset = (Inset)Enum.ToObject(typeof(Inset), insetInsex);
+
+            collectionsPanel.SetActive(false);
+            achievmentPanel.SetActive(false);
+
+            switch (inset) {
+                case Inset.ACHIEVMENT:
+                    achievmentPanel.SetActive(true);
+                    break;
+                case Inset.COLLECTIONS:
+                    collectionsPanel.SetActive(true);
+                    break;
+            }
+
+            RefreshDisplay();
+        }
+
+        public void Show() {
+            RefreshDisplay();
+            gameObject.SetActive(true);
+        }
+
+        public void Hide() {
+            gameObject.SetActive(false);
+        }
+
+        private void SetupContent() {
+            SetupAchievments();
+            SetupCollections();
+
+            score.text = Convert.ToString(RewardManager.Instance.scorePoints);
+        }
+
+        private void SetupAchievments() {
+            for (int i = 0; i < RewardManager.Instance.AchievmentsCount; i++) {
+                var go = GameObject.Instantiate<GameObject>(achievmentPrefab);
+                go.transform.SetParent(achievmentsContent.transform, false);
+                var achievmentContainer = go.GetComponent<AchievmentContainer>();
+                achievmentContainer.Setup(RewardManager.Instance.GetAchievment(i));
+                achievmentInst.Add(achievmentContainer);
+            }
+        }
+
+        private void SetupCollections() {
+            for (int i = 0; i < RewardManager.Instance.CollectionsCount; i++) {
+                var go = GameObject.Instantiate<GameObject>(collectionPrefab);
+                go.transform.SetParent(collectionsContent.transform, false);
+                var collectionContainer = go.GetComponent<CollectionContainer>();
+                collectionContainer.Setup(RewardManager.Instance.GetCollection(i));
+
+                collectionsInst.Add(collectionContainer);
+            }
+        }
+
+        private void RefreshDisplay() {
+            switch (inset) {
+                case Inset.ACHIEVMENT:
+                    achievmentInst.ForEach(x => x.RefreshDisplay());
+                    break;
+                case Inset.COLLECTIONS:
+                    collectionsInst.ForEach(x => x.RefreshDisplay());
+                    break;
+            }
+        }
+    }
+}

@@ -6,16 +6,20 @@ using UnityEngine;
 
 namespace Framework{
     public class RewardManager : MonoBehaviour {
-        public const string saveFileName = "reward_system";
+        private const string saveFileName = "reward_system";
 
         public static RewardManager Instance;
 
-        public event Action NewAchievment;
+        public event EventHandler NewReward;
 
-        private int scorePoints;
+        private AchievmentBanner achievmentBanner;
+
+        public int scorePoints { get; private set; }
         private List<Achievment> achievments;
-        private Queue<AchievmentInfo> achievmentsForBanner;
         private List<Collection> collections;
+
+        public int CollectionsCount { get { return collections.Count; } }
+        public int AchievmentsCount { get { return achievments.Count; } }
 
         void Awake() {
             if (Instance != null) {
@@ -25,7 +29,6 @@ namespace Framework{
             }
 
             achievments = new List<Achievment>();
-            achievmentsForBanner = new Queue<AchievmentInfo>();
             collections = new List<Collection>();
 
             SetupAchievments();
@@ -35,10 +38,13 @@ namespace Framework{
             Load();
         }
 
+        void Start() {
+            
+        }
+
         void Update() {
             if (Input.GetMouseButtonUp(0)) {
                 GiveAchievment("curious");
-                Save();
             }
         }
 
@@ -46,45 +52,72 @@ namespace Framework{
             Save();
         }
 
-        public AchievmentInfo GetAchievmentInfo() {
-            if (achievmentsForBanner.Count == 0) return null;
-            return achievmentsForBanner.Dequeue();
+        public void AddAchievmentBanner(AchievmentBanner banner) {
+            achievmentBanner = banner;
+            achievmentBanner.MoveComplete += CheckNotGivenAchievmentReward;
+        }
+
+        public void CheckNotGivenAchievmentReward() {
+            foreach (Achievment achievment in achievments) {
+                if (achievment.CheckNotGiven()) {
+                    achievment.TryGiveReward();
+                }
+            }
+        }
+
+        public AchievmentBannerState GetAchievmentBannerState() {
+            return achievmentBanner.State;
+        }
+
+
+        public void GiveReward(IReward reward) {
+            if (reward.GetScore() != 0)
+                AddScorePoints(reward.GetScore());
+
+            if (NewReward != null)
+                NewReward(reward, EventArgs.Empty);
         }
 
         public void GiveAchievment(string id) {
-            var achievment = achievments.Find(x => x.id == id);
-            if (achievment.currentCount == achievment.totalCount) return;
-
-            achievment.currentCount++;
-            achievmentsForBanner.Enqueue(achievment.GetInfo());
-
-            if (NewAchievment != null)
-                NewAchievment();
+            var achievment = GetAchievment(id);
+            if (achievment.currentCount == achievment.TotalCount) return;
+            achievment.MarkAsNotGiven();
         }
 
-        public void AddScorePoints(int value) {
+        public void CollectItem(string collectionId, int itemIndex) {
+            GetCollection(collectionId).GetItem(itemIndex).MarkAsCollected();
+        }
+
+        private void AddScorePoints(int value) {
             scorePoints += value;
         }
 
-        public CollectionItem GetCollectionItem(string collectionId, string itemId) {
-            var collection = collections.Find(col => col.id == collectionId);
-            if (collection == null) throw new Exception("Unknown collection ID '" + collectionId + "'.");
-
-            var item = collection.items.Find(it => it.id == itemId);
-            if (item == null) throw new Exception("Unknown collection item ID '" + itemId + "'.");
-
-            return item;
+        public Achievment GetAchievment(string id) {
+            var achievment = achievments.Find(x => x.id == id);
+            if (achievment == null) throw new Exception("Unknown achievment ID '" + id + "'");
+            return achievment;
         }
 
-        public void CollectItem(string collectionId, string itemId) {
-            var item = GetCollectionItem(collectionId, itemId);
-            item.collected = true;
-            AddScorePoints(item.score);
+        public Achievment GetAchievment(int index) {
+            try {
+                return achievments[index];
+            } catch {
+                throw new Exception("Achievment Index is out of range: index = '" + index + "'.");
+            }
         }
 
-        public bool IsCollected(string collectionId, string itemId) {
-            var item = GetCollectionItem(collectionId, itemId);
-            return item.collected;
+        public Collection GetCollection(string id) {
+            var collection = collections.Find(col => col.id == id);
+            if (collection == null) throw new Exception("Unknown collection ID '" + id + "'.");
+            return collection;
+        }
+
+        public Collection GetCollection(int index) {
+            try {
+                return collections[index];
+            } catch {
+                throw new Exception("Collection Index is out of range: index = '" + index + "'.");
+            }
         }
 
         public void Save() {
@@ -100,14 +133,6 @@ namespace Framework{
             achievments.ForEach(x => achievmentsNode.AppendChild(x.Save(doc)));
             root.AppendChild(achievmentsNode);
 
-            XmlNode achievmentsForBannerNode = doc.CreateElement("achievments_for_banner");
-            foreach(AchievmentInfo info in achievmentsForBanner) {
-                XmlElement achievmentInfo = doc.CreateElement(info.id);
-                achievmentInfo.SetAttribute("count", Convert.ToString(info.currentCount));
-                achievmentsForBannerNode.AppendChild(achievmentInfo);
-            }
-            root.AppendChild(achievmentsForBannerNode);
-
             XmlNode collectionsNode = doc.CreateElement("collections");
             collections.ForEach(x => collectionsNode.AppendChild(x.Save(doc)));
             root.AppendChild(collectionsNode);
@@ -122,7 +147,7 @@ namespace Framework{
             if (root == null) return;
 
             XmlElement scoreNode = Utils.GetElement(root, "score_points");
-            if(scoreNode != null) {
+            if (scoreNode != null) {
                 var scorePointsValue = scoreNode.GetAttribute("value");
                 if (scorePointsValue != null)
                     scorePoints = Convert.ToInt32(scorePointsValue);
@@ -130,36 +155,19 @@ namespace Framework{
 
             XmlElement achievmentsNode = Utils.GetElement(root, "achievments");
             if (achievmentsNode != null) {
-                foreach (XmlElement achievmentInfo in achievmentsNode) {
-                    var currentAchievment = achievments.Find(x => x.id == achievmentInfo.Name);
+                foreach (XmlElement achievment in achievmentsNode) {
+                    var currentAchievment = achievments.Find(x => x.id == achievment.Name);
                     if (currentAchievment == null) continue;
-
-                    currentAchievment.Load(achievmentInfo);
-                }
-            }
-
-            XmlElement achievmentsForBannerNode = Utils.GetElement(root, "achievments_for_banner");
-            if(achievmentsForBannerNode != null) {
-                foreach (XmlElement achievmentsForBannerInfo in achievmentsForBannerNode) {
-                    var currentAchievment = achievments.Find(x => x.id == achievmentsForBannerInfo.Name);
-                    if (currentAchievment == null) continue;
-
-                    var countValue = achievmentsForBannerInfo.GetAttribute("count");
-                    if (countValue == null) continue;
-
-                    var currentAchievmentInfo = currentAchievment.GetInfo();
-                    currentAchievmentInfo.currentCount = Convert.ToInt32(countValue);
-                    achievmentsForBanner.Enqueue(currentAchievmentInfo);
+                    currentAchievment.Load(achievment);
                 }
             }
 
             XmlNode collectionsNode = Utils.GetElement(root, "collections");
             if (collectionsNode != null) {
-                foreach (XmlElement collectionInfo in collectionsNode) {
-                    var currentCollection = collections.Find(x => x.id == collectionInfo.Name);
+                foreach (XmlElement collection in collectionsNode) {
+                    var currentCollection = collections.Find(x => x.id == collection.Name);
                     if (currentCollection == null) continue;
-
-                    currentCollection.Load(collectionInfo);
+                    currentCollection.Load(collection);
                 }
             }
         }
@@ -171,7 +179,7 @@ namespace Framework{
 
         private void SetupCollections() {
             collections = Resources.LoadAll<Collection>("Prefabs/Collections").ToList();
-            collections.ForEach(col => col.Init());
+            collections.ForEach(x => x.Init());
         }
     }
 }

@@ -86,6 +86,23 @@
       <counter text="#_ACHIEVEMENT_TOTAL#"/>
       <button_close text="SCHLIESSEN"/>
     </achievements>
+    <collections>
+      <collection_1>
+        <title text="Artist"/>
+      </collection_1>
+      <collection_2>
+        <title text="Journalist"/>
+      </collection_2>
+      <collection_3>
+        <title text="Spencer family heirlooms"/>
+      </collection_3>
+      <collection_4>
+        <title text="Little girl"/>
+      </collection_4>
+      <collection_5>
+        <title text="Ignorance and flames"/>
+      </collection_5>
+    </collections>
     <map>
       <place_description text="Aktueller Standort"/>
       <quest_description text="Bereiche mit aktiven Aufgaben."/>

@@ -1,79 +1,84 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Framework {
+    public enum AchievmentBannerState { DEFAULT, MOVE }
+
     public class AchievmentBanner : MonoBehaviour {
 
         private const string moveAnimName = "show_achievment_banner";
 
         private Animator animator;
-        private AchievmentInfo currentAchievInfo;
+        private Achievment currentAchievment;
 
         private int moveState;
         private int currentState;
 
-        private Text title;
-        private Text description;
-        private Text counter;
-        private Image icon;
+        public Text title;
+        public Text description;
+        public Text counter;
+        public Image icon;
 
         private RewardManager rewardManager;
+
+        public event Action MoveComplete;
+
+        public AchievmentBannerState State {
+            get {
+                currentState = animator.GetCurrentAnimatorStateInfo(0).shortNameHash;
+                if (moveState == currentState) {
+                    return AchievmentBannerState.MOVE;
+                } else {
+                    return AchievmentBannerState.DEFAULT;
+                }
+            }
+        }
 
         void Awake() {
             moveState = Animator.StringToHash(moveAnimName);
             animator = GetComponent<Animator>();
-
-            title = transform.FindChild("title").GetComponent<Text>();
-            description = transform.FindChild("description").GetComponent<Text>();
-            counter = transform.FindChild("counter").GetComponent<Text>();
-            icon = transform.FindChild("icon").GetComponent<Image>();
         }
 
         void Start() {
             rewardManager = RewardManager.Instance;
-            rewardManager.NewAchievment += OnNewAchievment;
-
-            ShowBanner();
+            rewardManager.NewReward += OnNewReward;
+            rewardManager.AddAchievmentBanner(this);
+            rewardManager.CheckNotGivenAchievmentReward();
         }
 
-        public void OnNewAchievment() {
-            ShowBanner();
+        public void OnNewReward(object reward, EventArgs e) {
+            currentAchievment = reward as Achievment;
+            if(currentAchievment != null)
+                ShowBanner();
         }
 
         public void OnBannerShowComplete() {
-            currentAchievInfo = null;
-            ShowBanner();
+            if (MoveComplete != null) {
+                MoveComplete();
+            }
         }
 
         private void ShowBanner() {
-            if (currentAchievInfo != null) return;
-            currentAchievInfo = rewardManager.GetAchievmentInfo();
-
-            if (currentAchievInfo == null) return;
-
-            currentState = animator.GetCurrentAnimatorStateInfo(0).shortNameHash;
-            if (moveState == currentState) return;
-
             SetBannerInfo();
             animator.Play(moveState);
         }
 
         private void SetBannerInfo() {
-            title.text = LocalizationManager.GetTranslationStatic(currentAchievInfo.titlePath);
-            description.text = LocalizationManager.GetTranslationStatic(currentAchievInfo.descriptionPath);
+            title.text = LocalizationManager.GetTranslationStatic(currentAchievment.Title);
+            description.text = LocalizationManager.GetTranslationStatic(currentAchievment.Description);
 
-            if (currentAchievInfo.totalCount == 1) {
+            if (currentAchievment.TotalCount == 1) {
                 counter.text = "";
             } else {
-                counter.text = currentAchievInfo.currentCount + "/" + currentAchievInfo.totalCount;
+                counter.text = currentAchievment.currentCount + "/" + currentAchievment.TotalCount;
             }
 
-            if(currentAchievInfo.currentCount == currentAchievInfo.totalCount) {
-                icon.sprite = currentAchievInfo.iconGlow;
+            if(currentAchievment.currentCount == currentAchievment.TotalCount) {
+                icon.sprite = currentAchievment.IconGlow;
             } else {
-                icon.sprite = currentAchievInfo.iconNormal;
+                icon.sprite = currentAchievment.IconNormal;
             }
         }
-
     }
 }

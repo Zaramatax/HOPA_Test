@@ -4,15 +4,17 @@ using UnityEngine.EventSystems;
 namespace Framework {
     public class CollectionItemZone : MonoBehaviour, IPointerClickHandler {
         public string collectionId;
-        public string itemId;
+        public int itemIndex;
 
         void Start() {
-            if(RewardManager.Instance.IsCollected(collectionId, itemId))
+            var item = RewardManager.Instance.GetCollection(collectionId).GetItem(itemIndex);
+
+            if (item.collected)
                 gameObject.SetActive(false);
         }
 
         public void OnPointerClick(PointerEventData eventData) {
-            RewardManager.Instance.CollectItem(collectionId, itemId);
+            RewardManager.Instance.CollectItem(collectionId, itemIndex);
             gameObject.SetActive(false);
         }
     }
