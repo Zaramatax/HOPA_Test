@@ -47,7 +47,6 @@ namespace Framework{
 
         void OnDestroy() {
             Save();
-            achievmentBanner.MoveComplete -= CheckNotGivenAchievmentReward;
         }
 
         ///////////////////////////
@@ -61,8 +60,15 @@ namespace Framework{
 
         public void AddAchievmentBanner(AchievmentBanner banner) {
             achievmentBanner = banner;
-            achievmentBanner.MoveComplete += CheckNotGivenAchievmentReward;
             CheckNotGivenAchievmentReward();
+        }
+
+        public void OnAchievmentBannerMoveComplete() {
+            CheckNotGivenAchievmentReward();
+        }
+
+        public AchievmentBannerState GetAchievmentBannerState() {
+            return achievmentBanner.State;
         }
 
         public void CheckNotGivenAchievmentReward() {
@@ -72,10 +78,6 @@ namespace Framework{
                     return;
                 }
             }
-        }
-
-        public AchievmentBannerState GetAchievmentBannerState() {
-            return achievmentBanner.State;
         }
 
 

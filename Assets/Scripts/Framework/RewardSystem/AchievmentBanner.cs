@@ -57,9 +57,7 @@ namespace Framework {
         }
 
         public void OnBannerShowComplete() {
-            if (MoveComplete != null) {
-                MoveComplete();
-            }
+            rewardManager.OnAchievmentBannerMoveComplete();
         }
 
         private void ShowBanner() {

@@ -40,7 +40,6 @@ namespace Framework {
 
             SetupContent();
             ChangeInset(0);
-            //Hide();
         }
 
         void Start() {
@@ -76,12 +75,10 @@ namespace Framework {
         public void Show() {
             RefreshDisplay();
             animator.Play(showAnimName);
-            //gameObject.SetActive(true);
         }
 
         public void Hide() {
             animator.Play(hideAnimName);
-            //gameObject.SetActive(false);
         }
 
         public void OnNewRewardGiven(object reward, EventArgs e) {
