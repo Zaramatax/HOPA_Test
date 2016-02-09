@@ -9,43 +9,53 @@ using UnityEngine.EventSystems;
 namespace Framework {
     public class MiniHO : SubLocation {
 
-        [SerializeField]
-        public List<MiniHOItem> itemsOnScene;
-        public List<MiniHOItem> itemsOnPlace;
+        public RuntimeAnimatorController animatorController;
 
-        private Dictionary<MiniHOItem, MiniHOItem> items;
-
+        public List<MiniHOPair> items;
         private CanvasGroup canvasGroup;
 
         protected override void Awake() {
             base.Awake();
             canvasGroup = GetComponent<CanvasGroup>();
 
-            if (itemsOnScene.Count != itemsOnPlace.Count) throw new Exception("items on scene count != items on place count : on scene " + name);
-
-            items = new Dictionary<MiniHOItem, MiniHOItem>();
-            for(int i = 0; i < itemsOnScene.Count; i++) {
-                itemsOnScene[i].ItemOnPlace += OnItemOnPlace;
-                items.Add(itemsOnScene[i], itemsOnPlace[i]);
+            foreach(MiniHOPair pair in items) {
+                pair.onScene.Init(animatorController);
+                pair.onPlace.Init(animatorController);
+                pair.onScene.ItemOnPlace += OnItemOnPlace;
             }
+        }
+
+        protected override void OnDestroy() {
+            base.OnDestroy();
+            items.ForEach(x => x.onScene.ItemOnPlace -= OnItemOnPlace);
         }
 
         protected override void OnGameObjectClicked(GameObject go) {
             var clickedItem = go.GetComponent<MiniHOItem>();
             if (clickedItem == null) return;
 
-            if (!items.ContainsKey(clickedItem)) return;
+            var miniHOPair = items.Find(x => x.onScene == clickedItem);
+            if (miniHOPair == null) return;
 
-            var targetItem = items[clickedItem];
-            clickedItem.OnClick(targetItem.transform.position);
+            canvasGroup.interactable = false;
+            miniHOPair.onScene.OnClick(miniHOPair.onPlace.transform.position);
         }
 
         public void OnItemOnPlace(object sender, EventArgs e) {
+            canvasGroup.interactable = true;
+
             var itemOnScene = (MiniHOItem)sender;
 
-            if (!items.ContainsKey(itemOnScene)) return;
-            var onPlaceItem = items[itemOnScene];
-            onPlaceItem.OnItemOnPlace();
+            var miniHOPair = items.Find(x => x.onScene == itemOnScene);
+            if (miniHOPair == null) return;
+
+            miniHOPair.onPlace.OnItemOnPlace();
         }
+    }
+
+    [Serializable]
+    public class MiniHOPair {
+        public MiniHOItem onScene;
+        public MiniHOItem onPlace;
     }
 }
