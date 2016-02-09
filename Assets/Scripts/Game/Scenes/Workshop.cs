@@ -8,6 +8,8 @@ namespace Scenes {
 
         override protected void Start() {
             base.Start();
+
+            subLocations.Find(x => x.GetComponent<MiniHO>() != null).GetComponent<MiniHO>().MiniHOComplete += OnMiniHOComplete;
         }
 
         override protected void CreateDialogues () {
@@ -23,6 +25,16 @@ namespace Scenes {
 
             if(Input.GetKeyDown(KeyCode.D)) {
                 StartDialogue("dialogue_1");
+            }
+        }
+
+        public void OnMiniHOComplete(MiniHO miniHO) {
+            var openSubAreas = GetComponentsInChildren<OpenSubArea>();
+            for(int i = 0; i < openSubAreas.Length; i++) {
+                if(openSubAreas[i].subLocation == miniHO) {
+                    openSubAreas[i].gameObject.SetActive(false);
+                    return;
+                }
             }
         }
     }

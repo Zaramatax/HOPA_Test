@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -13,6 +14,9 @@ namespace Framework {
 
         public GameObject shadow;
         public GameObject patch;
+        public GameObject place;
+
+        public bool collect;
 
         public event MiniHOItemAction MoveComplete;
 
@@ -24,13 +28,46 @@ namespace Framework {
                 animator = shadow.AddComponent<Animator>();
                 animator.runtimeAnimatorController = controller;
             }
+
+            if (place != null) {
+                animator = place.AddComponent<Animator>();
+                animator.runtimeAnimatorController = controller;
+            }
+
+            collect = false;
         }
 
-        public void OnFadeHideComplete(GameObject go) {
-            go.SetActive(false);
+        private void UpdateState() {
+            if (collect) {
+                gameObject.SetActive(false);
+                if(shadow != null)
+                    shadow.SetActive(false);
+                if (patch != null)
+                    patch.SetActive(false);
+                place.SetActive(true);
+            } else {
+                gameObject.SetActive(true);
+                if (shadow != null)
+                    shadow.SetActive(true);
+                if (patch != null)
+                    patch.SetActive(true);
+                place.SetActive(false);
+            }
+        }
+
+        public XmlNode Save(XmlDocument doc) {
+            XmlElement collectedInfo = doc.CreateElement("collected");
+            collectedInfo.SetAttribute("value", Convert.ToString(collect));
+            return collectedInfo;
+        }
+
+        public void Load(XmlElement info) {
+            collect = Convert.ToBoolean(Utils.GetAttribute(info, "value"));
+            UpdateState();
         }
 
         public void Fly(Vector3 targetPos) {
+            collect = true;
             StartCoroutine(MoveItem(targetPos));
         }
 

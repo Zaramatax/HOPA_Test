@@ -14,70 +14,56 @@ namespace Framework {
         private const string fadeHide = "fade_hide";
 
         public RuntimeAnimatorController animatorController;
-        public List<MiniHOPair> items;
+        public List<MiniHOItem> items;
 
-        public int collectedCount { get; private set; }
+        public event Action<MiniHO> MiniHOComplete;
 
         protected override void Awake() {
             base.Awake();
 
-            collectedCount = 0;
-
-            foreach (MiniHOPair pair in items) {
-                pair.onScene.Init(animatorController);
-                pair.onPlace.Init(animatorController);
-                pair.onScene.MoveComplete += OnItemMoveComplete;
+            foreach (MiniHOItem item in items) {
+                item.Init(animatorController);
+                item.MoveComplete += OnItemMoveComplete;
             }
         }
 
         protected override void OnDestroy() {
             base.OnDestroy();
-            items.ForEach(x => x.onScene.MoveComplete -= OnItemMoveComplete);
+            items.ForEach(x => x.MoveComplete -= OnItemMoveComplete);
         }
 
         protected override void Save() {
-            base.Save();
             XmlDocument doc = new XmlDocument();
+            XmlElement root = doc.CreateElement("root");
+            doc.AppendChild(root);
 
-            if (ProfileSaver.Load(doc, locationName)) {
-                XmlElement root = doc.DocumentElement;
-                XmlElement collected = doc.CreateElement("collected");
-                collected.SetAttribute("value", Convert.ToString(collectedCount));
-                root.AppendChild(collected);
-
-                ProfileSaver.Save(doc, locationName);
+            for(int i = 0; i < items.Count; i++) {
+                root.AppendChild(items[i].Save(doc));
             }
+
+            ProfileSaver.Save(doc, locationName);
         }
 
         protected override void Load() {
-            base.Load();
-
             XmlDocument doc = new XmlDocument();
-
             if (ProfileSaver.Load(doc, locationName)) {
                 XmlElement root = doc.DocumentElement;
-                XmlElement collected = Utils.GetElement(root, "collected");
-                collectedCount = Convert.ToInt32(Utils.GetAttribute(collected, "value"));
+                for(int i = 0; i < root.ChildNodes.Count; i++) {
+                    items[i].Load((XmlElement)root.ChildNodes[i]);
+                }
             }
+
+            CheckComplete();
         }
 
         protected override void OnGameObjectClicked(GameObject go) {
-            var clickedItem = go.GetComponent<MiniHOItem>();
-            if (clickedItem == null) return;
-
-            var miniHOPair = items.Find(x => x.onScene == clickedItem);
-            if (miniHOPair == null) return;
-
-            collectedCount++;
-
-            OnItemClick(miniHOPair);
+            var item = go.GetComponent<MiniHOItem>();
+            if (item == null) return;
+            OnItemClick(item);
         }
 
-        public void OnItemMoveComplete(MiniHOItem onSceneItem) {
-            var miniHOPair = items.Find(x => x.onScene == onSceneItem);
-            if (miniHOPair == null) return;
-
-            OnItemPlace(miniHOPair);
+        public void OnItemMoveComplete(MiniHOItem item) {
+            OnItemPlace(item);
         }
 
         public void FadeShow(GameObject item){
@@ -100,32 +86,33 @@ namespace Framework {
             StartCoroutine(SetActive(item, false));
         }
 
-        public virtual void OnItemClick(MiniHOPair item) {
+        public virtual void OnItemClick(MiniHOItem item) {
             Disable();
-            FadeHide(item.onScene.shadow);
-            if (item.onScene.patch != null) {
-                item.onScene.patch.SetActive(false);
+            FadeHide(item.shadow);
+            if (item.patch != null) {
+                item.patch.SetActive(false);
             }
-            item.onScene.Fly(item.onPlace.transform.position);
+            item.Fly(item.place.transform.position);
         }
 
-        public virtual void OnItemPlace(MiniHOPair item) {
+        public virtual void OnItemPlace(MiniHOItem item) {
             Enable();
-            FadeHide(item.onScene.gameObject);
-            FadeShow(item.onPlace.gameObject);
-            FadeShow(item.onPlace.shadow);
-            if(item.onPlace.patch != null) {
-                item.onPlace.patch.SetActive(true);
-            }
+            FadeHide(item.gameObject);
+            FadeShow(item.place.gameObject);
+            FadeShow(item.shadow);
 
             CheckComplete();
         }
 
         public void CheckComplete() {
-            if (collectedCount == items.Count) {
-                Disable();
-                StartCoroutine(CloseMiniHO());
-            }
+            foreach(MiniHOItem item in items)
+                if (!item.collect) return;
+
+            if (MiniHOComplete != null)
+                MiniHOComplete(this);
+
+            Disable();
+            StartCoroutine(CloseMiniHO());
         }
 
         IEnumerator CloseMiniHO() {
@@ -136,12 +123,6 @@ namespace Framework {
         IEnumerator SetActive(GameObject go, bool value) {
             yield return new WaitForSeconds(0.5f);
             go.SetActive(value);
-        } 
-    }
-
-    [Serializable]
-    public class MiniHOPair {
-        public MiniHOItem onScene;
-        public MiniHOItem onPlace;
+        }
     }
 }
