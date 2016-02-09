@@ -7,19 +7,16 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace Framework {
-    public class MiniHOItem : MonoBehaviour {
+    public delegate void MiniHOItemAction(MiniHOItem item);
 
-        private const string fadeShow = "fade_show";
-        private const string fadeHide = "fade_hide";
+    public class MiniHOItem : MonoBehaviour {
 
         public GameObject shadow;
         public GameObject patch;
 
-        public event EventHandler ItemOnPlace;
+        public event MiniHOItemAction MoveComplete;
 
         public void Init(RuntimeAnimatorController controller) {
-
-
             var animator = gameObject.AddComponent<Animator>();
             animator.runtimeAnimatorController = controller;
 
@@ -27,26 +24,17 @@ namespace Framework {
                 animator = shadow.AddComponent<Animator>();
                 animator.runtimeAnimatorController = controller;
             }
-
-            patch.SetActive(false);
         }
 
-        public void OnClick(Vector3 targetPos) {
-            shadow.GetComponent<Animator>().Play(fadeHide);
-            StartCoroutine(Fly(targetPos));
+        public void OnFadeHideComplete(GameObject go) {
+            go.SetActive(false);
         }
 
-        public void OnItemOnPlace() {
-            gameObject.SetActive(true);
-            GetComponent<Animator>().Play(fadeShow);
-
-            //if (shadow != null) {
-            //    var animator = GetComponent<Animator>();
-            //    animator.runtimeAnimatorController = controller;
-            //}
+        public void Fly(Vector3 targetPos) {
+            StartCoroutine(MoveItem(targetPos));
         }
 
-        IEnumerator Fly(Vector3 targetPos) {
+        IEnumerator MoveItem(Vector3 targetPos) {
             Vector3 startPosition = transform.position;
 
             float t = 0;
@@ -58,10 +46,8 @@ namespace Framework {
                 yield return new WaitForSeconds(0.01f);
             }
 
-            GetComponent<Animator>().Play(fadeHide);
-
-            if (ItemOnPlace != null)
-                ItemOnPlace(this, EventArgs.Empty);
+            if (MoveComplete != null)
+                MoveComplete(this);
         }
     }
 }

@@ -51,6 +51,14 @@ namespace Framework
             }
         }
 
+        public void Disable() {
+            GetComponent<Animator>().Play("disable_sub");
+        }
+
+        public void Enable() {
+            GetComponent<Animator>().Play("enable_sub");
+        }
+
         public bool IsOpen() {
             return State.Open == state;
         }
