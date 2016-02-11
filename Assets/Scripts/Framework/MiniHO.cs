@@ -10,24 +10,19 @@ using UnityEngine.EventSystems;
 namespace Framework {
     public class MiniHO : SubLocation {
 
-        private const string fadeShow = "fade_show";
-        private const string fadeHide = "fade_hide";
-
-        public RuntimeAnimatorController animatorController;
         public List<MiniHOItem> items;
-
         public event Action<MiniHO> MiniHOComplete;
 
         protected override void Awake() {
             base.Awake();
 
             foreach (MiniHOItem item in items) {
-                item.Init(animatorController);
+                item.Init();
                 item.MoveComplete += OnItemMoveComplete;
             }
         }
 
-        protected override void OnDestroy() {
+        protected override void OnApplicationQuit() {
             base.OnDestroy();
             items.ForEach(x => x.MoveComplete -= OnItemMoveComplete);
         }

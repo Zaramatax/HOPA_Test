@@ -20,20 +20,7 @@ namespace Framework {
 
         public event MiniHOItemAction MoveComplete;
 
-        public void Init(RuntimeAnimatorController controller) {
-            var animator = gameObject.AddComponent<Animator>();
-            animator.runtimeAnimatorController = controller;
-
-            if (shadow != null) {
-                animator = shadow.AddComponent<Animator>();
-                animator.runtimeAnimatorController = controller;
-            }
-
-            if (place != null) {
-                animator = place.AddComponent<Animator>();
-                animator.runtimeAnimatorController = controller;
-            }
-
+        public void Init() {
             collect = false;
         }
 
