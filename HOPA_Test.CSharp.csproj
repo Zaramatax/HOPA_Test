@@ -63,12 +63,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\AssetBundleManager\AssetBundleLoadOperation.cs" />
-    <Compile Include="Assets\Scripts\AssetBundleManager\AssetBundleManager.cs" />
-    <Compile Include="Assets\Scripts\AssetBundleManager\Scripts\LoadAssets.cs" />
-    <Compile Include="Assets\Scripts\AssetBundleManager\Scripts\LoadScenes.cs" />
-    <Compile Include="Assets\Scripts\AssetBundleManager\Scripts\LoadVariants.cs" />
-    <Compile Include="Assets\Scripts\AssetBundleManager\Utility.cs" />
+    <Compile Include="Assets\AssetBundleManager\AssetBundleLoadOperation.cs" />
+    <Compile Include="Assets\AssetBundleManager\AssetBundleManager.cs" />
+    <Compile Include="Assets\AssetBundleManager\Scripts\LoadAssets.cs" />
+    <Compile Include="Assets\AssetBundleManager\Scripts\LoadScenes.cs" />
+    <Compile Include="Assets\AssetBundleManager\Scripts\LoadVariants.cs" />
+    <Compile Include="Assets\AssetBundleManager\Utility.cs" />
     <Compile Include="Assets\Scripts\Framework\BlackStripes.cs" />
     <Compile Include="Assets\Scripts\Framework\CloseSubLocation.cs" />
     <Compile Include="Assets\Scripts\Framework\CommentManager.cs" />

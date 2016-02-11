@@ -1,0 +1,117 @@
+ManifestFileVersion: 0
+CRC: 1032031121
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 37f9900b91008cee238a77f730cea836
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9dea23ffc7e96552740e12d1ee5309d8
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Sources/SE/5. Workshop/maneken_head.png
+- Assets/Sources/SE/5. Workshop/mg_03.png
+- Assets/Sources/SE/5. Workshop/maracas.png
+- Assets/Sources/SE/5. Workshop/train_part3.png
+- Assets/Sources/SE/5. Workshop/rope_shadow.png
+- Assets/Sources/SE/5. Workshop/window light.png
+- Assets/Sources/SE/5. Workshop/wagony.png
+- Assets/Sources/SE/5. Workshop/train_part1.png
+- Assets/Sources/SE/5. Workshop/paz_05.png
+- Assets/Sources/SE/5. Workshop/ropes.png
+- Assets/Sources/SE/5. Workshop/redlight.png
+- Assets/Sources/SE/5. Workshop/left_arm2.png
+- Assets/Sources/SE/5. Workshop/card_0.png
+- Assets/Sources/SE/5. Workshop/flagki.png
+- Assets/Sources/SE/5. Workshop/right_leg.png
+- Assets/Sources/SE/5. Workshop/parovoz_shadow.png
+- Assets/Sources/SE/5. Workshop/parovoz_1.png
+- Assets/Sources/SE/5. Workshop/left_arm.png
+- Assets/Sources/SE/5. Workshop/scissors.png
+- "Assets/Sources/SE/5. Workshop/mg_05 \xA6\xA6\xA6-\xA6\xAC\xA6\xACT\u041F.png"
+- "Assets/Sources/SE/5. Workshop/T\u041D\xA6-\xA6-\xA6\xAC\xA6\xA6\xA6-\xA6- T\u0411T\u0414\xA6\xA6T\u0410T\u041B.png"
+- Assets/Sources/SE/5. Workshop/patch_doll.png
+- Assets/Sources/SE/5. Workshop/paz_02.png
+- Assets/Sources/SE/5. Workshop/morph_02.png
+- Assets/Sources/SE/5. Workshop/candle_light.png
+- Assets/Sources/SE/5. Workshop/fabric 2.png
+- Assets/Sources/SE/5. Workshop/mg_04.png
+- Assets/Sources/SE/5. Workshop/card_2.png
+- Assets/Sources/SE/5. Workshop/right_arm 2.png
+- Assets/Sources/SE/5. Workshop/paint.png
+- "Assets/Sources/SE/5. Workshop/\xA6\u0431\xA6\xAC\xA6-\xA6\xAC\xA6\u0416 2.png"
+- Assets/Sources/SE/5. Workshop/shkatulka_1.png
+- Assets/Sources/SE/5. Workshop/train.png
+- Assets/Sources/SE/5. Workshop/bashmak_02.png
+- Assets/Sources/SE/5. Workshop/mg_close.png
+- Assets/Sources/SE/5. Workshop/doll.png
+- Assets/Sources/SE/5. Workshop/rope.png
+- Assets/Sources/SE/5. Workshop/right_leg2.png
+- Assets/Sources/SE/5. Workshop/train_part6_sh.png
+- "Assets/Sources/SE/5. Workshop/\xA6\u0431\xA6\xAC\xA6-\xA6\xAC\xA6\u0416 1.png"
+- Assets/Sources/SE/5. Workshop/train_part4.png
+- Assets/Sources/SE/5. Workshop/patch_train_part3.png
+- Assets/Sources/SE/5. Workshop/train_part1_sh.png
+- Assets/Sources/SE/5. Workshop/paz_06.png
+- Assets/Sources/SE/5. Workshop/button_close.png
+- Assets/Sources/SE/5. Workshop/train_part5.png
+- Assets/Sources/SE/5. Workshop/paz_01.png
+- Assets/Sources/SE/5. Workshop/left_leg.png
+- Assets/Sources/SE/5. Workshop/train_part6.png
+- Assets/Sources/SE/5. Workshop/card_3.png
+- Assets/Sources/SE/5. Workshop/train_part3_sh.png
+- Assets/Sources/SE/5. Workshop/shtory.png
+- Assets/Sources/SE/5. Workshop/doll1.png
+- Assets/Sources/SE/5. Workshop/close.png
+- Assets/Sources/SE/5. Workshop/hair2.png
+- Assets/Sources/SE/5. Workshop/fabric3.png
+- Assets/Sources/SE/5. Workshop/chains_unlock.png
+- Assets/Sources/SE/5. Workshop/1mg_01.png
+- "Assets/Sources/SE/5. Workshop/\xA6\u0431\xA6\xAC\xA6-\xA6\xAC\xA6\u0416 3.png"
+- Assets/Sources/SE/5. Workshop/laskuty.png
+- Assets/Sources/SE/5. Workshop/1mg_02.png
+- Assets/Sources/SE/5. Workshop/patch_train_part4.png
+- Assets/Sources/SE/5. Workshop/mg_02.png
+- Assets/Sources/SE/5. Workshop/paz_04.png
+- Assets/Sources/SE/5. Workshop/patch_wagony.png
+- Assets/Sources/SE/5. Workshop/card_1.png
+- Assets/Sources/SE/5. Workshop/shkatulka_2.png
+- Assets/Sources/SE/5. Workshop/patch_shtory.png
+- Assets/Sources/SE/5. Workshop/body.png
+- Assets/Sources/SE/5. Workshop/train_part2.png
+- Assets/Sources/SE/5. Workshop/paper.png
+- Assets/Sources/SE/5. Workshop/1mg_03.png
+- "Assets/Sources/SE/5. Workshop/\xA6\u0431\xA6\xAC\xA6-\xA6\xAC\xA6\u0416 5.png"
+- Assets/Sources/SE/5. Workshop/hair.png
+- Assets/Sources/SE/5. Workshop/lamp light.png
+- Assets/Sources/SE/5. Workshop/hand_anim.png
+- Assets/Sources/SE/5. Workshop/doll_anim.png
+- Assets/Sources/SE/5. Workshop/doll_shadow.png
+- Assets/Sources/SE/5. Workshop/right_leg_1.png
+- Assets/Sources/SE/5. Workshop/emblem.png
+- Assets/Sources/SE/5. Workshop/metla.png
+- Assets/Sources/SE/5. Workshop/open.png
+- Assets/Sources/SE/5. Workshop/Layer 136.png
+- Assets/Sources/SE/5. Workshop/brush.png
+- "Assets/Sources/SE/5. Workshop/\xA6\u0431\xA6\xAC\xA6-\xA6\xAC\xA6\u0416 6.png"
+- Assets/Sources/SE/5. Workshop/mg_01.png
+- Assets/Sources/SE/5. Workshop/left_leg2.png
+- Assets/Sources/SE/5. Workshop/back.png
+- Assets/Sources/SE/5. Workshop/morph_01.png
+- "Assets/Sources/SE/5. Workshop/\xA6\u0431\xA6\xAC\xA6-\xA6\xAC\xA6\u0416 4.png"
+- Assets/Sources/SE/5. Workshop/candle_flames.png
+- Assets/Sources/SE/5. Workshop/face.png
+- Assets/Sources/SE/5. Workshop/parovoz.png
+- Assets/Sources/SE/5. Workshop/Layer 30.png
+- Assets/Sources/SE/5. Workshop/fabric 1.png
+- "Assets/Sources/SE/5. Workshop/\xA6\u0431\xA6\xAC\xA6-\xA6\xAC\xA6\u0416 7.png"
+- Assets/Sources/SE/5. Workshop/train_part2_sh.png
+- Assets/Sources/SE/5. Workshop/mg_05.png
+- Assets/Sources/SE/5. Workshop/paz_03.png
+- Assets/Sources/SE/5. Workshop/bashmak_01.png
+Dependencies: []

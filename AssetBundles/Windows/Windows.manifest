@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: scene_5_workshop_sources
+      Dependencies: {}
+    Info_1:
+      Name: scene_5_workshop
+      Dependencies:
+        Dependency_0: scene_5_workshop_sources
