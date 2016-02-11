@@ -54,6 +54,18 @@ namespace Framework
             return (T)Enum.Parse(typeof(T), value, true);
         }
 
+        public static string GetGameObjectFullName(GameObject go) {
+            string fullName = go.name;
+            var parent = go.transform.parent;
+
+            while(parent != null) {
+                fullName = fullName.Insert(0, parent.name + "/");
+                parent = parent.parent;
+            }
+
+            return fullName;
+        }
+
 
         // for use with xml documents
         public static XmlNode GetDocRootNode(string pathName) {
@@ -73,6 +85,13 @@ namespace Framework
                 if (element.Name == name) return element;
 
             return null;
+        }
+
+        public static Vector2 Vector2Parse(string str) {
+            string[] temp = str.Substring(1, str.Length - 2).Split(',');
+            float x = float.Parse(temp[0]);
+            float y = float.Parse(temp[1]);
+            return new Vector2(x, y);
         }
     }
 }
