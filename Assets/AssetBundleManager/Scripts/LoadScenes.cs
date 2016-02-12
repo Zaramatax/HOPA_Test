@@ -2,7 +2,7 @@
 using System.Collections;
 using AssetBundles;
 using UnityEngine.SceneManagement;
-using UnityEditor;
+using System.IO;
 
 using Framework;
 
@@ -20,13 +20,7 @@ public class LoadScenes : MonoBehaviour
     }
 
     bool SceneExists(string sceneName) {
-        EditorBuildSettingsScene[] scenes = EditorBuildSettings.scenes;
-        foreach (EditorBuildSettingsScene scene in scenes) {
-            if (scene.path == "Assets/Scenes/" + sceneName + ".unity")
-                return true;
-        }
-
-        return false;
+        return File.Exists("Assets/Scenes/" + sceneName + ".unity");
     }
 
     IEnumerator LoadLocal (string sceneName) {
@@ -54,15 +48,15 @@ public class LoadScenes : MonoBehaviour
 		// 	Another approach would be to make this configurable in the standalone player.)
 		#if DEVELOPMENT_BUILD || UNITY_EDITOR
 		AssetBundleManager.SetDevelopmentAssetBundleServer ();
-		#else
+#else
 		// Use the following code if AssetBundles are embedded in the project for example via StreamingAssets folder etc:
 		AssetBundleManager.SetSourceAssetBundleURL(Application.dataPath + "/");
 		// Or customize the URL based on your deployment or configuration
-		//AssetBundleManager.SetSourceAssetBundleURL("http://www.MyWebsite/MyAssetBundles");
-		#endif
-		
-		// Initialize AssetBundleManifest which loads the AssetBundleManifest object.
-		var request = AssetBundleManager.Initialize();
+		AssetBundleManager.SetSourceAssetBundleURL("https://www.dropbox.com/sh/4zzwvowesnm1v8t/AAAx_oac4uSzS9SKVk0WOMh9a?dl=0");
+#endif
+
+        // Initialize AssetBundleManifest which loads the AssetBundleManifest object.
+        var request = AssetBundleManager.Initialize();
 		
 		if (request != null)
 			yield return StartCoroutine(request);
@@ -74,7 +68,7 @@ public class LoadScenes : MonoBehaviour
 		float startTime = Time.realtimeSinceStartup;
 
 		// Load level from assetBundle.
-		AssetBundleLoadOperation request = AssetBundleManager.LoadLevelAsync(sceneName, sceneName, isAdditive);
+		AssetBundleLoadOperation request = AssetBundleManager.LoadLevelAsync(sceneName.ToLower(), sceneName, isAdditive);
 		if (request == null)
 			yield break;
 		StartCoroutine(request);
