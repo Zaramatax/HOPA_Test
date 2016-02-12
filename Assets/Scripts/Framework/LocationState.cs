@@ -81,12 +81,31 @@ namespace Framework {
         }
     }
 
+    public class AnimationState : Attribute {
+
+        public AnimationState() {
+            attributeName = "animation_state";
+        }
+
+        protected override void DoLoad(GameObject gameObject, XmlAttribute attribute) {
+            AnimationSystem.Instance.Restore(gameObject, attribute.Value);
+        }
+        protected override void DoSave(GameObject gameObject, XmlAttribute attribute) {
+            var animationUpdater = gameObject.GetComponent<AnimationUpdater>();
+            if (animationUpdater == null) return;
+
+            attribute.Value = animationUpdater.GetStateToString();
+        }
+    }
+
+
     public static class LocationState {
         static List<Attribute> attributes = new List<Attribute>();
 
         public static void CreateSavesList() {
             attributes.Add(new Activity());
             attributes.Add(new Position());
+            attributes.Add(new AnimationState());
         }
 
         public static void LoadFromXML(Transform parent_transform, XmlNode parent_node, XmlDocument doc) {

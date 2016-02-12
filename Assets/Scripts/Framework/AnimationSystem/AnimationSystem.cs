@@ -8,13 +8,11 @@ using System.Xml.Serialization;
 using UnityEngine;
 
 namespace Framework {
-    public enum AnimationType { Fade, Rotate, Move, Enable }
+    public enum AnimationType { Fade, Rotate, Move, Interactable }
 
     public class AnimationSystem : MonoBehaviour {
 
         public static AnimationSystem Instance;
-
-        private List<AnimationSystemObject> objects;
 
         void Awake() {
             if (Instance != null) {
@@ -22,176 +20,87 @@ namespace Framework {
             } else {
                 Instance = this;
             }
-
-            objects = new List<AnimationSystemObject>();
-
-            Load();
-            objects.ForEach(x => PlayAnimation(x));
         }
 
-        void OnApplicationQuit() {
-            objects.ForEach(x => x.UpdateObjectsState());
-            Save();
+        public void Restore(GameObject go, string state) {
+            string[] animations = state.Split('/');
+
+            foreach(string anim in animations) {
+                if(anim != "") {
+                    string[] animParams = anim.Split(';');
+
+                    switch ((AnimationType)Enum.Parse(typeof(AnimationType), animParams[0])) {
+                        case AnimationType.Fade:
+                            Fade(go, Convert.ToSingle(animParams[1]), Convert.ToSingle(animParams[2]), Convert.ToSingle(animParams[3]), animParams[4], Convert.ToBoolean(animParams[5]));
+                            break;
+
+                        case AnimationType.Move:
+                            Move(go, Utils.Vector2Parse(animParams[1]), Utils.Vector2Parse(animParams[2]), Convert.ToSingle(animParams[3]), animParams[4]);
+                            break;
+                    }
+                }
+            }
         }
 
-        private void SetComponents(GameObject go, AnimationType animType) {
+        private AnimationUpdater SetComponents(GameObject go, AnimationType animType) {
             var animationUpdater = go.GetComponent<AnimationUpdater>();
-            if (animationUpdater == null)
+            if (animationUpdater == null) {
                 animationUpdater = go.AddComponent<AnimationUpdater>();
+            }
 
-            animationUpdater.AnimationComplete += OnAnimationComplete;
-
-            if(animType == AnimationType.Fade || animType == AnimationType.Enable) {
+            if(animType == AnimationType.Fade || animType == AnimationType.Interactable) {
                 var canvasGroup = go.GetComponent<CanvasGroup>();
                 if (canvasGroup == null)
                     canvasGroup = go.AddComponent<CanvasGroup>();
             }
-        }
 
-        private void PlayAnimation(AnimationSystemObject animInfo) {
-            switch (animInfo.type) {
-                case AnimationType.Fade:
-                    var fadeState = (FadeAnimationState)animInfo.state;
-                    Fade(animInfo.animatedObject, fadeState.currentValue, fadeState.endValue, fadeState.timeLeft, animInfo.functionName);
-                    break;
-
-                case AnimationType.Move:
-                    var moveState = (MoveAnimationState)animInfo.state;
-                    Move(animInfo.animatedObject, moveState.currentPos, moveState.targetPos, moveState.speed, animInfo.functionName);
-                    break;
-            }
-        }
-
-        public void OnAnimationComplete(GameObject go, AnimationType type) {
-            go.GetComponent<AnimationUpdater>().AnimationComplete -= OnAnimationComplete;
-
-            var animSystObj = objects.Find(x => (x.animatedObject == go) && (x.type == type));
-            if(animSystObj.functionName != "")
-                go.SendMessageUpwards(animSystObj.functionName);
-            objects.Remove(animSystObj);
-        }
-
-        private void Save() {
-            XmlDocument doc = new XmlDocument();
-            XmlNode root = doc.CreateElement("root");
-            doc.AppendChild(root);
-
-            objects.ForEach(x => root.AppendChild(x.Save(doc)));
-
-            ProfileSaver.Save(doc, "animation_system.xml");
-        }
-
-        private void Load() {
-            XmlDocument doc = new XmlDocument();
-            ProfileSaver.Load(doc, "animation_system.xml");
-            XmlElement root = doc.DocumentElement;
-            if (root == null) return;
-
-            foreach (XmlElement objElement in root) {
-                var currentObj = new AnimationSystemObject();
-                currentObj.Load(objElement);
-                objects.Add(currentObj);
-            }
+            return animationUpdater;
         }
 
 
         //external functions
-        public void Fade(GameObject go, float startValue, float endValue, float time, string functionName = "") {
-            SetComponents(go, AnimationType.Fade);
-            go.GetComponent<AnimationUpdater>().Fade(startValue, endValue, time);
-
-            var sameAnimation = objects.Find(x => (x.animatedObject == go) && (x.type == AnimationType.Fade));
-            if (sameAnimation != null) {
-                objects.Remove(sameAnimation);
-            }
-
-            objects.Add(new AnimationSystemObject { animatedObject = go, functionName = functionName, type = AnimationType.Fade });
+        public void Fade(GameObject go, float start, float end, float time, string functionName = "", bool inactiveAfterAnim = false) {
+            var animationUpdater = SetComponents(go, AnimationType.Fade);
+            var fade = new FadeAnimation(start, end, time, functionName, inactiveAfterAnim);
+            animationUpdater.Play(fade);
         }
 
-        public void Move(GameObject go, Vector2 startPos, Vector2 targetPos, float speed, string functionName = "") {
-            SetComponents(go, AnimationType.Move);
-            go.GetComponent<AnimationUpdater>().Move(startPos, targetPos, speed);
-
-            var sameAnimation = objects.Find(x => (x.animatedObject == go) && (x.type == AnimationType.Move));
-            if (sameAnimation != null) {
-                objects.Remove(sameAnimation);
-            }
-
-            objects.Add(new AnimationSystemObject { animatedObject = go, functionName = functionName, type = AnimationType.Move });
-        }
-    }
-
-    public class AnimationSystemObject {
-        public GameObject animatedObject;
-        public string functionName;
-        public AnimationType type;
-
-        public object state;
-
-        public void UpdateObjectsState() {
-            switch (type) {
-                case AnimationType.Fade:
-                    state = animatedObject.GetComponent<AnimationUpdater>().fadeAnimationState;
-                    break;
-
-                case AnimationType.Move:
-                    state = animatedObject.GetComponent<AnimationUpdater>().moveAnimationState;
-                    break;
-            }
+        public void Move(GameObject go, Vector2 start, Vector2 target, float speed, string functionName = "", bool inactiveAfterAnim = false) {
+            var animationUpdater = SetComponents(go, AnimationType.Move);
+            var move = new MoveAnimation(start, target, speed, functionName, inactiveAfterAnim);
+            animationUpdater.Play(move);
         }
 
-        public XmlNode Save(XmlDocument doc) {
-
-            XmlElement animation_object = doc.CreateElement(Enum.GetName(typeof(AnimationType), (int)type));
-
-            animation_object.SetAttribute("animated_obj", Convert.ToString(Utils.GetGameObjectFullName(animatedObject)));
-            animation_object.SetAttribute("func_name", functionName);
-
-            switch (type) {
-                case AnimationType.Fade:
-                    var fadeState = (FadeAnimationState)state;
-
-                    animation_object.SetAttribute("current_value", Convert.ToString(fadeState.currentValue));
-                    animation_object.SetAttribute("end_value", Convert.ToString(fadeState.endValue));
-                    animation_object.SetAttribute("time_left", Convert.ToString(fadeState.timeLeft));
-                    break;
-
-                case AnimationType.Move:
-                    var moveState = (MoveAnimationState)state;
-
-                    animation_object.SetAttribute("current_pos", Convert.ToString(moveState.currentPos));
-                    animation_object.SetAttribute("target_pos", Convert.ToString(moveState.targetPos));
-                    animation_object.SetAttribute("speed", Convert.ToString(moveState.speed));
-                    break;
-            }
-
-            return animation_object;
+        public void Show(GameObject go, float time, string functionName = "") {
+            var animationUpdater = SetComponents(go, AnimationType.Fade);
+            var fade = new FadeAnimation(0, 1, time, functionName);
+            go.SetActive(true);
+            go.GetComponent<CanvasGroup>().interactable = true; 
+            animationUpdater.Play(fade);
         }
 
-        public void Load(XmlElement objInfo) {
-            if (objInfo == null) return;
-
-            animatedObject = GameObject.Find(objInfo.GetAttribute("animated_obj"));
-            functionName = objInfo.GetAttribute("func_name");
-            type = (AnimationType)Enum.Parse(typeof(AnimationType), objInfo.Name);
-
-            switch (type) {
-                case AnimationType.Fade:
-                    var fadeState = new FadeAnimationState();
-                    fadeState.currentValue = Convert.ToSingle(objInfo.GetAttribute("current_value"));
-                    fadeState.endValue = Convert.ToSingle(objInfo.GetAttribute("end_value"));
-                    fadeState.timeLeft = Convert.ToSingle(objInfo.GetAttribute("time_left"));
-                    state = fadeState;
-                    break;
-
-                case AnimationType.Move:
-                    var moveState = new MoveAnimationState();
-                    moveState.currentPos = Utils.Vector2Parse(objInfo.GetAttribute("current_pos"));
-                    moveState.targetPos = Utils.Vector2Parse(objInfo.GetAttribute("target_pos"));
-                    moveState.speed = Convert.ToSingle(objInfo.GetAttribute("speed"));
-                    state = moveState;
-                    break;
-            }
+        public void Hide(GameObject go, float time, string functionName = "") {
+            var animationUpdater = SetComponents(go, AnimationType.Fade);
+            var fade = new FadeAnimation(1, 0, time, functionName, true);
+            go.GetComponent<CanvasGroup>().interactable = false;
+            animationUpdater.Play(fade);
         }
+
+        public void InstShow(GameObject go) {
+            var animationUpdater = SetComponents(go, AnimationType.Fade);
+            var fade = new FadeAnimation(0, 1, 0);
+            go.SetActive(true);
+            go.GetComponent<CanvasGroup>().interactable = true;
+            animationUpdater.Play(fade);
+        }
+
+        public void InstHide(GameObject go) {
+            var animationUpdater = SetComponents(go, AnimationType.Fade);
+            var fade = new FadeAnimation(1, 0, 0);
+            go.SetActive(false);
+            go.GetComponent<CanvasGroup>().interactable = false;
+            animationUpdater.Play(fade);
+        }
+        //external functions -----------///////////////
     }
 }
